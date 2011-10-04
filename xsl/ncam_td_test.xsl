@@ -25,10 +25,10 @@
                 <description>
                     <xsl:value-of select="../../resource_texts/annotation"/>
                 </description>
-                <xsl:for-each select="../..//hierarchy_memberships/hierarchy_membership">
+                <xsl:for-each select="../../hierarchy_memberships/hierarchy_membership">
                     <subject>
                         <!-- Apply template to strip top levels of heirarchy -->
-                        <xsl:value-of select="/resources/resource/hierarchy_memberships/hierarchy_membership"/>
+                        <xsl:value-of select="."/>
                     </subject>
                 </xsl:for-each>
                 <language>en-US</language>
@@ -117,18 +117,19 @@
                     <accessMode><xsl:value-of select="."/></accessMode>
                 </xsl:for-each>
                 <xsl:if test="./@relationship != 'Primary'">
-                    <xsl:variable name="adapted_asset_url"/>
+                    <xsl:variable name="adapted_asset_code" select="is_adaptation_of/@code"/>
                     <xsl:variable name="asset_code" select="@code"></xsl:variable>
                     <xsl:for-each select="../../assets/asset">
-                        <xsl:if test="./@code = $asset_code">
+                        <xsl:if test="./@code = $adapted_asset_code">
                             <xsl:variable name="adapted_asset_url" select="./url"></xsl:variable>
+                            <isAdaptationOf><xsl:value-of select="$adapted_asset_url"/></isAdaptationOf>
                         </xsl:if>
                     </xsl:for-each>
-                    <isAdaptationOf><xsl:value-of select="$adapted_asset_url"/></isAdaptationOf>
+                    
                 </xsl:if>
-                
-                <adaptationType>captions</adaptationType>
-                <adaptationType>audioDescription</adaptationType>
+                <xsl:for-each select="access_feature">
+                    <adaptationType><xsl:value-of select="@name"/></adaptationType>
+                </xsl:for-each>
             </accessForAll>
         </record>
     </xsl:template>
