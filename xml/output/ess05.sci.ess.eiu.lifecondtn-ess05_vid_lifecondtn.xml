@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>ess05.sci.ess.eiu.lifecondtn-ess05_vid_lifecondtn</recordID>
+      <recordDate>2005-12-15</recordDate>
+      <url>http://www.teachersdomain.org/asset/ess05_vid_lifecondtn/</url>
+      <title>Caves: Extreme Conditions for Life</title>
+      <description>This video segment adapted from &lt;em&gt;NOVA&lt;/em&gt; raises the provocative idea that if life can exist in the most extreme environments on Earth &amp;mdash; such as in dark, toxic caves &amp;mdash; then perhaps living things can also survive in harsh environments on other planets.</description>
+      <subject>National K -12 Subject::Science::Life Science::Evolution and Diversity::Deep Time/History of Life</subject>
+      <subject>National K -12 Subject::Science::Life Science::Evolution and Diversity::Evidence for Evolution</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Composition of the Universe</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Conditions Necessary for Planetary Life</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth System, Structure, and Processes::Biogeochemical Cycles</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth System, Structure, and Processes::Earth's History</subject>
+      <language>en-US</language>
+      <mimeType/>
+   </general>
+   <educational>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2005-12-15</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>audioDescription</adaptationType>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

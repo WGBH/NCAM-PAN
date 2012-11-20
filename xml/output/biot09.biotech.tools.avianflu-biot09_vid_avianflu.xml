@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>biot09.biotech.tools.avianflu-biot09_vid_avianflu</recordID>
+      <recordDate>2009-09-08</recordDate>
+      <url>http://www.teachersdomain.org/asset/biot09_vid_avianflu/</url>
+      <title>Genetically Engineering the Avian Flu</title>
+      <description>In this video segment adapted from &lt;em&gt;NOVA scienceNOW&lt;/em&gt;, learn about a radical biotechnology experiment aimed at figuring out how to stop the avian flu virus.</description>
+      <subject>National K -12 Subject::Science::Life Science::Evolution and Diversity::Processes of Evolution</subject>
+      <subject>National K -12 Subject::Science::Life Science::Genetics and Heredity::Genetic Engineering</subject>
+      <subject>National K -12 Subject::Science::Life Science::Genetics and Heredity::Molecular Mechanisms of DNA</subject>
+      <subject>National K -12 Subject::Science::Life Science::Genetics and Heredity::Scientists/Process</subject>
+      <subject>National K -12 Subject::Science::Engineering::Systems and Technologies::Biotechnologies</subject>
+      <language>en-US</language>
+      <mimeType/>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2009-09-08</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_amgen.gif">Amgen Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>
