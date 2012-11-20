@@ -13,29 +13,42 @@ class Ingest::Ncamafa < Ingest::Xml
   end
 
   def record_unique_id
-    "@recordID"
+    "//xmlns:recordID"
   end
   def process_record row, solr_doc = nil
     solr_doc ||= {}
     fields = []
-    row.xpath("*").select { |x| !x.text.blank? }.each do |node|
-      case node.name
-        when "CONTRIBUTOR"
-          i = 0
-          node.xpath("xmlns:DATA", "xml.namespaces").each do |contributor|
-            i += 1
-            fields << ['contributor_name_s', contributor.text]
-            fields << ['contributor_name_role_s', "#{contributor.text}\0#{node.xpath("xmlns:CONT
-RIBUTOR_ROLE/xmlns:DATA[#{i}]", xml.namespaces).text}"]
-          end
-        when "SUBJECT_PERSONALITIES"
-          node.xpath("xmlns:DATA", "xml.namespaces").each do |subject|
-            fields << ['subject_personalities_s', subject.text]
-          end
-
-        else
-          fields << ["#{node.name.parameterize}_s", node.text]
-      end
+    row.xpath('xmlns:record').children.children.select.each do |node|
+#    row.xpath("//xmlns:record").children.children.select { |x| !x.text.nil? }.each do |node|
+#      case node.name
+#        when "educationLevel"
+#          node.xpath("xmlns:educationLevel", "xml.namespaces").each do |educationLevel|
+#            fields << ['educationLevel_s', educationLevel.text]
+#          end
+#        when "resourceType"
+#          node.xpath("xmlns:resourceType", "xml.namespaces").each do |resourceType|
+#            fields << ['resourceType_s', resourceType.text]
+#          end
+#        when "rights"
+#          node.xpath("xmlns:rights", "xml.namespaces").each do |rights|
+#            fields << ['rights_s', rights.text]
+#          end
+#        when "contributor"
+#          node.xpath("xmlns:contributor", "xml.namespaces").each do |contributor|
+#            fields << ['contributor_s', contributor.text]
+#          end
+#        when "accessMode"
+#          node.xpath("xmlns:accessMode", "xml.namespaces").each do |accessMode|
+#            fields << ['accessMode_s', accessMode.text]
+#          end
+#        when "adaptationType"
+#          node.xpath("xmlns:adaptationType", "xml.namespaces").each do |adaptationType|
+#            fields << ['adaptationType_s', adaptationType.text]
+#          end
+#
+#        else
+          fields << ["#{node.name.parameterize}_s", node.text] if node.name != "text"
+#      end
     end
 
     fields.each do |key, value|

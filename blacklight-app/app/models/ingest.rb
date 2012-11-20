@@ -16,8 +16,8 @@ module Ingest
       @content ||= File.read(file)
     end
 
-    def process! opts = {}
+    #def process! opts = {}
       # not implemented
-    end
+    #end
   end
 end
