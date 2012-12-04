@@ -518,7 +518,7 @@
    <field name="id" type="string" indexed="true" stored="true" required="true" />
    <field name="timestamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
    <!-- default, catch all search field -->
-   <field name="description_s" type="text" indexed="true" stored="false" multiValued="true"/>
+   <field name="description_s" type="text" indexed="true" stored="true" multiValued="true"/>
    
    <!-- these display fields are NOT multi-valued -->
    <!--field name="marc_display" type="string" indexed="false" stored="true" multiValued="false"/ -->
@@ -530,10 +530,10 @@
    <field name="publicationdate_s" type="string" indexed="true" stored="true" multiValued="false"/>
    <field name="url_s" type="string" indexed="false" stored="true" multiValued="false"/>
    <!-- field name="description_s" type="string" indexed="true" stored="true" multiValued="false"/ -->
-   <field name="rights_s" type="string" indexed="true" stored="true" multiValued="false"/>
-   <field name="accessrights_s" type="string" indexed="true" stored="true" multiValued="false"/>
-   <field name="isadaptationof_s" type="string" indexed="true" stored="true" multiValued="false"/>
-   <field name="mimetype_s" type="string" indexed="true" stored="true" multiValued="false"/>
+   <field name="rights_s" type="string" indexed="true" stored="true" multiValued="true"/>
+   <field name="accessrights_s" type="string" indexed="true" stored="true" multiValued="true"/>
+   <field name="isadaptationof_s" type="string" indexed="true" stored="true" multiValued="true"/>
+   <field name="mimetype_s" type="string" indexed="true" stored="true" multiValued="true"/>
    <!-- these fields are also used for display, so they must be stored -->
    <field name="subject_s" type="text" indexed="true" stored="true" multiValued="true"/>
    <field name="language_s" type="string" indexed="true" stored="true" multiValued="true" />
