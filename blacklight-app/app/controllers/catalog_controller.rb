@@ -52,13 +52,13 @@ class CatalogController < ApplicationController
     # :show may be set to false if you don't want the facet to be drawn in the 
     # facet bar
     config.add_facet_field 'resourcetype_s', :label => 'Resource Type'
-    config.add_facet_field 'title_s', :label => 'Title' 
+    # config.add_facet_field 'title_s', :label => 'Title' 
     config.add_facet_field 'publicationdate_s', :label => 'Publication Date' 
     config.add_facet_field 'language_s', :label => 'Language', :limit => true 
     config.add_facet_field 'audience_s', :label => 'Audience', :limit => 20 
     config.add_facet_field 'educationlevel_s', :label => 'Education Level' 
     config.add_facet_field 'accessmode_s', :label => 'Access Mode' 
-    config.add_facet_field 'isadaptationof_s', :label => 'Is Adaptation Of', :limit => true
+    # config.add_facet_field 'isadaptationof_s', :label => 'Is Adaptation Of', :limit => true
     config.add_facet_field 'adaptationtype_s', :label => 'Adaptation Type', :limit => true
 
     # Have BL send all facet field names to Solr, which has been the default
@@ -112,45 +112,45 @@ class CatalogController < ApplicationController
     # since we aren't specifying it otherwise. 
     
     config.add_search_field 'all_fields', :label => 'All Fields'
-    
+    #config.add_search_field 'description_s', :label => 'Description'
 
     # Now we see how to over-ride Solr request handler defaults, in this
     # case for a BL "search field", which is really a dismax aggregate
     # of Solr search fields. 
     
-    config.add_search_field('title_s', :label => 'Title') do |field|
+    config.add_search_field 'title_s', :label => 'Title' do |field|
       # solr_parameters hash are sent to Solr as ordinary url query params. 
-      field.solr_parameters = { :'spellcheck.dictionary' => 'title_s' }
+      # field.solr_parameters = { :'spellcheck.dictionary' => 'title_s' }
 
       # :solr_local_parameters will be sent using Solr LocalParams
       # syntax, as eg {! qf=$title_qf }. This is neccesary to use
       # Solr parameter de-referencing like $title_qf.
       # See: http://wiki.apache.org/solr/LocalParams
-      # field.solr_local_parameters = { 
-      #   :qf => '$title_s_qf',
-      #   :pf => '$title_s_pf'
-      # }
+      field.solr_local_parameters = { 
+        :qf => '$title_s_qf',
+        :pf => '$title_s_pf'
+      }
     end
     
-    config.add_search_field('resourcetype_s', :label => 'Resource Type') do |field|
-      field.solr_parameters = { :'spellcheck.dictionary' => 'resourcetype_s'  }
+    config.add_search_field('resourcetype_s', :label => 'Resource Type') # do |field|
+      # field.solr_parameters = { :'spellcheck.dictionary' => 'resourcetype_s'  }
       # field.solr_local_parameters = { 
       #   :qf => '$resourcetype_s_qf',
       #   :pf => '$resourcetype_s_pf'
       # }
-    end
+    # end
     
     # Specifying a :qt only to show it's possible, and so our internal automated
     # tests can test it. In this case it's the same as 
     # config[:default_solr_parameters][:qt], so isn't actually neccesary. 
-    config.add_search_field('subject_s', :label => 'Subject') do |field|
-      field.solr_parameters = { :'spellcheck.dictionary' => 'subject_s' }
-      field.qt = 'search'
+    config.add_search_field('subject_s', :label => 'Subject') # do |field|
+      #field.solr_parameters = { :'spellcheck.dictionary' => 'subject_s' }
+      #field.qt = 'search'
       # field.solr_local_parameters = { 
       #   :qf => '$subject_s_qf',
       #   :pf => '$subject_s_pf'
       # }
-    end
+    #end
 
     # "sort results by" select (pulldown)
     # label in pulldown is followed by the name of the SOLR field to sort by and

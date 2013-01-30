@@ -24,7 +24,7 @@ class Ingest::Xml < Ingest::Base
 
           #solr_doc[:id] ||= row.xpath(record_unique_id, xmlns).text.to_s
           
-          #solr_doc[:xml_display_s] = row.to_s
+          solr_doc[:xml_display_s] = row.to_s
 
         end
         
