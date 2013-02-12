@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>ess05.sci.ess.earthsys.neworleans-ess05_vid_neworleans</recordID>
+      <recordID>ess05_sci_ess_earthsys_neworleans-ess05_vid_neworleans</recordID>
       <recordDate>2005-12-15</recordDate>
       <url>http://www.teachersdomain.org/asset/ess05_vid_neworleans/</url>
       <title>Hurricane: New Orleans Under Threat</title>

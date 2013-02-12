@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>pj07.sci.phys.matter.alkaloid-pj07_vid_alkaloid</recordID>
+      <recordID>pj07_sci_phys_matter_alkaloid-pj07_vid_alkaloid</recordID>
       <recordDate>2007-02-12</recordDate>
       <url>http://www.teachersdomain.org/asset/pj07_vid_alkaloid/</url>
       <title>Synthesizing an Alkaloid</title>

@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>eng06.sci.engin.systems.robofly-eng06_vid_robofly</recordID>
+      <recordID>eng06_sci_engin_systems_robofly-eng06_vid_robofly</recordID>
       <recordDate>2006-05-08</recordDate>
       <url>http://www.teachersdomain.org/asset/eng06_vid_robofly/</url>
       <title>Robofly</title>

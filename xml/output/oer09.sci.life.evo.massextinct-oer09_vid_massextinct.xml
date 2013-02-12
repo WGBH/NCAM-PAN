@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>oer09.sci.life.evo.massextinct-oer09_vid_massextinct</recordID>
+      <recordID>oer09_sci_life_evo_massextinct-oer09_vid_massextinct</recordID>
       <recordDate>2009-05-26</recordDate>
       <url>http://www.teachersdomain.org/asset/oer09_vid_massextinct/</url>
       <title>Mass Extinction</title>

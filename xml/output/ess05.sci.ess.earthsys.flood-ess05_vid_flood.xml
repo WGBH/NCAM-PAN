@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>ess05.sci.ess.earthsys.flood-ess05_vid_flood</recordID>
+      <recordID>ess05_sci_ess_earthsys_flood-ess05_vid_flood</recordID>
       <recordDate>2005-10-19</recordDate>
       <url>http://www.teachersdomain.org/asset/ess05_vid_flood/</url>
       <title>The Great Flood of 1993</title>

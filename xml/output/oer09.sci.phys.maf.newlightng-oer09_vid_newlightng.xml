@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>oer09.sci.phys.maf.newlightng-oer09_vid_newlightng</recordID>
+      <recordID>oer09_sci_phys_maf_newlightng-oer09_vid_newlightng</recordID>
       <recordDate>2009-05-26</recordDate>
       <url>http://www.teachersdomain.org/asset/oer09_vid_newlightng/</url>
       <title>A New Theory of Lightning</title>

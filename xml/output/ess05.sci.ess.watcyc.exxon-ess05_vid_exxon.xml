@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>ess05.sci.ess.watcyc.exxon-ess05_vid_exxon</recordID>
+      <recordID>ess05_sci_ess_watcyc_exxon-ess05_vid_exxon</recordID>
       <recordDate>2005-12-15</recordDate>
       <url>http://www.teachersdomain.org/asset/ess05_vid_exxon/</url>
       <title>Oil Spill: &lt;em&gt;Exxon Valdez&lt;/em&gt;, 1989</title>

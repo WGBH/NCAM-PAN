@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>nsn08.sci.engin.systems.smartbridge-nsn08_vid_smartbridge</recordID>
+      <recordID>nsn08_sci_engin_systems_smartbridge-nsn08_vid_smartbridge</recordID>
       <recordDate>2008-08-20</recordDate>
       <url>http://www.teachersdomain.org/asset/nsn08_vid_smartbridge/</url>
       <title>Smart Bridges</title>

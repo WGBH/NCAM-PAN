@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>nsn08.sci.life.stru.stemcell2-nsn08_vid_stemcell2</recordID>
+      <recordID>nsn08_sci_life_stru_stemcell2-nsn08_vid_stemcell2</recordID>
       <recordDate>2008-08-20</recordDate>
       <url>http://www.teachersdomain.org/asset/nsn08_vid_stemcell2/</url>
       <title>Stem Cells Breakthrough</title>

@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.reg.seaturtles-tdc02_vid_seaturtles</recordID>
+      <recordID>tdc02_sci_life_reg_seaturtles-tdc02_vid_seaturtles</recordID>
       <recordDate>2003-10-16</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_vid_seaturtles/</url>
       <title>Sea Turtles</title>

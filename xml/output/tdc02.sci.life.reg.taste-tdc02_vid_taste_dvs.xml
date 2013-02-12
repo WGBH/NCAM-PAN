@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.reg.taste-tdc02_vid_taste_dvs</recordID>
+      <recordID>tdc02_sci_life_reg_taste-tdc02_vid_taste_dvs</recordID>
       <recordDate>2010-11-16</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_vid_taste_dvs/</url>
       <title>The Sense of Taste (Audio Description)</title>

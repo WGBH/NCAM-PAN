@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.colt.crawlies-tdc02_int_crawlies</recordID>
+      <recordID>tdc02_sci_life_colt_crawlies-tdc02_int_crawlies</recordID>
       <recordDate>2003-10-16</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_int_crawlies/</url>
       <title>Creepy Crawlies</title>

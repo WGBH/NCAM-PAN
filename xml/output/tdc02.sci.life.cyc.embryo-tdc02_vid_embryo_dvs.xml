@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.cyc.embryo-tdc02_vid_embryo_dvs</recordID>
+      <recordID>tdc02_sci_life_cyc_embryo-tdc02_vid_embryo_dvs</recordID>
       <recordDate>2010-11-13</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_vid_embryo_dvs/</url>
       <title>Common Past, Different Paths (Audio Description)</title>

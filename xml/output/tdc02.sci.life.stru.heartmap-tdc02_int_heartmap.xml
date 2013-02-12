@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.stru.heartmap-tdc02_int_heartmap</recordID>
+      <recordID>tdc02_sci_life_stru_heartmap-tdc02_int_heartmap</recordID>
       <recordDate>2011-10-28</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_int_heartmap/</url>
       <title>Map of the Human Heart</title>

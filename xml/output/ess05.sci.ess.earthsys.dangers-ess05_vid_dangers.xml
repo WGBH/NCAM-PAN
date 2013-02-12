@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>ess05.sci.ess.earthsys.dangers-ess05_vid_dangers</recordID>
+      <recordID>ess05_sci_ess_earthsys_dangers-ess05_vid_dangers</recordID>
       <recordDate>2005-10-19</recordDate>
       <url>http://www.teachersdomain.org/asset/ess05_vid_dangers/</url>
       <title>Antarctica: A Challenging Work Day</title>

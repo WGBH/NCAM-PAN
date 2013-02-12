@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.phys.mfw.galileoplane-phy03_vid_galileoplane_dvs</recordID>
+      <recordID>phy03_sci_phys_mfw_galileoplane-phy03_vid_galileoplane_dvs</recordID>
       <recordDate>2012-04-06</recordDate>
       <url/>
       <title>Galileo's Inclined Plane (Audio Description)</title>

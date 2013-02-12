@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.phys.energy.erjoesroom-phy03_int_erjoesroom</recordID>
+      <recordID>phy03_sci_phys_energy_erjoesroom-phy03_int_erjoesroom</recordID>
       <recordDate>2004-01-22</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_int_erjoesroom/</url>
       <title>Speed of Light: Joe's Room</title>

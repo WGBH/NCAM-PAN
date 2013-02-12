@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>novat10.sci.life.evo.evodevo-novat10_int_evodevo</recordID>
+      <recordID>novat10_sci_life_evo_evodevo-novat10_int_evodevo</recordID>
       <recordDate>2010-03-08</recordDate>
       <url>http://www.teachersdomain.org/asset/novat10_int_evodevo/</url>
       <title>Regulating Genes</title>

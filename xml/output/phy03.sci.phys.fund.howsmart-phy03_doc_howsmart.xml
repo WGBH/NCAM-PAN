@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.phys.fund.howsmart-phy03_doc_howsmart</recordID>
+      <recordID>phy03_sci_phys_fund_howsmart-phy03_doc_howsmart</recordID>
       <recordDate>2004-01-22</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_doc_howsmart/</url>
       <title>Einstein: How Smart Was He?</title>

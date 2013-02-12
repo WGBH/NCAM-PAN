@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>nsn09.sci.life.eco.seafloor-nsn09_int_seafloor</recordID>
+      <recordID>nsn09_sci_life_eco_seafloor-nsn09_int_seafloor</recordID>
       <recordDate>2009-08-24</recordDate>
       <url>http://www.teachersdomain.org/asset/nsn09_int_seafloor/</url>
       <title>Exploring the Arctic Seafloor</title>

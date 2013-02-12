@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>ess05.sci.ess.watcyc.icemelt-ess05_int_icemelt</recordID>
+      <recordID>ess05_sci_ess_watcyc_icemelt-ess05_int_icemelt</recordID>
       <recordDate>2005-12-15</recordDate>
       <url>http://www.teachersdomain.org/asset/ess05_int_icemelt/</url>
       <title>Mountain of Ice: If the Ice Melts</title>

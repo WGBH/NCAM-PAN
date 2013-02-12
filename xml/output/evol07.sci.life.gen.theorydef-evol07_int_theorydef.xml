@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>evol07.sci.life.gen.theorydef-evol07_int_theorydef</recordID>
+      <recordID>evol07_sci_life_gen_theorydef-evol07_int_theorydef</recordID>
       <recordDate>2007-11-01</recordDate>
       <url>http://www.teachersdomain.org/asset/evol07_int_theorydef/</url>
       <title>What Is a Theory?</title>

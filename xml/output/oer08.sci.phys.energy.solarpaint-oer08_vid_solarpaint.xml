@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>oer08.sci.phys.energy.solarpaint-oer08_vid_solarpaint</recordID>
+      <recordID>oer08_sci_phys_energy_solarpaint-oer08_vid_solarpaint</recordID>
       <recordDate>2008-08-20</recordDate>
       <url>http://www.teachersdomain.org/asset/oer08_vid_solarpaint/</url>
       <title>Solar Paint Your Roof</title>

@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>ess05.sci.ess.earthsys.lahar-ess05_vid_lahar</recordID>
+      <recordID>ess05_sci_ess_earthsys_lahar-ess05_vid_lahar</recordID>
       <recordDate>2005-12-15</recordDate>
       <url>http://www.teachersdomain.org/asset/ess05_vid_lahar/</url>
       <title>Mount Pinatubo: The Aftermath of a Volcanic Eruption</title>

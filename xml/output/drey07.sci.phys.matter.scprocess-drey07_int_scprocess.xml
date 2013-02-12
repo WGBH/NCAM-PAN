@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>drey07.sci.phys.matter.scprocess-drey07_int_scprocess</recordID>
+      <recordID>drey07_sci_phys_matter_scprocess-drey07_int_scprocess</recordID>
       <recordDate>2007-08-01</recordDate>
       <url>http://www.teachersdomain.org/asset/drey07_int_scprocess/</url>
       <title>Scientific Processes</title>

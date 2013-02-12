@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.reg.inuithear-tdc02_vid_inuithear</recordID>
+      <recordID>tdc02_sci_life_reg_inuithear-tdc02_vid_inuithear</recordID>
       <recordDate>2003-10-16</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_vid_inuithear/</url>
       <title>Moriussaq: A Case Study in Hearing Loss</title>

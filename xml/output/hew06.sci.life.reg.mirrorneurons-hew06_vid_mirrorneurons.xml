@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>hew06.sci.life.reg.mirrorneurons-hew06_vid_mirrorneurons</recordID>
+      <recordID>hew06_sci_life_reg_mirrorneurons-hew06_vid_mirrorneurons</recordID>
       <recordDate>2007-04-18</recordDate>
       <url>http://www.teachersdomain.org/asset/hew06_vid_mirrorneurons/</url>
       <title>Mirror Neurons</title>

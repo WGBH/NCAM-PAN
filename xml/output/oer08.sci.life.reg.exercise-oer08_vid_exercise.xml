@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>oer08.sci.life.reg.exercise-oer08_vid_exercise</recordID>
+      <recordID>oer08_sci_life_reg_exercise-oer08_vid_exercise</recordID>
       <recordDate>2008-08-20</recordDate>
       <url>http://www.teachersdomain.org/asset/oer08_vid_exercise/</url>
       <title>How the Body Responds to Exercise</title>

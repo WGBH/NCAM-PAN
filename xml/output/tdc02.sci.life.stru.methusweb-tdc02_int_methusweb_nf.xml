@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.stru.methusweb-tdc02_int_methusweb_nf</recordID>
+      <recordID>tdc02_sci_life_stru_methusweb-tdc02_int_methusweb_nf</recordID>
       <recordDate>2010-11-27</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_int_methusweb_nf/</url>
       <title>Illuminating Photosynthesis (HTML version)</title>

@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>oer08.sci.engin.design.futurecar-oer08_vid_futurecar</recordID>
+      <recordID>oer08_sci_engin_design_futurecar-oer08_vid_futurecar</recordID>
       <recordDate>2008-08-19</recordDate>
       <url>http://www.teachersdomain.org/asset/oer08_vid_futurecar/</url>
       <title>Carbon-Fiber Car of the Future</title>

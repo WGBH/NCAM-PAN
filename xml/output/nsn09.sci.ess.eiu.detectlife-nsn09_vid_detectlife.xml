@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>nsn09.sci.ess.eiu.detectlife-nsn09_vid_detectlife</recordID>
+      <recordID>nsn09_sci_ess_eiu_detectlife-nsn09_vid_detectlife</recordID>
       <recordDate>2009-08-24</recordDate>
       <url>http://www.teachersdomain.org/asset/nsn09_vid_detectlife/</url>
       <title>Detecting Life on Other Planets</title>

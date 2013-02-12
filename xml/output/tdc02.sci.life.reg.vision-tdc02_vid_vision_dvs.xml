@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.reg.vision-tdc02_vid_vision_dvs</recordID>
+      <recordID>tdc02_sci_life_reg_vision-tdc02_vid_vision_dvs</recordID>
       <recordDate>2010-11-16</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_vid_vision_dvs/</url>
       <title>More Than an Image (Audio Description)</title>

@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>ess05.sci.ess.eiu.galileosys-ess05_vid_galileosys_dvs</recordID>
+      <recordID>ess05_sci_ess_eiu_galileosys-ess05_vid_galileosys_dvs</recordID>
       <recordDate>2012-04-06</recordDate>
       <url/>
       <title>Galileo: Sun-Centered System (Audio Description)</title>

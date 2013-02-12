@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>eng06.sci.engin.systems.airbag-eng06_vid_airbag</recordID>
+      <recordID>eng06_sci_engin_systems_airbag-eng06_vid_airbag</recordID>
       <recordDate>2006-05-08</recordDate>
       <url>http://www.teachersdomain.org/asset/eng06_vid_airbag/</url>
       <title>Air Bag Design</title>

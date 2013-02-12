@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.phys.fund.newpicture-phy03_vid_newpicture</recordID>
+      <recordID>phy03_sci_phys_fund_newpicture-phy03_vid_newpicture</recordID>
       <recordDate>2004-02-20</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_vid_newpicture/</url>
       <title>String Theory: A New Picture of Gravity</title>

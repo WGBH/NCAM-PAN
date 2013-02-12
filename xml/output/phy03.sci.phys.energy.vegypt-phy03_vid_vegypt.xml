@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.phys.energy.vegypt-phy03_vid_vegypt</recordID>
+      <recordID>phy03_sci_phys_energy_vegypt-phy03_vid_vegypt</recordID>
       <recordDate>2004-02-20</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_vid_vegypt/</url>
       <title>Raising an Obelisk: An Engineering Puzzle</title>

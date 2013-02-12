@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.phys.mfw.hardhat-phy03_doc_hardhat</recordID>
+      <recordID>phy03_sci_phys_mfw_hardhat-phy03_doc_hardhat</recordID>
       <recordDate>2004-01-22</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_doc_hardhat/</url>
       <title>Astronauts in Hard Hats</title>

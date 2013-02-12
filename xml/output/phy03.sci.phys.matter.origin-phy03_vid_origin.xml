@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.phys.matter.origin-phy03_vid_origin</recordID>
+      <recordID>phy03_sci_phys_matter_origin-phy03_vid_origin</recordID>
       <recordDate>2004-01-22</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_vid_origin/</url>
       <title>The Origin of the Elements</title>

@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>biot09.sci.life.gen.epigenetics-biot09_vid_epigenetics</recordID>
+      <recordID>biot09_sci_life_gen_epigenetics-biot09_vid_epigenetics</recordID>
       <recordDate>2009-09-08</recordDate>
       <url>http://www.teachersdomain.org/asset/biot09_vid_epigenetics/</url>
       <title>Epigenetics</title>

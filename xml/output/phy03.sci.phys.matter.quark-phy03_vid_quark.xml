@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.phys.matter.quark-phy03_vid_quark</recordID>
+      <recordID>phy03_sci_phys_matter_quark-phy03_vid_quark</recordID>
       <recordDate>2004-02-20</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_vid_quark/</url>
       <title>Quarks: Inside the Atom</title>

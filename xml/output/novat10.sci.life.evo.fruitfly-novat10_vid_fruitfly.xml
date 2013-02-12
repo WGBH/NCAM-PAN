@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>novat10.sci.life.evo.fruitfly-novat10_vid_fruitfly</recordID>
+      <recordID>novat10_sci_life_evo_fruitfly-novat10_vid_fruitfly</recordID>
       <recordDate>2010-03-08</recordDate>
       <url>http://www.teachersdomain.org/asset/novat10_vid_fruitfly/</url>
       <title>Switching Genes On and Off</title>

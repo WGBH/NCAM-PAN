@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>pj07.soc.civil.tactics.education-pj07_vid_education</recordID>
+      <recordID>pj07_soc_civil_tactics_education-pj07_vid_education</recordID>
       <recordDate>2007-02-12</recordDate>
       <url>http://www.teachersdomain.org/asset/pj07_vid_education/</url>
       <title>Getting an Education</title>

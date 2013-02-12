@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.engin.design.galileotele-phy03_doc_galileotele</recordID>
+      <recordID>phy03_sci_engin_design_galileotele-phy03_doc_galileotele</recordID>
       <recordDate>2004-01-22</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_doc_galileotele/</url>
       <title>The Beginnings of the Telescope</title>

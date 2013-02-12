@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.gen.journeydna-tdc02_int_journeydna</recordID>
+      <recordID>tdc02_sci_life_gen_journeydna-tdc02_int_journeydna</recordID>
       <recordDate>2003-10-16</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_int_journeydna/</url>
       <title>Journey into DNA</title>

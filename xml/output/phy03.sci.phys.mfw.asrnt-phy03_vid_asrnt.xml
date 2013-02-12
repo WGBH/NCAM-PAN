@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.phys.mfw.asrnt-phy03_vid_asrnt</recordID>
+      <recordID>phy03_sci_phys_mfw_asrnt-phy03_vid_asrnt</recordID>
       <recordDate>2004-02-20</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_vid_asrnt/</url>
       <title>Newton's Third Law of Motion: Astronauts in Outer Space</title>

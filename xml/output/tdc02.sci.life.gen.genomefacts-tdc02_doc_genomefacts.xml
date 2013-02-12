@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.gen.genomefacts-tdc02_doc_genomefacts</recordID>
+      <recordID>tdc02_sci_life_gen_genomefacts-tdc02_doc_genomefacts</recordID>
       <recordDate>2003-10-16</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_doc_genomefacts/</url>
       <title>Genome Facts</title>

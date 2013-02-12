@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>ate10.sci.phys.energy.newsolar-ate10_int_newsolar</recordID>
+      <recordID>ate10_sci_phys_energy_newsolar-ate10_int_newsolar</recordID>
       <recordDate>2009-12-08</recordDate>
       <url>http://www.teachersdomain.org/asset/ate10_int_newsolar/</url>
       <title>New Ways to Catch Rays</title>

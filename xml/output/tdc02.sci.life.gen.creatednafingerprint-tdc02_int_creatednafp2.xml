@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>tdc02.sci.life.gen.creatednafingerprint-tdc02_int_creatednafp2</recordID>
+      <recordID>tdc02_sci_life_gen_creatednafingerprint-tdc02_int_creatednafp2</recordID>
       <recordDate>2011-05-31</recordDate>
       <url>http://www.teachersdomain.org/asset/tdc02_int_creatednafp2/</url>
       <title>Create a DNA Fingerprint</title>

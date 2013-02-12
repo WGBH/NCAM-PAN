@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>nsn08.sci.life.evo.pardis-nsn08_vid_pardis</recordID>
+      <recordID>nsn08_sci_life_evo_pardis-nsn08_vid_pardis</recordID>
       <recordDate>2008-08-20</recordDate>
       <url>http://www.teachersdomain.org/asset/nsn08_vid_pardis/</url>
       <title>Geneticist Pardis Sabeti</title>

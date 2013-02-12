@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.engin.design.stealth-phy03_int_stealth</recordID>
+      <recordID>phy03_sci_engin_design_stealth-phy03_int_stealth</recordID>
       <recordDate>2004-01-22</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_int_stealth/</url>
       <title>Designing for Stealth</title>

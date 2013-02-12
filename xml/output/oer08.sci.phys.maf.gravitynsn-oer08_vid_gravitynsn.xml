@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>oer08.sci.phys.maf.gravitynsn-oer08_vid_gravitynsn</recordID>
+      <recordID>oer08_sci_phys_maf_gravitynsn-oer08_vid_gravitynsn</recordID>
       <recordDate>2008-08-20</recordDate>
       <url>http://www.teachersdomain.org/asset/oer08_vid_gravitynsn/</url>
       <title>Gravity at Earth's Center</title>

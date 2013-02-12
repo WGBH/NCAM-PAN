@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>lsps07.sci.life.gen.rnaiexplain-lsps07_int_rnaiexplain</recordID>
+      <recordID>lsps07_sci_life_gen_rnaiexplain-lsps07_int_rnaiexplain</recordID>
       <recordDate>2007-08-14</recordDate>
       <url>http://www.teachersdomain.org/asset/lsps07_int_rnaiexplain/</url>
       <title>RNAi Explained</title>

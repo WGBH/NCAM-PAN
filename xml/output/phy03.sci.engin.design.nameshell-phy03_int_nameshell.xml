@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.engin.design.nameshell-phy03_int_nameshell</recordID>
+      <recordID>phy03_sci_engin_design_nameshell-phy03_int_nameshell</recordID>
       <recordDate>2004-01-22</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_int_nameshell/</url>
       <title>Name That Shell Interactive</title>

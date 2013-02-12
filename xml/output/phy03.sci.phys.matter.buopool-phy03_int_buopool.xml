@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>phy03.sci.phys.matter.buopool-phy03_int_buopool</recordID>
+      <recordID>phy03_sci_phys_matter_buopool-phy03_int_buopool</recordID>
       <recordDate>2004-01-22</recordDate>
       <url>http://www.teachersdomain.org/asset/phy03_int_buopool/</url>
       <title>Buoyancy Brainteasers: Boat-in-Pool Puzzler</title>

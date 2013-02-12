@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>biot09.sci.engin.systems.longevity-biot09_vid_longevity</recordID>
+      <recordID>biot09_sci_engin_systems_longevity-biot09_vid_longevity</recordID>
       <recordDate>2009-09-08</recordDate>
       <url>http://www.teachersdomain.org/asset/biot09_vid_longevity/</url>
       <title>Longevity Genes</title>

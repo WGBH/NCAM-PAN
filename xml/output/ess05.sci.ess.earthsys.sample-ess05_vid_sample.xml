@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>ess05.sci.ess.earthsys.sample-ess05_vid_sample</recordID>
+      <recordID>ess05_sci_ess_earthsys_sample-ess05_vid_sample</recordID>
       <recordDate>2005-10-19</recordDate>
       <url>http://www.teachersdomain.org/asset/ess05_vid_sample/</url>
       <title>Lava Sampling on Kilauea Volcano, Hawaii</title>

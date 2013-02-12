@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>nsn08.sci.ess.watcyc.capcarbon-nsn08_vid_capcarbon</recordID>
+      <recordID>nsn08_sci_ess_watcyc_capcarbon-nsn08_vid_capcarbon</recordID>
       <recordDate>2008-08-20</recordDate>
       <url>http://www.teachersdomain.org/asset/nsn08_vid_capcarbon/</url>
       <title>Capturing Carbon</title>

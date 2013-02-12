@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>nsn09.sci.life.reg.sealion-nsn09_vid_sealion</recordID>
+      <recordID>nsn09_sci_life_reg_sealion-nsn09_vid_sealion</recordID>
       <recordDate>2009-08-24</recordDate>
       <url>http://www.teachersdomain.org/asset/nsn09_vid_sealion/</url>
       <title>Smart Sea Lions</title>

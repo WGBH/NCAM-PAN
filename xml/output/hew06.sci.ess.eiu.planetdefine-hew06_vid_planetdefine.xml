@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>hew06.sci.ess.eiu.planetdefine-hew06_vid_planetdefine</recordID>
+      <recordID>hew06_sci_ess_eiu_planetdefine-hew06_vid_planetdefine</recordID>
       <recordDate>2007-04-18</recordDate>
       <url>http://www.teachersdomain.org/asset/hew06_vid_planetdefine/</url>
       <title>What Is a Planet?</title>

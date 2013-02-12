@@ -4,7 +4,7 @@
         xmlns:tdxf="http://teachersdomain.org/functions"
         xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
    <general>
-      <recordID>oer08.sci.engin.systems.elevator-oer08_vid_elevator</recordID>
+      <recordID>oer08_sci_engin_systems_elevator-oer08_vid_elevator</recordID>
       <recordDate>2008-08-19</recordDate>
       <url>http://www.teachersdomain.org/asset/oer08_vid_elevator/</url>
       <title>A Nanotube Space Elevator</title>
