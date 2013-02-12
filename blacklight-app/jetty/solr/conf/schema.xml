@@ -57,7 +57,7 @@
        1.4: default auto-phrase (QueryParser feature) to off
      -->
 
-  <types>
+   <types>
     <!-- field type definitions. The "name" attribute is
        just a label to be used by field definitions.  The "class"
        attribute and any other attributes determine the real
@@ -518,6 +518,7 @@
    <field name="id" type="string" indexed="true" stored="true" required="true" />
    <field name="timestamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
    <!-- default, catch all search field -->
+   <field name="text" type="text" indexed="true" stored="false" multiValued="true"/>
    <field name="description_s" type="text" indexed="true" stored="true" multiValued="true"/>
    
    <!-- these display fields are NOT multi-valued -->
@@ -561,18 +562,26 @@
         Longer patterns will be matched first.  if equal size patterns
         both match, the first appearing in the schema will be used.  -->
    <dynamicField name="*_i"  type="int"    indexed="true"  stored="true"/>
-   <dynamicField name="*_s"  type="string"  indexed="true"  stored="true"/>
+   <dynamicField name="*_is" type="int"    indexed="true"  stored="true"  multiValued="true"/>
+   <dynamicField name="*_s"  type="string"  indexed="true"  stored="true" />
+   <dynamicField name="*_ss" type="string"  indexed="true"  stored="true" multiValued="true"/>
    <dynamicField name="*_l"  type="long"   indexed="true"  stored="true"/>
-   <dynamicField name="*_t"  type="text"    indexed="true"  stored="true" multiValued="true"/>
-   <dynamicField name="*_txt" type="text_general"    indexed="true"  stored="true" multiValued="true"/>
-   <dynamicField name="*_b"  type="boolean" indexed="true"  stored="true"/>
+   <dynamicField name="*_ls" type="long"   indexed="true"  stored="true"  multiValued="true"/>
+   <dynamicField name="*_t"  type="text_general"    indexed="true"  stored="true"/>
+   <dynamicField name="*_txt" type="text_general"   indexed="true"  stored="true" multiValued="true"/>
+   <dynamicField name="*_en"  type="text_en"    indexed="true"  stored="true" multiValued="true"/>
+   <dynamicField name="*_b"  type="boolean" indexed="true" stored="true"/>
+   <dynamicField name="*_bs" type="boolean" indexed="true" stored="true"  multiValued="true"/>
    <dynamicField name="*_f"  type="float"  indexed="true"  stored="true"/>
+   <dynamicField name="*_fs" type="float"  indexed="true"  stored="true"  multiValued="true"/>
    <dynamicField name="*_d"  type="double" indexed="true"  stored="true"/>
+   <dynamicField name="*_ds" type="double" indexed="true"  stored="true"  multiValued="true"/>
 
    <!-- Type used to index the lat and lon components for the "location" FieldType -->
-   <dynamicField name="*_coordinate"  type="tdouble" indexed="true"  stored="false"/>
+   <dynamicField name="*_coordinate"  type="tdouble" indexed="true"  stored="false" />
 
-   <dynamicField name="*_dt" type="date"    indexed="true"  stored="true"/>
+   <dynamicField name="*_dt"  type="date"    indexed="true"  stored="true"/>
+   <dynamicField name="*_dts" type="date"    indexed="true"  stored="true" multiValued="true"/>
    <dynamicField name="*_p"  type="location" indexed="true" stored="true"/>
 
    <!-- some trie-coded dynamic fields for faster range queries -->
@@ -583,7 +592,6 @@
    <dynamicField name="*_tdt" type="tdate"  indexed="true"  stored="true"/>
    
    <dynamicField name="*_pi"  type="pint"    indexed="true"  stored="true"/>
-
    <dynamicField name="ignored_*" type="ignored" multiValued="true"/>
    <dynamicField name="attr_*" type="text_general" indexed="true" stored="true" multiValued="true"/>
 
@@ -599,9 +607,10 @@
         field name or dynamic field, rather than reporting them as an error. 
         alternately, change the type="ignored" to some other type e.g. "text" if you want 
         unknown fields indexed and/or stored by default --> 
-   <dynamicField name="*" type="ignored" multiValued="true" />
+   <dynamicField name="*" type="text" multiValued="true" />
    
  </fields>
+ 
 
  <!-- Field to use to determine and enforce document uniqueness. 
       Unless this field is marked with required="false", it will be a required field
@@ -609,7 +618,7 @@
  <uniqueKey>id</uniqueKey>
 
  <!-- field for the QueryParser to use when an explicit fieldname is absent -->
- <defaultSearchField>description_s</defaultSearchField>
+ <defaultSearchField>text</defaultSearchField>
 
  <!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
  <solrQueryParser defaultOperator="OR"/>
@@ -618,6 +627,8 @@
         is added to the index.  It's used either to index the same field differently,
         or to add multiple fields to the same field for easier/faster searching.  -->
    <!-- Copy Fields -->
+   <copyField source="title_s" dest="title_t"/>
+   <copyField source="description_s" dest="description_t"/>
         
    <!-- unstemmed fields 
    <copyField source="title_t" dest="title_unstem_search"/>
@@ -641,8 +652,8 @@
    <copyField source="*_t" dest="spell"/>
    <copyField source="*_facet" dest="spell"/>
    <!-- title spell check;  should match fields for title request handler -->
-   <copyField source="title_s" dest="title_spell"/>
-   <copyField source="description_s" dest="description_spell"/>
+   <!-- copyField source="title_s" dest="title_spell"/ -->
+   <!-- copyField source="description_s" dest="description_spell"/ -->
    <!-- copyField source="addl_titles_t" dest="title_spell"/ -->
    <!-- copyField source="title_added_entry_t" dest="title_spell"/ -->
    <!-- copyField source="title_series_t" dest="title_spell"/ -->
@@ -672,7 +683,7 @@
 	  destination field is to use the dynamic field syntax. 
 	  copyField also supports a maxChars to copy setting.  -->
 	   
-   <!-- <copyField source="*_t" dest="text" maxChars="3000"/> -->
+   <copyField source="*_t" dest="text" maxChars="3000"/>
 
    <!-- copy name to alphaNameSort, a field designed for sorting by name -->
    <!-- <copyField source="name" dest="alphaNameSort"/> -->

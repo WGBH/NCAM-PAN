@@ -16,18 +16,20 @@
 
 // $background_image: 'blacklight/bg.png';
 // $logo_image: 'blacklight/logo.png';
-
+$background_image: nil;
+$logo_image: nil;
 /* Various elements of search customization share these colors */
 
 // $search_ui_border_color: #AAAAAA;
 // $search_ui_bg_color: #F0F0F0;
-
+$search_ui_border_color: #FFFFFF;
+$search_ui_bg_color: #FFFFFF;
 /* separates documents, facets */
 // $dotted_border_color: #CCC;
 
 /* background color of page */
 // $page_bg_color: #2E4F81;
-
+$page_bg_color: #FFFFFF;
 
 /* label (field names) */
 // $field_name_color: #888;
