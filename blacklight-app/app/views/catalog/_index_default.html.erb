@@ -1,0 +1,17 @@
+<%# default partial to display solr document fields in catalog index view -%>
+<ul class="defList">
+  
+  <% index_fields.each do |solr_fname, field| -%>
+    <% if document.has? solr_fname %>
+      <li class="label blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_label :field => solr_fname %>:</li>
+      <li class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_value :document => document, :field => solr_fname %></li>
+    <% end -%>
+    <% if solr_fname.parameterize == 'adaptationtype_s' %>
+    <li class="more-info-btn"><h3 class="twiddle">More Info</h3>
+    <ul>
+    <% end -%>
+  <% end -%>
+    </ul>
+  </li>
+  <hr />
+</ul>

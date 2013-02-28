@@ -1,0 +1,520 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Access to NSDL Search Results</title>
+    <link href="http://lsncampan.wgbh.org/catalog/opensearch.xml" title="Access to NSDL" type="application/opensearchdescription+xml" rel="search"/>
+    <link href="/assets/favicon-fc29bb1958da9707a744737aa7cc1727.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <!-- %= stylesheet_link_tag    "application" % -->
+    <style type="text/css" media="all">
+    body {font-family: 'Lucida Sans Unicode', Arial, Helvetica, sans-serif; }
+    /*body.blacklight-catalog { background: url('/assets/ncampan/search-bd6a1d3fc2e8734eb19f90c9e2a7b0a9.jpg') 0px 0px no-repeat; }*/
+    body.blacklight-catalog { background: transparent; }
+   
+    body.landing { background: transparent; }
+    #main_container a, #main_container a:link, #main_container a:active, #main_container a:visited {
+      color:#0E3868;
+      text-decoration: none;
+    } 
+    #documents {
+      font-size: .8em;
+      padding-top: 30px;
+      color: #555555;
+    }
+    #documents .document a,#documents .document a:visited,#documents .document a:link,#documents .document a:active {
+      color: #0E3868;
+      text-decoration: none;
+    }
+    #documents .document h3 {
+      margin-bottom:7px;
+    }
+    #documents .document h3.ui-accordion-header {
+      display:block;
+      background: #aecff0 url('/assets/ncampan/more_arrows-7ddf5ec2f879b5c1b52f5e2169f04cc3.png') 80px -33px no-repeat;
+      font-size: 1em;
+      height: 24px;
+      padding: 0;
+      width: 95px;
+      vertical-align: middle;
+      line-height: 24px;
+      text-indent: 4px;
+    }
+    #documents .document h3.ui-accordion-header.ui-state-active {
+      background: #aecff0 url('/assets/ncampan/more_arrows-7ddf5ec2f879b5c1b52f5e2169f04cc3.png')  80px -3px no-repeat;
+    }
+    #documents .document ul {
+      list-style-type: none;
+      list-style-position: inner;
+      list-style: none;
+      padding:0;
+      margin:0 6% 0 0;
+    }
+    #documents .document ul hr {
+      border:0;
+      height: 0;
+      border-top: solid 1px #aaaaaa;
+      margin-top:2.5em;
+    }
+
+    #documents .document ul li {
+      clear: right;
+    }
+
+    #documents .document  ul li.label {
+      margin-right: 1.5em;
+      float: left;
+      font-weight: 600;
+    }
+
+    #documents .document ul li.blacklight-title_s { display: none;}
+    #documents .document ul li.blacklight-description_s {margin-bottom: 1.5em;}
+    #documents .document ul li.label.blacklight-description_s {display: none;}
+    
+    /* #documents h3.index_title {display: none;} */
+    /*body.blacklight-catalog.landing { background: transparent url('/assets/ncampan/landing-022dfe211ebc3d76ebf2a485b50e4a40.jpg') 0px 0px no-repeat; }*/
+    body.blacklight-catalog.landing { background: transparent; }
+    
+    #bd {position: relative;}
+    
+    body.landing #main {
+      margin-left: 333px;
+    }
+    #main {
+      margin-left: 230px;
+      margin-right: 0;
+      /*padding-left: 4.196%;
+      width: 74.825%;*/
+      width: auto;
+      min-width: 600px;
+    }
+    
+    #about_content {
+      margin:100px 0;
+      width: 640px;
+    }
+    
+    #sidebar {
+      margin-right: 20px; /*0.699%;*/
+      overflow: hidden;
+      /* width: 20.28%; */
+      position: absolute;
+      display: inline;
+      top: 0;
+      left: 10px;
+      width: 220px;
+    }
+    
+    
+    #hd {
+      height: 54px;
+      margin: 0 0 4px 0;
+      position: relative;
+    }
+    body.landing #hd {
+      height: 185px;
+    }
+    
+    #hd h1 {
+      color: #0e3868;
+      font-size: .9em;
+      font-weight: normal;
+      width: 480px;
+      position: absolute;
+      top: 30px;
+      margin: 0 0 0 437px;
+    }
+    body.landing #hd h1 {
+      font-size: 1.25em;
+      top: 74px;
+      margin: 0 0 0 333px;
+    }
+    
+    #logo {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      margin: 0 0 6px;
+      padding: 0;
+      height: 43px;
+      width: 410px;
+      background: url('/assets/ncampan/accesstonsdl-results-logo-93cbfe11732ad7af1a64294a4c622306.png') -8px 0px no-repeat;
+    }
+    body.landing #logo {
+      height: 57px;
+      width: 582px;
+      background: url('/assets/ncampan/accesstonsdl-index-logo-c358b0950aeb0d77d3ed8076e46a0dda.png') -8px 0px no-repeat;
+    }
+    #search_bg {
+    height: 59px;
+    margin: 0;
+      background: url('/assets/ncampan/accesstonsdl-gradient-long-5225aba06d03966ee53e5e5ec0ec0071.png') 0px 0px repeat-y;}
+    #search {
+    height: 59px;
+    margin: -18px 0 0;
+      background: url('/assets/ncampan/accesstonsdl-gradient-long-5225aba06d03966ee53e5e5ec0ec0071.png') -220px 0px repeat-y;
+    }    
+    body.landing #search {
+      height: 153px;
+      margin: 10px 0 0;
+      background: url('/assets/ncampan/accesstonsdl-gradient-9dc7d5888f0069e8603d0672ecdf5fe4.png') 0px 0px repeat-y;
+    }
+    #search hr { display: none; }
+    #search label { display: none; }
+    #search select { display: none; }
+    #search input.q {
+      border: medium none;
+      border-radius: 3px 3px 3px 3px;
+      color: #0E3868;
+      font-size: 1em;
+      margin: 16px 0 0;
+      padding: 3px;
+      width: 193px;
+    }
+    
+    body.landing #search input.q {
+      height: 32px;
+      width: 218px;
+      margin: 59px 12px 0 22px;
+    }
+    
+    #search input.submit:hover {cursor: pointer;}
+    
+    #search input.submit {
+      background: url(/assets/ncampan/search_btn_bg-9f30eb008213c757fbdb3e811c151ff5.png) repeat-x;
+      height: 28px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      border:none;
+      color: #0e3868;
+      font-size: 1.1em;
+      text-transform: capitalize;
+      margin:0;
+      vertical-align: bottom;
+      padding: 0 3px 4px 3px;
+    }
+    
+    body.landing #search input.submit {
+      height: 31px;
+      padding: 3px 5px 3px 5px;
+      font-size: 1.2em;
+    }
+    
+    
+    body.blacklight-catalog.landing #sidebar { display: none; }
+    
+    #landing_copy {
+      /*margin: 20px 0 0 335px; */
+      
+    }
+    #landing_copy h3 {
+      font-size: .8em;
+      font-weight: normal;
+      color: #555555;
+    }
+    #landing_copy ul, #ft ul {
+      font-size: .8em;
+      list-style-type: none;
+      padding: 0;
+      width: 400px;
+    }
+    #landing_copy li {
+      display: inline-block;
+      float: left;
+      max-width: 200px;
+      min-width: 165px;
+      padding: 0;
+    }
+
+    #facets h2 {
+      color: #0E3868;
+      font-size: 0.9em;
+      padding: 0 22px;
+    }
+
+    #facets div.facet_limit {
+      padding: 0 18px 0 0;
+    }
+
+    #facets h3.twiddle {
+      font-size: 0.8em;
+      height: 24px;
+      margin: 0 0 5px;
+      padding: 4px 4px 0 22px;
+      color: #0E3868;
+      background: #ffdc80 url('/assets/ncampan/facet_arrows-2-96529c80e26b5864a34dbebbb8b03fc4.png') 6px 0px no-repeat; 
+    }
+    #facets h3.twiddle.twiddle-open {
+      background-position: 6px -27px;
+    }
+    #facets div.facet_limit > ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0 0 .8em .6em;
+    }
+    #facets div.facet_limit > ul > li {
+      font-size: .7em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #facets div.facet_limit > ul > li span.label {
+      margin: 0 0.4em;
+    }
+    #facets div.facet_limit > ul > li span.label.selected {
+      margin-left: 0;
+    }
+    
+    #facets div.facet_limit a {
+      color: #0E3868;
+      text-decoration: none;
+    }
+    
+    
+    #facets div.facet_limit a.facet_select {
+      margin-left: 1em;
+    } 
+    #facets div.facet_limit a.remove {
+      background: url("/assets/blacklight/remove-412d6dce60c197be10e4679b1ba5d2b8.gif") 0px center no-repeat transparent;
+      display: block;
+      float: left;
+      width: 1em;
+      text-indent: -9000px;
+    }
+
+    /* Results headings and controlls */
+
+    #appliedParams {
+      color: #555555;
+    }
+    div.documentFunctions { display:none; }
+    form.folder_togle { display: none; }
+
+#appliedParams {
+background-color: #fff4d8;
+margin-bottom: 1.5em;
+/* padding: 1em 0.66em 0 1em;*/
+min-height: 90px;
+width: 732px;
+}
+.appliedFilter {
+/*
+border: 1px solid #C4DAFE;
+border-radius: 15px 15px 15px 15px;
+*/
+font-size: .7em;
+display: inline-block;
+margin-bottom: 0.66em;
+margin-right: 0.33em;
+padding: 3px 3px 3px 1.5em;
+position: relative;
+}
+.filterValue {
+background: none repeat scroll 0 0 #ffffff;
+padding-right: 37px;
+padding-left: 4px;
+-moz-box-shadow:    2px 2px 3px 1px #888888;
+-webkit-box-shadow: 2px 2px 3px 1px #888888;
+box-shadow:         2px 2px 3px 1px #888888;
+}
+/*
+a:link, a:visited, a:active {
+border-bottom: 1px dotted #AAAAAA;
+color: #2E4F81;
+text-decoration: none;
+}
+*/
+.appliedFilter .btnRemove {
+/*background: url("/assets/blacklight/remove-412d6dce60c197be10e4679b1ba5d2b8.gif") no-repeat scroll center center transparent;*/
+background: url("/assets/blacklight/remove-412d6dce60c197be10e4679b1ba5d2b8.gif") no-repeat scroll center center transparent;
+
+/*
+border-bottom: medium none;
+border-left: 1px solid #C4DAFE;
+*/
+display: block;
+height: 100%;
+outline: medium none;
+position: absolute;
+right: 0;
+text-indent: -99999px;
+top: 0;
+width: 32px;
+z-index: 5;
+}
+
+    #appliedParams h3.label {
+      font-size: .8em;
+      font-weight: normal;
+      color: #0E3868;
+      background: #fff;
+      padding: 0 0 12px 0;
+    }
+
+    div.pageEntriesInfo {
+      display: inline-block;
+      font-size: 0.8em;
+      /*
+      margin-top: 0.6em;
+      width: 150px;
+      float:left;
+      */
+    }
+    
+    #sortAndPerPage {
+      font-size: 0.8em;
+      width: 380px;
+      float: left;
+    }
+    
+    #sortAndPerPage #sort_form {
+      width: 200px;
+      float: left;
+    }
+    
+    div.pagination {
+      background: #EEEEEE;
+      width:732px;
+    }
+
+    nav.pagination-container {
+      position: relative;
+      font-size: 0.8em;
+      float:right;
+      width: 240px;
+      top: -21px;
+    }
+
+    nav.pagination-container span.next {
+      position: absolute;
+      right: 0px;
+    }
+
+    nav.pagination-container span.prev {
+      position: absolute;
+      left: 0px;
+    }
+
+    nav.pagination-container div.page_links {
+      text-align: center;
+    }
+    
+    
+    #bottom-paginator {
+      position: relative;
+      top: 100px;
+    }
+    
+    #bottom-paginator div.pagination { width: 90% }
+    
+    
+
+    #sponsorship ul {
+      margin: 160px 0 12px 235px;
+      clear: both;
+      display: none;
+    }
+
+    body.landing #sponsorship #sponsorship ul {
+      margin: 160px 0 12px 335px;
+    }
+    
+    body.landing #sponsorship ul.logos { display: block; }
+    
+    #sponsorship ul.links {
+      display: block;
+      padding-top: 22px;
+    }
+    
+    #sponsorship ul.links li.links {
+      float:left;
+      margin-right: 30px;
+    }
+    
+    #sponsorship ul.logos li {
+      float: left;
+    }
+    
+    #sponsorship ul.links a {
+      color: #555555;
+      text-decoration: none;
+    }
+    
+    </style>
+    <script src="/assets/application-9ea5ad5efcf161c3736fa2c558af31c6.js" type="text/javascript"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="VMpWdiIpaGtpnNkbiaRTyi/ofQFf1cc2kLl1KAucC5M=" name="csrf-token" />
+    <link href="http://lsncampan.wgbh.org/catalog.rss?commit=search&amp;q=lajdsh&amp;search_field=all_fields&amp;utf8=%E2%9C%93" rel="alternate" title="RSS for results" type="application/rss+xml" />
+<link href="http://lsncampan.wgbh.org/catalog.atom?commit=search&amp;q=lajdsh&amp;search_field=all_fields&amp;utf8=%E2%9C%93" rel="alternate" title="Atom for results" type="application/atom+xml" />
+<meta content="0" name="totalResults" />
+<meta content="1" name="startIndex" />
+<meta content="10" name="itemsPerPage" />
+
+    <script>
+    $(document).ready(function() {
+      $('#documents .document li.more-info-btn').accordion({ 
+        active: false,
+        collapsible: true
+      });
+    });
+    </script>
+</head>
+<body onload="" class="blacklight-catalog blacklight-catalog-index">
+<div id="page">
+      <div id="hd">
+      <div id="logo">
+      <a href="/catalog/" style="display:block; height:42px; width: 408px;"></a>
+      <!-- h1 class="site_title"><a href="/">Access to NSDL</a><span id='results_text'>Search Results</span></h1 -->
+      </div>
+      <!-- div id="user_util_links" -->
+      <!-- %= render :partial=>'/user_util_links' % -->
+      <!-- /div -->
+      
+      <h1>STEM resources for students with disabilities</h1>
+      </div>
+    <div id="bd">
+    <div id="main">
+    <div id="main_container">
+      <div id="search" class="search">
+      <form accept-charset="UTF-8" action="/catalog" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+      <h2 class="search"><label for="q">Search </label></h2>
+      <input class="q" id="q" name="q" type="text" value="" />
+      <label for="search_field"> in </label>
+      <select class="search_field" id="search_field" name="search_field" title="Targeted search options"><option value="all_fields" selected="selected">All Fields</option>
+      <option value="title_s">Title</option>
+      <option value="resourcetype_s">Resource Type</option>
+      <option value="description_t">Description</option>
+      <option value="educationlevel">Education Level</option></select>
+      <input name="utf8" type="hidden" value="✓" />        
+      
+      <input class="submit" name="commit" type="submit" value="search" />
+      </form>
+      </div>
+      
+      <div id="about_content">
+        <p>Access to NSDL is a unique portal that provides accessibility information about resources selected from the National STEM Digital Library and elsewhere. The site offers resources from Teachers’ Domain, Middle School Math and Science Portals, and other partners. More partners can join at any time by providing accessibility metadata to the project, so the range of the portal’s offerings will grow over time. If you are interested in being a partner in this project, please contact us at <a href="mailto:ncam@wgbh.org">ncam@wgbh.org</a></p>
+
+      </div>
+    
+    </div>
+    </div>
+    <div id="sidebar"><div id="search_bg"></div>
+    </div>
+    </div>
+    <div id="ft">
+    <!--  %= raw(@footer) % -->
+    <div id="sponsorship">
+    <ul class="logos">
+    <li><a href="http://ncam.wgbh.org/" target="_blank"><img src="/assets/ncampan/ncam_logo-06961c2847c207cc486250230064a5de.gif" alt="WGBH Carl and Ruth Shapiro Family National Center for Accessible Media" /></a></li>
+    <li><a href="http://nsf.gov" target="_blank"><img src="/assets/ncampan/nsf_logo-55f3ed88c2df35cb28e375fb79262096.gif" alt="National Science Foundation" /></a></li>
+    </ul>
+    <ul class="links">
+    <li style="visibility:hidden;">About Access to NSDL</li>
+    <li><a href="http://ncam.wgbh.org/" target="_blank">Hosted by WGBH Educational Foundation</a></li>
+    <li><a href="http://nsf.gov/" target="_blank">Funding Provided by the National Science Foundation</a></li>  
+    </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
