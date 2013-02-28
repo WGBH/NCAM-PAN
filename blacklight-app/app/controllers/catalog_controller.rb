@@ -24,7 +24,7 @@ class CatalogController < ApplicationController
 
     # solr field configuration for search results/index views
     config.index.show_link = 'title_s'
-    config.index.record_display_type = 'description_s'
+    config.index.record_display_type = 'url_s'
 
     # solr field configuration for document/show views
     config.show.html_title = 'title_s'
@@ -50,15 +50,15 @@ class CatalogController < ApplicationController
     #
     # :show may be set to false if you don't want the facet to be drawn in the 
     # facet bar
+    config.add_facet_field 'adaptationtype_s', :label => 'Adaptation Type', :limit => true
+    config.add_facet_field 'accessmode_s', :label => 'Access Mode' 
     config.add_facet_field 'resourcetype_s', :label => 'Resource Type'
     # config.add_facet_field 'title_s', :label => 'Title' 
     # config.add_facet_field 'publicationdate_s', :label => 'Publication Date' 
-    # config.add_facet_field 'language_s', :label => 'Language', :limit => true 
-    # config.add_facet_field 'audience_s', :label => 'Audience', :limit => 20 
+    config.add_facet_field 'language_s', :label => 'Language', :limit => true 
+    config.add_facet_field 'audience_s', :label => 'Audience', :limit => 20 
     config.add_facet_field 'educationlevel_s', :label => 'Education Level' 
-    config.add_facet_field 'accessmode_s', :label => 'Access Mode' 
     # config.add_facet_field 'isadaptationof_s', :label => 'Is Adaptation Of', :limit => true
-    config.add_facet_field 'adaptationtype_s', :label => 'Adaptation Type', :limit => true
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -70,27 +70,33 @@ class CatalogController < ApplicationController
 
     # solr fields to be displayed in the index (search results) view
     #   The ordering of the field names is the order of the display 
-    config.add_index_field 'resourcetype_s', :label => 'Resource Type'
-    config.add_index_field 'title_s', :label => 'Title' 
-    config.add_index_field 'publicationdate_s', :label => 'Publication Date'  
-    config.add_index_field 'language_s', :label => 'Language'
-    config.add_index_field 'audience_s', :label => 'Audience'
-    config.add_index_field 'educationlevel_s', :label => 'Education Level' 
-    config.add_index_field 'accessmode_s', :label => 'Access Mode'
-    #config.add_index_field 'isadaptationof_s', :label => 'Is Adaptation Of'
+    config.add_index_field 'title_s', :label => 'Title'
+    config.add_index_field 'description_s', :label => 'Description'
     config.add_index_field 'adaptationtype_s', :label => 'Adaptation Type'
+    config.add_index_field 'accessmode_s', :label => 'Access Mode'
+    config.add_index_field 'url_s', :label => 'URL' 
+    config.add_index_field 'isadaptationof_s', :label => 'Is Adaptation Of'
+    config.add_index_field 'subject_s', :label => 'Subjects'
+    config.add_index_field 'educationlevel_s', :label => 'Education Level'
+    config.add_index_field 'audience_s', :label => 'Audience' 
+    config.add_index_field 'resourcetype_s', :label => 'Resource Type'  
+    config.add_index_field 'language_s', :label => 'Language'
+    config.add_index_field 'publicationdate_s', :label => 'Publication Date'
+    config.add_index_field 'rights_s', :label => 'Rights'
+    config.add_index_field 'accessRights_s', :label => 'Access Rights'
+    config.add_index_field 'contributer_s', :label => 'Contributers'
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
-    config.add_show_field 'resourcetype_s', :label => 'Resource Type'
-    config.add_show_field 'title_s', :label => 'Title' 
-    config.add_show_field 'publicationdate_s', :label => 'Publication Date'  
-    config.add_show_field 'language_s', :label => 'Language'
-    config.add_show_field 'audience_s', :label => 'Audience'
-    config.add_show_field 'educationlevel_s', :label => 'Education Level' 
-    config.add_show_field 'accessmode_s', :label => 'Access Mode'
-    config.add_show_field 'isadaptationof_s', :label => 'Is Adaptation Of'
-    config.add_show_field 'adaptationtype_s', :label => 'Adaptation Type'
+    #config.add_show_field 'resourcetype_s', :label => 'Resource Type'
+    #config.add_show_field 'title_s', :label => 'Title' 
+    #config.add_show_field 'publicationdate_s', :label => 'Publication Date'  
+    #config.add_show_field 'language_s', :label => 'Language'
+    #config.add_show_field 'audience_s', :label => 'Audience'
+    #config.add_show_field 'educationlevel_s', :label => 'Education Level' 
+    #config.add_show_field 'accessmode_s', :label => 'Access Mode'
+    #config.add_show_field 'isadaptationof_s', :label => 'Is Adaptation Of'
+    #config.add_show_field 'adaptationtype_s', :label => 'Adaptation Type'
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
@@ -163,10 +169,12 @@ class CatalogController < ApplicationController
     # label in pulldown is followed by the name of the SOLR field to sort by and
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
-    #config.add_sort_field 'score desc, pub_date_sort desc, title_sort asc', :label => 'relevance'
-    #config.add_sort_field 'pub_date_sort desc, title_sort asc', :label => 'year'
+    config.add_sort_field 'score desc, publicationdate_sort desc, title_sort asc', :label => 'Relevance'
+    #config.add_sort_field 'publicationdate_sort desc, title_sort asc', :label => 'Publication Date'
     #config.add_sort_field 'author_sort asc, title_sort asc', :label => 'author'
-    #config.add_sort_field 'title_sort asc, pub_date_sort desc', :label => 'title'
+    config.add_sort_field 'title_sort asc, pub_date_sort desc', :label => 'Title'
+    config.add_sort_field 'accessmode_sort asc, title_sort asc', :label => 'Access Mode'
+    config.add_sort_field 'adaptationtype_sort asc, title_sort asc', :label => 'Adaptation Type'
 
     # If there are more than this many search results, no spelling ("did you 
     # mean") suggestion is offered.
