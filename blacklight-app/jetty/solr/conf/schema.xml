@@ -57,7 +57,7 @@
        1.4: default auto-phrase (QueryParser feature) to off
      -->
 
-   <types>
+  <types>
     <!-- field type definitions. The "name" attribute is
        just a label to be used by field definitions.  The "class"
        attribute and any other attributes determine the real
