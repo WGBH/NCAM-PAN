@@ -154,7 +154,7 @@ en:
               count: "Numerical Sort"
               index: "A-Z Sort"
             count: "(%{number})"
-            more: "more È"
+            more: "more Â¬Âª"
             selected:
                 remove: "[remove]"
         email:
@@ -224,4 +224,4 @@ en:
         last: "Last &raquo;"
         previous: "&laquo; Previous"
         next: "Next &raquo;"
-        truncate: "É"
+        truncate: "..."
