@@ -59,6 +59,8 @@ class CatalogController < ApplicationController
     config.add_facet_field 'audience_s', :label => 'Audience', :limit => 20 
     config.add_facet_field 'educationlevel_s', :label => 'Education Level' 
     # config.add_facet_field 'isadaptationof_s', :label => 'Is Adaptation Of', :limit => true
+    config.add_facet_field 'withoutvision_display', :label => 'Useful Without Vision'
+    config.add_facet_field 'withouthearing_display', :label => 'Useful Without Hearing' 
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -85,6 +87,8 @@ class CatalogController < ApplicationController
     config.add_index_field 'rights_s', :label => 'Rights'
     config.add_index_field 'accessRights_s', :label => 'Access Rights'
     config.add_index_field 'contributer_s', :label => 'Contributers'
+    config.add_index_field 'withoutvision_display', :label => 'Useful Without Vision'
+    config.add_index_field 'withouthearing_display', :label => 'Useful Without Hearing' 
 
     # solr fields to be displayed in the show (single result) view
     #   The ordering of the field names is the order of the display 
