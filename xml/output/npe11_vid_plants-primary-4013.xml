@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>npe11_vid_plants-primary</recordID>
+      <recordDate>2012-06-27</recordDate>
+      <url>http://www.teachersdomain.org/resource/npe11.sci.phys.energy.plants/</url>
+      <title>Growing Plants in Space </title>
+      <description>Learn about the challenges and benefits of growing plants in space from plant biologist Dr. Ray Wheeler in this video from NASA.</description>
+      <subject>National K -12 Subject::Science::Engineering::Engineering Design::Applying the Design Process</subject>
+      <subject>National K -12 Subject::Science::Life Science::Structure and Function::Photosynthesis</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Energy::Light</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Energy::Nuclei and Radiation</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Motions and Forces::Gravity</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2012-06-27</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wnet__.gif">WNET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wnet_.gif">WNET</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nasa.gif">NASA</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>transcript</adaptationType>
+   </accessForAll>
+</record>

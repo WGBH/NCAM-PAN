@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>appcul_vid_shadygrove-primary</recordID>
+      <recordDate>2011-10-06</recordDate>
+      <url>http://www.teachersdomain.org/resource/appcul.arts.music.shadygrove/</url>
+      <title>Kentucky-Appalachian Culture: Shady Grove/Bandyrowe</title>
+      <description>Folksinger Jean Ritchie performs the Appalachian tune &amp;ldquo;Shady Grove,&amp;rdquo; a traditional song she learned from her family. Then she performs &amp;ldquo;Bandyrowe,&amp;rdquo; a song for which she made up verses to help get her two sons to sleep when they were very young. Ritchie accompanies herself on the lap dulcimer.</description>
+      <subject>National K -12 Subject::Arts::Music::Society and History of Music::History of Music</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <educationLevel>Grade 2</educationLevel>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2011-10-06</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket_.gif">KET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket.gif">KET</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

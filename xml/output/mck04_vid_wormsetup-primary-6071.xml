@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>mck04_vid_wormsetup-primary</recordID>
+      <recordDate>2004-08-24</recordDate>
+      <url>http://www.teachersdomain.org/resource/tdpd12.pd.sci.wormsetup/</url>
+      <title>Setting up an Inquiry about Soil and Earthworms</title>
+      <description>In this video segment from &lt;em&gt;Teaching Elementary Life Science&lt;/em&gt;, a teacher talks with her second-grade class about their study of earthworm behavior.</description>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <educationLevel>Grade 2</educationLevel>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2004-08-24</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

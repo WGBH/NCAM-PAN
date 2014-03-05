@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>wlvt07_vid_undergrnd-primary</recordID>
+      <recordDate>2008-04-01</recordDate>
+      <url>http://www.teachersdomain.org/resource/wlvt07-history.pahist.undergrnd/</url>
+      <title>Underground Railroad</title>
+      <description>Black slaves fleeing their imprisonment in the South often sought the help of sympathetic Northerners while on their way to Canada. In this  18th century house in Reading, Pennsylvania some escaped slaves may have found refuge. The Parvin House might have been part of the Underground  Railroad. Under the house is a network of tunnels filled with broken pottery and other 19th century artifacts. The tunnels that once protected refugees are  now threatened by highway construction, but a team of archeology students is trying to determine whether or not these tunnels really are part of the  Underground Railroad before the county government destroys them forever.</description>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2008-04-01</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_pbs39.gif">WLVT PBS 39</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

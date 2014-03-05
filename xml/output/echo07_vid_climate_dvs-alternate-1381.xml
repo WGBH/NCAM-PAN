@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>echo07_vid_climate_dvs-alternate</recordID>
+      <recordDate>2010-09-21</recordDate>
+      <url>http://www.teachersdomain.org/resource/echo07.sci.life.coast.climate/</url>
+      <title>Arctic Climate Perspectives (Audio Description)</title>
+      <description> This video, adapted from material provided by the ECHO partners, describes how global climate change is affecting Barrow, Alaska. </description>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Water Cycle, Weather, and Climate::Structure and Composition of the Atmosphere</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Water Cycle, Weather, and Climate::Climate</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2010-09-21</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_doe.gif">U.S. Department of Education</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_echo.gif">Education through Cultural and Historical Organizations</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <isAdaptationOf>http://www.teachersdomain.org/asset/echo07_vid_climate/</isAdaptationOf>
+      <adaptationType>audioDescription</adaptationType>
+   </accessForAll>
+</record>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>ket09_vid_gravity-primary</recordID>
+      <recordDate>2009-08-21</recordDate>
+      <url>http://www.teachersdomain.org/resource/ket09.sci.ess.gravity/</url>
+      <title>Thank Goodness for Gravity</title>
+      <description>In this video adapted from the Lexington, KY Public Library, a young boy learns about Earth&amp;rsquo;s rotation from a librarian, a pendulum, and Leon Foucault.</description>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Earth's Movement</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::The Solar System</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Motions and Forces::Gravity</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Motions and Forces::Objects in Motion</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2009-08-21</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket_.gif">KET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket.gif">KET</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_hewlett.gif">The William and Flora Hewlett Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

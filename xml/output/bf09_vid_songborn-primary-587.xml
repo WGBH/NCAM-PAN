@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>bf09_vid_songborn-primary</recordID>
+      <recordDate>2009-08-11</recordDate>
+      <url>http://www.teachersdomain.org/resource/bf09.socst.us.prosp.songborn/</url>
+      <title>Abel Meeropol, Billie Holiday and a Song Born of Protest</title>
+      <description>&lt;p&gt; Learn about teacher and author, Abel Meeropol who penned the haunting song of protest, &lt;em&gt;Strange Fruit&lt;/em&gt;, in this segment from &lt;em&gt;Independent Lens.&lt;/em&gt;&lt;/p&gt;</description>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2009-08-11</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wnet__.gif">WNET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wnet_.gif">WNET</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_boothferris.gif">Booth Ferris Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>transcript</adaptationType>
+   </accessForAll>
+</record>

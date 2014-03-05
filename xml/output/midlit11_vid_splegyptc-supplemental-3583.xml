@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>midlit11_vid_splegyptc-supplemental</recordID>
+      <recordDate>2011-07-19</recordDate>
+      <url>http://www.teachersdomain.org/resource/midlit11.soc.wh.pyramids/</url>
+      <title>What Were the Pyramids For?</title>
+      <description>This resource featuring video segments adapted from NOVA: &amp;ldquo;This Old Pyramid&amp;rdquo; tells the story of the Egyptian pyramids, from the first, relatively small step pyramid to the Great Pyramid of Khufu.</description>
+      <subject>National K -12 Subject::Social Studies::World History::Early Civilizations (4000-1000 BCE)::Middle East and Indus Valley (4000-1000 BCE)</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2011-07-19</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_walmart.gif">Walmart Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

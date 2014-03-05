@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>ess05_vid_moonorbit_dvs-alternate</recordID>
+      <recordDate>2013-02-25</recordDate>
+      <url>http://www.teachersdomain.org/resource/ess05.sci.ess.eiu.moonorbit/</url>
+      <title>Why Doesn't the Moon Fall Down? (Audio Description)</title>
+      <description>In this animated video segment adapted from NASA, astronomer Doris Daou explains how the forces of speed and gravity keep the Moon in a constant orbit around Earth.</description>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Earth's Movement</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Earth in the Solar System</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::The Solar System</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Composition of the Universe</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2013-02-25</publicationDate>
+      <rights>Download, Share, and Remix</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/3/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <isAdaptationOf>http://www.teachersdomain.org/asset/ess05_vid_moonorbit/</isAdaptationOf>
+      <adaptationType>audioDescription</adaptationType>
+   </accessForAll>
+</record>

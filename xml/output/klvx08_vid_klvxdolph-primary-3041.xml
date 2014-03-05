@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>klvx08_vid_klvxdolph-primary</recordID>
+      <recordDate>2008-09-09</recordDate>
+      <url>http://www.teachersdomain.org/resource/klvx08.sci.klvxdolph/</url>
+      <title>Dolphin Reproductive Behavior</title>
+      <description>This video segment from the &lt;em&gt;Science and Technology Chat &lt;/em&gt;series focuses on dolphin pregnancy, birth, and care of the young, and features Atlantic bottlenose dolphins living in captivity at the Mirage Resort Dolphin Habitat. </description>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Habitats</subject>
+      <subject>National K -12 Subject::Science::Life Science::Genetics and Heredity::Birth, Growth, and Development</subject>
+      <subject>National K -12 Subject::Science::Life Science::Genetics and Heredity::Reproduction</subject>
+      <subject>National K -12 Subject::Science::Life Science::Genetics and Heredity::Inherited and Acquired Characteristics</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Adaptation</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Behavioral Response</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2008-09-09</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_vegaspbs_.gif">VegasPBS</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_vegaspbs.gif">VegasPBS</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_hewlett.gif">The William and Flora Hewlett Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

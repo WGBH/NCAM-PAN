@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>tdc02_vid_germinator-primary</recordID>
+      <recordDate>2003-10-16</recordDate>
+      <url>http://www.teachersdomain.org/resource/tdc02.sci.life.stru.germinator/</url>
+      <title>Germinator</title>
+      <description>This &lt;em&gt;ZOOMSci&lt;/em&gt; video segment teaches you how to germinate seeds in a plastic bag and helps you understand some of the factors that influence the germination process.</description>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Plants and Animals</subject>
+      <subject>National K -12 Subject::Science::Life Science::Structure and Function::Living Systems</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <educationLevel>Grade 2</educationLevel>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2003-10-16</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>textual</accessMode>
+      <accessMode>visual</accessMode>
+      <isAdaptationOf>http://www.teachersdomain.org/asset/tdc02_vid_germinator_dvs/</isAdaptationOf>
+      <adaptationType>audioDescription</adaptationType>
+      <adaptationType>captions</adaptationType>
+      <adaptationType>transcript</adaptationType>
+   </accessForAll>
+</record>

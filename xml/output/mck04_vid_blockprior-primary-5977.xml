@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>mck04_vid_blockprior-primary</recordID>
+      <recordDate>2004-08-24</recordDate>
+      <url>http://www.teachersdomain.org/resource/tdpd12.pd.sci.blockprior/</url>
+      <title>Launching a Unit on Electric Circuits</title>
+      <description>In this video from &lt;em&gt;Teaching Elementary Physical Science&lt;/em&gt;, see a fourth-grade teacher describe how she begins a unit about electricity.</description>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <educationLevel>Grade 2</educationLevel>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2004-08-24</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

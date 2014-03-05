@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>wlvt07_vid_prodmgr-primary</recordID>
+      <recordDate>2008-03-19</recordDate>
+      <url>http://www.teachersdomain.org/resource/wlvt07-carwriteprompts.prodmgr/</url>
+      <title>Production Manager</title>
+      <description>This Career Clip features Tonya Dean, Production Manager at the Lehigh Valley Syrup Plant for Coca-Cola.  She is responsible for ensuring that the operations run smoothly and that all customers orders get completed.  Her best advice was to take care of the people and the work will take care of itself.  Making sure that they are taken care of and that they have the knowledge and materials to complete tasks, the work will get done.</description>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2008-03-19</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_pbs39.gif">WLVT PBS 39</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/psea.gif">PSEA, Pennsylvania State Education Association</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

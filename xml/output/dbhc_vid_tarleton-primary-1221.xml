@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>dbhc_vid_tarleton-primary</recordID>
+      <recordDate>2011-10-13</recordDate>
+      <url>http://www.teachersdomain.org/resource/dbhc.arts.drama.tarleton/</url>
+      <title>Drama Based on Historical Characters: Henry Clay: Colonel Tarleton's Visit</title>
+      <description>George McGee, a drama professor at Georgetown College and a Kentucky Humanities Council Chautauqua performer, performs a monologue scene as 19th century Kentucky statesman Henry Clay. In this scene, Clay recalls a childhood incident&amp;mdash;the invasion of his family&amp;rsquo;s farm by British troops the day after his father&amp;rsquo;s funeral.</description>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2011-10-13</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket_.gif">KET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket.gif">KET</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

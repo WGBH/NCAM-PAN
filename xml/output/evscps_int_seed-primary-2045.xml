@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>evscps_int_seed-primary</recordID>
+      <recordDate>2010-11-08</recordDate>
+      <url>http://www.teachersdomain.org/resource/evscps.sci.life.seedint/</url>
+      <title>Everyday Science: From Seed to Fruit Interactive</title>
+      <description>Children get a glimpse of what happens underground in the life of a cherry tomato plant in this original animated video from KET.</description>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Plants and Animals</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Basic Needs</subject>
+      <subject>National K -12 Subject::Science::Life Science::Genetics and Heredity::Reproduction</subject>
+      <language>en-US</language>
+      <mimeType>application/x-shockwave-flash</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade Pre-K</educationLevel>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Instructional Material</resourceType>
+      <resourceType>Interactive Simulation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2010-11-08</publicationDate>
+      <rights>Download, Share, and Remix</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/3/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket_.gif">KET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket.gif">KET</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>textual</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

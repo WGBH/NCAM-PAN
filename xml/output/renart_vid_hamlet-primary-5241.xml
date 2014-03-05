@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>renart_vid_hamlet-primary</recordID>
+      <recordDate>2011-05-18</recordDate>
+      <url>http://www.teachersdomain.org/resource/renart.arts.drama.hamlet/</url>
+      <title>Arts in the Renaissance: Scene from Hamlet</title>
+      <description>Actor Kevin Hardesty performs the famous &amp;ldquo;To be, or not to be&amp;rdquo; soliloquy from Act III, Scene I of the Shakespearean tragedy &lt;em&gt;Hamlet&lt;/em&gt;. Hardesty opens the segment with an introduction to the scene.</description>
+      <subject>National K -12 Subject::Arts::Theater::Society and History of Theater::Theater in World Cultures</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2011-05-18</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket_.gif">KET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket.gif">KET</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>evscps_vid_getfrom-primary</recordID>
+      <recordDate>2011-09-02</recordDate>
+      <url>http://www.teachersdomain.org/resource/evscps.sci.life.getfrom/</url>
+      <title>Everyday Science: What Do You Get From That?</title>
+      <description>Children learn how farm animals contribute to people&amp;rsquo;s lives by providing food for the table and clothes to keep them warm.</description>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Plants and Animals</subject>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Producers and Consumers</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Basic Needs</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade Pre-K</educationLevel>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2011-09-02</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket_.gif">KET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket.gif">KET</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

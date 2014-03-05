@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>idptv11_vid_d4kspy-primary</recordID>
+      <recordDate>2011-08-15</recordDate>
+      <url>http://www.teachersdomain.org/resource/idptv11.sci.engin.design.d4kspy/</url>
+      <title>Spy Technology</title>
+      <description> In this video segment from IdahoPTV's &lt;em&gt; D4K &lt;/em&gt;meet Kevin Young, an  Idaho National Engineering and Environmental Laboratory engineer, who designs robots, infrared cameras and hazmat cameras as he describes their many uses. These imaginative creations are valuable for the military, counter terrorism and law enforcement. </description>
+      <subject>National K -12 Subject::Science::Engineering::Materials and Tools::Tools</subject>
+      <subject>National K -12 Subject::Science::Engineering::Engineering Design::Innovation and Invention</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2011-08-15</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_idaho_1.gif">Idaho PTV</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_idaho.gif">Idaho PTV</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_iclf.gif">ICFL</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_bbusa.gif">BTOP</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>textual</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+      <adaptationType>transcript</adaptationType>
+   </accessForAll>
+</record>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>envh10_vid_fracking-primary</recordID>
+      <recordDate>2011-04-13</recordDate>
+      <url>http://www.teachersdomain.org/resource/envh10.sci.phys.energy.fracking/</url>
+      <title>Fracking</title>
+      <description>In this video segment adapted from &lt;em&gt;Need to Know&lt;/em&gt;, learn about the controversial method of extracting natural gas known as hydraulic fracturing, or fracking, and how some residents who live near drill sites are concerned that it's polluting their water.</description>
+      <subject>National K -12 Subject::Science::Physical Science::Energy::Energy Sources</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth System, Structure, and Processes::Energy in the Earth System</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth System, Structure, and Processes::Natural Resources</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Water Cycle, Weather, and Climate::Water Quality</subject>
+      <subject>National K -12 Subject::Science::Engineering::Engineering Design::History and Impact of Technology</subject>
+      <subject>National K -12 Subject::Science::Engineering::Systems and Technologies::Energy and Power Technologies</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2011-04-13</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_niehs.gif">NIEHS</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

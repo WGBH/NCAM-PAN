@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>tdc02_doc_howtoconquer-primary</recordID>
+      <recordDate>2003-10-16</recordDate>
+      <url>http://www.teachersdomain.org/resource/tdc02.sci.life.gen.howtoconquer/</url>
+      <title>How to Conquer a Genetic Disease</title>
+      <description>In &lt;em&gt;Blazing a Genetic Trail,&lt;/em&gt; by the Howard Hughes Medical Institute, follow this three-step approach to treating genetic diseases.</description>
+      <subject>National K -12 Subject::Science::Life Science::Genetics and Heredity::Genetic Engineering</subject>
+      <subject>National K -12 Subject::Science::Life Science::Genetics and Heredity::Human Genetics</subject>
+      <subject>National K -12 Subject::Health and Physical Education::The Human Body and Life Cycle::The Human Body::Genetics and Heredity</subject>
+      <language>en-US</language>
+      <mimeType>application/pdf</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Instructional Material</resourceType>
+      <resourceType>Tutorial</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2003-10-16</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>textual</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

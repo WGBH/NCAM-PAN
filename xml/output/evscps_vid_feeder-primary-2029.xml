@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>evscps_vid_feeder-primary</recordID>
+      <recordDate>2010-09-19</recordDate>
+      <url>http://www.teachersdomain.org/resource/evscps.sci.life.bio.feeder/</url>
+      <title>Everyday Science: Who Comes to the Feeder?</title>
+      <description>Children learn about the different birds they can attract to a backyard feeder in this original video from KET.</description>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Plants and Animals</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Basic Needs</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Behavioral Response</subject>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Human Impact</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade Pre-K</educationLevel>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <educationLevel>Grade 2</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2010-09-19</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket_.gif">KET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket.gif">KET</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

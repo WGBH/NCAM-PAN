@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>wds10_aud_hebpla-primary</recordID>
+      <recordDate>2010-02-04</recordDate>
+      <url>http://www.teachersdomain.org/resource/wds10.sci.ess.eiu.hebpla/</url>
+      <title>Naming Uranus and Neptune, in Hebrew</title>
+      <description>The Hebrew Language Academy, a government funded institution that coins new Hebrew terms, is letting the public decide the Hebrew names of two planets. Learn why and hear some of the 2000 suggestions and their inspirations in this audio segment from &lt;em&gt;PRI's The World Science Podcast&lt;/em&gt;. </description>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::The Solar System</subject>
+      <language>en-US</language>
+      <mimeType>audio/mp3</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Instructional Material</resourceType>
+      <resourceType>Tutorial</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2010-02-04</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

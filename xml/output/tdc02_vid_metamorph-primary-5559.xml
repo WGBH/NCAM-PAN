@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>tdc02_vid_metamorph-primary</recordID>
+      <recordDate>2003-10-16</recordDate>
+      <url>http://www.teachersdomain.org/resource/tdc02.sci.life.cyc.metamorph/</url>
+      <title>Metamorphosis: Change of Plans</title>
+      <description>All animals develop and grow over time. The animals in this video segment, however, undergo very dramatic changes on their way to adulthood -- a developmental process known as metamorphosis.</description>
+      <subject>National K -12 Subject::Science::Life Science::Genetics and Heredity::Birth, Growth, and Development</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <educationLevel>Grade 2</educationLevel>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2003-10-16</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>textual</accessMode>
+      <accessMode>visual</accessMode>
+      <isAdaptationOf>http://www.teachersdomain.org/asset/tdc02_vid_metamorph_dvs/</isAdaptationOf>
+      <adaptationType>audioDescription</adaptationType>
+      <adaptationType>captions</adaptationType>
+      <adaptationType>transcript</adaptationType>
+   </accessForAll>
+</record>

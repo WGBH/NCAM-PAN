@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>frntc10_vid_haiti-primary</recordID>
+      <recordDate>2010-06-03</recordDate>
+      <url>http://www.teachersdomain.org/resource/frntc10.guide.haiti/</url>
+      <title>Haiti: Relief Efforts, The Staggering Obstacles</title>
+      <description>From FRONTLINE &lt;em&gt;The Quake&lt;/em&gt;, correspondent Martin Smith travels to Haiti to bear witness to this humanitarian crisis and the ill-coordinated relief efforts on the ground.</description>
+      <subject>National K -12 Subject::Social Studies::World History::World History Across the Eras::Social Structures</subject>
+      <subject>National K -12 Subject::Social Studies::World History::World History Across the Eras::Politics</subject>
+      <subject>National K -12 Subject::Social Studies::Economics::Macroeconomics::Government Failure</subject>
+      <subject>National K -12 Subject::Social Studies::Economics::International Economics::Policy, Law and Regulation</subject>
+      <subject>National K -12 Subject::Social Studies::Civics and Government::International Relations and the U.S.::Forms of International Influence</subject>
+      <subject>National K -12 Subject::Social Studies::World History::The World Since 1945::An Interdependent World (1945-Present)</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <educationLevel>Higher Education</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2010-06-03</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_macarthur.gif">The John D. and Catherine T. MacArthur Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_park.gif">Park Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

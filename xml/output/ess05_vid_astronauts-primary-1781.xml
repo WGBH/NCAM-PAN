@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>ess05_vid_astronauts-primary</recordID>
+      <recordDate>2005-12-15</recordDate>
+      <url>http://www.teachersdomain.org/resource/ess05.sci.ess.eiu.astronauts/</url>
+      <title>Expedition 8 Crew Talks to Students in Japan</title>
+      <description>In this video segment adapted from NASA, students in Matsuyama City, Japan, interview Expedition 8 Commander and NASA Science Officer Mike Foale and Flight Engineer Alexander Kaleri about life and work aboard the International Space Station.</description>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Changes in Earth and Sky</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Earth's Movement</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Earth in the Solar System</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::The Solar System</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <educationLevel>Grade 2</educationLevel>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2005-12-15</publicationDate>
+      <rights>Download, Share, and Remix</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/3/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

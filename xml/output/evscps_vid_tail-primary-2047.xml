@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>evscps_vid_tail-primary</recordID>
+      <recordDate>2010-09-19</recordDate>
+      <url>http://www.teachersdomain.org/resource/evscps.sci.life.tail/</url>
+      <title>Everyday Science: A Tail Like This</title>
+      <description> We use our senses to communicate and explore the world around us. Animals use their senses to help them find food and tell them when danger is near.  You may not be able to move your ears like a rabbit, but you both have ears. Learn about traits you share with other animals in this KET original video.</description>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Plants and Animals</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Behavioral Response</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Basic Needs</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade Pre-K</educationLevel>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2010-09-19</publicationDate>
+      <rights>Download, Share, and Remix</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/3/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket_.gif">KET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket.gif">KET</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

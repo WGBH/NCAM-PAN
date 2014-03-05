@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>wlvt07_vid_canalhistory-primary</recordID>
+      <recordDate>2008-04-01</recordDate>
+      <url>http://www.teachersdomain.org/resource/wlvt07-history.pahist.canalhistory/</url>
+      <title>Canal History</title>
+      <description>The Lehigh Valley became a major part of the Industrial Revolution after coal was discovered in the area.  The canal system was built as a way to transport the coal from the local mines to New York and Philadelphia.  Using the canal, small boats pulled by mules transported coal out and other materials into the Valley.  Within a decade, the Lehigh Valley was transformed into a thriving industrial area.  Without the canal, the Lehigh Valley we know  today would not exist.  Parts of the canal have been preserved as public parks and some of the locks and dams have also been restored.</description>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2008-04-01</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_pbs39.gif">WLVT PBS 39</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

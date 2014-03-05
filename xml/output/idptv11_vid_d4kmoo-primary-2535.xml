@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>idptv11_vid_d4kmoo-primary</recordID>
+      <recordDate>2011-08-15</recordDate>
+      <url>http://www.teachersdomain.org/resource/idptv11.sci.ess.eiu.d4kmoo/</url>
+      <title>The Moon</title>
+      <description> This video segment from IdahoPTV's &lt;em&gt; D4K &lt;/em&gt; discusses the physical characteristics of the moon, as well as its gravity, and distance form the earth. It includes video of Apollo 15 on the moon. </description>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Earth's Movement</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::The Solar System</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2011-08-15</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_idaho_1.gif">Idaho PTV</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_idaho.gif">Idaho PTV</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_iclf.gif">ICFL</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_bbusa.gif">BTOP</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>textual</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+      <adaptationType>transcript</adaptationType>
+   </accessForAll>
+</record>

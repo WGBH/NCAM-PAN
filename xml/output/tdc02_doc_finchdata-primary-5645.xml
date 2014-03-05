@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>tdc02_doc_finchdata-primary</recordID>
+      <recordDate>2003-10-16</recordDate>
+      <url>http://www.teachersdomain.org/resource/tdc02.sci.life.evo.finchdata/</url>
+      <title>Finch Beak Data Sheet</title>
+      <description>This graphic from &lt;em&gt;Ecology and Evolution of Darwin's Finches&lt;/em&gt; by Peter Grant presents data from the Galapagos Islands, showing that a severe drought put selective pressure on the population of Darwin's finches and resulted in a change in the average beak size in the next generation.</description>
+      <subject>National K -12 Subject::Science::Life Science::Evolution and Diversity::Classification</subject>
+      <subject>National K -12 Subject::Science::Life Science::Evolution and Diversity::Processes of Evolution</subject>
+      <language>en-US</language>
+      <mimeType>application/pdf</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Instructional Material</resourceType>
+      <resourceType>Tutorial</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2003-10-16</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>textual</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

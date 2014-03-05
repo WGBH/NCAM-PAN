@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>wpsu09_vid_wpsubyturt-primary</recordID>
+      <recordDate>2009-02-03</recordDate>
+      <url>http://www.teachersdomain.org/resource/wpsu09.sci.life.reg.wpsubyturt/</url>
+      <title>Backyard Turtles</title>
+      <description>In this video from the WPSU&amp;rsquo;s series &lt;em&gt;Outside&lt;/em&gt;, learn about backyard turtle habitats, their favorite foods, and why they don&amp;rsquo;t make good pets.</description>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Habitats</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Adaptation</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2009-02-03</publicationDate>
+      <rights>Download, Share, and Remix</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/3/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wpsu.gif">WPSU</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wpsu.gif">WPSU</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_hewlett.gif">The William and Flora Hewlett Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

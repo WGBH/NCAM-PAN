@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>phy03_vid_quantum_dvs-alternate</recordID>
+      <recordDate>2012-04-26</recordDate>
+      <url>http://www.teachersdomain.org/resource/phy03.sci.phys.fund.quantum/</url>
+      <title>Quantum Mechanics (Audio Description)</title>
+      <description>Are electrons particles or waves? This video segment adapted from &lt;em&gt;A Science Odyssey&lt;/em&gt; looks at the intense debate surrounding the understanding of electron configuration.</description>
+      <subject>National K -12 Subject::Science::Physical Science::Fundamental Theory::Quantum Mechanics</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Matter::Chemical Reaction and Electrons</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Matter::The Periodic Table</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2012-04-26</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <isAdaptationOf>http://www.teachersdomain.org/asset/phy03_vid_quantum/</isAdaptationOf>
+      <adaptationType>audioDescription</adaptationType>
+   </accessForAll>
+</record>

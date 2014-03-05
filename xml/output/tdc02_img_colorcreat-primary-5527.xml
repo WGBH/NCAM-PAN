@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>tdc02_img_colorcreat-primary</recordID>
+      <recordDate>2003-10-16</recordDate>
+      <url>http://www.teachersdomain.org/resource/tdc02.sci.life.colt.colorcreat/</url>
+      <title>Colorful Creatures</title>
+      <description>For animals, bright, flashy coloration can serve as a warning or as an invitation. Either way, colorful skin, feathers, and scales yell, "Notice me!" This collection of images shows examples of some of the world's most colorful creatures.</description>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Plants and Animals</subject>
+      <subject>National K -12 Subject::Science::Life Science::Structure and Function::Living Systems</subject>
+      <language>en-US</language>
+      <mimeType>image/jpeg</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <educationLevel>Grade 2</educationLevel>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Instructional Material</resourceType>
+      <resourceType>Tutorial</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2003-10-16</publicationDate>
+      <rights>Download, Share, and Remix</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/3/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

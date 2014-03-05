@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>ars10_vid_inclo-primary</recordID>
+      <recordDate>2010-03-19</recordDate>
+      <url>http://www.teachersdomain.org/resource/ars10.arts.vis.context.inclo/</url>
+      <title>Late 19th-Century American Indian Clothing</title>
+      <description>Tribal arts appraiser Douglas Deihl examines a collection of American Indian clothing and objects, dating back to the 1880s and 1890s and representing several tribes, in this video from &lt;em&gt;Antiques Roadshow&lt;/em&gt;</description>
+      <subject>National K -12 Subject::Social Studies::U.S. History::Expansion and Reform (1801-1861)::Territorial Expansion</subject>
+      <subject>National K -12 Subject::Arts::Visual Arts::Society and History of Visual Art ::Visual Art in World Cultures</subject>
+      <subject>National K -12 Subject::Arts::Visual Arts::Society and History of Visual Art ::History of Visual Art</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2010-03-19</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_libertymutual_new.gif">Liberty Mutual</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_subaru.gif">Subaru</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>transcript</adaptationType>
+   </accessForAll>
+</record>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>phy03_int_kaboom-primary</recordID>
+      <recordDate>2004-01-22</recordDate>
+      <url>http://www.teachersdomain.org/resource/phy03.sci.phys.matter.kaboom/</url>
+      <title>Pyrotechnics: It's Elemental</title>
+      <description>In this interactive periodic table from the &lt;em&gt;NOVA&lt;/em&gt; Web site, find out the role of various elements in making fireworks.</description>
+      <subject>National K -12 Subject::Science::Physical Science::Matter::The Periodic Table</subject>
+      <language>en-US</language>
+      <mimeType>application/x-shockwave-flash</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Instructional Material</resourceType>
+      <resourceType>Interactive Simulation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2004-01-22</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>textual</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

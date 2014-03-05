@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>psu06-e21_int_windstory-primary</recordID>
+      <recordDate>2006-09-13</recordDate>
+      <url>http://www.teachersdomain.org/resource/psu06-e21.sci.windstory/</url>
+      <title>Wind Story</title>
+      <description> The flash animations present the characteristics of wind power  as a source of clean energy and allows the viewer to examine how a modern wind turbine works by pausing and clicking on its components.</description>
+      <subject>National K -12 Subject::Science::Physical Science::Energy::Energy Sources</subject>
+      <language>en-US</language>
+      <mimeType>application/x-shockwave-flash</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Instructional Material</resourceType>
+      <resourceType>Interactive Simulation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2006-09-13</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wpsu.gif">WPSU</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wpsu.gif">WPSU</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_westpennpower.gif">WPPSEF</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_cpb.gif">Corporation for Public Broadcasting</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>textual</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

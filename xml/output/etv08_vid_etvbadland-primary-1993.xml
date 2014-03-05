@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>etv08_vid_etvbadland-primary</recordID>
+      <recordDate>2008-08-20</recordDate>
+      <url>http://www.teachersdomain.org/resource/etv08.sci.ess.earthsys.badland/</url>
+      <title>Geology of North Dakota Badlands</title>
+      <description>See how the geology of the North Dakota badlands has changed over time in this video segment from &lt;em&gt;NatureScene&lt;/em&gt;, featuring the landscape at Theodore Roosevelt National Park.</description>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth System, Structure, and Processes::Changes in the Earth</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth System, Structure, and Processes::Earth's History</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth System, Structure, and Processes::Surface Processes</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth System, Structure, and Processes::Internal Earth Processes</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2008-08-20</publicationDate>
+      <rights>Download, Share, and Remix</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/3/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_scetv_.gif">SCETV</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_scetv.gif">SCETV</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_hewlett.gif">The William and Flora Hewlett Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

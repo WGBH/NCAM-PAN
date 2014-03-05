@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>etv08_vid_etvcarnplt-primary</recordID>
+      <recordDate>2008-08-20</recordDate>
+      <url>http://www.teachersdomain.org/resource/etv08.sci.life.evo.carnplt/</url>
+      <title>Carnivorous Plants of Cartwheel Bay</title>
+      <description>In this video segment from &lt;em&gt;NatureScene&lt;/em&gt;, explore Cartwheel Bay, a wetland in South Carolina, and learn about the variety of carnivorous plants native to this unique landform. </description>
+      <subject>National K -12 Subject::Science::Life Science::Evolution and Diversity::Classification</subject>
+      <subject>National K -12 Subject::Science::Life Science::Evolution and Diversity::Natural Selection</subject>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Plants and Animals</subject>
+      <subject>National K -12 Subject::Science::Life Science::Structure and Function::Living Systems</subject>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Producers and Consumers</subject>
+      <subject>National K -12 Subject::Science::Life Science::Organisms and Their Environments::Habitats</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Obtaining Resources</subject>
+      <subject>National K -12 Subject::Science::Life Science::Regulation and Behavior::Adaptation</subject>
+      <subject>National K -12 Subject::Science::Life Science::Ecology::Ecosystems</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2008-08-20</publicationDate>
+      <rights>Download, Share, and Remix</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/3/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_scetv_.gif">SCETV</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_scetv.gif">SCETV</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_hewlett.gif">The William and Flora Hewlett Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

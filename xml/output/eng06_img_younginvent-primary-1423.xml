@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>eng06_img_younginvent-primary</recordID>
+      <recordDate>2006-05-08</recordDate>
+      <url>http://www.teachersdomain.org/resource/eng06.sci.engin.design.younginvent/</url>
+      <title>Young Inventors</title>
+      <description>In this stills collage adapted from the National Science Teachers Association/Craftsman Young Inventors Awards, see several inventions by students in grades 4-7 and read about some of the challenges they faced during the design process.</description>
+      <subject>National K -12 Subject::Science::Engineering::Engineering Design::Applying the Design Process</subject>
+      <subject>National K -12 Subject::Science::Engineering::Engineering Design::Innovation and Invention</subject>
+      <subject>National K -12 Subject::Science::Engineering::Materials and Tools::Materials</subject>
+      <subject>National K -12 Subject::Science::Engineering::Materials and Tools::Tools</subject>
+      <language>en-US</language>
+      <mimeType>image/jpeg</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <educationLevel>Grade 2</educationLevel>
+      <educationLevel>Grade 3</educationLevel>
+      <educationLevel>Grade 4</educationLevel>
+      <educationLevel>Grade 5</educationLevel>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Instructional Material</resourceType>
+      <resourceType>Tutorial</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2006-05-08</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_argosy.gif">Argosy Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

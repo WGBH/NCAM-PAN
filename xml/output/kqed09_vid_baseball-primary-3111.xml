@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>kqed09_vid_baseball-primary</recordID>
+      <recordDate>2009-10-22</recordDate>
+      <url>http://www.teachersdomain.org/resource/kqed09.sci.phys.maf.kqedbaseball/</url>
+      <title>The Physics of Baseball</title>
+      <description>In this video adapted from &lt;em&gt;QUEST&lt;/em&gt;, discover that some of the rules of physics and baseball are one and the same. </description>
+      <subject>National K -12 Subject::Science::Physical Science::Motions and Forces::Forces Between Objects</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Energy::Work and Simple Machines</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Motions and Forces::Velocity and Acceleration</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Motions and Forces::Objects in Motion</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2009-10-22</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_kqed.gif">KQED</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_kqed.gif">KQED Public Television</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_hewlett.gif">The William and Flora Hewlett Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

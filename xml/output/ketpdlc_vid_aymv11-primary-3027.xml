@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>ketpdlc_vid_aymv11-primary</recordID>
+      <recordDate>2011-08-21</recordDate>
+      <url>http://www.teachersdomain.org/resource/ketpdlc.lang.spa.lostresosos.ricitos/</url>
+      <title>Goldilocks en Español </title>
+      <description>Do you want to learn the story of Goldilocks in Spanish? In this video from &amp;iexcl;Arte y m&amp;aacute;s! produced by KET, Se&amp;ntilde;ora Alicia tells you how it all happened.</description>
+      <subject>National K -12 Subject::World Languages::Spanish::Grammar::Sounds and Symbols of the Spanish Language</subject>
+      <subject>National K -12 Subject::World Languages::Spanish::Grammar::Spanish Vocabulary and Syntax</subject>
+      <subject>National K -12 Subject::World Languages::Spanish::Communication::Speaking and Listening in Spanish</subject>
+      <subject>National K -12 Subject::World Languages::Spanish::Culture::Cultural Knowledge of the Spanish-Speaking World</subject>
+      <subject>National K -12 Subject::World Languages::Spanish::Culture::Participation In Spanish-Speaking Communities</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade Pre-K</educationLevel>
+      <educationLevel>Kindergarten</educationLevel>
+      <educationLevel>Grade 1</educationLevel>
+      <educationLevel>Grade 2</educationLevel>
+      <educationLevel>Grade 3</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2011-08-21</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket_.gif">KET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket.gif">KET</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

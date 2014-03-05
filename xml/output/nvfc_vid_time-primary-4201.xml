@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>nvfc_vid_time-primary</recordID>
+      <recordDate>2012-01-26</recordDate>
+      <url>http://www.teachersdomain.org/resource/nvfc.sci.physics.time/</url>
+      <title>Traveling Through Time</title>
+      <description>This video excerpt from NOVA&amp;rsquo;s "The Fabric of the Cosmos: The Illusion of Time" explains gravity&amp;rsquo;s pull on time, and how time travel may be possible in the future. However, this kind of time travel might not be exactly like Hollywood&amp;rsquo;s depiction. </description>
+      <subject>National K -12 Subject::Science::Physical Science::Fundamental Theory::Cosmology and Gravity</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Motions and Forces::Gravity</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Fundamental Theory::The Special Theory of Relativity</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2012-01-26</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/nvms_DOE_logo_perfect.png">U.S. Department of Energy</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/ArthurViningLogo.png">The Arthur Vining Davis Foundations</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>textual</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+      <adaptationType>transcript</adaptationType>
+   </accessForAll>
+</record>

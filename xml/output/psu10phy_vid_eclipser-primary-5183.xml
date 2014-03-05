@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>psu10phy_vid_eclipser-primary</recordID>
+      <recordDate>2010-04-09</recordDate>
+      <url>http://www.teachersdomain.org/resource/psu10phy.sci.eclipser/</url>
+      <title>Eclipser Shadows</title>
+      <description>This animation shows the rotation of Earth, the orbit of the Moon about Earth, and the orbit of the Earth-Moon about the Sun. The appearance of both the Sun and the Moon can be affected by the shadows cast by the Earth and the Moon in the sunlight.</description>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Changes in Earth and Sky</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2010-04-09</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wpsu.gif">WPSU</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wpsu.gif">WPSU</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wpsu_.gif">WPSU</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

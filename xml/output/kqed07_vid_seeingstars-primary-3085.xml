@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>kqed07_vid_seeingstars-primary</recordID>
+      <recordDate>2008-03-26</recordDate>
+      <url>http://www.teachersdomain.org/resource/kqed07.sci.ess.eiu.telescopes/</url>
+      <title>Seeing Stars</title>
+      <description> This video segment, adapted from &lt;em&gt;QUEST&lt;/em&gt;, explores the modern techniques employed by astrophysicists to detect planets in orbit around stars  in the universe other than our own.</description>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Satellites and Space Research Technology</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Conditions Necessary for Planetary Life</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2008-03-26</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_kqed.gif">KQED Public Television</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_cpb.gif">Corporation for Public Broadcasting</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

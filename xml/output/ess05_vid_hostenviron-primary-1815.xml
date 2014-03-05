@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>ess05_vid_hostenviron-primary</recordID>
+      <recordDate>2005-12-15</recordDate>
+      <url>http://www.teachersdomain.org/resource/ess05.sci.ess.eiu.hostenviron/</url>
+      <title>Mars Dead or Alive: A Hostile Environment</title>
+      <description>This NOVA video segment describes the challenges presented by the frozen desert environment of Mars to NASA engineers designing two robots that will journey millions of miles to the red planet.</description>
+      <subject>National K -12 Subject::Science::Engineering::Engineering Design::Applying the Design Process</subject>
+      <subject>National K -12 Subject::Science::Engineering::Systems and Technologies::Transportation Technologies</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Conditions Necessary for Planetary Life</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Satellites and Space Research Technology</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Physical Composition of the Solar System</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Composition of the Universe</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 6</educationLevel>
+      <educationLevel>Grade 7</educationLevel>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2005-12-15</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

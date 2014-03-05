@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>frnht10_vid_china-primary</recordID>
+      <recordDate>2010-07-22</recordDate>
+      <url>http://www.teachersdomain.org/resource/frnht10.guide.china/</url>
+      <title>Corporations or Consumers: Who's Responsible for Climate Change?</title>
+      <description>From FRONTLINE &lt;em&gt;Heat&lt;/em&gt;, this video challenges viewers to examine who is really responsible for climate change: corporations or consumers?</description>
+      <subject>National K -12 Subject::Science::Engineering::Systems and Technologies::Energy and Power Technologies</subject>
+      <subject>National K -12 Subject::Social Studies::World History::The World Since 1945::An Interdependent World (1945-Present)</subject>
+      <subject>National K -12 Subject::Social Studies::World History::The World Since 1945::Major Global Trends (1945-Present)</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <educationLevel>Higher Education</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2010-07-22</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_grantham.gif">Grantham Foundation for the Protection of the Environment</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>

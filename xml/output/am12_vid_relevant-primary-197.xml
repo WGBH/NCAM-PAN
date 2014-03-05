@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>am12_vid_relevant-primary</recordID>
+      <recordDate>2012-06-20</recordDate>
+      <url>http://www.teachersdomain.org/resource/am12.ela.rv.text.relevant/</url>
+      <title>Is To Kill A Mockingbird Still Relevant Today?</title>
+      <description>This video from &lt;em&gt;American Masters: Harper Lee: Hey, Boo &lt;/em&gt;provides a historical context for students reading the novel &lt;em&gt;To Kill a Mockingbird &lt;/em&gt;and offers evidence as to why the story is still relevant today.</description>
+      <subject>National K -12 Subject::English Language Arts::Reading and Viewing::Text Comprehension Skills::Comprehension Strategies</subject>
+      <subject>National K -12 Subject::English Language Arts::Reading and Viewing::Text Comprehension Skills::Critical Reading</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2012-06-20</publicationDate>
+      <rights>Viewed Online only</rights>
+      <rights>http://www.teachersdomain.org/terms_of_use.html</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wnet__.gif">WNET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wnet_.gif">WNET</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>transcript</adaptationType>
+   </accessForAll>
+</record>

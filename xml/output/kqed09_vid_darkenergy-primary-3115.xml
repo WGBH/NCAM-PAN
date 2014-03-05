@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>kqed09_vid_darkenergy-primary</recordID>
+      <recordDate>2009-10-22</recordDate>
+      <url>http://www.teachersdomain.org/resource/kqed09.sci.phys.matter.darkenergy/</url>
+      <title>Dark Energy</title>
+      <description>In this video adapted from &lt;em&gt;QUEST&lt;/em&gt;, learn about the discovery of a form of energy, called dark energy, which has the potential to alter our theories of how the universe is structured.</description>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Physical Composition of the Solar System</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Conditions Necessary for Planetary Life</subject>
+      <subject>National K -12 Subject::Science::Earth and Space Science::Earth in the Universe::Origins and Evolution of the Universe</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2009-10-22</publicationDate>
+      <rights>Download and Share</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/2/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_kqed.gif">KQED</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_kqed.gif">KQED Public Television</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_hewlett.gif">The William and Flora Hewlett Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+      <adaptationType>captions</adaptationType>
+   </accessForAll>
+</record>

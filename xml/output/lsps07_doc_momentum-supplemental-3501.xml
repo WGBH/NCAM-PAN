@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>lsps07_doc_momentum-supplemental</recordID>
+      <recordDate>2007-08-14</recordDate>
+      <url>http://www.teachersdomain.org/resource/lsps07.sci.phys.maf.momentum/</url>
+      <title>Momentum Worksheet</title>
+      <description> In this interactive activity adapted from Wake Forest University, observe the effect of mass on velocity and momentum in elastic and inelastic collisions. </description>
+      <subject>National K -12 Subject::Science::Physical Science::Motions and Forces::Velocity and Acceleration</subject>
+      <subject>National K -12 Subject::Science::Physical Science::Motions and Forces::Forces Between Objects</subject>
+      <language>en-US</language>
+      <mimeType>application/pdf</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 8</educationLevel>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Instructional Material</resourceType>
+      <resourceType>Interactive Simulation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2007-08-14</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_wgbh.gif">WGBH Educational Foundation</contributor>
+      <contributor role="Funder"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_nsf.gif">National Science Foundation</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>textual</accessMode>
+   </accessForAll>
+</record>

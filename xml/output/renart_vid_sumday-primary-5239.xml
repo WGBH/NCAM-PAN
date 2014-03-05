@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns="http://ns.nsdl.org/ncs/ncam_afa"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:tdxf="http://teachersdomain.org/functions"
+        xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+   <general>
+      <recordID>renart_vid_sumday-primary</recordID>
+      <recordDate>2011-05-18</recordDate>
+      <url>http://www.teachersdomain.org/resource/renart.arts.dance.sumday/</url>
+      <title>Arts in the Renaissance: Upon a Summer's Day</title>
+      <description>Instructor Jennifer Rose teaches students a Renaissance dance, Upon a Summer&amp;rsquo;s Day, from John Playford&amp;rsquo;s book &lt;em&gt;The English Dancing Master&lt;/em&gt;. They perform the dance&amp;rsquo;s three figures and chorus. Rose relates that this was still danced in Appalachia in the 1920s and explains dance&amp;rsquo;s role in social interaction in the Renaissance.</description>
+      <subject>National K -12 Subject::Arts::Dance::Society and History of Dance::Dance in World Cultures</subject>
+      <language>en-US</language>
+      <mimeType>video/mp4</mimeType>
+   </general>
+   <educational>
+      <educationLevel>Grade 9</educationLevel>
+      <educationLevel>Grade 10</educationLevel>
+      <educationLevel>Grade 11</educationLevel>
+      <educationLevel>Grade 12</educationLevel>
+      <audience>Learner</audience>
+      <resourceType>Audio/Visual</resourceType>
+      <resourceType>Movie/Animation</resourceType>
+   </educational>
+   <lifecycle>
+      <publicationDate>2011-05-18</publicationDate>
+      <rights>Download</rights>
+      <rights>http://www.teachersdomain.org/oerlicense/1/</rights>
+      <accessRights>Free access with registration</accessRights>
+      <contributor role="Producer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket_.gif">KET</contributor>
+      <contributor role="Developer"
+                   thumbnail="http://www.teachersdomain.org/assets/image_support/branding/logo/mono/mono_ket.gif">KET</contributor>
+   </lifecycle>
+   <accessForAll>
+      <accessMode>auditory</accessMode>
+      <accessMode>visual</accessMode>
+   </accessForAll>
+</record>
