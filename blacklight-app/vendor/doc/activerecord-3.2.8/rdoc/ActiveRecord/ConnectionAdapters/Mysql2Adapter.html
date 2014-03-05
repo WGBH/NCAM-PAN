@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: ActiveRecord::ConnectionAdapters::Mysql2Adapter</title>
+
+  <link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../../lib/active_record/connection_adapters/mysql2_adapter_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_record/connection_adapters/mysql2_adapter.rb">lib/active_record/connection_adapters/mysql2_adapter.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="AbstractMysqlAdapter.html">ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-active-3F">#active?</a></li>
+          
+          <li><a href="#method-i-create">#create</a></li>
+          
+          <li><a href="#method-i-disconnect-21">#disconnect!</a></li>
+          
+          <li><a href="#method-i-error_number">#error_number</a></li>
+          
+          <li><a href="#method-i-exec_delete">#exec_delete</a></li>
+          
+          <li><a href="#method-i-exec_insert">#exec_insert</a></li>
+          
+          <li><a href="#method-i-exec_query">#exec_query</a></li>
+          
+          <li><a href="#method-i-exec_update">#exec_update</a></li>
+          
+          <li><a href="#method-i-exec_without_stmt">#exec_without_stmt</a></li>
+          
+          <li><a href="#method-i-execute">#execute</a></li>
+          
+          <li><a href="#method-i-explain">#explain</a></li>
+          
+          <li><a href="#method-i-insert_sql">#insert_sql</a></li>
+          
+          <li><a href="#method-i-last_inserted_id">#last_inserted_id</a></li>
+          
+          <li><a href="#method-i-quote_string">#quote_string</a></li>
+          
+          <li><a href="#method-i-reconnect-21">#reconnect!</a></li>
+          
+          <li><a href="#method-i-reset-21">#reset!</a></li>
+          
+          <li><a href="#method-i-select">#select</a></li>
+          
+          <li><a href="#method-i-select_rows">#select_rows</a></li>
+          
+          <li><a href="#method-i-supports_explain-3F">#supports_explain?</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../../README_rdoc.html">README.rdoc</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../ActiveRecord.html">ActiveRecord</a></li>
+        
+          <li><a href="../../ActiveRecord/ActiveRecordError.html">ActiveRecord::ActiveRecordError</a></li>
+        
+          <li><a href="../../ActiveRecord/AdapterNotFound.html">ActiveRecord::AdapterNotFound</a></li>
+        
+          <li><a href="../../ActiveRecord/AdapterNotSpecified.html">ActiveRecord::AdapterNotSpecified</a></li>
+        
+          <li><a href="../../ActiveRecord/Aggregations.html">ActiveRecord::Aggregations</a></li>
+        
+          <li><a href="../../ActiveRecord/Aggregations/ClassMethods.html">ActiveRecord::Aggregations::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AssociationTypeMismatch.html">ActiveRecord::AssociationTypeMismatch</a></li>
+        
+          <li><a href="../../ActiveRecord/Associations.html">ActiveRecord::Associations</a></li>
+        
+          <li><a href="../../ActiveRecord/Associations/ClassMethods.html">ActiveRecord::Associations::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeAssignment.html">ActiveRecord::AttributeAssignment</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeAssignment/ClassMethods.html">ActiveRecord::AttributeAssignment::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeAssignmentError.html">ActiveRecord::AttributeAssignmentError</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods.html">ActiveRecord::AttributeMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/BeforeTypeCast.html">ActiveRecord::AttributeMethods::BeforeTypeCast</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/ClassMethods.html">ActiveRecord::AttributeMethods::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/DeprecatedUnderscoreRead.html">ActiveRecord::AttributeMethods::DeprecatedUnderscoreRead</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/DeprecatedUnderscoreRead/ClassMethods.html">ActiveRecord::AttributeMethods::DeprecatedUnderscoreRead::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/Dirty.html">ActiveRecord::AttributeMethods::Dirty</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/PrimaryKey.html">ActiveRecord::AttributeMethods::PrimaryKey</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/PrimaryKey/ClassMethods.html">ActiveRecord::AttributeMethods::PrimaryKey::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/Query.html">ActiveRecord::AttributeMethods::Query</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/Read.html">ActiveRecord::AttributeMethods::Read</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/Read/ClassMethods.html">ActiveRecord::AttributeMethods::Read::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/Serialization.html">ActiveRecord::AttributeMethods::Serialization</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/Serialization/Attribute.html">ActiveRecord::AttributeMethods::Serialization::Attribute</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/Serialization/ClassMethods.html">ActiveRecord::AttributeMethods::Serialization::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/TimeZoneConversion.html">ActiveRecord::AttributeMethods::TimeZoneConversion</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/TimeZoneConversion/ClassMethods.html">ActiveRecord::AttributeMethods::TimeZoneConversion::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/Write.html">ActiveRecord::AttributeMethods::Write</a></li>
+        
+          <li><a href="../../ActiveRecord/AttributeMethods/Write/ClassMethods.html">ActiveRecord::AttributeMethods::Write::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/AutosaveAssociation.html">ActiveRecord::AutosaveAssociation</a></li>
+        
+          <li><a href="../../ActiveRecord/AutosaveAssociation/ClassMethods.html">ActiveRecord::AutosaveAssociation::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Base.html">ActiveRecord::Base</a></li>
+        
+          <li><a href="../../ActiveRecord/Batches.html">ActiveRecord::Batches</a></li>
+        
+          <li><a href="../../ActiveRecord/Calculations.html">ActiveRecord::Calculations</a></li>
+        
+          <li><a href="../../ActiveRecord/Callbacks.html">ActiveRecord::Callbacks</a></li>
+        
+          <li><a href="../../ActiveRecord/Coders.html">ActiveRecord::Coders</a></li>
+        
+          <li><a href="../../ActiveRecord/ConfigurationError.html">ActiveRecord::ConfigurationError</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters.html">ActiveRecord::ConnectionAdapters</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/AbstractAdapter.html">ActiveRecord::ConnectionAdapters::AbstractAdapter</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/AbstractMysqlAdapter.html">ActiveRecord::ConnectionAdapters::AbstractMysqlAdapter</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/ConnectionHandler.html">ActiveRecord::ConnectionAdapters::ConnectionHandler</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/ConnectionManagement.html">ActiveRecord::ConnectionAdapters::ConnectionManagement</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/ConnectionPool.html">ActiveRecord::ConnectionAdapters::ConnectionPool</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/DatabaseLimits.html">ActiveRecord::ConnectionAdapters::DatabaseLimits</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/DatabaseStatements.html">ActiveRecord::ConnectionAdapters::DatabaseStatements</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/Mysql2Adapter.html">ActiveRecord::ConnectionAdapters::Mysql2Adapter</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/MysqlAdapter.html">ActiveRecord::ConnectionAdapters::MysqlAdapter</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/MysqlAdapter/StatementPool.html">ActiveRecord::ConnectionAdapters::MysqlAdapter::StatementPool</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/PostgreSQLAdapter.html">ActiveRecord::ConnectionAdapters::PostgreSQLAdapter</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/PostgreSQLAdapter/StatementPool.html">ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::StatementPool</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/PostgreSQLAdapter/TableDefinition.html">ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::TableDefinition</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/PostgreSQLAdapter/Utils.html">ActiveRecord::ConnectionAdapters::PostgreSQLAdapter::Utils</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/PostgreSQLColumn.html">ActiveRecord::ConnectionAdapters::PostgreSQLColumn</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/QueryCache.html">ActiveRecord::ConnectionAdapters::QueryCache</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/Quoting.html">ActiveRecord::ConnectionAdapters::Quoting</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/SQLiteAdapter.html">ActiveRecord::ConnectionAdapters::SQLiteAdapter</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/SQLiteAdapter/ExplainPrettyPrinter.html">ActiveRecord::ConnectionAdapters::SQLiteAdapter::ExplainPrettyPrinter</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/SQLiteAdapter/StatementPool.html">ActiveRecord::ConnectionAdapters::SQLiteAdapter::StatementPool</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/SQLiteAdapter/Version.html">ActiveRecord::ConnectionAdapters::SQLiteAdapter::Version</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/SchemaCache.html">ActiveRecord::ConnectionAdapters::SchemaCache</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/SchemaStatements.html">ActiveRecord::ConnectionAdapters::SchemaStatements</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/StatementPool.html">ActiveRecord::ConnectionAdapters::StatementPool</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/Table.html">ActiveRecord::ConnectionAdapters::Table</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionAdapters/TableDefinition.html">ActiveRecord::ConnectionAdapters::TableDefinition</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionNotEstablished.html">ActiveRecord::ConnectionNotEstablished</a></li>
+        
+          <li><a href="../../ActiveRecord/ConnectionTimeoutError.html">ActiveRecord::ConnectionTimeoutError</a></li>
+        
+          <li><a href="../../ActiveRecord/CounterCache.html">ActiveRecord::CounterCache</a></li>
+        
+          <li><a href="../../ActiveRecord/DangerousAttributeError.html">ActiveRecord::DangerousAttributeError</a></li>
+        
+          <li><a href="../../ActiveRecord/Delegation.html">ActiveRecord::Delegation</a></li>
+        
+          <li><a href="../../ActiveRecord/DynamicFinderMatch.html">ActiveRecord::DynamicFinderMatch</a></li>
+        
+          <li><a href="../../ActiveRecord/DynamicMatchers.html">ActiveRecord::DynamicMatchers</a></li>
+        
+          <li><a href="../../ActiveRecord/DynamicScopeMatch.html">ActiveRecord::DynamicScopeMatch</a></li>
+        
+          <li><a href="../../ActiveRecord/Explain.html">ActiveRecord::Explain</a></li>
+        
+          <li><a href="../../ActiveRecord/FinderMethods.html">ActiveRecord::FinderMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Fixtures.html">ActiveRecord::Fixtures</a></li>
+        
+          <li><a href="../../ActiveRecord/Fixtures/File.html">ActiveRecord::Fixtures::File</a></li>
+        
+          <li><a href="../../ActiveRecord/Generators.html">ActiveRecord::Generators</a></li>
+        
+          <li><a href="../../ActiveRecord/Generators/Migration.html">ActiveRecord::Generators::Migration</a></li>
+        
+          <li><a href="../../ActiveRecord/Generators/MigrationGenerator.html">ActiveRecord::Generators::MigrationGenerator</a></li>
+        
+          <li><a href="../../ActiveRecord/Generators/ModelGenerator.html">ActiveRecord::Generators::ModelGenerator</a></li>
+        
+          <li><a href="../../ActiveRecord/Generators/ObserverGenerator.html">ActiveRecord::Generators::ObserverGenerator</a></li>
+        
+          <li><a href="../../ActiveRecord/Generators/SessionMigrationGenerator.html">ActiveRecord::Generators::SessionMigrationGenerator</a></li>
+        
+          <li><a href="../../ActiveRecord/IdentityMap.html">ActiveRecord::IdentityMap</a></li>
+        
+          <li><a href="../../ActiveRecord/IdentityMap/Middleware.html">ActiveRecord::IdentityMap::Middleware</a></li>
+        
+          <li><a href="../../ActiveRecord/Inheritance.html">ActiveRecord::Inheritance</a></li>
+        
+          <li><a href="../../ActiveRecord/Inheritance/ClassMethods.html">ActiveRecord::Inheritance::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Integration.html">ActiveRecord::Integration</a></li>
+        
+          <li><a href="../../ActiveRecord/InvalidForeignKey.html">ActiveRecord::InvalidForeignKey</a></li>
+        
+          <li><a href="../../ActiveRecord/IrreversibleMigration.html">ActiveRecord::IrreversibleMigration</a></li>
+        
+          <li><a href="../../ActiveRecord/Locking.html">ActiveRecord::Locking</a></li>
+        
+          <li><a href="../../ActiveRecord/Locking/Optimistic.html">ActiveRecord::Locking::Optimistic</a></li>
+        
+          <li><a href="../../ActiveRecord/Locking/Optimistic/ClassMethods.html">ActiveRecord::Locking::Optimistic::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Locking/Pessimistic.html">ActiveRecord::Locking::Pessimistic</a></li>
+        
+          <li><a href="../../ActiveRecord/LogSubscriber.html">ActiveRecord::LogSubscriber</a></li>
+        
+          <li><a href="../../ActiveRecord/Migration.html">ActiveRecord::Migration</a></li>
+        
+          <li><a href="../../ActiveRecord/Migration/CommandRecorder.html">ActiveRecord::Migration::CommandRecorder</a></li>
+        
+          <li><a href="../../ActiveRecord/MigrationProxy.html">ActiveRecord::MigrationProxy</a></li>
+        
+          <li><a href="../../ActiveRecord/ModelSchema.html">ActiveRecord::ModelSchema</a></li>
+        
+          <li><a href="../../ActiveRecord/ModelSchema/ClassMethods.html">ActiveRecord::ModelSchema::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/MultiparameterAssignmentErrors.html">ActiveRecord::MultiparameterAssignmentErrors</a></li>
+        
+          <li><a href="../../ActiveRecord/NestedAttributes.html">ActiveRecord::NestedAttributes</a></li>
+        
+          <li><a href="../../ActiveRecord/NestedAttributes/ClassMethods.html">ActiveRecord::NestedAttributes::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/NestedAttributes/TooManyRecords.html">ActiveRecord::NestedAttributes::TooManyRecords</a></li>
+        
+          <li><a href="../../ActiveRecord/Observer.html">ActiveRecord::Observer</a></li>
+        
+          <li><a href="../../ActiveRecord/Persistence.html">ActiveRecord::Persistence</a></li>
+        
+          <li><a href="../../ActiveRecord/Persistence/ClassMethods.html">ActiveRecord::Persistence::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/PreparedStatementInvalid.html">ActiveRecord::PreparedStatementInvalid</a></li>
+        
+          <li><a href="../../ActiveRecord/QueryCache.html">ActiveRecord::QueryCache</a></li>
+        
+          <li><a href="../../ActiveRecord/QueryCache/ClassMethods.html">ActiveRecord::QueryCache::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/QueryMethods.html">ActiveRecord::QueryMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Querying.html">ActiveRecord::Querying</a></li>
+        
+          <li><a href="../../ActiveRecord/Railtie.html">ActiveRecord::Railtie</a></li>
+        
+          <li><a href="../../ActiveRecord/Railties.html">ActiveRecord::Railties</a></li>
+        
+          <li><a href="../../ActiveRecord/Railties/ControllerRuntime.html">ActiveRecord::Railties::ControllerRuntime</a></li>
+        
+          <li><a href="../../ActiveRecord/Railties/ControllerRuntime/ClassMethods.html">ActiveRecord::Railties::ControllerRuntime::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/ReadOnlyRecord.html">ActiveRecord::ReadOnlyRecord</a></li>
+        
+          <li><a href="../../ActiveRecord/ReadonlyAttributes.html">ActiveRecord::ReadonlyAttributes</a></li>
+        
+          <li><a href="../../ActiveRecord/ReadonlyAttributes/ClassMethods.html">ActiveRecord::ReadonlyAttributes::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/RecordInvalid.html">ActiveRecord::RecordInvalid</a></li>
+        
+          <li><a href="../../ActiveRecord/RecordNotFound.html">ActiveRecord::RecordNotFound</a></li>
+        
+          <li><a href="../../ActiveRecord/RecordNotSaved.html">ActiveRecord::RecordNotSaved</a></li>
+        
+          <li><a href="../../ActiveRecord/RecordNotUnique.html">ActiveRecord::RecordNotUnique</a></li>
+        
+          <li><a href="../../ActiveRecord/Reflection.html">ActiveRecord::Reflection</a></li>
+        
+          <li><a href="../../ActiveRecord/Reflection/ClassMethods.html">ActiveRecord::Reflection::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Reflection/MacroReflection.html">ActiveRecord::Reflection::MacroReflection</a></li>
+        
+          <li><a href="../../ActiveRecord/Relation.html">ActiveRecord::Relation</a></li>
+        
+          <li><a href="../../ActiveRecord/Result.html">ActiveRecord::Result</a></li>
+        
+          <li><a href="../../ActiveRecord/Rollback.html">ActiveRecord::Rollback</a></li>
+        
+          <li><a href="../../ActiveRecord/Sanitization.html">ActiveRecord::Sanitization</a></li>
+        
+          <li><a href="../../ActiveRecord/Sanitization/ClassMethods.html">ActiveRecord::Sanitization::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Schema.html">ActiveRecord::Schema</a></li>
+        
+          <li><a href="../../ActiveRecord/Scoping.html">ActiveRecord::Scoping</a></li>
+        
+          <li><a href="../../ActiveRecord/Scoping/ClassMethods.html">ActiveRecord::Scoping::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Scoping/Default.html">ActiveRecord::Scoping::Default</a></li>
+        
+          <li><a href="../../ActiveRecord/Scoping/Default/ClassMethods.html">ActiveRecord::Scoping::Default::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Scoping/Named.html">ActiveRecord::Scoping::Named</a></li>
+        
+          <li><a href="../../ActiveRecord/Scoping/Named/ClassMethods.html">ActiveRecord::Scoping::Named::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Serialization.html">ActiveRecord::Serialization</a></li>
+        
+          <li><a href="../../ActiveRecord/SerializationTypeMismatch.html">ActiveRecord::SerializationTypeMismatch</a></li>
+        
+          <li><a href="../../ActiveRecord/SessionStore.html">ActiveRecord::SessionStore</a></li>
+        
+          <li><a href="../../ActiveRecord/SessionStore/Session.html">ActiveRecord::SessionStore::Session</a></li>
+        
+          <li><a href="../../ActiveRecord/SessionStore/SqlBypass.html">ActiveRecord::SessionStore::SqlBypass</a></li>
+        
+          <li><a href="../../ActiveRecord/SpawnMethods.html">ActiveRecord::SpawnMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/StaleObjectError.html">ActiveRecord::StaleObjectError</a></li>
+        
+          <li><a href="../../ActiveRecord/StatementInvalid.html">ActiveRecord::StatementInvalid</a></li>
+        
+          <li><a href="../../ActiveRecord/Store.html">ActiveRecord::Store</a></li>
+        
+          <li><a href="../../ActiveRecord/Store/ClassMethods.html">ActiveRecord::Store::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/TestFixtures.html">ActiveRecord::TestFixtures</a></li>
+        
+          <li><a href="../../ActiveRecord/TestFixtures/ClassMethods.html">ActiveRecord::TestFixtures::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/ThrowResult.html">ActiveRecord::ThrowResult</a></li>
+        
+          <li><a href="../../ActiveRecord/Timestamp.html">ActiveRecord::Timestamp</a></li>
+        
+          <li><a href="../../ActiveRecord/Transactions.html">ActiveRecord::Transactions</a></li>
+        
+          <li><a href="../../ActiveRecord/Transactions/ClassMethods.html">ActiveRecord::Transactions::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Translation.html">ActiveRecord::Translation</a></li>
+        
+          <li><a href="../../ActiveRecord/UnknownAttributeError.html">ActiveRecord::UnknownAttributeError</a></li>
+        
+          <li><a href="../../ActiveRecord/UnknownPrimaryKey.html">ActiveRecord::UnknownPrimaryKey</a></li>
+        
+          <li><a href="../../ActiveRecord/Validations.html">ActiveRecord::Validations</a></li>
+        
+          <li><a href="../../ActiveRecord/Validations/AssociatedValidator.html">ActiveRecord::Validations::AssociatedValidator</a></li>
+        
+          <li><a href="../../ActiveRecord/Validations/ClassMethods.html">ActiveRecord::Validations::ClassMethods</a></li>
+        
+          <li><a href="../../ActiveRecord/Validations/UniquenessValidator.html">ActiveRecord::Validations::UniquenessValidator</a></li>
+        
+          <li><a href="../../ActiveRecord/WrappedDatabaseException.html">ActiveRecord::WrappedDatabaseException</a></li>
+        
+          <li><a href="../../Mysql.html">Mysql</a></li>
+        
+          <li><a href="../../Mysql/Result.html">Mysql::Result</a></li>
+        
+          <li><a href="../../Mysql/Stmt.html">Mysql::Stmt</a></li>
+        
+          <li><a href="../../Mysql/Time.html">Mysql::Time</a></li>
+        
+          <li><a href="../../ArJdbcMySQL.html">ArJdbcMySQL</a></li>
+        
+          <li><a href="../../ArJdbcMySQL/Error.html">ArJdbcMySQL::Error</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">ActiveRecord::ConnectionAdapters::Mysql2Adapter</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+      <!-- Constants -->
+      <div id="constants-list" class="section">
+        <h3 class="section-header">Constants</h3>
+        <dl>
+        
+          <dt><a name="ADAPTER_NAME">ADAPTER_NAME</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+        </dl>
+      </div>
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(connection, logger, connection_options, config)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">connection</span>, <span class="ruby-identifier">logger</span>, <span class="ruby-identifier">connection_options</span>, <span class="ruby-identifier">config</span>)
+  <span class="ruby-keyword">super</span>
+  <span class="ruby-ivar">@visitor</span> = <span class="ruby-constant">BindSubstitution</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword">self</span>
+  <span class="ruby-identifier">configure_connection</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="active-3F-method" class="method-detail ">
+          <a name="method-i-active-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">active?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>CONNECTION MANAGEMENT ====================================</p>
+            
+
+            
+            <div class="method-source-code" id="active-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 71</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">active?</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@connection</span>
+  <span class="ruby-ivar">@connection</span>.<span class="ruby-identifier">ping</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- active-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- active-3F-method -->
+
+      
+        <div id="create-method" class="method-detail method-alias">
+          <a name="method-i-create"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">create</span><span
+              class="method-args">(sql, name = nil, pk = nil, id_value = nil, sequence_name = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+          </div>
+
+          
+
+          
+          <div class="aliases">
+            Alias for: <a href="Mysql2Adapter.html#method-i-insert_sql">insert_sql</a>
+          </div>
+          
+        </div><!-- create-method -->
+
+      
+        <div id="disconnect-21-method" class="method-detail ">
+          <a name="method-i-disconnect-21"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">disconnect!</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Disconnects from the database if already connected. Otherwise, this method
+does nothing.</p>
+            
+
+            
+            <div class="method-source-code" id="disconnect-21-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 83</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">disconnect!</span>
+  <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@connection</span>.<span class="ruby-identifier">nil?</span>
+    <span class="ruby-ivar">@connection</span>.<span class="ruby-identifier">close</span>
+    <span class="ruby-ivar">@connection</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- disconnect-21-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- disconnect-21-method -->
+
+      
+        <div id="error_number-method" class="method-detail ">
+          <a name="method-i-error_number"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">error_number</span><span
+              class="method-args">(exception)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="error_number-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 59</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">error_number</span>(<span class="ruby-identifier">exception</span>)
+  <span class="ruby-identifier">exception</span>.<span class="ruby-identifier">error_number</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">exception</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:error_number</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- error_number-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- error_number-method -->
+
+      
+        <div id="exec_delete-method" class="method-detail ">
+          <a name="method-i-exec_delete"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">exec_delete</span><span
+              class="method-args">(sql, name, binds)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="exec_delete-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 237</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">exec_delete</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">name</span>, <span class="ruby-identifier">binds</span>)
+  <span class="ruby-identifier">execute</span> <span class="ruby-identifier">to_sql</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">binds</span>), <span class="ruby-identifier">name</span>
+  <span class="ruby-ivar">@connection</span>.<span class="ruby-identifier">affected_rows</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- exec_delete-source -->
+            
+          </div>
+
+          
+          <div class="aliases">
+            Also aliased as: <a href="Mysql2Adapter.html#method-i-exec_update">exec_update</a>
+          </div>
+          
+
+          
+        </div><!-- exec_delete-method -->
+
+      
+        <div id="exec_insert-method" class="method-detail ">
+          <a name="method-i-exec_insert"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">exec_insert</span><span
+              class="method-args">(sql, name, binds)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="exec_insert-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 233</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">exec_insert</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">name</span>, <span class="ruby-identifier">binds</span>)
+  <span class="ruby-identifier">execute</span> <span class="ruby-identifier">to_sql</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">binds</span>), <span class="ruby-identifier">name</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- exec_insert-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- exec_insert-method -->
+
+      
+        <div id="exec_query-method" class="method-detail ">
+          <a name="method-i-exec_query"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">exec_query</span><span
+              class="method-args">(sql, name = 'SQL', binds = [])</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="exec_query-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 214</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">exec_query</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">name</span> = <span class="ruby-string">'SQL'</span>, <span class="ruby-identifier">binds</span> = [])
+  <span class="ruby-identifier">result</span> = <span class="ruby-identifier">execute</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">name</span>)
+  <span class="ruby-constant">ActiveRecord</span><span class="ruby-operator">::</span><span class="ruby-constant">Result</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">result</span>.<span class="ruby-identifier">fields</span>, <span class="ruby-identifier">result</span>.<span class="ruby-identifier">to_a</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- exec_query-source -->
+            
+          </div>
+
+          
+          <div class="aliases">
+            Also aliased as: <a href="Mysql2Adapter.html#method-i-exec_without_stmt">exec_without_stmt</a>
+          </div>
+          
+
+          
+        </div><!-- exec_query-method -->
+
+      
+        <div id="exec_update-method" class="method-detail method-alias">
+          <a name="method-i-exec_update"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">exec_update</span><span
+              class="method-args">(sql, name, binds)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+          </div>
+
+          
+
+          
+          <div class="aliases">
+            Alias for: <a href="Mysql2Adapter.html#method-i-exec_delete">exec_delete</a>
+          </div>
+          
+        </div><!-- exec_update-method -->
+
+      
+        <div id="exec_without_stmt-method" class="method-detail method-alias">
+          <a name="method-i-exec_without_stmt"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">exec_without_stmt</span><span
+              class="method-args">(sql, name = 'SQL', binds = [])</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+          </div>
+
+          
+
+          
+          <div class="aliases">
+            Alias for: <a href="Mysql2Adapter.html#method-i-exec_query">exec_query</a>
+          </div>
+          
+        </div><!-- exec_without_stmt-method -->
+
+      
+        <div id="execute-method" class="method-detail ">
+          <a name="method-i-execute"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">execute</span><span
+              class="method-args">(sql, name = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Executes the SQL statement in the context of this connection.</p>
+            
+
+            
+            <div class="method-source-code" id="execute-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 206</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">execute</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">name</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-comment"># make sure we carry over any changes to ActiveRecord::Base.default_timezone that have been</span>
+  <span class="ruby-comment"># made since we established the connection</span>
+  <span class="ruby-ivar">@connection</span>.<span class="ruby-identifier">query_options</span>[<span class="ruby-value">:database_timezone</span>] = <span class="ruby-constant">ActiveRecord</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>.<span class="ruby-identifier">default_timezone</span>
+
+  <span class="ruby-keyword">super</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- execute-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- execute-method -->
+
+      
+        <div id="explain-method" class="method-detail ">
+          <a name="method-i-explain"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">explain</span><span
+              class="method-args">(arel, binds = [])</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>DATABASE STATEMENTS ======================================</p>
+            
+
+            
+            <div class="method-source-code" id="explain-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 97</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">explain</span>(<span class="ruby-identifier">arel</span>, <span class="ruby-identifier">binds</span> = [])
+  <span class="ruby-identifier">sql</span>     = <span class="ruby-node">&quot;EXPLAIN #{to_sql(arel, binds.dup)}&quot;</span>
+  <span class="ruby-identifier">start</span>   = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>
+  <span class="ruby-identifier">result</span>  = <span class="ruby-identifier">exec_query</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-string">'EXPLAIN'</span>, <span class="ruby-identifier">binds</span>)
+  <span class="ruby-identifier">elapsed</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">start</span>
+
+  <span class="ruby-constant">ExplainPrettyPrinter</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">pp</span>(<span class="ruby-identifier">result</span>, <span class="ruby-identifier">elapsed</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- explain-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- explain-method -->
+
+      
+        <div id="insert_sql-method" class="method-detail ">
+          <a name="method-i-insert_sql"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">insert_sql</span><span
+              class="method-args">(sql, name = nil, pk = nil, id_value = nil, sequence_name = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="insert_sql-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 227</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">insert_sql</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">name</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">pk</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">id_value</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">sequence_name</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">super</span>
+  <span class="ruby-identifier">id_value</span> <span class="ruby-operator">||</span> <span class="ruby-ivar">@connection</span>.<span class="ruby-identifier">last_id</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- insert_sql-source -->
+            
+          </div>
+
+          
+          <div class="aliases">
+            Also aliased as: <a href="Mysql2Adapter.html#method-i-create">create</a>
+          </div>
+          
+
+          
+        </div><!-- insert_sql-method -->
+
+      
+        <div id="last_inserted_id-method" class="method-detail ">
+          <a name="method-i-last_inserted_id"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">last_inserted_id</span><span
+              class="method-args">(result)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="last_inserted_id-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 243</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">last_inserted_id</span>(<span class="ruby-identifier">result</span>)
+  <span class="ruby-ivar">@connection</span>.<span class="ruby-identifier">last_id</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- last_inserted_id-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- last_inserted_id-method -->
+
+      
+        <div id="quote_string-method" class="method-detail ">
+          <a name="method-i-quote_string"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">quote_string</span><span
+              class="method-args">(string)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>QUOTING ==================================================</p>
+            
+
+            
+            <div class="method-source-code" id="quote_string-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 65</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">quote_string</span>(<span class="ruby-identifier">string</span>)
+  <span class="ruby-ivar">@connection</span>.<span class="ruby-identifier">escape</span>(<span class="ruby-identifier">string</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- quote_string-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- quote_string-method -->
+
+      
+        <div id="reconnect-21-method" class="method-detail ">
+          <a name="method-i-reconnect-21"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">reconnect!</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="reconnect-21-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reconnect!</span>
+  <span class="ruby-identifier">disconnect!</span>
+  <span class="ruby-identifier">connect</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- reconnect-21-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- reconnect-21-method -->
+
+      
+        <div id="reset-21-method" class="method-detail ">
+          <a name="method-i-reset-21"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">reset!</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="reset-21-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 90</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reset!</span>
+  <span class="ruby-identifier">disconnect!</span>
+  <span class="ruby-identifier">connect</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- reset-21-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- reset-21-method -->
+
+      
+        <div id="select-method" class="method-detail ">
+          <a name="method-i-select"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">select</span><span
+              class="method-args">(sql, name = nil, binds = [])</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns an array of record hashes with the column names as keys and column
+values as values.</p>
+            
+
+            
+            <div class="method-source-code" id="select-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 223</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">select</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">name</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">binds</span> = [])
+  <span class="ruby-identifier">exec_query</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">name</span>).<span class="ruby-identifier">to_a</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- select-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- select-method -->
+
+      
+        <div id="select_rows-method" class="method-detail ">
+          <a name="method-i-select_rows"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">select_rows</span><span
+              class="method-args">(sql, name = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns an array of arrays containing the field values. Order is the same
+as that returned by <tt>columns</tt>.</p>
+            
+
+            
+            <div class="method-source-code" id="select_rows-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 201</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">select_rows</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">name</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">execute</span>(<span class="ruby-identifier">sql</span>, <span class="ruby-identifier">name</span>).<span class="ruby-identifier">to_a</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- select_rows-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- select_rows-method -->
+
+      
+        <div id="supports_explain-3F-method" class="method-detail ">
+          <a name="method-i-supports_explain-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">supports_explain?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="supports_explain-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/active_record/connection_adapters/mysql2_adapter.rb, line 39</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">supports_explain?</span>
+  <span class="ruby-keyword">true</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- supports_explain-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- supports_explain-3F-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

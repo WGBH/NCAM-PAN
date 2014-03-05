@@ -1,0 +1,13 @@
+Tue, 06 Nov 2012 17:35:52 -0500
+lib/multi_json/adapters/oj.rb	Tue, 06 Nov 2012 17:35:45 -0500
+lib/multi_json/adapters/json_pure.rb	Tue, 06 Nov 2012 17:35:45 -0500
+lib/multi_json/adapters/json_common.rb	Tue, 06 Nov 2012 17:35:45 -0500
+lib/multi_json/adapters/nsjsonserialization.rb	Tue, 06 Nov 2012 17:35:45 -0500
+lib/multi_json/adapters/json_gem.rb	Tue, 06 Nov 2012 17:35:45 -0500
+lib/multi_json/adapters/ok_json.rb	Tue, 06 Nov 2012 17:35:45 -0500
+lib/multi_json/adapters/yajl.rb	Tue, 06 Nov 2012 17:35:45 -0500
+lib/multi_json/vendor/okjson.rb	Tue, 06 Nov 2012 17:35:45 -0500
+lib/multi_json/version.rb	Tue, 06 Nov 2012 17:35:45 -0500
+lib/multi_json.rb	Tue, 06 Nov 2012 17:35:45 -0500
+LICENSE.md	Tue, 06 Nov 2012 17:35:45 -0500
+README.md	Tue, 06 Nov 2012 17:35:45 -0500

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.nsdl.org/ncs/ncam_afa" xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+  <general>
+    <recordID>NCAM-MSP2-000-190-143-684</recordID>
+    <recordDate>2007-12-12</recordDate>
+    <url>http://www.visionlearning.com/library/module_viewer.php?mid=63</url>
+    <title>Nucleic Acids : DNA and RNA</title>
+    <description>This lesson is an introduction to the structure and function of DNA including the process of DNA replication. A short multiple-choice quiz is included.</description>
+    <subject>Life science:Biochemistry:Nucleic acids</subject>
+    <subject>Life science:Cell:Cellular structures</subject>
+    <subject>Life science:Genetics:DNA</subject>
+    <language>en-US</language>
+    <mimeType>text</mimeType>
+    <mimeType>text/html</mimeType>
+  </general>
+  <educational>
+    <educationLevel>Middle School</educationLevel>
+    <educationLevel>Grade 7</educationLevel>
+    <educationLevel>Grade 8</educationLevel>
+    <audience>Educator</audience>
+    <audience>Learner</audience>
+    <resourceType>Reference Material</resourceType>
+    <resourceType>Article</resourceType>
+    <resourceType>Audio/Visual</resourceType>
+    <resourceType>Illustration</resourceType>
+  </educational>
+  <lifecycle>
+    <publicationDate>2003</publicationDate>
+    <rights url="http://www.visionlearning.com/docs/terms.php#copyright">Visionlearning</rights>
+    <accessRights>Free access</accessRights>
+    <contributor role="Creator">Anthony Carpi</contributor>
+    <contributor role="Producer">Visionlearning</contributor>
+  </lifecycle>
+  <accessForAll>
+    <accessMode>colour</accessMode>
+    <accessMode>textual</accessMode>
+    <accessMode>visual</accessMode>
+    <displayTransformability>backgroundColour</displayTransformability>
+    <displayTransformability>fontFace</displayTransformability>
+    <displayTransformability>fontSize</displayTransformability>
+    <displayTransformability>foregroundColour</displayTransformability>
+  </accessForAll>
+</record>

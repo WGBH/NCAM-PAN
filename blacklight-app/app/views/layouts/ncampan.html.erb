@@ -1,0 +1,496 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= h(@page_title || application_name) %></title>
+    <link href="<%= opensearch_catalog_path(:format => 'xml', :only_path => false) %>" title="<%= application_name%>" type="application/opensearchdescription+xml" rel="search"/>
+    <%= favicon_link_tag asset_path('favicon.ico') %>
+    <!-- %= stylesheet_link_tag    "application" % -->
+    <style type="text/css" media="all">
+    img, a {border: none;}
+    body {font-family: 'Lucida Sans Unicode', Arial, Helvetica, sans-serif; }
+    /*body.blacklight-catalog { background: url('<%= asset_path('ncampan/search.jpg') %>') 0px 0px no-repeat; }*/
+    body.blacklight-catalog { background: transparent; }
+   
+    body.landing { background: transparent; }
+    #main_container a, #main_container a:link, #main_container a:active, #main_container a:visited {
+      color:#0E3868;
+      text-decoration: none;
+    } 
+    #documents {
+      font-size: .8em;
+      padding-top: 30px;
+      color: #555555;
+    }
+    #documents .document a,#documents .document a:visited,#documents .document a:link,#documents .document a:active {
+      color: #0E3868;
+      text-decoration: none;
+    }
+    #documents .document h3 {
+      margin-bottom:7px;
+    }
+    #documents .document h3.ui-accordion-header {
+      display:block;
+      background: #aecff0 url('<%= asset_path('ncampan/more_arrows.png') %>') 80px -33px no-repeat;
+      font-size: 1em;
+      height: 24px;
+      padding: 0;
+      width: 95px;
+      vertical-align: middle;
+      line-height: 24px;
+      text-indent: 4px;
+    }
+    #documents .document h3.ui-accordion-header.ui-state-active {
+      background: #aecff0 url('<%= asset_path('ncampan/more_arrows.png') %>')  80px -3px no-repeat;
+    }
+    #documents .document ul {
+      list-style-type: none;
+      list-style-position: inner;
+      list-style: none;
+      padding:0;
+      margin:0 6% 0 0;
+    }
+    #documents .document ul hr {
+      border:0;
+      height: 0;
+      border-top: solid 1px #aaaaaa;
+      margin-top:2.5em;
+    }
+
+    #documents .document ul li {
+      clear: right;
+    }
+
+    #documents .document  ul li.label {
+      margin-right: 1.5em;
+      float: left;
+      font-weight: 600;
+    }
+
+    #documents .document ul li.blacklight-title_s { display: none;}
+    #documents .document ul li.blacklight-description_s {margin-bottom: 1.5em;}
+    #documents .document ul li.label.blacklight-description_s {display: none;}
+    
+    /* #documents h3.index_title {display: none;} */
+    /*body.blacklight-catalog.landing { background: transparent url('<%= asset_path('ncampan/landing.jpg') %>') 0px 0px no-repeat; }*/
+    body.blacklight-catalog.landing { background: transparent; }
+    
+    #bd {position: relative;}
+    
+    body.landing #main {
+      margin-left: 333px;
+    }
+    #main {
+      margin-left: 230px;
+      margin-right: 0;
+      /*padding-left: 4.196%;
+      width: 74.825%;*/
+      width: auto;
+      min-width: 600px;
+    }
+    
+    
+    #sidebar {
+      margin-right: 20px; /*0.699%;*/
+      overflow: hidden;
+      /* width: 20.28%; */
+      position: absolute;
+      display: inline;
+      top: 0;
+      left: 10px;
+      width: 220px;
+    }
+    
+    
+    #hd {
+      height: 54px;
+      margin: 0 0 4px 0;
+      position: relative;
+    }
+    body.landing #hd {
+      height: 185px;
+    }
+    
+    #hd h1 {
+      color: #0e3868;
+      font-size: .9em;
+      font-weight: normal;
+      width: 480px;
+      position: absolute;
+      top: 30px;
+      margin: 0 0 0 437px;
+    }
+    body.landing #hd h1 {
+      font-size: 1.25em;
+      top: 74px;
+      margin: 0 0 0 333px;
+    }
+    
+    #logo {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      margin: 0 0 6px;
+      padding: 0;
+      height: 43px;
+      width: 410px;
+      background: url('<%= asset_path('ncampan/accesstonsdl-results-logo.png') %>') -8px 0px no-repeat;
+    }
+    body.landing #logo {
+      height: 57px;
+      width: 582px;
+      background: url('<%= asset_path('ncampan/accesstonsdl-index-logo.png') %>') -8px 0px no-repeat;
+    }
+    #search_bg {
+    height: 59px;
+    margin: 0;
+      background: url('<%= asset_path('ncampan/accesstonsdl-gradient-long.png') %>') 0px 0px repeat-y;}
+    #search {
+    height: 59px;
+    margin: -18px 0 0;
+      background: url('<%= asset_path('ncampan/accesstonsdl-gradient-long.png') %>') -220px 0px repeat-y;
+    }    
+    body.landing #search {
+      height: 153px;
+      margin: 10px 0 0;
+      background: url('<%= asset_path('ncampan/accesstonsdl-gradient.png') %>') 0px 0px repeat-y;
+    }
+    #search hr { display: none; }
+    #search label { display: none; }
+    #search select { display: none; }
+    #search input.q {
+      border: medium none;
+      border-radius: 3px 3px 3px 3px;
+      color: #0E3868;
+      font-size: 1em;
+      margin: 16px 0 0;
+      padding: 3px;
+      width: 193px;
+    }
+    
+    body.landing #search input.q {
+      height: 32px;
+      width: 218px;
+      margin: 59px 12px 0 22px;
+    }
+    
+    #search input.submit:hover {cursor: pointer;}
+    
+    #search input.submit {
+      background: url(<%= asset_path('ncampan/search_btn_bg.png') %>) repeat-x;
+      height: 28px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      border:none;
+      color: #0e3868;
+      font-size: 1.1em;
+      text-transform: capitalize;
+      margin:0;
+      vertical-align: bottom;
+      padding: 0 3px 4px 3px;
+    }
+    
+    body.landing #search input.submit {
+      height: 31px;
+      padding: 3px 5px 3px 5px;
+      font-size: 1.2em;
+    }
+    
+    
+    body.blacklight-catalog.landing #sidebar { display: none; }
+    
+    #landing_copy {
+      /*margin: 20px 0 0 335px; */
+      
+    }
+    #landing_copy h3 {
+      font-size: .8em;
+      font-weight: normal;
+      color: #555555;
+    }
+    #landing_copy ul, #ft ul {
+      font-size: .8em;
+      list-style-type: none;
+      padding: 0;
+      width: 400px;
+    }
+    #landing_copy li {
+      display: inline-block;
+      float: left;
+      max-width: 200px;
+      min-width: 165px;
+      padding: 0;
+    }
+
+    #facets h2 {
+      color: #0E3868;
+      font-size: 0.9em;
+      padding: 0 22px;
+    }
+
+    #facets div.facet_limit {
+      padding: 0 18px 0 0;
+    }
+
+    #facets h3.twiddle {
+      font-size: 0.8em;
+      height: 24px;
+      margin: 0 0 5px;
+      padding: 4px 4px 0 22px;
+      color: #0E3868;
+      background: #ffdc80 url('<%= asset_path('ncampan/facet_arrows-2.png') %>') 6px 0px no-repeat; 
+    }
+    #facets h3.twiddle.twiddle-open {
+      background-position: 6px -27px;
+    }
+    #facets div.facet_limit > ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0 0 .8em .6em;
+    }
+    #facets div.facet_limit > ul > li {
+      font-size: .7em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #facets div.facet_limit > ul > li span.label {
+      margin: 0 0.4em;
+    }
+    #facets div.facet_limit > ul > li span.label.selected {
+      margin-left: 0;
+    }
+    
+    #facets div.facet_limit a {
+      color: #0E3868;
+      text-decoration: none;
+    }
+    
+    
+    #facets div.facet_limit a.facet_select {
+      margin-left: 1em;
+    } 
+    #facets div.facet_limit a.remove {
+      background: url("<%= asset_path('blacklight/remove.gif') %>") 0px center no-repeat transparent;
+      display: block;
+      float: left;
+      width: 1em;
+      text-indent: -9000px;
+    }
+
+    /* Results headings and controlls */
+
+    #appliedParams {
+      color: #555555;
+    }
+    div.documentFunctions { display:none; }
+    form.folder_togle { display: none; }
+
+#appliedParams {
+background-color: #fff4d8;
+margin-bottom: 1.5em;
+/* padding: 1em 0.66em 0 1em;*/
+min-height: 90px;
+width: 732px;
+}
+.appliedFilter {
+/*
+border: 1px solid #C4DAFE;
+border-radius: 15px 15px 15px 15px;
+*/
+font-size: .7em;
+display: inline-block;
+margin-bottom: 0.66em;
+margin-right: 0.33em;
+padding: 3px 3px 3px 1.5em;
+position: relative;
+}
+.filterValue {
+background: none repeat scroll 0 0 #ffffff;
+padding-right: 37px;
+padding-left: 4px;
+-moz-box-shadow:    2px 2px 3px 1px #888888;
+-webkit-box-shadow: 2px 2px 3px 1px #888888;
+box-shadow:         2px 2px 3px 1px #888888;
+}
+/*
+a:link, a:visited, a:active {
+border-bottom: 1px dotted #AAAAAA;
+color: #2E4F81;
+text-decoration: none;
+}
+*/
+.appliedFilter .btnRemove {
+/*background: url("/assets/blacklight/remove-412d6dce60c197be10e4679b1ba5d2b8.gif") no-repeat scroll center center transparent;*/
+background: url("<%= asset_path('blacklight/remove.gif') %>") no-repeat scroll center center transparent;
+
+/*
+border-bottom: medium none;
+border-left: 1px solid #C4DAFE;
+*/
+display: block;
+height: 100%;
+outline: medium none;
+position: absolute;
+right: 0;
+text-indent: -99999px;
+top: 0;
+width: 32px;
+z-index: 5;
+}
+
+    #appliedParams h3.label {
+      font-size: .8em;
+      font-weight: normal;
+      color: #0E3868;
+      background: #fff;
+      padding: 0 0 12px 0;
+    }
+
+    div.pageEntriesInfo {
+      display: inline-block;
+      font-size: 0.8em;
+      /*
+      margin-top: 0.6em;
+      width: 150px;
+      float:left;
+      */
+    }
+    
+    #sortAndPerPage {
+      font-size: 0.8em;
+      width: 380px;
+      float: left;
+    }
+    
+    #sortAndPerPage #sort_form {
+      width: 200px;
+      float: left;
+    }
+    
+    div.pagination {
+      background: #EEEEEE;
+      width:732px;
+    }
+
+    nav.pagination-container {
+      position: relative;
+      font-size: 0.8em;
+      float:right;
+      width: 240px;
+      top: -21px;
+    }
+
+    nav.pagination-container span.next {
+      position: absolute;
+      right: 0px;
+      padding-left: 1em;
+    }
+
+    nav.pagination-container span.prev {
+      position: absolute;
+      left: 0px;
+      padding-right: 1em;
+    }
+
+    nav.pagination-container div.page_links {
+      text-align: center;
+    }
+    
+    
+    #bottom-paginator {
+      position: relative;
+      top: 100px;
+    }
+    
+    #bottom-paginator div.pagination { width: 90% }
+    
+    
+
+    #sponsorship ul {
+      margin: 160px 0 12px 235px;
+      clear: both;
+      display: none;
+    }
+
+    body.landing #sponsorship ul {
+      margin: 160px 0 12px 335px;
+    }
+    
+    body.landing #sponsorship ul.logos { display: block; }
+    
+    #sponsorship ul.links {
+      display: block;
+      padding-top: 22px;
+    }
+    
+    #sponsorship ul.links li.links {
+      float:left;
+      margin-right: 30px;
+    }
+    
+    #sponsorship ul.logos li {
+      float: left;
+    }
+    
+    #sponsorship ul.links a {
+      color: #555555;
+      text-decoration: none;
+    }
+    
+    </style>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <%= raw(render_head_content) %>
+    <script>
+    $(document).ready(function() {
+      $('#documents .document li.more-info-btn').accordion({ 
+        active: false,
+        collapsible: true
+      });
+    });
+    </script>
+  </head>
+  <% onload_text = "$('input#q').focus();" if params[:q].to_s.empty? and params[:f].to_s.empty? and params[:id].nil? %>
+  <body onload="<%= onload_text %>" class="<%= render_body_class.html_safe %>">
+    <div id="page">
+      <div id="hd">
+        <div id="logo">
+          <a href="/catalog/" style="display:block; height:42px; width: 408px;"></a>
+          <!-- h1 class="site_title"><%= link_to application_name, "/" %><%= (params[:controller] == "catalog" and !params[:id]) ? "<span id='results_text'>Search Results</span>".html_safe : "" %></h1 -->
+        </div>
+        <!-- div id="user_util_links" -->
+          <!-- %= render :partial=>'/user_util_links' % -->
+        <!-- /div -->
+        
+        <h1>STEM resources for students with disabilities</h1>
+      </div>
+      <div id="bd">
+        <div id="main">
+          <div id="main_container">
+            <%= render :partial=>'/flash_msg' %>
+            <%= yield %>
+          </div>
+        </div>
+        <div id="sidebar"><div id="search_bg"></div><%= sidebar_items.join('').html_safe %></div>
+      </div>
+      <div id="ft">
+        <!--  %= raw(@footer) % -->
+        <%= render :partial=>'layouts/footer' %>
+      </div>
+    </div>
+    <!-- GA embed -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39453118-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type ='text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

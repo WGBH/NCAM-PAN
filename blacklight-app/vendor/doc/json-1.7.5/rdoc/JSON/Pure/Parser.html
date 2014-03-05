@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: JSON::Pure::Parser</title>
+
+  <link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../../lib/json/pure/parser_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/json/pure/parser.rb">lib/json/pure/parser.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">StringScanner</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-parse">#parse</a></li>
+          
+          <li><a href="#method-i-quirks_mode-3F">#quirks_mode?</a></li>
+          
+          <li><a href="#method-i-reset">#reset</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../../README_rdoc.html">README.rdoc</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../JSON.html">JSON</a></li>
+        
+          <li><a href="../../JSON/Ext.html">JSON::Ext</a></li>
+        
+          <li><a href="../../JSON/GeneratorError.html">JSON::GeneratorError</a></li>
+        
+          <li><a href="../../JSON/GenericObject.html">JSON::GenericObject</a></li>
+        
+          <li><a href="../../JSON/JSONError.html">JSON::JSONError</a></li>
+        
+          <li><a href="../../JSON/MissingUnicodeSupport.html">JSON::MissingUnicodeSupport</a></li>
+        
+          <li><a href="../../JSON/NestingError.html">JSON::NestingError</a></li>
+        
+          <li><a href="../../JSON/ParserError.html">JSON::ParserError</a></li>
+        
+          <li><a href="../../JSON/Pure.html">JSON::Pure</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator.html">JSON::Pure::Generator</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods.html">JSON::Pure::Generator::GeneratorMethods</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods/Array.html">JSON::Pure::Generator::GeneratorMethods::Array</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods/FalseClass.html">JSON::Pure::Generator::GeneratorMethods::FalseClass</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods/Float.html">JSON::Pure::Generator::GeneratorMethods::Float</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods/Hash.html">JSON::Pure::Generator::GeneratorMethods::Hash</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods/Integer.html">JSON::Pure::Generator::GeneratorMethods::Integer</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods/NilClass.html">JSON::Pure::Generator::GeneratorMethods::NilClass</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods/Object.html">JSON::Pure::Generator::GeneratorMethods::Object</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods/String.html">JSON::Pure::Generator::GeneratorMethods::String</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods/String/Extend.html">JSON::Pure::Generator::GeneratorMethods::String::Extend</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/GeneratorMethods/TrueClass.html">JSON::Pure::Generator::GeneratorMethods::TrueClass</a></li>
+        
+          <li><a href="../../JSON/Pure/Generator/State.html">JSON::Pure::Generator::State</a></li>
+        
+          <li><a href="../../JSON/Pure/Parser.html">JSON::Pure::Parser</a></li>
+        
+          <li><a href="../../JSON/GeneratorError.html">JSON::UnparserError</a></li>
+        
+          <li><a href="../../BigDecimal.html">BigDecimal</a></li>
+        
+          <li><a href="../../Class.html">Class</a></li>
+        
+          <li><a href="../../Complex.html">Complex</a></li>
+        
+          <li><a href="../../Date.html">Date</a></li>
+        
+          <li><a href="../../DateTime.html">DateTime</a></li>
+        
+          <li><a href="../../Exception.html">Exception</a></li>
+        
+          <li><a href="../../Kernel.html">Kernel</a></li>
+        
+          <li><a href="../../OpenStruct.html">OpenStruct</a></li>
+        
+          <li><a href="../../Range.html">Range</a></li>
+        
+          <li><a href="../../Rational.html">Rational</a></li>
+        
+          <li><a href="../../Regexp.html">Regexp</a></li>
+        
+          <li><a href="../../Struct.html">Struct</a></li>
+        
+          <li><a href="../../Symbol.html">Symbol</a></li>
+        
+          <li><a href="../../Time.html">Time</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">JSON::Pure::Parser</h1>
+
+    <div id="description" class="description">
+      
+<p>This class implements the <a href="../../JSON.html">JSON</a> parser that is
+used to parse a <a href="../../JSON.html">JSON</a> string into a Ruby data
+structure.</p>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+      <!-- Constants -->
+      <div id="constants-list" class="section">
+        <h3 class="section-header">Constants</h3>
+        <dl>
+        
+          <dt><a name="ARRAY_CLOSE">ARRAY_CLOSE</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="ARRAY_OPEN">ARRAY_OPEN</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="COLLECTION_DELIMITER">COLLECTION_DELIMITER</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="EMPTY_8BIT_STRING">EMPTY_8BIT_STRING</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="FALSE">FALSE</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="FLOAT">FLOAT</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="IGNORE">IGNORE</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="INFINITY">INFINITY</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="INTEGER">INTEGER</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="MINUS_INFINITY">MINUS_INFINITY</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="NAN">NAN</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="NULL">NULL</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="OBJECT_CLOSE">OBJECT_CLOSE</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="OBJECT_OPEN">OBJECT_OPEN</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="PAIR_DELIMITER">PAIR_DELIMITER</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="STRING">STRING</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="TRUE">TRUE</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+          <dt><a name="UNESCAPE_MAP">UNESCAPE_MAP</a></dt>
+          
+          <dd class="description"><p>Unescape characters in strings.</p></dd>
+          
+        
+          <dt><a name="UNPARSED">UNPARSED</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+        </dl>
+      </div>
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(source, opts = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Creates a new <a href="Parser.html">JSON::Pure::Parser</a> instance for the
+string <em>source</em>.</p>
+
+<p>It will be configured by the <em>opts</em> hash. <em>opts</em> can have the
+following keys:</p>
+<ul><li>
+<p><b>max_nesting</b>: The maximum depth of nesting allowed in the parsed data
+structures. Disable depth checking with :max_nesting =&gt; false|nil|0, it
+defaults to 19.</p>
+</li><li>
+<p><b>allow_nan</b>: If set to true, allow NaN, Infinity and -Infinity in
+defiance of RFC 4627 to be parsed by the <a href="Parser.html">Parser</a>.
+This option defaults to false.</p>
+</li><li>
+<p><b>symbolize_names</b>: If set to true, returns symbols for the names
+(keys) in a <a href="../../JSON.html">JSON</a> object. Otherwise strings
+are returned, which is also the default.</p>
+</li><li>
+<p><b>create_additions</b>: If set to false, the <a
+href="Parser.html">Parser</a> doesn't create additions even if a matchin
+class and create_id was found. This option defaults to true.</p>
+</li><li>
+<p><b>object_class</b>: Defaults to Hash</p>
+</li><li>
+<p><b>array_class</b>: Defaults to Array</p>
+</li><li>
+<p><b>quirks_mode</b>: Enables quirks_mode for parser, that is for example
+parsing single <a href="../../JSON.html">JSON</a> values instead of
+documents is possible.</p>
+</li></ul>
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/json/pure/parser.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">source</span>, <span class="ruby-identifier">opts</span> = {})
+  <span class="ruby-identifier">opts</span> <span class="ruby-operator">||=</span> {}
+  <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@quirks_mode</span> = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:quirks_mode</span>]
+    <span class="ruby-identifier">source</span> = <span class="ruby-identifier">convert_encoding</span> <span class="ruby-identifier">source</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">super</span> <span class="ruby-identifier">source</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">opts</span>.<span class="ruby-identifier">key?</span>(<span class="ruby-value">:max_nesting</span>) <span class="ruby-comment"># defaults to 19</span>
+    <span class="ruby-ivar">@max_nesting</span> = <span class="ruby-value">19</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">opts</span>[<span class="ruby-value">:max_nesting</span>]
+    <span class="ruby-ivar">@max_nesting</span> = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:max_nesting</span>]
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@max_nesting</span> = <span class="ruby-value">0</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@allow_nan</span> = <span class="ruby-operator">!</span><span class="ruby-operator">!</span><span class="ruby-identifier">opts</span>[<span class="ruby-value">:allow_nan</span>]
+  <span class="ruby-ivar">@symbolize_names</span> = <span class="ruby-operator">!</span><span class="ruby-operator">!</span><span class="ruby-identifier">opts</span>[<span class="ruby-value">:symbolize_names</span>]
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">opts</span>.<span class="ruby-identifier">key?</span>(<span class="ruby-value">:create_additions</span>)
+    <span class="ruby-ivar">@create_additions</span> = <span class="ruby-operator">!</span><span class="ruby-operator">!</span><span class="ruby-identifier">opts</span>[<span class="ruby-value">:create_additions</span>]
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@create_additions</span> = <span class="ruby-keyword">true</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@create_id</span> = <span class="ruby-ivar">@create_additions</span> <span class="ruby-operator">?</span> <span class="ruby-constant">JSON</span>.<span class="ruby-identifier">create_id</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-ivar">@object_class</span> = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:object_class</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">Hash</span>
+  <span class="ruby-ivar">@array_class</span>  = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:array_class</span>] <span class="ruby-operator">||</span> <span class="ruby-constant">Array</span>
+  <span class="ruby-ivar">@match_string</span> = <span class="ruby-identifier">opts</span>[<span class="ruby-value">:match_string</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="parse-method" class="method-detail ">
+          <a name="method-i-parse"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">parse</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Parses the current <a href="../../JSON.html">JSON</a> string
+<em>source</em> and returns the complete data structure as a result.</p>
+            
+
+            
+            <div class="method-source-code" id="parse-source">
+<pre>
+<span class="ruby-comment"># File lib/json/pure/parser.rb, line 112</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">parse</span>
+  <span class="ruby-identifier">reset</span>
+  <span class="ruby-identifier">obj</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@quirks_mode</span>
+    <span class="ruby-keyword">while</span> <span class="ruby-operator">!</span><span class="ruby-identifier">eos?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">skip</span>(<span class="ruby-constant">IGNORE</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">eos?</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">ParserError</span>, <span class="ruby-string">&quot;source did not contain any JSON!&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">obj</span> = <span class="ruby-identifier">parse_value</span>
+      <span class="ruby-identifier">obj</span> <span class="ruby-operator">==</span> <span class="ruby-constant">UNPARSED</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">ParserError</span>, <span class="ruby-string">&quot;source did not contain any JSON!&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">until</span> <span class="ruby-identifier">eos?</span>
+      <span class="ruby-keyword">case</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-identifier">scan</span>(<span class="ruby-constant">OBJECT_OPEN</span>)
+        <span class="ruby-identifier">obj</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">ParserError</span>, <span class="ruby-node">&quot;source '#{peek(20)}' not in JSON!&quot;</span>
+        <span class="ruby-ivar">@current_nesting</span> = <span class="ruby-value">1</span>
+        <span class="ruby-identifier">obj</span> = <span class="ruby-identifier">parse_object</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-identifier">scan</span>(<span class="ruby-constant">ARRAY_OPEN</span>)
+        <span class="ruby-identifier">obj</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">ParserError</span>, <span class="ruby-node">&quot;source '#{peek(20)}' not in JSON!&quot;</span>
+        <span class="ruby-ivar">@current_nesting</span> = <span class="ruby-value">1</span>
+        <span class="ruby-identifier">obj</span> = <span class="ruby-identifier">parse_array</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-identifier">skip</span>(<span class="ruby-constant">IGNORE</span>)
+        ;
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">raise</span> <span class="ruby-constant">ParserError</span>, <span class="ruby-node">&quot;source '#{peek(20)}' not in JSON!&quot;</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">obj</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">raise</span> <span class="ruby-constant">ParserError</span>, <span class="ruby-string">&quot;source did not contain any JSON!&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">obj</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- parse-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- parse-method -->
+
+      
+        <div id="quirks_mode-3F-method" class="method-detail ">
+          <a name="method-i-quirks_mode-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">quirks_mode?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="quirks_mode-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/json/pure/parser.rb, line 101</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">quirks_mode?</span>
+  <span class="ruby-operator">!</span><span class="ruby-operator">!</span><span class="ruby-ivar">@quirks_mode</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- quirks_mode-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- quirks_mode-3F-method -->
+
+      
+        <div id="reset-method" class="method-detail ">
+          <a name="method-i-reset"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">reset</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="reset-source">
+<pre>
+<span class="ruby-comment"># File lib/json/pure/parser.rb, line 105</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reset</span>
+  <span class="ruby-keyword">super</span>
+  <span class="ruby-ivar">@current_nesting</span> = <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- reset-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- reset-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

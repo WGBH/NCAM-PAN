@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.nsdl.org/ncs/ncam_afa" xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+  <general>
+    <recordID>NCAM-MSP2-000-190-145-816</recordID>
+    <recordDate>2010-10-20</recordDate>
+    <url>http://education.eol.org/podcast/marine-iguana-1</url>
+    <title>Marine Iguana</title>
+    <description>No iguana wants to be cooked alive on a hot rock and then served up as dinner for a Galapagos hawk. But it turns out the marine iguanas have a strategy that warns them of the presence of hawks they can’t see. They learned to tune in to a kind of police scanner…the alarm calls of mockingbirds.Also included is a Learn More section that provides background information on the scientists recorded in the podcast, lessons, images, and cool facts.</description>
+    <subject>Life science</subject>
+    <subject>Life science:Animals</subject>
+    <subject>Life science:Animals:Reptiles</subject>
+    <language>en-US</language>
+    <duration>PT5M20S</duration>
+    <mimeType>audio</mimeType>
+    <mimeType>image</mimeType>
+    <mimeType>image/jpeg</mimeType>
+    <mimeType>text</mimeType>
+    <mimeType>text/html</mimeType>
+  </general>
+  <educational>
+    <educationLevel>Middle School</educationLevel>
+    <educationLevel>Grade 6</educationLevel>
+    <educationLevel>Grade 7</educationLevel>
+    <educationLevel>Grade 8</educationLevel>
+    <educationLevel>High School</educationLevel>
+    <educationLevel>Grade 9</educationLevel>
+    <educationLevel>Grade 10</educationLevel>
+    <educationLevel>Grade 11</educationLevel>
+    <educationLevel>Grade 12</educationLevel>
+    <audience>Educator</audience>
+    <audience>Learner</audience>
+    <resourceType>Instructional Material</resourceType>
+    <resourceType>Activity</resourceType>
+    <resourceType>Reference Material</resourceType>
+    <resourceType>Nonfiction Reference</resourceType>
+    <resourceType>Audio/Visual</resourceType>
+    <resourceType>Voice Recording</resourceType>
+  </educational>
+  <lifecycle>
+    <publicationDate>2009</publicationDate>
+    <rights>Creative Commons Attributions 3.0 United States License</rights>
+    <accessRights>Free access</accessRights>
+    <contributor role="Producer">Encyclopedia of Life</contributor>
+  </lifecycle>
+  <accessForAll>
+    <accessMode>auditory</accessMode>
+    <hasAdaptation>http://education.eol.org/sites/default/files/marineiguanascript.pdf</hasAdaptation>
+    <accessModeAdapted>auditory</accessModeAdapted>
+    <adaptationType>transcript</adaptationType>
+  </accessForAll>
+</record>

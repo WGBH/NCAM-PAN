@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Sprockets::Processor</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/sprockets/processor_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/sprockets/processor.rb">lib/sprockets/processor.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Tilt::Template</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-name">::name</a></li>
+          
+          <li><a href="#method-c-processor">::processor</a></li>
+          
+          <li><a href="#method-c-to_s">::to_s</a></li>
+          
+          <li><a href="#method-i-evaluate">#evaluate</a></li>
+          
+          <li><a href="#method-i-prepare">#prepare</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../Sprockets.html">Sprockets</a></li>
+        
+          <li><a href="../Sprockets/ArgumentError.html">Sprockets::ArgumentError</a></li>
+        
+          <li><a href="../Sprockets/Asset.html">Sprockets::Asset</a></li>
+        
+          <li><a href="../Sprockets/AssetAttributes.html">Sprockets::AssetAttributes</a></li>
+        
+          <li><a href="../Sprockets/Base.html">Sprockets::Base</a></li>
+        
+          <li><a href="../Sprockets/BundledAsset.html">Sprockets::BundledAsset</a></li>
+        
+          <li><a href="../Sprockets/Cache.html">Sprockets::Cache</a></li>
+        
+          <li><a href="../Sprockets/Cache/FileStore.html">Sprockets::Cache::FileStore</a></li>
+        
+          <li><a href="../Sprockets/Caching.html">Sprockets::Caching</a></li>
+        
+          <li><a href="../Sprockets/CharsetNormalizer.html">Sprockets::CharsetNormalizer</a></li>
+        
+          <li><a href="../Sprockets/CircularDependencyError.html">Sprockets::CircularDependencyError</a></li>
+        
+          <li><a href="../Sprockets/ContentTypeMismatch.html">Sprockets::ContentTypeMismatch</a></li>
+        
+          <li><a href="../Sprockets/Context.html">Sprockets::Context</a></li>
+        
+          <li><a href="../Sprockets/DirectiveProcessor.html">Sprockets::DirectiveProcessor</a></li>
+        
+          <li><a href="../Sprockets/EcoTemplate.html">Sprockets::EcoTemplate</a></li>
+        
+          <li><a href="../Sprockets/EjsTemplate.html">Sprockets::EjsTemplate</a></li>
+        
+          <li><a href="../Sprockets/EncodingError.html">Sprockets::EncodingError</a></li>
+        
+          <li><a href="../Sprockets/EngineError.html">Sprockets::EngineError</a></li>
+        
+          <li><a href="../Sprockets/Engines.html">Sprockets::Engines</a></li>
+        
+          <li><a href="../Sprockets/Environment.html">Sprockets::Environment</a></li>
+        
+          <li><a href="../Sprockets/Error.html">Sprockets::Error</a></li>
+        
+          <li><a href="../Sprockets/FileNotFound.html">Sprockets::FileNotFound</a></li>
+        
+          <li><a href="../Sprockets/FileOutsidePaths.html">Sprockets::FileOutsidePaths</a></li>
+        
+          <li><a href="../Sprockets/Index.html">Sprockets::Index</a></li>
+        
+          <li><a href="../Sprockets/JstProcessor.html">Sprockets::JstProcessor</a></li>
+        
+          <li><a href="../Sprockets/Mime.html">Sprockets::Mime</a></li>
+        
+          <li><a href="../Sprockets/ProcessedAsset.html">Sprockets::ProcessedAsset</a></li>
+        
+          <li><a href="../Sprockets/ProcessedAsset/DependencyFile.html">Sprockets::ProcessedAsset::DependencyFile</a></li>
+        
+          <li><a href="../Sprockets/Processing.html">Sprockets::Processing</a></li>
+        
+          <li><a href="../Sprockets/Processor.html">Sprockets::Processor</a></li>
+        
+          <li><a href="../Sprockets/SafetyColons.html">Sprockets::SafetyColons</a></li>
+        
+          <li><a href="../Sprockets/Server.html">Sprockets::Server</a></li>
+        
+          <li><a href="../Sprockets/StaticAsset.html">Sprockets::StaticAsset</a></li>
+        
+          <li><a href="../Sprockets/Trail.html">Sprockets::Trail</a></li>
+        
+          <li><a href="../Sprockets/UnserializeError.html">Sprockets::UnserializeError</a></li>
+        
+          <li><a href="../Sprockets/Utils.html">Sprockets::Utils</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Sprockets::Processor</h1>
+
+    <div id="description" class="description">
+      
+<p>`Processor` creates an anonymous processor class from a block.</p>
+
+<pre>register_preprocessor :my_processor do |context, data|
+  # ...
+end</pre>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="name-method" class="method-detail ">
+          <a name="method-c-name"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">name</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="name-source">
+<pre>
+<span class="ruby-comment"># File lib/sprockets/processor.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">name</span>
+  <span class="ruby-node">&quot;Sprockets::Processor (#{@name})&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- name-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- name-method -->
+
+      
+        <div id="processor-method" class="method-detail ">
+          <a name="method-c-processor"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">processor</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>`processor` is a lambda or block</p>
+            
+
+            
+            <div class="method-source-code" id="processor-source">
+<pre>
+<span class="ruby-comment"># File lib/sprockets/processor.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">processor</span>
+  <span class="ruby-ivar">@processor</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- processor-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- processor-method -->
+
+      
+        <div id="to_s-method" class="method-detail ">
+          <a name="method-c-to_s"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_s</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="to_s-source">
+<pre>
+<span class="ruby-comment"># File lib/sprockets/processor.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">to_s</span>
+  <span class="ruby-identifier">name</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_s-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_s-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="evaluate-method" class="method-detail ">
+          <a name="method-i-evaluate"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">evaluate</span><span
+              class="method-args">(context, locals)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Call processor block with `context` and `data`.</p>
+            
+
+            
+            <div class="method-source-code" id="evaluate-source">
+<pre>
+<span class="ruby-comment"># File lib/sprockets/processor.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">context</span>, <span class="ruby-identifier">locals</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">processor</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">context</span>, <span class="ruby-identifier">data</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- evaluate-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- evaluate-method -->
+
+      
+        <div id="prepare-method" class="method-detail ">
+          <a name="method-i-prepare"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">prepare</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="prepare-source">
+<pre>
+<span class="ruby-comment"># File lib/sprockets/processor.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">prepare</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- prepare-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- prepare-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

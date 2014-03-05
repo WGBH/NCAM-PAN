@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: ActiveResource::Connection</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/active_resource/http_mock_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_resource/http_mock.rb">lib/active_resource/http_mock.rb</a></li>
+          
+            <li><a href="../lib/active_resource/connection_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_resource/connection.rb">lib/active_resource/connection.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Object</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-c-requests">::requests</a></li>
+          
+          <li><a href="#method-i-auth_type-3D">#auth_type=</a></li>
+          
+          <li><a href="#method-i-delete">#delete</a></li>
+          
+          <li><a href="#method-i-get">#get</a></li>
+          
+          <li><a href="#method-i-head">#head</a></li>
+          
+          <li><a href="#method-i-password-3D">#password=</a></li>
+          
+          <li><a href="#method-i-post">#post</a></li>
+          
+          <li><a href="#method-i-proxy-3D">#proxy=</a></li>
+          
+          <li><a href="#method-i-put">#put</a></li>
+          
+          <li><a href="#method-i-site-3D">#site=</a></li>
+          
+          <li><a href="#method-i-ssl_options-3D">#ssl_options=</a></li>
+          
+          <li><a href="#method-i-timeout-3D">#timeout=</a></li>
+          
+          <li><a href="#method-i-user-3D">#user=</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../ActiveResource.html">ActiveResource</a></li>
+        
+          <li><a href="../ActiveResource/Base.html">ActiveResource::Base</a></li>
+        
+          <li><a href="../ActiveResource/Connection.html">ActiveResource::Connection</a></li>
+        
+          <li><a href="../ActiveResource/CustomMethods.html">ActiveResource::CustomMethods</a></li>
+        
+          <li><a href="../ActiveResource/CustomMethods/ClassMethods.html">ActiveResource::CustomMethods::ClassMethods</a></li>
+        
+          <li><a href="../ActiveResource/Errors.html">ActiveResource::Errors</a></li>
+        
+          <li><a href="../ActiveResource/Formats.html">ActiveResource::Formats</a></li>
+        
+          <li><a href="../ActiveResource/Formats/JsonFormat.html">ActiveResource::Formats::JsonFormat</a></li>
+        
+          <li><a href="../ActiveResource/Formats/XmlFormat.html">ActiveResource::Formats::XmlFormat</a></li>
+        
+          <li><a href="../ActiveResource/HttpMock.html">ActiveResource::HttpMock</a></li>
+        
+          <li><a href="../ActiveResource/InvalidRequestError.html">ActiveResource::InvalidRequestError</a></li>
+        
+          <li><a href="../ActiveResource/LogSubscriber.html">ActiveResource::LogSubscriber</a></li>
+        
+          <li><a href="../ActiveResource/Observing.html">ActiveResource::Observing</a></li>
+        
+          <li><a href="../ActiveResource/Railtie.html">ActiveResource::Railtie</a></li>
+        
+          <li><a href="../ActiveResource/Request.html">ActiveResource::Request</a></li>
+        
+          <li><a href="../ActiveResource/Response.html">ActiveResource::Response</a></li>
+        
+          <li><a href="../ActiveResource/SSLError.html">ActiveResource::SSLError</a></li>
+        
+          <li><a href="../ActiveResource/TimeoutError.html">ActiveResource::TimeoutError</a></li>
+        
+          <li><a href="../ActiveResource/Validations.html">ActiveResource::Validations</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">ActiveResource::Connection</h1>
+
+    <div id="description" class="description">
+      
+<p>Class to handle connections to remote web services. This class is used by
+<a href="Base.html">ActiveResource::Base</a> to interface with REST
+services.</p>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+      <!-- Constants -->
+      <div id="constants-list" class="section">
+        <h3 class="section-header">Constants</h3>
+        <dl>
+        
+          <dt><a name="HTTP_FORMAT_HEADER_NAMES">HTTP_FORMAT_HEADER_NAMES</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+        </dl>
+      </div>
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="auth_type-attribute-method" class="method-detail">
+          <a name="auth_type"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">auth_type</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="format-attribute-method" class="method-detail">
+          <a name="format"></a>
+          
+          <a name="format="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">format</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="password-attribute-method" class="method-detail">
+          <a name="password"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">password</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="proxy-attribute-method" class="method-detail">
+          <a name="proxy"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">proxy</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="site-attribute-method" class="method-detail">
+          <a name="site"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">site</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="ssl_options-attribute-method" class="method-detail">
+          <a name="ssl_options"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">ssl_options</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="timeout-attribute-method" class="method-detail">
+          <a name="timeout"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">timeout</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="user-attribute-method" class="method-detail">
+          <a name="user"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">user</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(site, format = ActiveResource::Formats::JsonFormat)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>The <tt>site</tt> parameter is required and will set the <tt>site</tt>
+attribute to the URI for the remote resource service.</p>
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">site</span>, <span class="ruby-identifier">format</span> = <span class="ruby-constant">ActiveResource</span><span class="ruby-operator">::</span><span class="ruby-constant">Formats</span><span class="ruby-operator">::</span><span class="ruby-constant">JsonFormat</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">'Missing site URI'</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">site</span>
+  <span class="ruby-ivar">@user</span> = <span class="ruby-ivar">@password</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">site</span> = <span class="ruby-identifier">site</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">format</span> = <span class="ruby-identifier">format</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+        <div id="requests-method" class="method-detail ">
+          <a name="method-c-requests"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">requests</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="requests-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">requests</span>
+  <span class="ruby-identifier">@@requests</span> <span class="ruby-operator">||=</span> []
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- requests-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- requests-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="auth_type-3D-method" class="method-detail ">
+          <a name="method-i-auth_type-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">auth_type=</span><span
+              class="method-args">(auth_type)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Sets the auth type for remote service.</p>
+            
+
+            
+            <div class="method-source-code" id="auth_type-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 63</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">auth_type=</span>(<span class="ruby-identifier">auth_type</span>)
+  <span class="ruby-ivar">@auth_type</span> = <span class="ruby-identifier">legitimize_auth_type</span>(<span class="ruby-identifier">auth_type</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- auth_type-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- auth_type-3D-method -->
+
+      
+        <div id="delete-method" class="method-detail ">
+          <a name="method-i-delete"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">delete</span><span
+              class="method-args">(path, headers = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Executes a DELETE request (see HTTP protocol documentation if unfamiliar).
+Used to delete resources.</p>
+            
+
+            
+            <div class="method-source-code" id="delete-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 85</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">headers</span> = {})
+  <span class="ruby-identifier">with_auth</span> { <span class="ruby-identifier">request</span>(<span class="ruby-value">:delete</span>, <span class="ruby-identifier">path</span>, <span class="ruby-identifier">build_request_headers</span>(<span class="ruby-identifier">headers</span>, <span class="ruby-value">:delete</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">site</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">path</span>))) }
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- delete-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- delete-method -->
+
+      
+        <div id="get-method" class="method-detail ">
+          <a name="method-i-get"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">get</span><span
+              class="method-args">(path, headers = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Executes a GET request. Used to get (find) resources.</p>
+            
+
+            
+            <div class="method-source-code" id="get-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 79</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">headers</span> = {})
+  <span class="ruby-identifier">with_auth</span> { <span class="ruby-identifier">request</span>(<span class="ruby-value">:get</span>, <span class="ruby-identifier">path</span>, <span class="ruby-identifier">build_request_headers</span>(<span class="ruby-identifier">headers</span>, <span class="ruby-value">:get</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">site</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">path</span>))) }
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- get-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- get-method -->
+
+      
+        <div id="head-method" class="method-detail ">
+          <a name="method-i-head"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">head</span><span
+              class="method-args">(path, headers = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Executes a HEAD request. Used to obtain meta-information about resources,
+such as whether they exist and their size (via response headers).</p>
+            
+
+            
+            <div class="method-source-code" id="head-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 103</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">head</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">headers</span> = {})
+  <span class="ruby-identifier">with_auth</span> { <span class="ruby-identifier">request</span>(<span class="ruby-value">:head</span>, <span class="ruby-identifier">path</span>, <span class="ruby-identifier">build_request_headers</span>(<span class="ruby-identifier">headers</span>, <span class="ruby-value">:head</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">site</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">path</span>))) }
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- head-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- head-method -->
+
+      
+        <div id="password-3D-method" class="method-detail ">
+          <a name="method-i-password-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">password=</span><span
+              class="method-args">(password)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Sets the password for remote service.</p>
+            
+
+            
+            <div class="method-source-code" id="password-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 58</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">password=</span>(<span class="ruby-identifier">password</span>)
+  <span class="ruby-ivar">@password</span> = <span class="ruby-identifier">password</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- password-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- password-3D-method -->
+
+      
+        <div id="post-method" class="method-detail ">
+          <a name="method-i-post"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">post</span><span
+              class="method-args">(path, body = '', headers = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Executes a POST request. Used to create new resources.</p>
+            
+
+            
+            <div class="method-source-code" id="post-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 97</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">body</span> = <span class="ruby-string">''</span>, <span class="ruby-identifier">headers</span> = {})
+  <span class="ruby-identifier">with_auth</span> { <span class="ruby-identifier">request</span>(<span class="ruby-value">:post</span>, <span class="ruby-identifier">path</span>, <span class="ruby-identifier">body</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-identifier">build_request_headers</span>(<span class="ruby-identifier">headers</span>, <span class="ruby-value">:post</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">site</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">path</span>))) }
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- post-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- post-method -->
+
+      
+        <div id="proxy-3D-method" class="method-detail ">
+          <a name="method-i-proxy-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">proxy=</span><span
+              class="method-args">(proxy)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Set the proxy for remote service.</p>
+            
+
+            
+            <div class="method-source-code" id="proxy-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 48</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">proxy=</span>(<span class="ruby-identifier">proxy</span>)
+  <span class="ruby-ivar">@proxy</span> = <span class="ruby-identifier">proxy</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">URI</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">proxy</span> <span class="ruby-operator">:</span> <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parser</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">proxy</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- proxy-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- proxy-3D-method -->
+
+      
+        <div id="put-method" class="method-detail ">
+          <a name="method-i-put"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">put</span><span
+              class="method-args">(path, body = '', headers = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Executes a PUT request (see HTTP protocol documentation if unfamiliar).
+Used to update resources.</p>
+            
+
+            
+            <div class="method-source-code" id="put-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 91</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">put</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">body</span> = <span class="ruby-string">''</span>, <span class="ruby-identifier">headers</span> = {})
+  <span class="ruby-identifier">with_auth</span> { <span class="ruby-identifier">request</span>(<span class="ruby-value">:put</span>, <span class="ruby-identifier">path</span>, <span class="ruby-identifier">body</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-identifier">build_request_headers</span>(<span class="ruby-identifier">headers</span>, <span class="ruby-value">:put</span>, <span class="ruby-keyword">self</span>.<span class="ruby-identifier">site</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">path</span>))) }
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- put-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- put-method -->
+
+      
+        <div id="site-3D-method" class="method-detail ">
+          <a name="method-i-site-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">site=</span><span
+              class="method-args">(site)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Set URI for remote service.</p>
+            
+
+            
+            <div class="method-source-code" id="site-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">site=</span>(<span class="ruby-identifier">site</span>)
+  <span class="ruby-ivar">@site</span> = <span class="ruby-identifier">site</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">URI</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">site</span> <span class="ruby-operator">:</span> <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parser</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">site</span>)
+  <span class="ruby-ivar">@user</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parser</span>.<span class="ruby-identifier">unescape</span>(<span class="ruby-ivar">@site</span>.<span class="ruby-identifier">user</span>) <span class="ruby-keyword">if</span> <span class="ruby-ivar">@site</span>.<span class="ruby-identifier">user</span>
+  <span class="ruby-ivar">@password</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">parser</span>.<span class="ruby-identifier">unescape</span>(<span class="ruby-ivar">@site</span>.<span class="ruby-identifier">password</span>) <span class="ruby-keyword">if</span> <span class="ruby-ivar">@site</span>.<span class="ruby-identifier">password</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- site-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- site-3D-method -->
+
+      
+        <div id="ssl_options-3D-method" class="method-detail ">
+          <a name="method-i-ssl_options-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">ssl_options=</span><span
+              class="method-args">(opts={})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Hash of options applied to Net::HTTP instance when <tt>site</tt> protocol
+is ‘https’.</p>
+            
+
+            
+            <div class="method-source-code" id="ssl_options-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ssl_options=</span>(<span class="ruby-identifier">opts</span>={})
+  <span class="ruby-ivar">@ssl_options</span> = <span class="ruby-identifier">opts</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- ssl_options-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- ssl_options-3D-method -->
+
+      
+        <div id="timeout-3D-method" class="method-detail ">
+          <a name="method-i-timeout-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">timeout=</span><span
+              class="method-args">(timeout)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Sets the number of seconds after which HTTP requests to the remote service
+should time out.</p>
+            
+
+            
+            <div class="method-source-code" id="timeout-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">timeout=</span>(<span class="ruby-identifier">timeout</span>)
+  <span class="ruby-ivar">@timeout</span> = <span class="ruby-identifier">timeout</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- timeout-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- timeout-3D-method -->
+
+      
+        <div id="user-3D-method" class="method-detail ">
+          <a name="method-i-user-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">user=</span><span
+              class="method-args">(user)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Sets the user for remote service.</p>
+            
+
+            
+            <div class="method-source-code" id="user-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/connection.rb, line 53</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">user=</span>(<span class="ruby-identifier">user</span>)
+  <span class="ruby-ivar">@user</span> = <span class="ruby-identifier">user</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- user-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- user-3D-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

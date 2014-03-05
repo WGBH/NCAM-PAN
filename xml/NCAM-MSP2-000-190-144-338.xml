@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.nsdl.org/ncs/ncam_afa" xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+  <general>
+    <recordID>NCAM-MSP2-000-190-144-338</recordID>
+    <recordDate>2007-12-12</recordDate>
+    <url>http://www.sciencenetlinks.com/sci_update.cfm?DocID=202</url>
+    <title>Germy Surfaces</title>
+    <description>If your brother or sister gets a cold, there is a good chance that you ll pick up the same bug either directly or from something he or she touched or sneezed on. In this Science Update, you'll find out how long a germ can hang around and wait for its next victim. Available as a podcast and written transcript with some background information.</description>
+    <subject>Life science</subject>
+    <subject>Life science:Disease</subject>
+    <subject>Life science:Viruses</subject>
+    <subject>Personal and social issues</subject>
+    <subject>Personal and social issues:Personal health</subject>
+    <subject>Personal and social issues:Personal health:Disease</subject>
+    <subject>Personal and social issues:Personal health:Personal hygiene</subject>
+    <language>en-US</language>
+    <mimeType>audio</mimeType>
+    <mimeType>text</mimeType>
+    <mimeType>text/html</mimeType>
+  </general>
+  <educational>
+    <educationLevel>Middle School</educationLevel>
+    <educationLevel>High School</educationLevel>
+    <audience>Learner</audience>
+    <resourceType>Reference Material</resourceType>
+    <resourceType>Nonfiction Reference</resourceType>
+    <resourceType>Audio/Visual</resourceType>
+    <resourceType>Voice Recording</resourceType>
+  </educational>
+  <lifecycle>
+    <publicationDate>2004-02-02</publicationDate>
+    <rights>AAAS</rights>
+    <accessRights>Free access</accessRights>
+    <contributor role="Producer">AAAS</contributor>
+  </lifecycle>
+  <accessForAll>
+    <accessMode>auditory</accessMode>
+    <hasAdaptation>http://sciencenetlinks.com/science-news/science-updates/germy-surfaces/</hasAdaptation>
+    <accessModeAdapted>auditory</accessModeAdapted>
+    <adaptationType>transcript</adaptationType>
+  </accessForAll>
+</record>

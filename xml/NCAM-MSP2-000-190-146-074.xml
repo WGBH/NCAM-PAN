@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.nsdl.org/ncs/ncam_afa" xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+  <general>
+    
+    
+    <recordID>NCAM-MSP2-000-190-146-074</recordID><recordDate>2013-02-14</recordDate>
+    
+    
+    <url>url_goes_here</url><title>COPIED RECORD</title><description>description_goes_here</description><subject>History and nature of science</subject>
+    <subject>History and nature of science:Scientific breakthroughs</subject>
+    <subject>History and nature of science:Scientific breakthroughs:Scientists and inventors</subject>
+    <subject>Life science</subject>
+    <subject>Life science:Animals</subject>
+    <subject>Life science:Animals:Boney fish</subject>
+    <language>en-US</language>
+    <duration>PT5M58S</duration>
+    <mimeType>audio</mimeType>
+    <mimeType>image</mimeType>
+    <mimeType>image/jpeg</mimeType>
+    <mimeType>text</mimeType>
+    <mimeType>text/html</mimeType>
+  </general>
+  <educational>
+    <educationLevel>Middle School</educationLevel>
+    <educationLevel>Grade 6</educationLevel>
+    <educationLevel>Grade 7</educationLevel>
+    <educationLevel>Grade 8</educationLevel>
+    <educationLevel>High School</educationLevel>
+    <educationLevel>Grade 9</educationLevel>
+    <educationLevel>Grade 10</educationLevel>
+    <educationLevel>Grade 11</educationLevel>
+    <educationLevel>Grade 12</educationLevel>
+    <audience>Educator</audience>
+    <audience>Learner</audience>
+    <resourceType>Instructional Material</resourceType>
+    <resourceType>Activity</resourceType>
+    <resourceType>Reference Material</resourceType>
+    <resourceType>Nonfiction Reference</resourceType>
+    <resourceType>Audio/Visual</resourceType>
+    <resourceType>Voice Recording</resourceType>
+  </educational>
+  <lifecycle>
+    <publicationDate>2009</publicationDate>
+    <rights>Creative Commons Attributions 3.0 United States License</rights>
+    <accessRights>Free access</accessRights>
+    <contributor role="Producer">Encyclopedia of Life</contributor>
+  </lifecycle>
+  <accessForAll>
+    <accessMode>auditory</accessMode>
+    <hasAdaptation>http://education.eol.org/sites/default/files/tuna%20_%20script.pdf</hasAdaptation>
+    <accessModeAdapted>auditory</accessModeAdapted>
+    <adaptationType>transcript</adaptationType>
+  </accessForAll>
+</record>

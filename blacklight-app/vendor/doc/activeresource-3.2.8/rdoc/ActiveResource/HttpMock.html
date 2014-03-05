@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: ActiveResource::HttpMock</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/active_resource/http_mock_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_resource/http_mock.rb">lib/active_resource/http_mock.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Object</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-delete_responses_to_replace">::delete_responses_to_replace</a></li>
+          
+          <li><a href="#method-c-requests">::requests</a></li>
+          
+          <li><a href="#method-c-reset-21">::reset!</a></li>
+          
+          <li><a href="#method-c-respond_to">::respond_to</a></li>
+          
+          <li><a href="#method-c-responses">::responses</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../README_rdoc.html">README.rdoc</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../ActiveResource.html">ActiveResource</a></li>
+        
+          <li><a href="../ActiveResource/Base.html">ActiveResource::Base</a></li>
+        
+          <li><a href="../ActiveResource/Connection.html">ActiveResource::Connection</a></li>
+        
+          <li><a href="../ActiveResource/CustomMethods.html">ActiveResource::CustomMethods</a></li>
+        
+          <li><a href="../ActiveResource/CustomMethods/ClassMethods.html">ActiveResource::CustomMethods::ClassMethods</a></li>
+        
+          <li><a href="../ActiveResource/Errors.html">ActiveResource::Errors</a></li>
+        
+          <li><a href="../ActiveResource/Formats.html">ActiveResource::Formats</a></li>
+        
+          <li><a href="../ActiveResource/Formats/JsonFormat.html">ActiveResource::Formats::JsonFormat</a></li>
+        
+          <li><a href="../ActiveResource/Formats/XmlFormat.html">ActiveResource::Formats::XmlFormat</a></li>
+        
+          <li><a href="../ActiveResource/HttpMock.html">ActiveResource::HttpMock</a></li>
+        
+          <li><a href="../ActiveResource/InvalidRequestError.html">ActiveResource::InvalidRequestError</a></li>
+        
+          <li><a href="../ActiveResource/LogSubscriber.html">ActiveResource::LogSubscriber</a></li>
+        
+          <li><a href="../ActiveResource/Observing.html">ActiveResource::Observing</a></li>
+        
+          <li><a href="../ActiveResource/Railtie.html">ActiveResource::Railtie</a></li>
+        
+          <li><a href="../ActiveResource/Request.html">ActiveResource::Request</a></li>
+        
+          <li><a href="../ActiveResource/Response.html">ActiveResource::Response</a></li>
+        
+          <li><a href="../ActiveResource/SSLError.html">ActiveResource::SSLError</a></li>
+        
+          <li><a href="../ActiveResource/TimeoutError.html">ActiveResource::TimeoutError</a></li>
+        
+          <li><a href="../ActiveResource/Validations.html">ActiveResource::Validations</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">ActiveResource::HttpMock</h1>
+
+    <div id="description" class="description">
+      
+<p>One thing that has always been a pain with remote web services is testing. 
+The <a href="HttpMock.html">HttpMock</a> class makes it easy to test your
+Active Resource models by creating a set of mock responses to specific
+requests.</p>
+
+<p>To test your Active Resource model, you simply call the <a
+href="HttpMock.html#method-c-respond_to">ActiveResource::HttpMock.respond_to</a>
+method with an attached block. The block declares a set of URIs with
+expected input, and the output each request should return. The passed in
+block has any number of entries in the following generalized format:</p>
+
+<pre>mock.http_method(path, request_headers = {}, body = nil, status = 200, response_headers = {})</pre>
+<ul><li>
+<p><tt>http_method</tt> - The HTTP method to listen for.  This can be
+<tt>get</tt>, <tt>post</tt>, <tt>put</tt>, <tt>delete</tt> or
+<tt>head</tt>.</p>
+</li><li>
+<p><tt>path</tt> - A string, starting with a "/", defining the URI that is
+expected to be called.</p>
+</li><li>
+<p><tt>request_headers</tt> - Headers that are expected along with the
+request.  This argument uses a hash format, such as <tt>{
+&quot;Content-Type&quot; =&gt; &quot;application/json&quot; }</tt>.  This
+mock will only trigger if your tests sends a request with identical
+headers.</p>
+</li><li>
+<p><tt>body</tt> - The data to be returned.  This should be a string of Active
+Resource parseable content, such as Json.</p>
+</li><li>
+<p><tt>status</tt> - The HTTP response code, as an integer, to return with the
+response.</p>
+</li><li>
+<p><tt>response_headers</tt> - Headers to be returned with the response.  Uses
+the same hash format as <tt>request_headers</tt> listed above.</p>
+</li></ul>
+
+<p>In order for a mock to deliver its content, the incoming request must match
+by the <tt>http_method</tt>, <tt>path</tt> and <tt>request_headers</tt>. If
+no match is found an <tt>InvalidRequestError</tt> exception will be raised
+showing you what request it could not find a response for and also what
+requests and response pairs have been recorded so you can create a new mock
+for that request.</p>
+
+<h4>Example</h4>
+
+<pre>def setup
+  @matz  = { :person =&gt; { :id =&gt; 1, :name =&gt; &quot;Matz&quot; } }.to_json
+  ActiveResource::HttpMock.respond_to do |mock|
+    mock.post   &quot;/people.json&quot;,   {}, @matz, 201, &quot;Location&quot; =&gt; &quot;/people/1.json&quot;
+    mock.get    &quot;/people/1.json&quot;, {}, @matz
+    mock.put    &quot;/people/1.json&quot;, {}, nil, 204
+    mock.delete &quot;/people/1.json&quot;, {}, nil, 200
+  end
+end
+
+def test_get_matz
+  person = Person.find(1)
+  assert_equal &quot;Matz&quot;, person.name
+end</pre>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="delete_responses_to_replace-method" class="method-detail ">
+          <a name="method-c-delete_responses_to_replace"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">delete_responses_to_replace</span><span
+              class="method-args">(new_responses)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="delete_responses_to_replace-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/http_mock.rb, line 205</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_responses_to_replace</span>(<span class="ruby-identifier">new_responses</span>)
+  <span class="ruby-identifier">new_responses</span>.<span class="ruby-identifier">each</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">nr</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">request_to_remove</span> = <span class="ruby-identifier">nr</span>[<span class="ruby-value">0</span>]
+    <span class="ruby-identifier">@@responses</span> = <span class="ruby-identifier">responses</span>.<span class="ruby-identifier">delete_if</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">r</span><span class="ruby-operator">|</span> <span class="ruby-identifier">r</span>[<span class="ruby-value">0</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">request_to_remove</span>}
+  }
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- delete_responses_to_replace-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- delete_responses_to_replace-method -->
+
+      
+        <div id="requests-method" class="method-detail ">
+          <a name="method-c-requests"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">requests</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns an array of all request objects that have been sent to the mock.
+You can use this to check if your model actually sent an HTTP request.</p>
+
+<h4>Example</h4>
+
+<pre>def setup
+  @matz  = { :person =&gt; { :id =&gt; 1, :name =&gt; &quot;Matz&quot; } }.to_json
+  ActiveResource::HttpMock.respond_to do |mock|
+    mock.get &quot;/people/1.json&quot;, {}, @matz
+  end
+end
+
+def test_should_request_remote_service
+  person = Person.find(1)  # Call the remote service
+
+  # This request object has the same HTTP method and path as declared by the mock
+  expected_request = ActiveResource::Request.new(:get, &quot;/people/1.json&quot;)
+
+  # Assert that the mock received, and responded to, the expected request from the model
+  assert ActiveResource::HttpMock.requests.include?(expected_request)
+end</pre>
+            
+
+            
+            <div class="method-source-code" id="requests-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/http_mock.rb, line 103</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">requests</span>
+  <span class="ruby-identifier">@@requests</span> <span class="ruby-operator">||=</span> []
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- requests-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- requests-method -->
+
+      
+        <div id="reset-21-method" class="method-detail ">
+          <a name="method-c-reset-21"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">reset!</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Deletes all logged requests and responses.</p>
+            
+
+            
+            <div class="method-source-code" id="reset-21-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/http_mock.rb, line 213</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reset!</span>
+  <span class="ruby-identifier">requests</span>.<span class="ruby-identifier">clear</span>
+  <span class="ruby-identifier">responses</span>.<span class="ruby-identifier">clear</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- reset-21-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- reset-21-method -->
+
+      
+        <div id="respond_to-method" class="method-detail ">
+          <a name="method-c-respond_to"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">respond_to</span><span
+              class="method-args">(*args)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Accepts a block which declares a set of requests and responses for the <a
+href="HttpMock.html">HttpMock</a> to respond to in the following format:</p>
+
+<pre>mock.http_method(path, request_headers = {}, body = nil, status = 200, response_headers = {})</pre>
+
+<h3>Example</h3>
+
+<pre>@matz  = { :person =&gt; { :id =&gt; 1, :name =&gt; &quot;Matz&quot; } }.to_json
+ActiveResource::HttpMock.respond_to do |mock|
+  mock.post   &quot;/people.json&quot;,   {}, @matz, 201, &quot;Location&quot; =&gt; &quot;/people/1.json&quot;
+  mock.get    &quot;/people/1.json&quot;, {}, @matz
+  mock.put    &quot;/people/1.json&quot;, {}, nil, 204
+  mock.delete &quot;/people/1.json&quot;, {}, nil, 200
+end</pre>
+
+<p>Alternatively, accepts a hash of <tt>{Request =&gt; Response}</tt> pairs
+allowing you to generate these the following format:</p>
+
+<pre>ActiveResource::Request.new(method, path, body, request_headers)
+ActiveResource::Response.new(body, status, response_headers)</pre>
+
+<h3>Example</h3>
+
+<p><a href="Request.html#method-c-new">Request.new</a>(:#{method}, path, nil,
+request_headers)</p>
+
+<pre>@matz  = { :person =&gt; { :id =&gt; 1, :name =&gt; &quot;Matz&quot; } }.to_json
+
+create_matz      = ActiveResource::Request.new(:post, '/people.json', @matz, {})
+created_response = ActiveResource::Response.new(&quot;&quot;, 201, {&quot;Location&quot; =&gt; &quot;/people/1.json&quot;})
+get_matz         = ActiveResource::Request.new(:get, '/people/1.json', nil)
+ok_response      = ActiveResource::Response.new(&quot;&quot;, 200, {})
+
+pairs = {create_matz =&gt; created_response, get_matz =&gt; ok_response}
+
+ActiveResource::HttpMock.respond_to(pairs)</pre>
+
+<p>Note, by default, every time you call <tt>respond_to</tt>, any previous
+request and response pairs stored in <a href="HttpMock.html">HttpMock</a>
+will be deleted giving you a clean slate to work on.</p>
+
+<p>If you want to override this behavior, pass in <tt>false</tt> as the last
+argument to <tt>respond_to</tt></p>
+
+<h3>Example</h3>
+
+<pre>ActiveResource::HttpMock.respond_to do |mock|
+  mock.send(:get, &quot;/people/1&quot;, {}, &quot;JSON1&quot;)
+end
+ActiveResource::HttpMock.responses.length #=&gt; 1
+
+ActiveResource::HttpMock.respond_to(false) do |mock|
+  mock.send(:get, &quot;/people/2&quot;, {}, &quot;JSON2&quot;)
+end
+ActiveResource::HttpMock.responses.length #=&gt; 2</pre>
+
+<p>This also works with passing in generated pairs of requests and responses,
+again, just pass in false as the last argument:</p>
+
+<h3>Example</h3>
+
+<pre>ActiveResource::HttpMock.respond_to do |mock|
+  mock.send(:get, &quot;/people/1&quot;, {}, &quot;JSON1&quot;)
+end
+ActiveResource::HttpMock.responses.length #=&gt; 1
+
+get_matz         = ActiveResource::Request.new(:get, '/people/1.json', nil)
+ok_response      = ActiveResource::Response.new(&quot;&quot;, 200, {})
+
+pairs = {get_matz =&gt; ok_response}
+
+ActiveResource::HttpMock.respond_to(pairs, false)
+ActiveResource::HttpMock.responses.length #=&gt; 2
+
+# If you add a response with an existing request, it will be replaced
+
+fail_response      = ActiveResource::Response.new(&quot;&quot;, 404, {})
+pairs = {get_matz =&gt; fail_response}
+
+ActiveResource::HttpMock.respond_to(pairs, false)
+ActiveResource::HttpMock.responses.length #=&gt; 2</pre>
+            
+
+            
+            <div class="method-source-code" id="respond_to-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/http_mock.rb, line 192</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">respond_to</span>(*<span class="ruby-identifier">args</span>) <span class="ruby-comment">#:yields: mock</span>
+  <span class="ruby-identifier">pairs</span> = <span class="ruby-identifier">args</span>.<span class="ruby-identifier">first</span> <span class="ruby-operator">||</span> {}
+  <span class="ruby-identifier">reset!</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">!=</span> <span class="ruby-constant">FalseClass</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+    <span class="ruby-keyword">yield</span> <span class="ruby-constant">Responder</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">responses</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">delete_responses_to_replace</span> <span class="ruby-identifier">pairs</span>.<span class="ruby-identifier">to_a</span>
+    <span class="ruby-identifier">responses</span>.<span class="ruby-identifier">concat</span> <span class="ruby-identifier">pairs</span>.<span class="ruby-identifier">to_a</span>
+    <span class="ruby-constant">Responder</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">responses</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- respond_to-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- respond_to-method -->
+
+      
+        <div id="responses-method" class="method-detail ">
+          <a name="method-c-responses"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">responses</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns the list of requests and their mocked responses. Look up a response
+for a request using <tt>responses.assoc(request)</tt>.</p>
+            
+
+            
+            <div class="method-source-code" id="responses-source">
+<pre>
+<span class="ruby-comment"># File lib/active_resource/http_mock.rb, line 109</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">responses</span>
+  <span class="ruby-identifier">@@responses</span> <span class="ruby-operator">||=</span> []
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- responses-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- responses-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

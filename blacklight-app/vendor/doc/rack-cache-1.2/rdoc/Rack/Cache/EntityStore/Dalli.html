@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Rack::Cache::EntityStore::Dalli</title>
+
+  <link rel="stylesheet" href="../../../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../../index.html">Home</a>
+          <a href="../../../index.html#classes">Classes</a>
+          <a href="../../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../../../lib/rack/cache/entitystore_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/rack/cache/entitystore.rb">lib/rack/cache/entitystore.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="MemCacheBase.html">Rack::Cache::EntityStore::MemCacheBase</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-exist-3F">#exist?</a></li>
+          
+          <li><a href="#method-i-purge">#purge</a></li>
+          
+          <li><a href="#method-i-read">#read</a></li>
+          
+          <li><a href="#method-i-write">#write</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../../../CHANGES.html">CHANGES</a></li>
+        
+          <li class="file"><a href="../../../COPYING.html">COPYING</a></li>
+        
+          <li class="file"><a href="../../../README.html">README</a></li>
+        
+          <li class="file"><a href="../../../TODO.html">TODO</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../../Rack.html">Rack</a></li>
+        
+          <li><a href="../../../Rack/Cache.html">Rack::Cache</a></li>
+        
+          <li><a href="../../../Rack/Cache/AppEngine.html">Rack::Cache::AppEngine</a></li>
+        
+          <li><a href="../../../Rack/Cache/AppEngine/MC.html">Rack::Cache::AppEngine::MC</a></li>
+        
+          <li><a href="../../../Rack/Cache/AppEngine/MemCache.html">Rack::Cache::AppEngine::MemCache</a></li>
+        
+          <li><a href="../../../Rack/Cache/CacheControl.html">Rack::Cache::CacheControl</a></li>
+        
+          <li><a href="../../../Rack/Cache/Context.html">Rack::Cache::Context</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore.html">Rack::Cache::EntityStore</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/Disk.html">Rack::Cache::EntityStore::DISK</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/Dalli.html">Rack::Cache::EntityStore::Dalli</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/Disk.html">Rack::Cache::EntityStore::Disk</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/Disk.html">Rack::Cache::EntityStore::FILE</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/GAEStore.html">Rack::Cache::EntityStore::GAE</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/GAEStore.html">Rack::Cache::EntityStore::GAECACHE</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/GAEStore.html">Rack::Cache::EntityStore::GAEStore</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/Heap.html">Rack::Cache::EntityStore::HEAP</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/Heap.html">Rack::Cache::EntityStore::Heap</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/Heap.html">Rack::Cache::EntityStore::MEM</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/MemCacheBase.html">Rack::Cache::EntityStore::MemCacheBase</a></li>
+        
+          <li><a href="../../../Rack/Cache/EntityStore/MemCached.html">Rack::Cache::EntityStore::MemCached</a></li>
+        
+          <li><a href="../../../Rack/Cache/Key.html">Rack::Cache::Key</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore.html">Rack::Cache::MetaStore</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/Disk.html">Rack::Cache::MetaStore::DISK</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/Dalli.html">Rack::Cache::MetaStore::Dalli</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/Disk.html">Rack::Cache::MetaStore::Disk</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/Disk.html">Rack::Cache::MetaStore::FILE</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/GAEStore.html">Rack::Cache::MetaStore::GAE</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/GAEStore.html">Rack::Cache::MetaStore::GAECACHE</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/GAEStore.html">Rack::Cache::MetaStore::GAEStore</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/Heap.html">Rack::Cache::MetaStore::HEAP</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/Heap.html">Rack::Cache::MetaStore::Heap</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/Heap.html">Rack::Cache::MetaStore::MEM</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/MemCacheBase.html">Rack::Cache::MetaStore::MemCacheBase</a></li>
+        
+          <li><a href="../../../Rack/Cache/MetaStore/MemCached.html">Rack::Cache::MetaStore::MemCached</a></li>
+        
+          <li><a href="../../../Rack/Cache/Options.html">Rack::Cache::Options</a></li>
+        
+          <li><a href="../../../Rack/Cache/Request.html">Rack::Cache::Request</a></li>
+        
+          <li><a href="../../../Rack/Cache/Response.html">Rack::Cache::Response</a></li>
+        
+          <li><a href="../../../Rack/Cache/Storage.html">Rack::Cache::Storage</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Rack::Cache::EntityStore::Dalli</h1>
+
+    <div id="description" class="description">
+      
+<p>Uses the <a href="Dalli.html">Dalli</a> ruby library. This is the default
+unless the memcached library has already been required.</p>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(server="localhost:11211", options={})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/entitystore.rb, line 210</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">server</span>=<span class="ruby-string">&quot;localhost:11211&quot;</span>, <span class="ruby-identifier">options</span>={})
+  <span class="ruby-ivar">@cache</span> =
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">server</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:stats</span>)
+      <span class="ruby-identifier">server</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">require</span> <span class="ruby-string">'dalli'</span>
+      <span class="ruby-operator">::</span><span class="ruby-constant">Dalli</span><span class="ruby-operator">::</span><span class="ruby-constant">Client</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">server</span>, <span class="ruby-identifier">options</span>)
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="exist-3F-method" class="method-detail ">
+          <a name="method-i-exist-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">exist?</span><span
+              class="method-args">(key)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="exist-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/entitystore.rb, line 220</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">exist?</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-operator">!</span><span class="ruby-identifier">cache</span>.<span class="ruby-identifier">get</span>(<span class="ruby-identifier">key</span>).<span class="ruby-identifier">nil?</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- exist-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- exist-3F-method -->
+
+      
+        <div id="purge-method" class="method-detail ">
+          <a name="method-i-purge"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">purge</span><span
+              class="method-args">(key)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="purge-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/entitystore.rb, line 236</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">purge</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">cache</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- purge-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- purge-method -->
+
+      
+        <div id="read-method" class="method-detail ">
+          <a name="method-i-read"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">read</span><span
+              class="method-args">(key)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="read-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/entitystore.rb, line 224</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">read</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">data</span> = <span class="ruby-identifier">cache</span>.<span class="ruby-identifier">get</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">data</span>.<span class="ruby-identifier">force_encoding</span>(<span class="ruby-string">'BINARY'</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">data</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:force_encoding</span>)
+  <span class="ruby-identifier">data</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- read-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- read-method -->
+
+      
+        <div id="write-method" class="method-detail ">
+          <a name="method-i-write"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">write</span><span
+              class="method-args">(body, ttl=nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="write-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/entitystore.rb, line 230</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">write</span>(<span class="ruby-identifier">body</span>, <span class="ruby-identifier">ttl</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">buf</span> = <span class="ruby-constant">StringIO</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">key</span>, <span class="ruby-identifier">size</span> = <span class="ruby-identifier">slurp</span>(<span class="ruby-identifier">body</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">part</span><span class="ruby-operator">|</span> <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">part</span>) }
+  [<span class="ruby-identifier">key</span>, <span class="ruby-identifier">size</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">cache</span>.<span class="ruby-identifier">set</span>(<span class="ruby-identifier">key</span>, <span class="ruby-identifier">buf</span>.<span class="ruby-identifier">string</span>, <span class="ruby-identifier">ttl</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- write-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- write-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

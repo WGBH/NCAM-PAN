@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Rack::Cache::CacheControl</title>
+
+  <link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../../lib/rack/cache/cachecontrol_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/rack/cache/cachecontrol.rb">lib/rack/cache/cachecontrol.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Hash</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-max_age">#max_age</a></li>
+          
+          <li><a href="#method-i-must_revalidate-3F">#must_revalidate?</a></li>
+          
+          <li><a href="#method-i-no_cache-3F">#no_cache?</a></li>
+          
+          <li><a href="#method-i-no_store-3F">#no_store?</a></li>
+          
+          <li><a href="#method-i-private-3F">#private?</a></li>
+          
+          <li><a href="#method-i-proxy_revalidate-3F">#proxy_revalidate?</a></li>
+          
+          <li><a href="#method-i-public-3F">#public?</a></li>
+          
+          <li><a href="#method-i-s_maxage">#s_maxage</a></li>
+          
+          <li><a href="#method-i-shared_max_age">#shared_max_age</a></li>
+          
+          <li><a href="#method-i-to_s">#to_s</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../../CHANGES.html">CHANGES</a></li>
+        
+          <li class="file"><a href="../../COPYING.html">COPYING</a></li>
+        
+          <li class="file"><a href="../../README.html">README</a></li>
+        
+          <li class="file"><a href="../../TODO.html">TODO</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../Rack.html">Rack</a></li>
+        
+          <li><a href="../../Rack/Cache.html">Rack::Cache</a></li>
+        
+          <li><a href="../../Rack/Cache/AppEngine.html">Rack::Cache::AppEngine</a></li>
+        
+          <li><a href="../../Rack/Cache/AppEngine/MC.html">Rack::Cache::AppEngine::MC</a></li>
+        
+          <li><a href="../../Rack/Cache/AppEngine/MemCache.html">Rack::Cache::AppEngine::MemCache</a></li>
+        
+          <li><a href="../../Rack/Cache/CacheControl.html">Rack::Cache::CacheControl</a></li>
+        
+          <li><a href="../../Rack/Cache/Context.html">Rack::Cache::Context</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore.html">Rack::Cache::EntityStore</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/Disk.html">Rack::Cache::EntityStore::DISK</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/Dalli.html">Rack::Cache::EntityStore::Dalli</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/Disk.html">Rack::Cache::EntityStore::Disk</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/Disk.html">Rack::Cache::EntityStore::FILE</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/GAEStore.html">Rack::Cache::EntityStore::GAE</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/GAEStore.html">Rack::Cache::EntityStore::GAECACHE</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/GAEStore.html">Rack::Cache::EntityStore::GAEStore</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/Heap.html">Rack::Cache::EntityStore::HEAP</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/Heap.html">Rack::Cache::EntityStore::Heap</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/Heap.html">Rack::Cache::EntityStore::MEM</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/MemCacheBase.html">Rack::Cache::EntityStore::MemCacheBase</a></li>
+        
+          <li><a href="../../Rack/Cache/EntityStore/MemCached.html">Rack::Cache::EntityStore::MemCached</a></li>
+        
+          <li><a href="../../Rack/Cache/Key.html">Rack::Cache::Key</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore.html">Rack::Cache::MetaStore</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/Disk.html">Rack::Cache::MetaStore::DISK</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/Dalli.html">Rack::Cache::MetaStore::Dalli</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/Disk.html">Rack::Cache::MetaStore::Disk</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/Disk.html">Rack::Cache::MetaStore::FILE</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/GAEStore.html">Rack::Cache::MetaStore::GAE</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/GAEStore.html">Rack::Cache::MetaStore::GAECACHE</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/GAEStore.html">Rack::Cache::MetaStore::GAEStore</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/Heap.html">Rack::Cache::MetaStore::HEAP</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/Heap.html">Rack::Cache::MetaStore::Heap</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/Heap.html">Rack::Cache::MetaStore::MEM</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/MemCacheBase.html">Rack::Cache::MetaStore::MemCacheBase</a></li>
+        
+          <li><a href="../../Rack/Cache/MetaStore/MemCached.html">Rack::Cache::MetaStore::MemCached</a></li>
+        
+          <li><a href="../../Rack/Cache/Options.html">Rack::Cache::Options</a></li>
+        
+          <li><a href="../../Rack/Cache/Request.html">Rack::Cache::Request</a></li>
+        
+          <li><a href="../../Rack/Cache/Response.html">Rack::Cache::Response</a></li>
+        
+          <li><a href="../../Rack/Cache/Storage.html">Rack::Cache::Storage</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Rack::Cache::CacheControl</h1>
+
+    <div id="description" class="description">
+      
+<p>Parses a Cache-Control header and exposes the directives as a Hash.
+Directives that do not have values are set to <tt>true</tt>.</p>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(value=nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/cachecontrol.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">value</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">value</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="max_age-method" class="method-detail ">
+          <a name="method-i-max_age"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">max_age</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>The expiration time of an entity MAY be specified by the origin server
+using the Expires header (see section 14.21). Alternatively, it MAY be
+specified using the max-age directive in a response. When the max-age
+cache-control directive is present in a cached response, the response is
+stale if its current age is greater than the age value given (in seconds)
+at the time of a new request for that resource. The max-age directive on a
+response implies that the response is cacheable (i.e., “public”) unless
+some other, more restrictive cache directive is also present.</p>
+
+<p>If a response includes both an Expires header and a max-age directive, the
+max-age directive overrides the Expires header, even if the Expires header
+is more restrictive. This rule allows an origin server to provide, for a
+given response, a longer expiration time to an HTTP/1.1 (or later) cache
+than to an HTTP/1.0 cache. This might be useful if certain HTTP/1.0 caches
+improperly calculate ages or expiration times, perhaps due to
+desynchronized clocks.</p>
+
+<p>Many HTTP/1.0 cache implementations will treat an Expires value that is
+less than or equal to the response Date value as being equivalent to the
+Cache-Control response directive “no-cache”. If an HTTP/1.1 cache receives
+such a response, and the response does not include a Cache-Control header
+field, it SHOULD consider the response to be non-cacheable in order to
+retain compatibility with HTTP/1.0 servers.</p>
+
+<p>When the max-age directive is included in the request, it indicates that
+the client is willing to accept a response whose age is no greater than the
+specified time in seconds.</p>
+            
+
+            
+            <div class="method-source-code" id="max_age-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/cachecontrol.rb, line 110</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">max_age</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-string">'max-age'</span>].<span class="ruby-identifier">to_i</span>  <span class="ruby-keyword">if</span> <span class="ruby-identifier">key?</span>(<span class="ruby-string">'max-age'</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- max_age-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- max_age-method -->
+
+      
+        <div id="must_revalidate-3F-method" class="method-detail ">
+          <a name="method-i-must_revalidate-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">must_revalidate?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Because a cache MAY be configured to ignore a server’s specified expiration
+time, and because a client request MAY include a max- stale directive
+(which has a similar effect), the protocol also includes a mechanism for
+the origin server to require revalidation of a cache entry on any
+subsequent use. When the must-revalidate directive is present in a response
+received by a cache, that cache MUST NOT use the entry after it becomes
+stale to respond to a subsequent request without first revalidating it with
+the origin server. (I.e., the cache MUST do an end-to-end revalidation
+every time, if, based solely on the origin server’s Expires or max-age
+value, the cached response is stale.)</p>
+
+<p>The must-revalidate directive is necessary to support reliable operation
+for certain protocol features. In all circumstances an HTTP/1.1 cache MUST
+obey the must-revalidate directive; in particular, if the cache cannot
+reach the origin server for any reason, it MUST generate a 504 (Gateway
+Timeout) response.</p>
+
+<p>Servers SHOULD send the must-revalidate directive if and only if failure to
+revalidate a request on the entity could result in incorrect operation,
+such as a silently unexecuted financial transaction. Recipients MUST NOT
+take any automated action that violates this directive, and MUST NOT
+automatically provide an unvalidated copy of the entity if revalidation
+fails.</p>
+            
+
+            
+            <div class="method-source-code" id="must_revalidate-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/cachecontrol.rb, line 152</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">must_revalidate?</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-string">'must-revalidate'</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- must_revalidate-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- must_revalidate-3F-method -->
+
+      
+        <div id="no_cache-3F-method" class="method-detail ">
+          <a name="method-i-no_cache-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">no_cache?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>When set in a response, a cache MUST NOT use the response to satisfy a
+subsequent request without successful revalidation with the origin server.
+This allows an origin server to prevent caching even by caches that have
+been configured to return stale responses to client requests.</p>
+
+<p>Note that this does not necessary imply that the response may not be stored
+by the cache, only that the cache cannot serve it without first making a
+conditional GET request with the origin server.</p>
+
+<p>When set in a request, the server MUST NOT use a cached copy for its
+response. This has quite different semantics compared to the no-cache
+directive on responses. When the client specifies no-cache, it causes an
+end-to-end reload, forcing each cache to update their cached copies.</p>
+            
+
+            
+            <div class="method-source-code" id="no_cache-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/cachecontrol.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">no_cache?</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-string">'no-cache'</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- no_cache-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- no_cache-3F-method -->
+
+      
+        <div id="no_store-3F-method" class="method-detail ">
+          <a name="method-i-no_store-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">no_store?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Indicates that the response MUST NOT be stored under any circumstances.</p>
+
+<p>The purpose of the no-store directive is to prevent the inadvertent release
+or retention of sensitive information (for example, on backup tapes). The
+no-store directive applies to the entire message, and MAY be sent either in
+a response or in a request. If sent in a request, a cache MUST NOT store
+any part of either this request or any response to it. If sent in a
+response, a cache MUST NOT store any part of either this response or the
+request that elicited it. This directive applies to both non- shared and
+shared caches. “MUST NOT store” in this context means that the cache MUST
+NOT intentionally store the information in non-volatile storage, and MUST
+make a best-effort attempt to remove the information from volatile storage
+as promptly as possible after forwarding it.</p>
+
+<p>The purpose of this directive is to meet the stated requirements of certain
+users and service authors who are concerned about accidental releases of
+information via unanticipated accesses to cache data structures. While the
+use of this directive might improve privacy in some cases, we caution that
+it is NOT in any way a reliable or sufficient mechanism for ensuring
+privacy. In particular, malicious or compromised caches might not recognize
+or obey this directive, and communications networks might be vulnerable to
+eavesdropping.</p>
+            
+
+            
+            <div class="method-source-code" id="no_store-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/cachecontrol.rb, line 78</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">no_store?</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-string">'no-store'</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- no_store-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- no_store-3F-method -->
+
+      
+        <div id="private-3F-method" class="method-detail ">
+          <a name="method-i-private-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">private?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Indicates that all or part of the response message is intended for a single
+user and MUST NOT be cached by a shared cache. This allows an origin server
+to state that the specified parts of the response are intended for only one
+user and are not a valid response for requests by other users. A private
+(non-shared) cache MAY cache the response.</p>
+
+<p>Note: This usage of the word private only controls where the response may
+be cached, and cannot ensure the privacy of the message content.</p>
+            
+
+            
+            <div class="method-source-code" id="private-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/cachecontrol.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">private?</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-string">'private'</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- private-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- private-3F-method -->
+
+      
+        <div id="proxy_revalidate-3F-method" class="method-detail ">
+          <a name="method-i-proxy_revalidate-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">proxy_revalidate?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>The proxy-revalidate directive has the same meaning as the must- revalidate
+directive, except that it does not apply to non-shared user agent caches.
+It can be used on a response to an authenticated request to permit the
+user’s cache to store and later return the response without needing to
+revalidate it (since it has already been authenticated once by that user),
+while still requiring proxies that service many users to revalidate each
+time (in order to make sure that each user has been authenticated). Note
+that such authenticated responses also need the public cache control
+directive in order to allow them to be cached at all.</p>
+            
+
+            
+            <div class="method-source-code" id="proxy_revalidate-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/cachecontrol.rb, line 166</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">proxy_revalidate?</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-string">'proxy-revalidate'</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- proxy_revalidate-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- proxy_revalidate-3F-method -->
+
+      
+        <div id="public-3F-method" class="method-detail ">
+          <a name="method-i-public-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">public?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Indicates that the response MAY be cached by any cache, even if it would
+normally be non-cacheable or cacheable only within a non- shared cache.</p>
+
+<p>A response may be considered public without this directive if the private
+directive is not set and the request does not include an Authorization
+header.</p>
+            
+
+            
+            <div class="method-source-code" id="public-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/cachecontrol.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">public?</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-string">'public'</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- public-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- public-3F-method -->
+
+      
+        <div id="s_maxage-method" class="method-detail method-alias">
+          <a name="method-i-s_maxage"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">s_maxage</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+          </div>
+
+          
+
+          
+          <div class="aliases">
+            Alias for: <a href="CacheControl.html#method-i-shared_max_age">shared_max_age</a>
+          </div>
+          
+        </div><!-- s_maxage-method -->
+
+      
+        <div id="shared_max_age-method" class="method-detail ">
+          <a name="method-i-shared_max_age"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">shared_max_age</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>If a response includes an s-maxage directive, then for a shared cache (but
+not for a private cache), the maximum age specified by this directive
+overrides the maximum age specified by either the max-age directive or the
+Expires header. The s-maxage directive also implies the semantics of the
+proxy-revalidate directive. i.e., that the shared cache must not use the
+entry after it becomes stale to respond to a subsequent request without
+first revalidating it with the origin server. The s-maxage directive is
+always ignored by a private cache.</p>
+            
+
+            
+            <div class="method-source-code" id="shared_max_age-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/cachecontrol.rb, line 123</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">shared_max_age</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-string">'s-maxage'</span>].<span class="ruby-identifier">to_i</span>  <span class="ruby-keyword">if</span> <span class="ruby-identifier">key?</span>(<span class="ruby-string">'s-maxage'</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- shared_max_age-source -->
+            
+          </div>
+
+          
+          <div class="aliases">
+            Also aliased as: <a href="CacheControl.html#method-i-s_maxage">s_maxage</a>
+          </div>
+          
+
+          
+        </div><!-- shared_max_age-method -->
+
+      
+        <div id="to_s-method" class="method-detail ">
+          <a name="method-i-to_s"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_s</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="to_s-source">
+<pre>
+<span class="ruby-comment"># File lib/rack/cache/cachecontrol.rb, line 170</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_s</span>
+  <span class="ruby-identifier">bools</span>, <span class="ruby-identifier">vals</span> = [], []
+  <span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>,<span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">value</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">true</span>
+      <span class="ruby-identifier">bools</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">key</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">value</span>
+      <span class="ruby-identifier">vals</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{key}=#{value}&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  (<span class="ruby-identifier">bools</span>.<span class="ruby-identifier">sort</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">vals</span>.<span class="ruby-identifier">sort</span>).<span class="ruby-identifier">join</span>(<span class="ruby-string">', '</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_s-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_s-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

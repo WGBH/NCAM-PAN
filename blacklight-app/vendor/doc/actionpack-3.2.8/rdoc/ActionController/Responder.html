@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: ActionController::Responder</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/action_controller/metal/responder_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/action_controller/metal/responder.rb">lib/action_controller/metal/responder.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="../Object.html">Object</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-call">::call</a></li>
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-api_behavior">#api_behavior</a></li>
+          
+          <li><a href="#method-i-api_location">#api_location</a></li>
+          
+          <li><a href="#method-i-default_action">#default_action</a></li>
+          
+          <li><a href="#method-i-default_render">#default_render</a></li>
+          
+          <li><a href="#method-i-display">#display</a></li>
+          
+          <li><a href="#method-i-display_errors">#display_errors</a></li>
+          
+          <li><a href="#method-i-has_errors-3F">#has_errors?</a></li>
+          
+          <li><a href="#method-i-json_resource_errors">#json_resource_errors</a></li>
+          
+          <li><a href="#method-i-navigation_behavior">#navigation_behavior</a></li>
+          
+          <li><a href="#method-i-navigation_location">#navigation_location</a></li>
+          
+          <li><a href="#method-i-resource_errors">#resource_errors</a></li>
+          
+          <li><a href="#method-i-resource_location">#resource_location</a></li>
+          
+          <li><a href="#method-i-resourceful-3F">#resourceful?</a></li>
+          
+          <li><a href="#method-i-respond">#respond</a></li>
+          
+          <li><a href="#method-i-response_overridden-3F">#response_overridden?</a></li>
+          
+          <li><a href="#method-i-to_format">#to_format</a></li>
+          
+          <li><a href="#method-i-to_html">#to_html</a></li>
+          
+          <li><a href="#method-i-to_js">#to_js</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../ActionDispatch.html">ActionDispatch</a></li>
+        
+          <li><a href="../ActionDispatch/Assertions.html">ActionDispatch::Assertions</a></li>
+        
+          <li><a href="../ActionDispatch/Assertions/DomAssertions.html">ActionDispatch::Assertions::DomAssertions</a></li>
+        
+          <li><a href="../ActionDispatch/Assertions/ResponseAssertions.html">ActionDispatch::Assertions::ResponseAssertions</a></li>
+        
+          <li><a href="../ActionDispatch/Assertions/RoutingAssertions.html">ActionDispatch::Assertions::RoutingAssertions</a></li>
+        
+          <li><a href="../ActionDispatch/Assertions/SelectorAssertions.html">ActionDispatch::Assertions::SelectorAssertions</a></li>
+        
+          <li><a href="../ActionDispatch/Assertions/TagAssertions.html">ActionDispatch::Assertions::TagAssertions</a></li>
+        
+          <li><a href="../ActionDispatch/BestStandardsSupport.html">ActionDispatch::BestStandardsSupport</a></li>
+        
+          <li><a href="../ActionDispatch/BodyProxy.html">ActionDispatch::BodyProxy</a></li>
+        
+          <li><a href="../ActionDispatch/Callbacks.html">ActionDispatch::Callbacks</a></li>
+        
+          <li><a href="../ActionDispatch/Cookies.html">ActionDispatch::Cookies</a></li>
+        
+          <li><a href="../ActionDispatch/Cookies/CookieOverflow.html">ActionDispatch::Cookies::CookieOverflow</a></li>
+        
+          <li><a href="../ActionDispatch/DebugExceptions.html">ActionDispatch::DebugExceptions</a></li>
+        
+          <li><a href="../ActionDispatch/ExceptionWrapper.html">ActionDispatch::ExceptionWrapper</a></li>
+        
+          <li><a href="../ActionDispatch/FileHandler.html">ActionDispatch::FileHandler</a></li>
+        
+          <li><a href="../ActionDispatch/Flash.html">ActionDispatch::Flash</a></li>
+        
+          <li><a href="../ActionDispatch/Flash/FlashHash.html">ActionDispatch::Flash::FlashHash</a></li>
+        
+          <li><a href="../ActionDispatch/Head.html">ActionDispatch::Head</a></li>
+        
+          <li><a href="../ActionDispatch/Http.html">ActionDispatch::Http</a></li>
+        
+          <li><a href="../ActionDispatch/Http/Cache.html">ActionDispatch::Http::Cache</a></li>
+        
+          <li><a href="../ActionDispatch/Http/Cache/Request.html">ActionDispatch::Http::Cache::Request</a></li>
+        
+          <li><a href="../ActionDispatch/Http/Cache/Response.html">ActionDispatch::Http::Cache::Response</a></li>
+        
+          <li><a href="../ActionDispatch/Http/FilterParameters.html">ActionDispatch::Http::FilterParameters</a></li>
+        
+          <li><a href="../ActionDispatch/Http/Headers.html">ActionDispatch::Http::Headers</a></li>
+        
+          <li><a href="../ActionDispatch/Http/MimeNegotiation.html">ActionDispatch::Http::MimeNegotiation</a></li>
+        
+          <li><a href="../ActionDispatch/Http/ParameterFilter.html">ActionDispatch::Http::ParameterFilter</a></li>
+        
+          <li><a href="../ActionDispatch/Http/Parameters.html">ActionDispatch::Http::Parameters</a></li>
+        
+          <li><a href="../ActionDispatch/Http/URL.html">ActionDispatch::Http::URL</a></li>
+        
+          <li><a href="../ActionDispatch/Http/Upload.html">ActionDispatch::Http::Upload</a></li>
+        
+          <li><a href="../ActionDispatch/Http/UploadedFile.html">ActionDispatch::Http::UploadedFile</a></li>
+        
+          <li><a href="../ActionDispatch/Integration.html">ActionDispatch::Integration</a></li>
+        
+          <li><a href="../ActionDispatch/Integration.html">ActionDispatch::Integration</a></li>
+        
+          <li><a href="../ActionDispatch/Integration/RequestHelpers.html">ActionDispatch::Integration::RequestHelpers</a></li>
+        
+          <li><a href="../ActionDispatch/Integration/Runner.html">ActionDispatch::Integration::Runner</a></li>
+        
+          <li><a href="../ActionDispatch/Integration/Session.html">ActionDispatch::Integration::Session</a></li>
+        
+          <li><a href="../ActionDispatch/IntegrationTest.html">ActionDispatch::IntegrationTest</a></li>
+        
+          <li><a href="../ActionDispatch/IntegrationTest.html">ActionDispatch::IntegrationTest</a></li>
+        
+          <li><a href="../ActionDispatch/MiddlewareStack.html">ActionDispatch::MiddlewareStack</a></li>
+        
+          <li><a href="../ActionDispatch/MiddlewareStack/Middleware.html">ActionDispatch::MiddlewareStack::Middleware</a></li>
+        
+          <li><a href="../ActionDispatch/ParamsParser.html">ActionDispatch::ParamsParser</a></li>
+        
+          <li><a href="../ActionDispatch/PerformanceTest.html">ActionDispatch::PerformanceTest</a></li>
+        
+          <li><a href="../ActionDispatch/PerformanceTest.html">ActionDispatch::PerformanceTest</a></li>
+        
+          <li><a href="../ActionDispatch/PublicExceptions.html">ActionDispatch::PublicExceptions</a></li>
+        
+          <li><a href="../ActionDispatch/RailsEntityStore.html">ActionDispatch::RailsEntityStore</a></li>
+        
+          <li><a href="../ActionDispatch/RailsMetaStore.html">ActionDispatch::RailsMetaStore</a></li>
+        
+          <li><a href="../ActionDispatch/Railtie.html">ActionDispatch::Railtie</a></li>
+        
+          <li><a href="../ActionDispatch/Reloader.html">ActionDispatch::Reloader</a></li>
+        
+          <li><a href="../ActionDispatch/RemoteIp.html">ActionDispatch::RemoteIp</a></li>
+        
+          <li><a href="../ActionDispatch/RemoteIp/GetIp.html">ActionDispatch::RemoteIp::GetIp</a></li>
+        
+          <li><a href="../ActionDispatch/RemoteIp/IpSpoofAttackError.html">ActionDispatch::RemoteIp::IpSpoofAttackError</a></li>
+        
+          <li><a href="../ActionDispatch/Request.html">ActionDispatch::Request</a></li>
+        
+          <li><a href="../ActionDispatch/RequestId.html">ActionDispatch::RequestId</a></li>
+        
+          <li><a href="../ActionDispatch/Rescue.html">ActionDispatch::Rescue</a></li>
+        
+          <li><a href="../ActionDispatch/Response.html">ActionDispatch::Response</a></li>
+        
+          <li><a href="../ActionDispatch/Routing.html">ActionDispatch::Routing</a></li>
+        
+          <li><a href="../ActionDispatch/Routing.html">ActionDispatch::Routing</a></li>
+        
+          <li><a href="../ActionDispatch/Routing/Mapper.html">ActionDispatch::Routing::Mapper</a></li>
+        
+          <li><a href="../ActionDispatch/Routing/Mapper/Base.html">ActionDispatch::Routing::Mapper::Base</a></li>
+        
+          <li><a href="../ActionDispatch/Routing/Mapper/HttpHelpers.html">ActionDispatch::Routing::Mapper::HttpHelpers</a></li>
+        
+          <li><a href="../ActionDispatch/Routing/Mapper/Resources.html">ActionDispatch::Routing::Mapper::Resources</a></li>
+        
+          <li><a href="../ActionDispatch/Routing/Mapper/Scoping.html">ActionDispatch::Routing::Mapper::Scoping</a></li>
+        
+          <li><a href="../ActionDispatch/Routing/PolymorphicRoutes.html">ActionDispatch::Routing::PolymorphicRoutes</a></li>
+        
+          <li><a href="../ActionDispatch/Routing/Redirection.html">ActionDispatch::Routing::Redirection</a></li>
+        
+          <li><a href="../ActionDispatch/Routing/RouteSet.html">ActionDispatch::Routing::RouteSet</a></li>
+        
+          <li><a href="../ActionDispatch/Routing/RouteSet/MountedHelpers.html">ActionDispatch::Routing::RouteSet::MountedHelpers</a></li>
+        
+          <li><a href="../ActionDispatch/Routing/UrlFor.html">ActionDispatch::Routing::UrlFor</a></li>
+        
+          <li><a href="../ActionDispatch/Session.html">ActionDispatch::Session</a></li>
+        
+          <li><a href="../ActionDispatch/Session/AbstractStore.html">ActionDispatch::Session::AbstractStore</a></li>
+        
+          <li><a href="../ActionDispatch/Session/CacheStore.html">ActionDispatch::Session::CacheStore</a></li>
+        
+          <li><a href="../ActionDispatch/Session/Compatibility.html">ActionDispatch::Session::Compatibility</a></li>
+        
+          <li><a href="../ActionDispatch/Session/CookieStore.html">ActionDispatch::Session::CookieStore</a></li>
+        
+          <li><a href="../ActionDispatch/Session/DestroyableSession.html">ActionDispatch::Session::DestroyableSession</a></li>
+        
+          <li><a href="../ActionDispatch/Session/MemCacheStore.html">ActionDispatch::Session::MemCacheStore</a></li>
+        
+          <li><a href="../ActionDispatch/Session/StaleSessionCheck.html">ActionDispatch::Session::StaleSessionCheck</a></li>
+        
+          <li><a href="../ActionDispatch/ShowExceptions.html">ActionDispatch::ShowExceptions</a></li>
+        
+          <li><a href="../ActionDispatch/Static.html">ActionDispatch::Static</a></li>
+        
+          <li><a href="../ActionDispatch/TestProcess.html">ActionDispatch::TestProcess</a></li>
+        
+          <li><a href="../ActionDispatch/TestRequest.html">ActionDispatch::TestRequest</a></li>
+        
+          <li><a href="../ActionDispatch/TestResponse.html">ActionDispatch::TestResponse</a></li>
+        
+          <li><a href="../ActionController.html">ActionController</a></li>
+        
+          <li><a href="../ActionController/Base.html">ActionController::Base</a></li>
+        
+          <li><a href="../ActionController/Caching.html">ActionController::Caching</a></li>
+        
+          <li><a href="../ActionController/Caching/Actions.html">ActionController::Caching::Actions</a></li>
+        
+          <li><a href="../ActionController/Caching/Actions/ActionCachePath.html">ActionController::Caching::Actions::ActionCachePath</a></li>
+        
+          <li><a href="../ActionController/Caching/Actions/ClassMethods.html">ActionController::Caching::Actions::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/Caching/ConfigMethods.html">ActionController::Caching::ConfigMethods</a></li>
+        
+          <li><a href="../ActionController/Caching/Fragments.html">ActionController::Caching::Fragments</a></li>
+        
+          <li><a href="../ActionController/Caching/Pages.html">ActionController::Caching::Pages</a></li>
+        
+          <li><a href="../ActionController/Caching/Pages/ClassMethods.html">ActionController::Caching::Pages::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/Caching/Sweeping.html">ActionController::Caching::Sweeping</a></li>
+        
+          <li><a href="../ActionController/Compatibility.html">ActionController::Compatibility</a></li>
+        
+          <li><a href="../ActionController/ConditionalGet.html">ActionController::ConditionalGet</a></li>
+        
+          <li><a href="../ActionController/Cookies.html">ActionController::Cookies</a></li>
+        
+          <li><a href="../ActionController/DataStreaming.html">ActionController::DataStreaming</a></li>
+        
+          <li><a href="../ActionController/Flash.html">ActionController::Flash</a></li>
+        
+          <li><a href="../ActionController/ForceSSL.html">ActionController::ForceSSL</a></li>
+        
+          <li><a href="../ActionController/ForceSSL/ClassMethods.html">ActionController::ForceSSL::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/Head.html">ActionController::Head</a></li>
+        
+          <li><a href="../ActionController/Helpers.html">ActionController::Helpers</a></li>
+        
+          <li><a href="../ActionController/Helpers/ClassMethods.html">ActionController::Helpers::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/HideActions.html">ActionController::HideActions</a></li>
+        
+          <li><a href="../ActionController/HideActions/ClassMethods.html">ActionController::HideActions::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/HttpAuthentication.html">ActionController::HttpAuthentication</a></li>
+        
+          <li><a href="../ActionController/HttpAuthentication/Basic.html">ActionController::HttpAuthentication::Basic</a></li>
+        
+          <li><a href="../ActionController/HttpAuthentication/Basic/ControllerMethods.html">ActionController::HttpAuthentication::Basic::ControllerMethods</a></li>
+        
+          <li><a href="../ActionController/HttpAuthentication/Basic/ControllerMethods/ClassMethods.html">ActionController::HttpAuthentication::Basic::ControllerMethods::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/HttpAuthentication/Digest.html">ActionController::HttpAuthentication::Digest</a></li>
+        
+          <li><a href="../ActionController/HttpAuthentication/Digest/ControllerMethods.html">ActionController::HttpAuthentication::Digest::ControllerMethods</a></li>
+        
+          <li><a href="../ActionController/HttpAuthentication/Token.html">ActionController::HttpAuthentication::Token</a></li>
+        
+          <li><a href="../ActionController/HttpAuthentication/Token/ControllerMethods.html">ActionController::HttpAuthentication::Token::ControllerMethods</a></li>
+        
+          <li><a href="../ActionController/ImplicitRender.html">ActionController::ImplicitRender</a></li>
+        
+          <li><a href="../ActionController/Instrumentation.html">ActionController::Instrumentation</a></li>
+        
+          <li><a href="../ActionController/Instrumentation/ClassMethods.html">ActionController::Instrumentation::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/LogSubscriber.html">ActionController::LogSubscriber</a></li>
+        
+          <li><a href="../ActionController/Metal.html">ActionController::Metal</a></li>
+        
+          <li><a href="../ActionController/Middleware.html">ActionController::Middleware</a></li>
+        
+          <li><a href="../ActionController/Middleware/ActionMiddleware.html">ActionController::Middleware::ActionMiddleware</a></li>
+        
+          <li><a href="../ActionController/MimeResponds.html">ActionController::MimeResponds</a></li>
+        
+          <li><a href="../ActionController/MimeResponds/ClassMethods.html">ActionController::MimeResponds::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/ParamsWrapper.html">ActionController::ParamsWrapper</a></li>
+        
+          <li><a href="../ActionController/ParamsWrapper/ClassMethods.html">ActionController::ParamsWrapper::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/RackDelegation.html">ActionController::RackDelegation</a></li>
+        
+          <li><a href="../ActionController/Railtie.html">ActionController::Railtie</a></li>
+        
+          <li><a href="../ActionController/Railties.html">ActionController::Railties</a></li>
+        
+          <li><a href="../ActionController/Railties/Paths.html">ActionController::Railties::Paths</a></li>
+        
+          <li><a href="../ActionController/RecordIdentifier.html">ActionController::RecordIdentifier</a></li>
+        
+          <li><a href="../ActionController/Redirecting.html">ActionController::Redirecting</a></li>
+        
+          <li><a href="../ActionController/Renderers.html">ActionController::Renderers</a></li>
+        
+          <li><a href="../ActionController/Renderers/All.html">ActionController::Renderers::All</a></li>
+        
+          <li><a href="../ActionController/Renderers/ClassMethods.html">ActionController::Renderers::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/Rendering.html">ActionController::Rendering</a></li>
+        
+          <li><a href="../ActionController/RequestForgeryProtection.html">ActionController::RequestForgeryProtection</a></li>
+        
+          <li><a href="../ActionController/RequestForgeryProtection/ClassMethods.html">ActionController::RequestForgeryProtection::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/Rescue.html">ActionController::Rescue</a></li>
+        
+          <li><a href="../ActionController/Responder.html">ActionController::Responder</a></li>
+        
+          <li><a href="../ActionController/SessionManagement.html">ActionController::SessionManagement</a></li>
+        
+          <li><a href="../ActionController/SessionManagement/ClassMethods.html">ActionController::SessionManagement::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/Streaming.html">ActionController::Streaming</a></li>
+        
+          <li><a href="../ActionController/TemplateAssertions.html">ActionController::TemplateAssertions</a></li>
+        
+          <li><a href="../ActionController/TestCase.html">ActionController::TestCase</a></li>
+        
+          <li><a href="../ActionController/TestCase/Behavior.html">ActionController::TestCase::Behavior</a></li>
+        
+          <li><a href="../ActionController/TestCase/Behavior/ClassMethods.html">ActionController::TestCase::Behavior::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/TestCase/RaiseActionExceptions.html">ActionController::TestCase::RaiseActionExceptions</a></li>
+        
+          <li><a href="../ActionController/TestResponse.html">ActionController::TestResponse</a></li>
+        
+          <li><a href="../ActionController/Testing.html">ActionController::Testing</a></li>
+        
+          <li><a href="../ActionController/Testing/ClassMethods.html">ActionController::Testing::ClassMethods</a></li>
+        
+          <li><a href="../ActionController/UrlFor.html">ActionController::UrlFor</a></li>
+        
+          <li><a href="../ActionView.html">ActionView</a></li>
+        
+          <li><a href="../ActionView/Base.html">ActionView::Base</a></li>
+        
+          <li><a href="../ActionView/Context.html">ActionView::Context</a></li>
+        
+          <li><a href="../ActionView/FileSystemResolver.html">ActionView::FileSystemResolver</a></li>
+        
+          <li><a href="../ActionView/FixtureResolver.html">ActionView::FixtureResolver</a></li>
+        
+          <li><a href="../ActionView/Helpers.html">ActionView::Helpers</a></li>
+        
+          <li><a href="../ActionView/Helpers/ActiveModelHelper.html">ActionView::Helpers::ActiveModelHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/ActiveModelInstanceTag.html">ActionView::Helpers::ActiveModelInstanceTag</a></li>
+        
+          <li><a href="../ActionView/AssetPaths.html">ActionView::Helpers::AssetPaths</a></li>
+        
+          <li><a href="../ActionView/Helpers/AssetTagHelper.html">ActionView::Helpers::AssetTagHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/AssetTagHelper/AssetIncludeTag.html">ActionView::Helpers::AssetTagHelper::AssetIncludeTag</a></li>
+        
+          <li><a href="../ActionView/Helpers/AssetTagHelper/JavascriptIncludeTag.html">ActionView::Helpers::AssetTagHelper::JavascriptIncludeTag</a></li>
+        
+          <li><a href="../ActionView/Helpers/AssetTagHelper/JavascriptTagHelpers.html">ActionView::Helpers::AssetTagHelper::JavascriptTagHelpers</a></li>
+        
+          <li><a href="../ActionView/Helpers/AssetTagHelper/JavascriptTagHelpers/ClassMethods.html">ActionView::Helpers::AssetTagHelper::JavascriptTagHelpers::ClassMethods</a></li>
+        
+          <li><a href="../ActionView/Helpers/AssetTagHelper/StylesheetIncludeTag.html">ActionView::Helpers::AssetTagHelper::StylesheetIncludeTag</a></li>
+        
+          <li><a href="../ActionView/Helpers/AssetTagHelper/StylesheetTagHelpers.html">ActionView::Helpers::AssetTagHelper::StylesheetTagHelpers</a></li>
+        
+          <li><a href="../ActionView/Helpers/AssetTagHelper/StylesheetTagHelpers/ClassMethods.html">ActionView::Helpers::AssetTagHelper::StylesheetTagHelpers::ClassMethods</a></li>
+        
+          <li><a href="../ActionView/Helpers/AtomFeedHelper.html">ActionView::Helpers::AtomFeedHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/AtomFeedHelper/AtomBuilder.html">ActionView::Helpers::AtomFeedHelper::AtomBuilder</a></li>
+        
+          <li><a href="../ActionView/Helpers/AtomFeedHelper/AtomFeedBuilder.html">ActionView::Helpers::AtomFeedHelper::AtomFeedBuilder</a></li>
+        
+          <li><a href="../ActionView/Helpers/CacheHelper.html">ActionView::Helpers::CacheHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/CaptureHelper.html">ActionView::Helpers::CaptureHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/CsrfHelper.html">ActionView::Helpers::CsrfHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/DateHelper.html">ActionView::Helpers::DateHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/DateHelperInstanceTag.html">ActionView::Helpers::DateHelperInstanceTag</a></li>
+        
+          <li><a href="../ActionView/Helpers/DebugHelper.html">ActionView::Helpers::DebugHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/FormBuilder.html">ActionView::Helpers::FormBuilder</a></li>
+        
+          <li><a href="../ActionView/Helpers/FormHelper.html">ActionView::Helpers::FormHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/FormTagHelper.html">ActionView::Helpers::FormTagHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/InstanceTag.html">ActionView::Helpers::InstanceTag</a></li>
+        
+          <li><a href="../ActionView/Helpers/JavaScriptHelper.html">ActionView::Helpers::JavaScriptHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/NumberHelper.html">ActionView::Helpers::NumberHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/NumberHelper/InvalidNumberError.html">ActionView::Helpers::NumberHelper::InvalidNumberError</a></li>
+        
+          <li><a href="../ActionView/Helpers/OutputSafetyHelper.html">ActionView::Helpers::OutputSafetyHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/RecordTagHelper.html">ActionView::Helpers::RecordTagHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/RenderingHelper.html">ActionView::Helpers::RenderingHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/SanitizeHelper.html">ActionView::Helpers::SanitizeHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/TagHelper.html">ActionView::Helpers::TagHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/TextHelper.html">ActionView::Helpers::TextHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/TranslationHelper.html">ActionView::Helpers::TranslationHelper</a></li>
+        
+          <li><a href="../ActionView/Helpers/UrlHelper.html">ActionView::Helpers::UrlHelper</a></li>
+        
+          <li><a href="../ActionView/LogSubscriber.html">ActionView::LogSubscriber</a></li>
+        
+          <li><a href="../ActionView/LookupContext.html">ActionView::LookupContext</a></li>
+        
+          <li><a href="../ActionView/LookupContext/DetailsCache.html">ActionView::LookupContext::DetailsCache</a></li>
+        
+          <li><a href="../ActionView/LookupContext/ViewPaths.html">ActionView::LookupContext::ViewPaths</a></li>
+        
+          <li><a href="../ActionView/NullResolver.html">ActionView::NullResolver</a></li>
+        
+          <li><a href="../ActionView/PartialRenderer.html">ActionView::PartialRenderer</a></li>
+        
+          <li><a href="../ActionView/Railtie.html">ActionView::Railtie</a></li>
+        
+          <li><a href="../ActionView/Renderer.html">ActionView::Renderer</a></li>
+        
+          <li><a href="../ActionView/Resolver.html">ActionView::Resolver</a></li>
+        
+          <li><a href="../ActionView/Resolver/Path.html">ActionView::Resolver::Path</a></li>
+        
+          <li><a href="../ActionView/Template.html">ActionView::Template</a></li>
+        
+          <li><a href="../ActionView/Template/Handlers.html">ActionView::Template::Handlers</a></li>
+        
+          <li><a href="../ActionView/Template/Handlers/Builder.html">ActionView::Template::Handlers::Builder</a></li>
+        
+          <li><a href="../ActionView/Template/Handlers/ERB.html">ActionView::Template::Handlers::ERB</a></li>
+        
+          <li><a href="../ActionView/Template/Handlers/Erubis.html">ActionView::Template::Handlers::Erubis</a></li>
+        
+          <li><a href="../ActionView/TestCase.html">ActionView::TestCase</a></li>
+        
+          <li><a href="../ActionView/TestCase/Behavior.html">ActionView::TestCase::Behavior</a></li>
+        
+          <li><a href="../ActionView/TestCase/Behavior/ClassMethods.html">ActionView::TestCase::Behavior::ClassMethods</a></li>
+        
+          <li><a href="../ActionView/TestCase/Behavior/Locals.html">ActionView::TestCase::Behavior::Locals</a></li>
+        
+          <li><a href="../ActionView/TestCase/TestController.html">ActionView::TestCase::TestController</a></li>
+        
+          <li><a href="../AbstractController.html">AbstractController</a></li>
+        
+          <li><a href="../AbstractController/ActionNotFound.html">AbstractController::ActionNotFound</a></li>
+        
+          <li><a href="../AbstractController/AssetPaths.html">AbstractController::AssetPaths</a></li>
+        
+          <li><a href="../AbstractController/Base.html">AbstractController::Base</a></li>
+        
+          <li><a href="../AbstractController/Callbacks.html">AbstractController::Callbacks</a></li>
+        
+          <li><a href="../AbstractController/Callbacks/ClassMethods.html">AbstractController::Callbacks::ClassMethods</a></li>
+        
+          <li><a href="../AbstractController/Collector.html">AbstractController::Collector</a></li>
+        
+          <li><a href="../AbstractController/DoubleRenderError.html">AbstractController::DoubleRenderError</a></li>
+        
+          <li><a href="../AbstractController/Error.html">AbstractController::Error</a></li>
+        
+          <li><a href="../AbstractController/Helpers.html">AbstractController::Helpers</a></li>
+        
+          <li><a href="../AbstractController/Helpers/ClassMethods.html">AbstractController::Helpers::ClassMethods</a></li>
+        
+          <li><a href="../AbstractController/Layouts.html">AbstractController::Layouts</a></li>
+        
+          <li><a href="../AbstractController/Layouts/ClassMethods.html">AbstractController::Layouts::ClassMethods</a></li>
+        
+          <li><a href="../AbstractController/Layouts/ClassMethods/LayoutConditions.html">AbstractController::Layouts::ClassMethods::LayoutConditions</a></li>
+        
+          <li><a href="../AbstractController/Logger.html">AbstractController::Logger</a></li>
+        
+          <li><a href="../AbstractController/Railties.html">AbstractController::Railties</a></li>
+        
+          <li><a href="../AbstractController/Railties/RoutesHelpers.html">AbstractController::Railties::RoutesHelpers</a></li>
+        
+          <li><a href="../AbstractController/Rendering.html">AbstractController::Rendering</a></li>
+        
+          <li><a href="../AbstractController/Rendering/ClassMethods.html">AbstractController::Rendering::ClassMethods</a></li>
+        
+          <li><a href="../AbstractController/Translation.html">AbstractController::Translation</a></li>
+        
+          <li><a href="../AbstractController/UrlFor.html">AbstractController::UrlFor</a></li>
+        
+          <li><a href="../AbstractController/UrlFor/ClassMethods.html">AbstractController::UrlFor::ClassMethods</a></li>
+        
+          <li><a href="../AbstractController/ViewPaths.html">AbstractController::ViewPaths</a></li>
+        
+          <li><a href="../AbstractController/ViewPaths/ClassMethods.html">AbstractController::ViewPaths::ClassMethods</a></li>
+        
+          <li><a href="../Sprockets.html">Sprockets</a></li>
+        
+          <li><a href="../Sprockets/Bootstrap.html">Sprockets::Bootstrap</a></li>
+        
+          <li><a href="../Sprockets/Compressors.html">Sprockets::Compressors</a></li>
+        
+          <li><a href="../Sprockets/Helpers.html">Sprockets::Helpers</a></li>
+        
+          <li><a href="../Sprockets/Helpers/IsolatedHelper.html">Sprockets::Helpers::IsolatedHelper</a></li>
+        
+          <li><a href="../Sprockets/Helpers/RailsHelper.html">Sprockets::Helpers::RailsHelper</a></li>
+        
+          <li><a href="../Sprockets/Helpers/RailsHelper/AssetPaths.html">Sprockets::Helpers::RailsHelper::AssetPaths</a></li>
+        
+          <li><a href="../Sprockets/Helpers/RailsHelper/AssetPaths/AssetNotPrecompiledError.html">Sprockets::Helpers::RailsHelper::AssetPaths::AssetNotPrecompiledError</a></li>
+        
+          <li><a href="../Sprockets/Railtie.html">Sprockets::Railtie</a></li>
+        
+          <li><a href="../Sprockets/StaticCompiler.html">Sprockets::StaticCompiler</a></li>
+        
+          <li><a href="../HTML.html">HTML</a></li>
+        
+          <li><a href="../HTML/FullSanitizer.html">HTML::FullSanitizer</a></li>
+        
+          <li><a href="../HTML/LinkSanitizer.html">HTML::LinkSanitizer</a></li>
+        
+          <li><a href="../HTML/Sanitizer.html">HTML::Sanitizer</a></li>
+        
+          <li><a href="../HTML/Selector.html">HTML::Selector</a></li>
+        
+          <li><a href="../HTML/Tag.html">HTML::Tag</a></li>
+        
+          <li><a href="../HTML/WhiteListSanitizer.html">HTML::WhiteListSanitizer</a></li>
+        
+          <li><a href="../Object.html">Object</a></li>
+        
+          <li><a href="../ActionDispatch/Integration.html">Object::Integration</a></li>
+        
+          <li><a href="../ActionDispatch/IntegrationTest.html">Object::IntegrationTest</a></li>
+        
+          <li><a href="../ActionDispatch/PerformanceTest.html">Object::PerformanceTest</a></li>
+        
+          <li><a href="../ActionDispatch/Routing.html">Object::Routing</a></li>
+        
+          <li><a href="../Mime.html">Mime</a></li>
+        
+          <li><a href="../Mime/Mimes.html">Mime::Mimes</a></li>
+        
+          <li><a href="../Mime/Type.html">Mime::Type</a></li>
+        
+          <li><a href="../I18n.html">I18n</a></li>
+        
+          <li><a href="../I18n/ExceptionHandler.html">I18n::ExceptionHandler</a></li>
+        
+          <li><a href="../ActionPack.html">ActionPack</a></li>
+        
+          <li><a href="../Rack.html">Rack</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">ActionController::Responder</h1>
+
+    <div id="description" class="description">
+      
+<p>Responsible for exposing a resource to different mime requests, usually
+depending on the HTTP verb. The responder is triggered when
+<tt>respond_with</tt> is called. The simplest case to study is a GET
+request:</p>
+
+<pre>class PeopleController &lt; ApplicationController
+  respond_to :html, :xml, :json
+
+  def index
+    @people = Person.all
+    respond_with(@people)
+  end
+end</pre>
+
+<p>When a request comes in, for example for an XML response, three steps
+happen:</p>
+
+<pre>1) the responder searches for a template at people/index.xml;
+
+2) if the template is not available, it will invoke &lt;code&gt;#to_xml&lt;/code&gt; on the given resource;
+
+3) if the responder does not &lt;code&gt;respond_to :to_xml&lt;/code&gt;, call &lt;code&gt;#to_format&lt;/code&gt; on it.</pre>
+
+<h3>Builtin HTTP verb semantics</h3>
+
+<p>The default Rails responder holds semantics for each HTTP verb. Depending
+on the content type, verb and the resource status, it will behave
+differently.</p>
+
+<p>Using Rails default responder, a POST request for creating an object could
+be written as:</p>
+
+<pre>def create
+  @user = User.new(params[:user])
+  flash[:notice] = 'User was successfully created.' if @user.save
+  respond_with(@user)
+end</pre>
+
+<p>Which is exactly the same as:</p>
+
+<pre>def create
+  @user = User.new(params[:user])
+
+  respond_to do |format|
+    if @user.save
+      flash[:notice] = 'User was successfully created.'
+      format.html { redirect_to(@user) }
+      format.xml { render :xml =&gt; @user, :status =&gt; :created, :location =&gt; @user }
+    else
+      format.html { render :action =&gt; &quot;new&quot; }
+      format.xml { render :xml =&gt; @user.errors, :status =&gt; :unprocessable_entity }
+    end
+  end
+end</pre>
+
+<p>The same happens for PUT and DELETE requests.</p>
+
+<h3>Nested resources</h3>
+
+<p>You can supply nested resources as you do in <tt>form_for</tt> and
+<tt>polymorphic_url</tt>. Consider the project has many tasks example. The
+create action for TasksController would be like:</p>
+
+<pre>def create
+  @project = Project.find(params[:project_id])
+  @task = @project.comments.build(params[:task])
+  flash[:notice] = 'Task was successfully created.' if @task.save
+  respond_with(@project, @task)
+end</pre>
+
+<p>Giving several resources ensures that the responder will redirect to
+<tt>project_task_url</tt> instead of <tt>task_url</tt>.</p>
+
+<p>Namespaced and singleton resources require a symbol to be given, as in
+polymorphic urls. If a project has one manager which has many tasks, it
+should be invoked as:</p>
+
+<pre>respond_with(@project, :manager, @task)</pre>
+
+<p>Note that if you give an array, it will be treated as a collection, so the
+following is not equivalent:</p>
+
+<pre>respond_with [@project, :manager, @task]</pre>
+
+<h3>Custom options</h3>
+
+<p><tt>respond_with</tt> also allows you to pass options that are forwarded to
+the underlying render call. Those options are only applied for success
+scenarios. For instance, you can do the following in the create method
+above:</p>
+
+<pre>def create
+  @project = Project.find(params[:project_id])
+  @task = @project.comments.build(params[:task])
+  flash[:notice] = 'Task was successfully created.' if @task.save
+  respond_with(@project, @task, :status =&gt; 201)
+end</pre>
+
+<p>This will return status 201 if the task was saved successfully. If not, it
+will simply ignore the given options and return status 422 and the resource
+errors. To customize the failure scenario, you can pass a a block to
+<tt>respond_with</tt>:</p>
+
+<pre>def create
+  @project = Project.find(params[:project_id])
+  @task = @project.comments.build(params[:task])
+  respond_with(@project, @task, :status =&gt; 201) do |format|
+    if @task.save
+      flash[:notice] = 'Task was successfully created.'
+    else
+      format.html { render &quot;some_special_template&quot; }
+    end
+  end
+end</pre>
+
+<p>Using <tt>respond_with</tt> with a block follows the same syntax as
+<tt>respond_to</tt>.</p>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+      <!-- Constants -->
+      <div id="constants-list" class="section">
+        <h3 class="section-header">Constants</h3>
+        <dl>
+        
+          <dt><a name="ACTIONS_FOR_VERBS">ACTIONS_FOR_VERBS</a></dt>
+          
+          <dd class="description"></dd>
+          
+        
+        </dl>
+      </div>
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="controller-attribute-method" class="method-detail">
+          <a name="controller"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">controller</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="format-attribute-method" class="method-detail">
+          <a name="format"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">format</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="options-attribute-method" class="method-detail">
+          <a name="options"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">options</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="request-attribute-method" class="method-detail">
+          <a name="request"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">request</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="resource-attribute-method" class="method-detail">
+          <a name="resource"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">resource</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="resources-attribute-method" class="method-detail">
+          <a name="resources"></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">resources</span><span
+              class="attribute-access-type">[R]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="call-method" class="method-detail ">
+          <a name="method-c-call"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">call</span><span
+              class="method-args">(*args)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Initializes a new responder an invoke the proper format. If the format is
+not defined, call to_format.</p>
+            
+
+            
+            <div class="method-source-code" id="call-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 145</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">call</span>(*<span class="ruby-identifier">args</span>)
+  <span class="ruby-identifier">new</span>(*<span class="ruby-identifier">args</span>).<span class="ruby-identifier">respond</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- call-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- call-method -->
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(controller, resources, options={})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 124</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">controller</span>, <span class="ruby-identifier">resources</span>, <span class="ruby-identifier">options</span>={})
+  <span class="ruby-ivar">@controller</span> = <span class="ruby-identifier">controller</span>
+  <span class="ruby-ivar">@request</span> = <span class="ruby-ivar">@controller</span>.<span class="ruby-identifier">request</span>
+  <span class="ruby-ivar">@format</span> = <span class="ruby-ivar">@controller</span>.<span class="ruby-identifier">formats</span>.<span class="ruby-identifier">first</span>
+  <span class="ruby-ivar">@resource</span> = <span class="ruby-identifier">resources</span>.<span class="ruby-identifier">last</span>
+  <span class="ruby-ivar">@resources</span> = <span class="ruby-identifier">resources</span>
+  <span class="ruby-ivar">@options</span> = <span class="ruby-identifier">options</span>
+  <span class="ruby-ivar">@action</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:action</span>)
+  <span class="ruby-ivar">@default_response</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:default_response</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="respond-method" class="method-detail ">
+          <a name="method-i-respond"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">respond</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Main entry point for responder responsible to dispatch to the proper
+format.</p>
+            
+
+            
+            <div class="method-source-code" id="respond-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 151</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">respond</span>
+  <span class="ruby-identifier">method</span> = <span class="ruby-node">&quot;to_#{format}&quot;</span>
+  <span class="ruby-identifier">respond_to?</span>(<span class="ruby-identifier">method</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">send</span>(<span class="ruby-identifier">method</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">to_format</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- respond-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- respond-method -->
+
+      
+        <div id="to_format-method" class="method-detail ">
+          <a name="method-i-to_format"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_format</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>All other formats follow the procedure below. First we try to render a
+template, if the template is not available, we verify if the resource
+responds to :<a href="Responder.html#method-i-to_format">to_format</a> and
+display it.</p>
+            
+
+            
+            <div class="method-source-code" id="to_format-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 174</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_format</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">get?</span> <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-identifier">has_errors?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">response_overridden?</span>
+    <span class="ruby-identifier">default_render</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">display_errors</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">rescue</span> <span class="ruby-constant">ActionView</span><span class="ruby-operator">::</span><span class="ruby-constant">MissingTemplate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+  <span class="ruby-identifier">api_behavior</span>(<span class="ruby-identifier">e</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_format-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_format-method -->
+
+      
+        <div id="to_html-method" class="method-detail ">
+          <a name="method-i-to_html"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_html</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p><a href="../HTML.html">HTML</a> format does not render the resource, it
+always attempt to render a template.</p>
+            
+
+            
+            <div class="method-source-code" id="to_html-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 159</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_html</span>
+  <span class="ruby-identifier">default_render</span>
+<span class="ruby-keyword">rescue</span> <span class="ruby-constant">ActionView</span><span class="ruby-operator">::</span><span class="ruby-constant">MissingTemplate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+  <span class="ruby-identifier">navigation_behavior</span>(<span class="ruby-identifier">e</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_html-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_html-method -->
+
+      
+        <div id="to_js-method" class="method-detail ">
+          <a name="method-i-to_js"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_js</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p><a href="Responder.html#method-i-to_js">to_js</a> simply tries to render a
+template. If no template is found, raises the error.</p>
+            
+
+            
+            <div class="method-source-code" id="to_js-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 166</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_js</span>
+  <span class="ruby-identifier">default_render</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_js-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_js-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+      <div id="protected-instance-method-details" class="method-section section">
+        <h3 class="section-header">Protected Instance Methods</h3>
+
+      
+        <div id="api_behavior-method" class="method-detail ">
+          <a name="method-i-api_behavior"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">api_behavior</span><span
+              class="method-args">(error)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>This is the common behavior for formats associated with APIs, such as :xml
+and :json.</p>
+            
+
+            
+            <div class="method-source-code" id="api_behavior-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 198</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">api_behavior</span>(<span class="ruby-identifier">error</span>)
+  <span class="ruby-identifier">raise</span> <span class="ruby-identifier">error</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">resourceful?</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">get?</span>
+    <span class="ruby-identifier">display</span> <span class="ruby-identifier">resource</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">post?</span>
+    <span class="ruby-identifier">display</span> <span class="ruby-identifier">resource</span>, <span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:created</span>, <span class="ruby-value">:location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">api_location</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">head</span> <span class="ruby-value">:no_content</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- api_behavior-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- api_behavior-method -->
+
+      
+        <div id="api_location-method" class="method-detail method-alias">
+          <a name="method-i-api_location"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">api_location</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+          </div>
+
+          
+
+          
+          <div class="aliases">
+            Alias for: <a href="Responder.html#method-i-resource_location">resource_location</a>
+          </div>
+          
+        </div><!-- api_location-method -->
+
+      
+        <div id="default_action-method" class="method-detail ">
+          <a name="method-i-default_action"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">default_action</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>By default, render the <tt>:edit</tt> action for <a
+href="../HTML.html">HTML</a> requests with failure, unless the verb is
+POST.</p>
+            
+
+            
+            <div class="method-source-code" id="default_action-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 270</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">default_action</span>
+  <span class="ruby-ivar">@action</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">ACTIONS_FOR_VERBS</span>[<span class="ruby-identifier">request</span>.<span class="ruby-identifier">request_method_symbol</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- default_action-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- default_action-method -->
+
+      
+        <div id="default_render-method" class="method-detail ">
+          <a name="method-i-default_render"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">default_render</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>If a response block was given, use it, otherwise call render on controller.</p>
+            
+
+            
+            <div class="method-source-code" id="default_render-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 228</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">default_render</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@default_response</span>
+    <span class="ruby-ivar">@default_response</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">options</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">controller</span>.<span class="ruby-identifier">default_render</span>(<span class="ruby-identifier">options</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- default_render-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- default_render-method -->
+
+      
+        <div id="display-method" class="method-detail ">
+          <a name="method-i-display"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">display</span><span
+              class="method-args">(resource, given_options={})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Display is just a shortcut to render a resource with the current format.</p>
+
+<pre>display @user, :status =&gt; :ok</pre>
+
+<p>For XML requests it’s equivalent to:</p>
+
+<pre>render :xml =&gt; @user, :status =&gt; :ok</pre>
+
+<p>Options sent by the user are also used:</p>
+
+<pre>respond_with(@user, :status =&gt; :created)
+display(@user, :status =&gt; :ok)</pre>
+
+<p>Results in:</p>
+
+<pre>render :xml =&gt; @user, :status =&gt; :created</pre>
+            
+
+            
+            <div class="method-source-code" id="display-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 253</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">display</span>(<span class="ruby-identifier">resource</span>, <span class="ruby-identifier">given_options</span>={})
+  <span class="ruby-identifier">controller</span>.<span class="ruby-identifier">render</span> <span class="ruby-identifier">given_options</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-identifier">options</span>).<span class="ruby-identifier">merge!</span>(<span class="ruby-identifier">format</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">resource</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- display-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- display-method -->
+
+      
+        <div id="display_errors-method" class="method-detail ">
+          <a name="method-i-display_errors"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">display_errors</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="display_errors-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 257</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">display_errors</span>
+  <span class="ruby-identifier">controller</span>.<span class="ruby-identifier">render</span> <span class="ruby-identifier">format</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">resource_errors</span>, <span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:unprocessable_entity</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- display_errors-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- display_errors-method -->
+
+      
+        <div id="has_errors-3F-method" class="method-detail ">
+          <a name="method-i-has_errors-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">has_errors?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Check whether the resource has errors.</p>
+            
+
+            
+            <div class="method-source-code" id="has_errors-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 263</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">has_errors?</span>
+  <span class="ruby-identifier">resource</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:errors</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">resource</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">empty?</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- has_errors-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- has_errors-3F-method -->
+
+      
+        <div id="json_resource_errors-method" class="method-detail ">
+          <a name="method-i-json_resource_errors"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">json_resource_errors</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="json_resource_errors-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 278</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">json_resource_errors</span>
+  {<span class="ruby-value">:errors</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">resource</span>.<span class="ruby-identifier">errors</span>}
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- json_resource_errors-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- json_resource_errors-method -->
+
+      
+        <div id="navigation_behavior-method" class="method-detail ">
+          <a name="method-i-navigation_behavior"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">navigation_behavior</span><span
+              class="method-args">(error)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>This is the common behavior for formats associated with browsing, like
+:html, :iphone and so forth.</p>
+            
+
+            
+            <div class="method-source-code" id="navigation_behavior-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 187</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">navigation_behavior</span>(<span class="ruby-identifier">error</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">get?</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-identifier">error</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">has_errors?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">default_action</span>
+    <span class="ruby-identifier">render</span> <span class="ruby-value">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">default_action</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">navigation_location</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- navigation_behavior-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- navigation_behavior-method -->
+
+      
+        <div id="navigation_location-method" class="method-detail method-alias">
+          <a name="method-i-navigation_location"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">navigation_location</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+          </div>
+
+          
+
+          
+          <div class="aliases">
+            Alias for: <a href="Responder.html#method-i-resource_location">resource_location</a>
+          </div>
+          
+        </div><!-- navigation_location-method -->
+
+      
+        <div id="resource_errors-method" class="method-detail ">
+          <a name="method-i-resource_errors"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">resource_errors</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="resource_errors-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 274</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">resource_errors</span>
+  <span class="ruby-identifier">respond_to?</span>(<span class="ruby-node">&quot;#{format}_resource_errors&quot;</span>, <span class="ruby-keyword">true</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">send</span>(<span class="ruby-node">&quot;#{format}_resource_errors&quot;</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">resource</span>.<span class="ruby-identifier">errors</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- resource_errors-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- resource_errors-method -->
+
+      
+        <div id="resource_location-method" class="method-detail ">
+          <a name="method-i-resource_location"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">resource_location</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns the resource location by retrieving it from the options or
+returning the resources array.</p>
+            
+
+            
+            <div class="method-source-code" id="resource_location-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 219</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">resource_location</span>
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:location</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">resources</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- resource_location-source -->
+            
+          </div>
+
+          
+          <div class="aliases">
+            Also aliased as: <a href="Responder.html#method-i-navigation_location">navigation_location</a>, <a href="Responder.html#method-i-api_location">api_location</a>
+          </div>
+          
+
+          
+        </div><!-- resource_location-method -->
+
+      
+        <div id="resourceful-3F-method" class="method-detail ">
+          <a name="method-i-resourceful-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">resourceful?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Checks whether the resource responds to the current format or not.</p>
+            
+
+            
+            <div class="method-source-code" id="resourceful-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 212</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">resourceful?</span>
+  <span class="ruby-identifier">resource</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-node">&quot;to_#{format}&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- resourceful-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- resourceful-3F-method -->
+
+      
+        <div id="response_overridden-3F-method" class="method-detail ">
+          <a name="method-i-response_overridden-3F"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">response_overridden?</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="response_overridden-3F-source">
+<pre>
+<span class="ruby-comment"># File lib/action_controller/metal/responder.rb, line 282</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">response_overridden?</span>
+  <span class="ruby-ivar">@default_response</span>.<span class="ruby-identifier">present?</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- response_overridden-3F-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- response_overridden-3F-method -->
+
+      
+      </div><!-- protected-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

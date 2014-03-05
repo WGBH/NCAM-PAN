@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Module: ActionView::Helpers::FormOptionsHelper</title>
+
+  <link rel="stylesheet" href="../../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="module">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../../index.html">Home</a>
+          <a href="../../index.html#classes">Classes</a>
+          <a href="../../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../../lib/action_view/helpers/form_options_helper_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/action_view/helpers/form_options_helper.rb">lib/action_view/helpers/form_options_helper.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-collection_select">#collection_select</a></li>
+          
+          <li><a href="#method-i-grouped_collection_select">#grouped_collection_select</a></li>
+          
+          <li><a href="#method-i-grouped_options_for_select">#grouped_options_for_select</a></li>
+          
+          <li><a href="#method-i-option_groups_from_collection_for_select">#option_groups_from_collection_for_select</a></li>
+          
+          <li><a href="#method-i-options_for_select">#options_for_select</a></li>
+          
+          <li><a href="#method-i-options_from_collection_for_select">#options_from_collection_for_select</a></li>
+          
+          <li><a href="#method-i-select">#select</a></li>
+          
+          <li><a href="#method-i-time_zone_options_for_select">#time_zone_options_for_select</a></li>
+          
+          <li><a href="#method-i-time_zone_select">#time_zone_select</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <!-- Included Modules -->
+      <div id="includes-section" class="section">
+        <h3 class="section-header">Included Modules</h3>
+        <ul class="link-list">
+        
+        
+          <li><a class="include" href="TextHelper.html">ActionView::Helpers::TextHelper</a></li>
+        
+        
+        </ul>
+      </div>
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../../ActionDispatch.html">ActionDispatch</a></li>
+        
+          <li><a href="../../ActionDispatch/Assertions.html">ActionDispatch::Assertions</a></li>
+        
+          <li><a href="../../ActionDispatch/Assertions/DomAssertions.html">ActionDispatch::Assertions::DomAssertions</a></li>
+        
+          <li><a href="../../ActionDispatch/Assertions/ResponseAssertions.html">ActionDispatch::Assertions::ResponseAssertions</a></li>
+        
+          <li><a href="../../ActionDispatch/Assertions/RoutingAssertions.html">ActionDispatch::Assertions::RoutingAssertions</a></li>
+        
+          <li><a href="../../ActionDispatch/Assertions/SelectorAssertions.html">ActionDispatch::Assertions::SelectorAssertions</a></li>
+        
+          <li><a href="../../ActionDispatch/Assertions/TagAssertions.html">ActionDispatch::Assertions::TagAssertions</a></li>
+        
+          <li><a href="../../ActionDispatch/BestStandardsSupport.html">ActionDispatch::BestStandardsSupport</a></li>
+        
+          <li><a href="../../ActionDispatch/BodyProxy.html">ActionDispatch::BodyProxy</a></li>
+        
+          <li><a href="../../ActionDispatch/Callbacks.html">ActionDispatch::Callbacks</a></li>
+        
+          <li><a href="../../ActionDispatch/Cookies.html">ActionDispatch::Cookies</a></li>
+        
+          <li><a href="../../ActionDispatch/Cookies/CookieOverflow.html">ActionDispatch::Cookies::CookieOverflow</a></li>
+        
+          <li><a href="../../ActionDispatch/DebugExceptions.html">ActionDispatch::DebugExceptions</a></li>
+        
+          <li><a href="../../ActionDispatch/ExceptionWrapper.html">ActionDispatch::ExceptionWrapper</a></li>
+        
+          <li><a href="../../ActionDispatch/FileHandler.html">ActionDispatch::FileHandler</a></li>
+        
+          <li><a href="../../ActionDispatch/Flash.html">ActionDispatch::Flash</a></li>
+        
+          <li><a href="../../ActionDispatch/Flash/FlashHash.html">ActionDispatch::Flash::FlashHash</a></li>
+        
+          <li><a href="../../ActionDispatch/Head.html">ActionDispatch::Head</a></li>
+        
+          <li><a href="../../ActionDispatch/Http.html">ActionDispatch::Http</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/Cache.html">ActionDispatch::Http::Cache</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/Cache/Request.html">ActionDispatch::Http::Cache::Request</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/Cache/Response.html">ActionDispatch::Http::Cache::Response</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/FilterParameters.html">ActionDispatch::Http::FilterParameters</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/Headers.html">ActionDispatch::Http::Headers</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/MimeNegotiation.html">ActionDispatch::Http::MimeNegotiation</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/ParameterFilter.html">ActionDispatch::Http::ParameterFilter</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/Parameters.html">ActionDispatch::Http::Parameters</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/URL.html">ActionDispatch::Http::URL</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/Upload.html">ActionDispatch::Http::Upload</a></li>
+        
+          <li><a href="../../ActionDispatch/Http/UploadedFile.html">ActionDispatch::Http::UploadedFile</a></li>
+        
+          <li><a href="../../ActionDispatch/Integration.html">ActionDispatch::Integration</a></li>
+        
+          <li><a href="../../ActionDispatch/Integration.html">ActionDispatch::Integration</a></li>
+        
+          <li><a href="../../ActionDispatch/Integration/RequestHelpers.html">ActionDispatch::Integration::RequestHelpers</a></li>
+        
+          <li><a href="../../ActionDispatch/Integration/Runner.html">ActionDispatch::Integration::Runner</a></li>
+        
+          <li><a href="../../ActionDispatch/Integration/Session.html">ActionDispatch::Integration::Session</a></li>
+        
+          <li><a href="../../ActionDispatch/IntegrationTest.html">ActionDispatch::IntegrationTest</a></li>
+        
+          <li><a href="../../ActionDispatch/IntegrationTest.html">ActionDispatch::IntegrationTest</a></li>
+        
+          <li><a href="../../ActionDispatch/MiddlewareStack.html">ActionDispatch::MiddlewareStack</a></li>
+        
+          <li><a href="../../ActionDispatch/MiddlewareStack/Middleware.html">ActionDispatch::MiddlewareStack::Middleware</a></li>
+        
+          <li><a href="../../ActionDispatch/ParamsParser.html">ActionDispatch::ParamsParser</a></li>
+        
+          <li><a href="../../ActionDispatch/PerformanceTest.html">ActionDispatch::PerformanceTest</a></li>
+        
+          <li><a href="../../ActionDispatch/PerformanceTest.html">ActionDispatch::PerformanceTest</a></li>
+        
+          <li><a href="../../ActionDispatch/PublicExceptions.html">ActionDispatch::PublicExceptions</a></li>
+        
+          <li><a href="../../ActionDispatch/RailsEntityStore.html">ActionDispatch::RailsEntityStore</a></li>
+        
+          <li><a href="../../ActionDispatch/RailsMetaStore.html">ActionDispatch::RailsMetaStore</a></li>
+        
+          <li><a href="../../ActionDispatch/Railtie.html">ActionDispatch::Railtie</a></li>
+        
+          <li><a href="../../ActionDispatch/Reloader.html">ActionDispatch::Reloader</a></li>
+        
+          <li><a href="../../ActionDispatch/RemoteIp.html">ActionDispatch::RemoteIp</a></li>
+        
+          <li><a href="../../ActionDispatch/RemoteIp/GetIp.html">ActionDispatch::RemoteIp::GetIp</a></li>
+        
+          <li><a href="../../ActionDispatch/RemoteIp/IpSpoofAttackError.html">ActionDispatch::RemoteIp::IpSpoofAttackError</a></li>
+        
+          <li><a href="../../ActionDispatch/Request.html">ActionDispatch::Request</a></li>
+        
+          <li><a href="../../ActionDispatch/RequestId.html">ActionDispatch::RequestId</a></li>
+        
+          <li><a href="../../ActionDispatch/Rescue.html">ActionDispatch::Rescue</a></li>
+        
+          <li><a href="../../ActionDispatch/Response.html">ActionDispatch::Response</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing.html">ActionDispatch::Routing</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing.html">ActionDispatch::Routing</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing/Mapper.html">ActionDispatch::Routing::Mapper</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing/Mapper/Base.html">ActionDispatch::Routing::Mapper::Base</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing/Mapper/HttpHelpers.html">ActionDispatch::Routing::Mapper::HttpHelpers</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing/Mapper/Resources.html">ActionDispatch::Routing::Mapper::Resources</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing/Mapper/Scoping.html">ActionDispatch::Routing::Mapper::Scoping</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing/PolymorphicRoutes.html">ActionDispatch::Routing::PolymorphicRoutes</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing/Redirection.html">ActionDispatch::Routing::Redirection</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing/RouteSet.html">ActionDispatch::Routing::RouteSet</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing/RouteSet/MountedHelpers.html">ActionDispatch::Routing::RouteSet::MountedHelpers</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing/UrlFor.html">ActionDispatch::Routing::UrlFor</a></li>
+        
+          <li><a href="../../ActionDispatch/Session.html">ActionDispatch::Session</a></li>
+        
+          <li><a href="../../ActionDispatch/Session/AbstractStore.html">ActionDispatch::Session::AbstractStore</a></li>
+        
+          <li><a href="../../ActionDispatch/Session/CacheStore.html">ActionDispatch::Session::CacheStore</a></li>
+        
+          <li><a href="../../ActionDispatch/Session/Compatibility.html">ActionDispatch::Session::Compatibility</a></li>
+        
+          <li><a href="../../ActionDispatch/Session/CookieStore.html">ActionDispatch::Session::CookieStore</a></li>
+        
+          <li><a href="../../ActionDispatch/Session/DestroyableSession.html">ActionDispatch::Session::DestroyableSession</a></li>
+        
+          <li><a href="../../ActionDispatch/Session/MemCacheStore.html">ActionDispatch::Session::MemCacheStore</a></li>
+        
+          <li><a href="../../ActionDispatch/Session/StaleSessionCheck.html">ActionDispatch::Session::StaleSessionCheck</a></li>
+        
+          <li><a href="../../ActionDispatch/ShowExceptions.html">ActionDispatch::ShowExceptions</a></li>
+        
+          <li><a href="../../ActionDispatch/Static.html">ActionDispatch::Static</a></li>
+        
+          <li><a href="../../ActionDispatch/TestProcess.html">ActionDispatch::TestProcess</a></li>
+        
+          <li><a href="../../ActionDispatch/TestRequest.html">ActionDispatch::TestRequest</a></li>
+        
+          <li><a href="../../ActionDispatch/TestResponse.html">ActionDispatch::TestResponse</a></li>
+        
+          <li><a href="../../ActionController.html">ActionController</a></li>
+        
+          <li><a href="../../ActionController/Base.html">ActionController::Base</a></li>
+        
+          <li><a href="../../ActionController/Caching.html">ActionController::Caching</a></li>
+        
+          <li><a href="../../ActionController/Caching/Actions.html">ActionController::Caching::Actions</a></li>
+        
+          <li><a href="../../ActionController/Caching/Actions/ActionCachePath.html">ActionController::Caching::Actions::ActionCachePath</a></li>
+        
+          <li><a href="../../ActionController/Caching/Actions/ClassMethods.html">ActionController::Caching::Actions::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/Caching/ConfigMethods.html">ActionController::Caching::ConfigMethods</a></li>
+        
+          <li><a href="../../ActionController/Caching/Fragments.html">ActionController::Caching::Fragments</a></li>
+        
+          <li><a href="../../ActionController/Caching/Pages.html">ActionController::Caching::Pages</a></li>
+        
+          <li><a href="../../ActionController/Caching/Pages/ClassMethods.html">ActionController::Caching::Pages::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/Caching/Sweeping.html">ActionController::Caching::Sweeping</a></li>
+        
+          <li><a href="../../ActionController/Compatibility.html">ActionController::Compatibility</a></li>
+        
+          <li><a href="../../ActionController/ConditionalGet.html">ActionController::ConditionalGet</a></li>
+        
+          <li><a href="../../ActionController/Cookies.html">ActionController::Cookies</a></li>
+        
+          <li><a href="../../ActionController/DataStreaming.html">ActionController::DataStreaming</a></li>
+        
+          <li><a href="../../ActionController/Flash.html">ActionController::Flash</a></li>
+        
+          <li><a href="../../ActionController/ForceSSL.html">ActionController::ForceSSL</a></li>
+        
+          <li><a href="../../ActionController/ForceSSL/ClassMethods.html">ActionController::ForceSSL::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/Head.html">ActionController::Head</a></li>
+        
+          <li><a href="../../ActionController/Helpers.html">ActionController::Helpers</a></li>
+        
+          <li><a href="../../ActionController/Helpers/ClassMethods.html">ActionController::Helpers::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/HideActions.html">ActionController::HideActions</a></li>
+        
+          <li><a href="../../ActionController/HideActions/ClassMethods.html">ActionController::HideActions::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/HttpAuthentication.html">ActionController::HttpAuthentication</a></li>
+        
+          <li><a href="../../ActionController/HttpAuthentication/Basic.html">ActionController::HttpAuthentication::Basic</a></li>
+        
+          <li><a href="../../ActionController/HttpAuthentication/Basic/ControllerMethods.html">ActionController::HttpAuthentication::Basic::ControllerMethods</a></li>
+        
+          <li><a href="../../ActionController/HttpAuthentication/Basic/ControllerMethods/ClassMethods.html">ActionController::HttpAuthentication::Basic::ControllerMethods::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/HttpAuthentication/Digest.html">ActionController::HttpAuthentication::Digest</a></li>
+        
+          <li><a href="../../ActionController/HttpAuthentication/Digest/ControllerMethods.html">ActionController::HttpAuthentication::Digest::ControllerMethods</a></li>
+        
+          <li><a href="../../ActionController/HttpAuthentication/Token.html">ActionController::HttpAuthentication::Token</a></li>
+        
+          <li><a href="../../ActionController/HttpAuthentication/Token/ControllerMethods.html">ActionController::HttpAuthentication::Token::ControllerMethods</a></li>
+        
+          <li><a href="../../ActionController/ImplicitRender.html">ActionController::ImplicitRender</a></li>
+        
+          <li><a href="../../ActionController/Instrumentation.html">ActionController::Instrumentation</a></li>
+        
+          <li><a href="../../ActionController/Instrumentation/ClassMethods.html">ActionController::Instrumentation::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/LogSubscriber.html">ActionController::LogSubscriber</a></li>
+        
+          <li><a href="../../ActionController/Metal.html">ActionController::Metal</a></li>
+        
+          <li><a href="../../ActionController/Middleware.html">ActionController::Middleware</a></li>
+        
+          <li><a href="../../ActionController/Middleware/ActionMiddleware.html">ActionController::Middleware::ActionMiddleware</a></li>
+        
+          <li><a href="../../ActionController/MimeResponds.html">ActionController::MimeResponds</a></li>
+        
+          <li><a href="../../ActionController/MimeResponds/ClassMethods.html">ActionController::MimeResponds::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/ParamsWrapper.html">ActionController::ParamsWrapper</a></li>
+        
+          <li><a href="../../ActionController/ParamsWrapper/ClassMethods.html">ActionController::ParamsWrapper::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/RackDelegation.html">ActionController::RackDelegation</a></li>
+        
+          <li><a href="../../ActionController/Railtie.html">ActionController::Railtie</a></li>
+        
+          <li><a href="../../ActionController/Railties.html">ActionController::Railties</a></li>
+        
+          <li><a href="../../ActionController/Railties/Paths.html">ActionController::Railties::Paths</a></li>
+        
+          <li><a href="../../ActionController/RecordIdentifier.html">ActionController::RecordIdentifier</a></li>
+        
+          <li><a href="../../ActionController/Redirecting.html">ActionController::Redirecting</a></li>
+        
+          <li><a href="../../ActionController/Renderers.html">ActionController::Renderers</a></li>
+        
+          <li><a href="../../ActionController/Renderers/All.html">ActionController::Renderers::All</a></li>
+        
+          <li><a href="../../ActionController/Renderers/ClassMethods.html">ActionController::Renderers::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/Rendering.html">ActionController::Rendering</a></li>
+        
+          <li><a href="../../ActionController/RequestForgeryProtection.html">ActionController::RequestForgeryProtection</a></li>
+        
+          <li><a href="../../ActionController/RequestForgeryProtection/ClassMethods.html">ActionController::RequestForgeryProtection::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/Rescue.html">ActionController::Rescue</a></li>
+        
+          <li><a href="../../ActionController/Responder.html">ActionController::Responder</a></li>
+        
+          <li><a href="../../ActionController/SessionManagement.html">ActionController::SessionManagement</a></li>
+        
+          <li><a href="../../ActionController/SessionManagement/ClassMethods.html">ActionController::SessionManagement::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/Streaming.html">ActionController::Streaming</a></li>
+        
+          <li><a href="../../ActionController/TemplateAssertions.html">ActionController::TemplateAssertions</a></li>
+        
+          <li><a href="../../ActionController/TestCase.html">ActionController::TestCase</a></li>
+        
+          <li><a href="../../ActionController/TestCase/Behavior.html">ActionController::TestCase::Behavior</a></li>
+        
+          <li><a href="../../ActionController/TestCase/Behavior/ClassMethods.html">ActionController::TestCase::Behavior::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/TestCase/RaiseActionExceptions.html">ActionController::TestCase::RaiseActionExceptions</a></li>
+        
+          <li><a href="../../ActionController/TestResponse.html">ActionController::TestResponse</a></li>
+        
+          <li><a href="../../ActionController/Testing.html">ActionController::Testing</a></li>
+        
+          <li><a href="../../ActionController/Testing/ClassMethods.html">ActionController::Testing::ClassMethods</a></li>
+        
+          <li><a href="../../ActionController/UrlFor.html">ActionController::UrlFor</a></li>
+        
+          <li><a href="../../ActionView.html">ActionView</a></li>
+        
+          <li><a href="../../ActionView/Base.html">ActionView::Base</a></li>
+        
+          <li><a href="../../ActionView/Context.html">ActionView::Context</a></li>
+        
+          <li><a href="../../ActionView/FileSystemResolver.html">ActionView::FileSystemResolver</a></li>
+        
+          <li><a href="../../ActionView/FixtureResolver.html">ActionView::FixtureResolver</a></li>
+        
+          <li><a href="../../ActionView/Helpers.html">ActionView::Helpers</a></li>
+        
+          <li><a href="../../ActionView/Helpers/ActiveModelHelper.html">ActionView::Helpers::ActiveModelHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/ActiveModelInstanceTag.html">ActionView::Helpers::ActiveModelInstanceTag</a></li>
+        
+          <li><a href="../../ActionView/AssetPaths.html">ActionView::Helpers::AssetPaths</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AssetTagHelper.html">ActionView::Helpers::AssetTagHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AssetTagHelper/AssetIncludeTag.html">ActionView::Helpers::AssetTagHelper::AssetIncludeTag</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AssetTagHelper/JavascriptIncludeTag.html">ActionView::Helpers::AssetTagHelper::JavascriptIncludeTag</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AssetTagHelper/JavascriptTagHelpers.html">ActionView::Helpers::AssetTagHelper::JavascriptTagHelpers</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AssetTagHelper/JavascriptTagHelpers/ClassMethods.html">ActionView::Helpers::AssetTagHelper::JavascriptTagHelpers::ClassMethods</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AssetTagHelper/StylesheetIncludeTag.html">ActionView::Helpers::AssetTagHelper::StylesheetIncludeTag</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AssetTagHelper/StylesheetTagHelpers.html">ActionView::Helpers::AssetTagHelper::StylesheetTagHelpers</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AssetTagHelper/StylesheetTagHelpers/ClassMethods.html">ActionView::Helpers::AssetTagHelper::StylesheetTagHelpers::ClassMethods</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AtomFeedHelper.html">ActionView::Helpers::AtomFeedHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AtomFeedHelper/AtomBuilder.html">ActionView::Helpers::AtomFeedHelper::AtomBuilder</a></li>
+        
+          <li><a href="../../ActionView/Helpers/AtomFeedHelper/AtomFeedBuilder.html">ActionView::Helpers::AtomFeedHelper::AtomFeedBuilder</a></li>
+        
+          <li><a href="../../ActionView/Helpers/CacheHelper.html">ActionView::Helpers::CacheHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/CaptureHelper.html">ActionView::Helpers::CaptureHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/CsrfHelper.html">ActionView::Helpers::CsrfHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/DateHelper.html">ActionView::Helpers::DateHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/DateHelperInstanceTag.html">ActionView::Helpers::DateHelperInstanceTag</a></li>
+        
+          <li><a href="../../ActionView/Helpers/DebugHelper.html">ActionView::Helpers::DebugHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/FormBuilder.html">ActionView::Helpers::FormBuilder</a></li>
+        
+          <li><a href="../../ActionView/Helpers/FormHelper.html">ActionView::Helpers::FormHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/FormOptionsHelper.html">ActionView::Helpers::FormOptionsHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/FormTagHelper.html">ActionView::Helpers::FormTagHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/InstanceTag.html">ActionView::Helpers::InstanceTag</a></li>
+        
+          <li><a href="../../ActionView/Helpers/JavaScriptHelper.html">ActionView::Helpers::JavaScriptHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/NumberHelper.html">ActionView::Helpers::NumberHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/NumberHelper/InvalidNumberError.html">ActionView::Helpers::NumberHelper::InvalidNumberError</a></li>
+        
+          <li><a href="../../ActionView/Helpers/OutputSafetyHelper.html">ActionView::Helpers::OutputSafetyHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/RecordTagHelper.html">ActionView::Helpers::RecordTagHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/RenderingHelper.html">ActionView::Helpers::RenderingHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/SanitizeHelper.html">ActionView::Helpers::SanitizeHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/TagHelper.html">ActionView::Helpers::TagHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/TextHelper.html">ActionView::Helpers::TextHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/TranslationHelper.html">ActionView::Helpers::TranslationHelper</a></li>
+        
+          <li><a href="../../ActionView/Helpers/UrlHelper.html">ActionView::Helpers::UrlHelper</a></li>
+        
+          <li><a href="../../ActionView/LogSubscriber.html">ActionView::LogSubscriber</a></li>
+        
+          <li><a href="../../ActionView/LookupContext.html">ActionView::LookupContext</a></li>
+        
+          <li><a href="../../ActionView/LookupContext/DetailsCache.html">ActionView::LookupContext::DetailsCache</a></li>
+        
+          <li><a href="../../ActionView/LookupContext/ViewPaths.html">ActionView::LookupContext::ViewPaths</a></li>
+        
+          <li><a href="../../ActionView/NullResolver.html">ActionView::NullResolver</a></li>
+        
+          <li><a href="../../ActionView/PartialRenderer.html">ActionView::PartialRenderer</a></li>
+        
+          <li><a href="../../ActionView/Railtie.html">ActionView::Railtie</a></li>
+        
+          <li><a href="../../ActionView/Renderer.html">ActionView::Renderer</a></li>
+        
+          <li><a href="../../ActionView/Resolver.html">ActionView::Resolver</a></li>
+        
+          <li><a href="../../ActionView/Resolver/Path.html">ActionView::Resolver::Path</a></li>
+        
+          <li><a href="../../ActionView/Template.html">ActionView::Template</a></li>
+        
+          <li><a href="../../ActionView/Template/Handlers.html">ActionView::Template::Handlers</a></li>
+        
+          <li><a href="../../ActionView/Template/Handlers/Builder.html">ActionView::Template::Handlers::Builder</a></li>
+        
+          <li><a href="../../ActionView/Template/Handlers/ERB.html">ActionView::Template::Handlers::ERB</a></li>
+        
+          <li><a href="../../ActionView/Template/Handlers/Erubis.html">ActionView::Template::Handlers::Erubis</a></li>
+        
+          <li><a href="../../ActionView/TestCase.html">ActionView::TestCase</a></li>
+        
+          <li><a href="../../ActionView/TestCase/Behavior.html">ActionView::TestCase::Behavior</a></li>
+        
+          <li><a href="../../ActionView/TestCase/Behavior/ClassMethods.html">ActionView::TestCase::Behavior::ClassMethods</a></li>
+        
+          <li><a href="../../ActionView/TestCase/Behavior/Locals.html">ActionView::TestCase::Behavior::Locals</a></li>
+        
+          <li><a href="../../ActionView/TestCase/TestController.html">ActionView::TestCase::TestController</a></li>
+        
+          <li><a href="../../AbstractController.html">AbstractController</a></li>
+        
+          <li><a href="../../AbstractController/ActionNotFound.html">AbstractController::ActionNotFound</a></li>
+        
+          <li><a href="../../AbstractController/AssetPaths.html">AbstractController::AssetPaths</a></li>
+        
+          <li><a href="../../AbstractController/Base.html">AbstractController::Base</a></li>
+        
+          <li><a href="../../AbstractController/Callbacks.html">AbstractController::Callbacks</a></li>
+        
+          <li><a href="../../AbstractController/Callbacks/ClassMethods.html">AbstractController::Callbacks::ClassMethods</a></li>
+        
+          <li><a href="../../AbstractController/Collector.html">AbstractController::Collector</a></li>
+        
+          <li><a href="../../AbstractController/DoubleRenderError.html">AbstractController::DoubleRenderError</a></li>
+        
+          <li><a href="../../AbstractController/Error.html">AbstractController::Error</a></li>
+        
+          <li><a href="../../AbstractController/Helpers.html">AbstractController::Helpers</a></li>
+        
+          <li><a href="../../AbstractController/Helpers/ClassMethods.html">AbstractController::Helpers::ClassMethods</a></li>
+        
+          <li><a href="../../AbstractController/Layouts.html">AbstractController::Layouts</a></li>
+        
+          <li><a href="../../AbstractController/Layouts/ClassMethods.html">AbstractController::Layouts::ClassMethods</a></li>
+        
+          <li><a href="../../AbstractController/Layouts/ClassMethods/LayoutConditions.html">AbstractController::Layouts::ClassMethods::LayoutConditions</a></li>
+        
+          <li><a href="../../AbstractController/Logger.html">AbstractController::Logger</a></li>
+        
+          <li><a href="../../AbstractController/Railties.html">AbstractController::Railties</a></li>
+        
+          <li><a href="../../AbstractController/Railties/RoutesHelpers.html">AbstractController::Railties::RoutesHelpers</a></li>
+        
+          <li><a href="../../AbstractController/Rendering.html">AbstractController::Rendering</a></li>
+        
+          <li><a href="../../AbstractController/Rendering/ClassMethods.html">AbstractController::Rendering::ClassMethods</a></li>
+        
+          <li><a href="../../AbstractController/Translation.html">AbstractController::Translation</a></li>
+        
+          <li><a href="../../AbstractController/UrlFor.html">AbstractController::UrlFor</a></li>
+        
+          <li><a href="../../AbstractController/UrlFor/ClassMethods.html">AbstractController::UrlFor::ClassMethods</a></li>
+        
+          <li><a href="../../AbstractController/ViewPaths.html">AbstractController::ViewPaths</a></li>
+        
+          <li><a href="../../AbstractController/ViewPaths/ClassMethods.html">AbstractController::ViewPaths::ClassMethods</a></li>
+        
+          <li><a href="../../Sprockets.html">Sprockets</a></li>
+        
+          <li><a href="../../Sprockets/Bootstrap.html">Sprockets::Bootstrap</a></li>
+        
+          <li><a href="../../Sprockets/Compressors.html">Sprockets::Compressors</a></li>
+        
+          <li><a href="../../Sprockets/Helpers.html">Sprockets::Helpers</a></li>
+        
+          <li><a href="../../Sprockets/Helpers/IsolatedHelper.html">Sprockets::Helpers::IsolatedHelper</a></li>
+        
+          <li><a href="../../Sprockets/Helpers/RailsHelper.html">Sprockets::Helpers::RailsHelper</a></li>
+        
+          <li><a href="../../Sprockets/Helpers/RailsHelper/AssetPaths.html">Sprockets::Helpers::RailsHelper::AssetPaths</a></li>
+        
+          <li><a href="../../Sprockets/Helpers/RailsHelper/AssetPaths/AssetNotPrecompiledError.html">Sprockets::Helpers::RailsHelper::AssetPaths::AssetNotPrecompiledError</a></li>
+        
+          <li><a href="../../Sprockets/Railtie.html">Sprockets::Railtie</a></li>
+        
+          <li><a href="../../Sprockets/StaticCompiler.html">Sprockets::StaticCompiler</a></li>
+        
+          <li><a href="../../HTML.html">HTML</a></li>
+        
+          <li><a href="../../HTML/FullSanitizer.html">HTML::FullSanitizer</a></li>
+        
+          <li><a href="../../HTML/LinkSanitizer.html">HTML::LinkSanitizer</a></li>
+        
+          <li><a href="../../HTML/Sanitizer.html">HTML::Sanitizer</a></li>
+        
+          <li><a href="../../HTML/Selector.html">HTML::Selector</a></li>
+        
+          <li><a href="../../HTML/Tag.html">HTML::Tag</a></li>
+        
+          <li><a href="../../HTML/WhiteListSanitizer.html">HTML::WhiteListSanitizer</a></li>
+        
+          <li><a href="../../Object.html">Object</a></li>
+        
+          <li><a href="../../ActionDispatch/Integration.html">Object::Integration</a></li>
+        
+          <li><a href="../../ActionDispatch/IntegrationTest.html">Object::IntegrationTest</a></li>
+        
+          <li><a href="../../ActionDispatch/PerformanceTest.html">Object::PerformanceTest</a></li>
+        
+          <li><a href="../../ActionDispatch/Routing.html">Object::Routing</a></li>
+        
+          <li><a href="../../Mime.html">Mime</a></li>
+        
+          <li><a href="../../Mime/Mimes.html">Mime::Mimes</a></li>
+        
+          <li><a href="../../Mime/Type.html">Mime::Type</a></li>
+        
+          <li><a href="../../I18n.html">I18n</a></li>
+        
+          <li><a href="../../I18n/ExceptionHandler.html">I18n::ExceptionHandler</a></li>
+        
+          <li><a href="../../ActionPack.html">ActionPack</a></li>
+        
+          <li><a href="../../Rack.html">Rack</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="module">ActionView::Helpers::FormOptionsHelper</h1>
+
+    <div id="description" class="description">
+      
+<p>Provides a number of methods for turning different kinds of containers into
+a set of option tags.</p>
+
+<h2>Options</h2>
+
+<p>The <tt>collection_select</tt>, <tt>select</tt> and
+<tt>time_zone_select</tt> methods take an <tt>options</tt> parameter, a
+hash:</p>
+<ul><li>
+<p><tt>:include_blank</tt> - set to true or a prompt string if the first
+option element of the select element is a blank. Useful if there is not a
+default value required for the select element.</p>
+</li></ul>
+
+<p>For example,</p>
+
+<pre>select(&quot;post&quot;, &quot;category&quot;, Post::CATEGORIES, {:include_blank =&gt; true})</pre>
+
+<p>could become:</p>
+
+<pre>&lt;select name=&quot;post[category]&quot;&gt;
+  &lt;option&gt;&lt;/option&gt;
+  &lt;option&gt;joke&lt;/option&gt;
+  &lt;option&gt;poem&lt;/option&gt;
+&lt;/select&gt;</pre>
+
+<p>Another common case is a select tag for an <tt>belongs_to</tt>-associated
+object.</p>
+
+<p>Example with @post.person_id =&gt; 2:</p>
+
+<pre>select(&quot;post&quot;, &quot;person_id&quot;, Person.all.collect {|p| [ p.name, p.id ] }, {:include_blank =&gt; 'None'})</pre>
+
+<p>could become:</p>
+
+<pre>&lt;select name=&quot;post[person_id]&quot;&gt;
+  &lt;option value=&quot;&quot;&gt;None&lt;/option&gt;
+  &lt;option value=&quot;1&quot;&gt;David&lt;/option&gt;
+  &lt;option value=&quot;2&quot; selected=&quot;selected&quot;&gt;Sam&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Tobias&lt;/option&gt;
+&lt;/select&gt;</pre>
+<ul><li>
+<p><tt>:prompt</tt> - set to true or a prompt string. When the select element
+doesn't have a value yet, this prepends an option with a generic prompt --
+"Please select" -- or the given prompt string.</p>
+</li></ul>
+
+<p>Example:</p>
+
+<pre>select(&quot;post&quot;, &quot;person_id&quot;, Person.all.collect {|p| [ p.name, p.id ] }, {:prompt =&gt; 'Select Person'})</pre>
+
+<p>could become:</p>
+
+<pre>&lt;select name=&quot;post[person_id]&quot;&gt;
+  &lt;option value=&quot;&quot;&gt;Select Person&lt;/option&gt;
+  &lt;option value=&quot;1&quot;&gt;David&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Sam&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Tobias&lt;/option&gt;
+&lt;/select&gt;</pre>
+
+<p>Like the other form helpers, <tt>select</tt> can accept an <tt>:index</tt>
+option to manually set the ID used in the resulting output. Unlike other
+helpers, <tt>select</tt> expects this option to be in the
+<tt>html_options</tt> parameter.</p>
+
+<p>Example:</p>
+
+<pre>select(&quot;album[]&quot;, &quot;genre&quot;, %w[rap rock country], {}, { :index =&gt; nil })</pre>
+
+<p>becomes:</p>
+
+<pre>&lt;select name=&quot;album[][genre]&quot; id=&quot;album__genre&quot;&gt;
+  &lt;option value=&quot;rap&quot;&gt;rap&lt;/option&gt;
+  &lt;option value=&quot;rock&quot;&gt;rock&lt;/option&gt;
+  &lt;option value=&quot;country&quot;&gt;country&lt;/option&gt;
+&lt;/select&gt;</pre>
+<ul><li>
+<p><tt>:disabled</tt> - can be a single value or an array of values that will
+be disabled options in the final output.</p>
+</li></ul>
+
+<p>Example:</p>
+
+<pre>select(&quot;post&quot;, &quot;category&quot;, Post::CATEGORIES, {:disabled =&gt; 'restricted'})</pre>
+
+<p>could become:</p>
+
+<pre>&lt;select name=&quot;post[category]&quot;&gt;
+  &lt;option&gt;&lt;/option&gt;
+  &lt;option&gt;joke&lt;/option&gt;
+  &lt;option&gt;poem&lt;/option&gt;
+  &lt;option disabled=&quot;disabled&quot;&gt;restricted&lt;/option&gt;
+&lt;/select&gt;</pre>
+
+<p>When used with the <tt>collection_select</tt> helper, <tt>:disabled</tt>
+can also be a Proc that identifies those options that should be disabled.</p>
+
+<p>Example:</p>
+
+<pre>collection_select(:post, :category_id, Category.all, :id, :name, {:disabled =&gt; lambda{|category| category.archived? }})</pre>
+
+<p>If the categories “2008 stuff” and “Christmas” return true when the method
+<tt>archived?</tt> is called, this would return:</p>
+
+<pre>&lt;select name=&quot;post[category_id]&quot;&gt;
+  &lt;option value=&quot;1&quot; disabled=&quot;disabled&quot;&gt;2008 stuff&lt;/option&gt;
+  &lt;option value=&quot;2&quot; disabled=&quot;disabled&quot;&gt;Christmas&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Jokes&lt;/option&gt;
+  &lt;option value=&quot;4&quot;&gt;Poems&lt;/option&gt;
+&lt;/select&gt;</pre>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="collection_select-method" class="method-detail ">
+          <a name="method-i-collection_select"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">collection_select</span><span
+              class="method-args">(object, method, collection, value_method, text_method, options = {}, html_options = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns <tt>&lt;select&gt;</tt> and <tt>&lt;option&gt;</tt> tags for the
+collection of existing return values of <tt>method</tt> for
+<tt>object</tt>‘s class. The value returned from calling <tt>method</tt> on
+the instance <tt>object</tt> will be selected. If calling <tt>method</tt>
+returns <tt>nil</tt>, no selection is made without including
+<tt>:prompt</tt> or <tt>:include_blank</tt> in the <tt>options</tt> hash.</p>
+
+<p>The <tt>:value_method</tt> and <tt>:text_method</tt> parameters are methods
+to be called on each member of <tt>collection</tt>. The return values are
+used as the <tt>value</tt> attribute and contents of each
+<tt>&lt;option&gt;</tt> tag, respectively.</p>
+
+<p>Example object structure for use with this method:</p>
+
+<pre>class Post &lt; ActiveRecord::Base
+  belongs_to :author
+end
+class Author &lt; ActiveRecord::Base
+  has_many :posts
+  def name_with_initial
+    &quot;#{first_name.first}. #{last_name}&quot;
+  end
+end</pre>
+
+<p>Sample usage (selecting the associated Author for an instance of Post,
+<tt>@post</tt>):</p>
+
+<pre>collection_select(:post, :author_id, Author.all, :id, :name_with_initial, :prompt =&gt; true)</pre>
+
+<p>If <tt>@post.author_id</tt> is already <tt>1</tt>, this would return:</p>
+
+<pre>&lt;select name=&quot;post[author_id]&quot;&gt;
+  &lt;option value=&quot;&quot;&gt;Please select&lt;/option&gt;
+  &lt;option value=&quot;1&quot; selected=&quot;selected&quot;&gt;D. Heinemeier Hansson&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;D. Thomas&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;M. Clark&lt;/option&gt;
+&lt;/select&gt;</pre>
+            
+
+            
+            <div class="method-source-code" id="collection_select-source">
+<pre>
+<span class="ruby-comment"># File lib/action_view/helpers/form_options_helper.rb, line 190</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">collection_select</span>(<span class="ruby-identifier">object</span>, <span class="ruby-identifier">method</span>, <span class="ruby-identifier">collection</span>, <span class="ruby-identifier">value_method</span>, <span class="ruby-identifier">text_method</span>, <span class="ruby-identifier">options</span> = {}, <span class="ruby-identifier">html_options</span> = {})
+  <span class="ruby-constant">InstanceTag</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">object</span>, <span class="ruby-identifier">method</span>, <span class="ruby-keyword">self</span>, <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:object</span>)).<span class="ruby-identifier">to_collection_select_tag</span>(<span class="ruby-identifier">collection</span>, <span class="ruby-identifier">value_method</span>, <span class="ruby-identifier">text_method</span>, <span class="ruby-identifier">options</span>, <span class="ruby-identifier">html_options</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- collection_select-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- collection_select-method -->
+
+      
+        <div id="grouped_collection_select-method" class="method-detail ">
+          <a name="method-i-grouped_collection_select"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">grouped_collection_select</span><span
+              class="method-args">(object, method, collection, group_method, group_label_method, option_key_method, option_value_method, options = {}, html_options = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns <tt>&lt;select&gt;</tt>, <tt>&lt;optgroup&gt;</tt> and
+<tt>&lt;option&gt;</tt> tags for the collection of existing return values
+of <tt>method</tt> for <tt>object</tt>‘s class. The value returned from
+calling <tt>method</tt> on the instance <tt>object</tt> will be selected.
+If calling <tt>method</tt> returns <tt>nil</tt>, no selection is made
+without including <tt>:prompt</tt> or <tt>:include_blank</tt> in the
+<tt>options</tt> hash.</p>
+
+<p>Parameters:</p>
+<ul><li>
+<p><tt>object</tt> - The instance of the class to be used for the select tag</p>
+</li><li>
+<p><tt>method</tt> - The attribute of <tt>object</tt> corresponding to the
+select tag</p>
+</li><li>
+<p><tt>collection</tt> - An array of objects representing the
+<tt>&lt;optgroup&gt;</tt> tags.</p>
+</li><li>
+<p><tt>group_method</tt> - The name of a method which, when called on a member
+of <tt>collection</tt>, returns an array of child objects representing the
+<tt>&lt;option&gt;</tt> tags.</p>
+</li><li>
+<p><tt>group_label_method</tt> - The name of a method which, when called on a
+member of <tt>collection</tt>, returns a string to be used as the
+<tt>label</tt> attribute for its <tt>&lt;optgroup&gt;</tt> tag.</p>
+</li><li>
+<p><tt>option_key_method</tt> - The name of a method which, when called on a
+child object of a member of <tt>collection</tt>, returns a value to be used
+as the <tt>value</tt> attribute for its <tt>&lt;option&gt;</tt> tag.</p>
+</li><li>
+<p><tt>option_value_method</tt> - The name of a method which, when called on a
+child object of a member of <tt>collection</tt>, returns a value to be used
+as the contents of its <tt>&lt;option&gt;</tt> tag.</p>
+</li></ul>
+
+<p>Example object structure for use with this method:</p>
+
+<pre>class Continent &lt; ActiveRecord::Base
+  has_many :countries
+  # attribs: id, name
+end
+class Country &lt; ActiveRecord::Base
+  belongs_to :continent
+  # attribs: id, name, continent_id
+end
+class City &lt; ActiveRecord::Base
+  belongs_to :country
+  # attribs: id, name, country_id
+end</pre>
+
+<p>Sample usage:</p>
+
+<pre>grouped_collection_select(:city, :country_id, @continents, :countries, :name, :id, :name)</pre>
+
+<p>Possible output:</p>
+
+<pre>&lt;select name=&quot;city[country_id]&quot;&gt;
+  &lt;optgroup label=&quot;Africa&quot;&gt;
+    &lt;option value=&quot;1&quot;&gt;South Africa&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Somalia&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label=&quot;Europe&quot;&gt;
+    &lt;option value=&quot;7&quot; selected=&quot;selected&quot;&gt;Denmark&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Ireland&lt;/option&gt;
+  &lt;/optgroup&gt;
+&lt;/select&gt;</pre>
+            
+
+            
+            <div class="method-source-code" id="grouped_collection_select-source">
+<pre>
+<span class="ruby-comment"># File lib/action_view/helpers/form_options_helper.rb, line 242</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">grouped_collection_select</span>(<span class="ruby-identifier">object</span>, <span class="ruby-identifier">method</span>, <span class="ruby-identifier">collection</span>, <span class="ruby-identifier">group_method</span>, <span class="ruby-identifier">group_label_method</span>, <span class="ruby-identifier">option_key_method</span>, <span class="ruby-identifier">option_value_method</span>, <span class="ruby-identifier">options</span> = {}, <span class="ruby-identifier">html_options</span> = {})
+  <span class="ruby-constant">InstanceTag</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">object</span>, <span class="ruby-identifier">method</span>, <span class="ruby-keyword">self</span>, <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:object</span>)).<span class="ruby-identifier">to_grouped_collection_select_tag</span>(<span class="ruby-identifier">collection</span>, <span class="ruby-identifier">group_method</span>, <span class="ruby-identifier">group_label_method</span>, <span class="ruby-identifier">option_key_method</span>, <span class="ruby-identifier">option_value_method</span>, <span class="ruby-identifier">options</span>, <span class="ruby-identifier">html_options</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- grouped_collection_select-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- grouped_collection_select-method -->
+
+      
+        <div id="grouped_options_for_select-method" class="method-detail ">
+          <a name="method-i-grouped_options_for_select"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">grouped_options_for_select</span><span
+              class="method-args">(grouped_options, selected_key = nil, prompt = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns a string of <tt>&lt;option&gt;</tt> tags, like
+<tt>options_for_select</tt>, but wraps them with <tt>&lt;optgroup&gt;</tt>
+tags.</p>
+
+<p>Parameters:</p>
+<ul><li>
+<p><tt>grouped_options</tt> - Accepts a nested array or hash of strings. The
+first value serves as the <tt>&lt;optgroup&gt;</tt> label while the second
+value must be an array of options. The second value can be a nested array
+of text-value pairs. See <tt>options_for_select</tt> for more info.</p>
+
+<pre>Ex. [&quot;North America&quot;,[[&quot;United States&quot;,&quot;US&quot;],[&quot;Canada&quot;,&quot;CA&quot;]]]</pre>
+</li><li>
+<p><tt>selected_key</tt> - A value equal to the <tt>value</tt> attribute for
+one of the <tt>&lt;option&gt;</tt> tags, which will have the
+<tt>selected</tt> attribute set. Note: It is possible for this value to
+match multiple options as you might have the same option in multiple
+groups. Each will then get <tt>selected=&quot;selected&quot;</tt>.</p>
+</li><li>
+<p><tt>prompt</tt> - set to true or a prompt string. When the select element
+doesn't have a value yet, this prepends an option with a generic prompt -
+"Please select" - or the given prompt string.</p>
+</li></ul>
+
+<p>Sample usage (Array):</p>
+
+<pre>grouped_options = [
+ ['North America',
+   [['United States','US'],'Canada']],
+ ['Europe',
+   ['Denmark','Germany','France']]
+]
+grouped_options_for_select(grouped_options)</pre>
+
+<p>Sample usage (Hash):</p>
+
+<pre>grouped_options = {
+ 'North America' =&gt; [['United States','US'], 'Canada'],
+ 'Europe' =&gt; ['Denmark','Germany','France']
+}
+grouped_options_for_select(grouped_options)</pre>
+
+<p>Possible output:</p>
+
+<pre>&lt;optgroup label=&quot;Europe&quot;&gt;
+  &lt;option value=&quot;Denmark&quot;&gt;Denmark&lt;/option&gt;
+  &lt;option value=&quot;Germany&quot;&gt;Germany&lt;/option&gt;
+  &lt;option value=&quot;France&quot;&gt;France&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=&quot;North America&quot;&gt;
+  &lt;option value=&quot;US&quot;&gt;United States&lt;/option&gt;
+  &lt;option value=&quot;Canada&quot;&gt;Canada&lt;/option&gt;
+&lt;/optgroup&gt;</pre>
+
+<p><b>Note:</b> Only the <tt>&lt;optgroup&gt;</tt> and <tt>&lt;option&gt;</tt>
+tags are returned, so you still have to wrap the output in an appropriate
+<tt>&lt;select&gt;</tt> tag.</p>
+            
+
+            
+            <div class="method-source-code" id="grouped_options_for_select-source">
+<pre>
+<span class="ruby-comment"># File lib/action_view/helpers/form_options_helper.rb, line 473</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">grouped_options_for_select</span>(<span class="ruby-identifier">grouped_options</span>, <span class="ruby-identifier">selected_key</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">prompt</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">body</span> = <span class="ruby-string">''</span>
+  <span class="ruby-identifier">body</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:option</span>, <span class="ruby-identifier">prompt</span>, { <span class="ruby-value">:value</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;&quot;</span> }, <span class="ruby-keyword">true</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">prompt</span>
+
+  <span class="ruby-identifier">grouped_options</span> = <span class="ruby-identifier">grouped_options</span>.<span class="ruby-identifier">sort</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">grouped_options</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+
+  <span class="ruby-identifier">grouped_options</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">group</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">body</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">content_tag</span>(<span class="ruby-value">:optgroup</span>, <span class="ruby-identifier">options_for_select</span>(<span class="ruby-identifier">group</span>[<span class="ruby-value">1</span>], <span class="ruby-identifier">selected_key</span>), <span class="ruby-value">:label</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">group</span>[<span class="ruby-value">0</span>])
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">body</span>.<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- grouped_options_for_select-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- grouped_options_for_select-method -->
+
+      
+        <div id="option_groups_from_collection_for_select-method" class="method-detail ">
+          <a name="method-i-option_groups_from_collection_for_select"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">option_groups_from_collection_for_select</span><span
+              class="method-args">(collection, group_method, group_label_method, option_key_method, option_value_method, selected_key = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns a string of <tt>&lt;option&gt;</tt> tags, like
+<tt>options_from_collection_for_select</tt>, but groups them by
+<tt>&lt;optgroup&gt;</tt> tags based on the object relationships of the
+arguments.</p>
+
+<p>Parameters:</p>
+<ul><li>
+<p><tt>collection</tt> - An array of objects representing the
+<tt>&lt;optgroup&gt;</tt> tags.</p>
+</li><li>
+<p><tt>group_method</tt> - The name of a method which, when called on a member
+of <tt>collection</tt>, returns an array of child objects representing the
+<tt>&lt;option&gt;</tt> tags.</p>
+</li><li>
+<p>group_label_method+ - The name of a method which, when called on a member
+of <tt>collection</tt>, returns a string to be used as the <tt>label</tt>
+attribute for its <tt>&lt;optgroup&gt;</tt> tag.</p>
+</li><li>
+<p><tt>option_key_method</tt> - The name of a method which, when called on a
+child object of a member of <tt>collection</tt>, returns a value to be used
+as the <tt>value</tt> attribute for its <tt>&lt;option&gt;</tt> tag.</p>
+</li><li>
+<p><tt>option_value_method</tt> - The name of a method which, when called on a
+child object of a member of <tt>collection</tt>, returns a value to be used
+as the contents of its <tt>&lt;option&gt;</tt> tag.</p>
+</li><li>
+<p><tt>selected_key</tt> - A value equal to the <tt>value</tt> attribute for
+one of the <tt>&lt;option&gt;</tt> tags, which will have the
+<tt>selected</tt> attribute set. Corresponds to the return value of one of
+the calls to <tt>option_key_method</tt>. If <tt>nil</tt>, no selection is
+made. Can also be a hash if disabled values are to be specified.</p>
+</li></ul>
+
+<p>Example object structure for use with this method:</p>
+
+<pre>class Continent &lt; ActiveRecord::Base
+  has_many :countries
+  # attribs: id, name
+end
+class Country &lt; ActiveRecord::Base
+  belongs_to :continent
+  # attribs: id, name, continent_id
+end</pre>
+
+<p>Sample usage:</p>
+
+<pre>option_groups_from_collection_for_select(@continents, :countries, :name, :id, :name, 3)</pre>
+
+<p>Possible output:</p>
+
+<pre>&lt;optgroup label=&quot;Africa&quot;&gt;
+  &lt;option value=&quot;1&quot;&gt;Egypt&lt;/option&gt;
+  &lt;option value=&quot;4&quot;&gt;Rwanda&lt;/option&gt;
+  ...
+&lt;/optgroup&gt;
+&lt;optgroup label=&quot;Asia&quot;&gt;
+  &lt;option value=&quot;3&quot; selected=&quot;selected&quot;&gt;China&lt;/option&gt;
+  &lt;option value=&quot;12&quot;&gt;India&lt;/option&gt;
+  &lt;option value=&quot;5&quot;&gt;Japan&lt;/option&gt;
+  ...
+&lt;/optgroup&gt;</pre>
+
+<p><b>Note:</b> Only the <tt>&lt;optgroup&gt;</tt> and <tt>&lt;option&gt;</tt>
+tags are returned, so you still have to wrap the output in an appropriate
+<tt>&lt;select&gt;</tt> tag.</p>
+            
+
+            
+            <div class="method-source-code" id="option_groups_from_collection_for_select-source">
+<pre>
+<span class="ruby-comment"># File lib/action_view/helpers/form_options_helper.rb, line 421</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">option_groups_from_collection_for_select</span>(<span class="ruby-identifier">collection</span>, <span class="ruby-identifier">group_method</span>, <span class="ruby-identifier">group_label_method</span>, <span class="ruby-identifier">option_key_method</span>, <span class="ruby-identifier">option_value_method</span>, <span class="ruby-identifier">selected_key</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">collection</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">group</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">group_label_string</span> = <span class="ruby-identifier">eval</span>(<span class="ruby-node">&quot;group.#{group_label_method}&quot;</span>)
+    <span class="ruby-node">&quot;&lt;optgroup label=\&quot;#{ERB::Util.html_escape(group_label_string)}\&quot;&gt;&quot;</span> <span class="ruby-operator">+</span>
+      <span class="ruby-identifier">options_from_collection_for_select</span>(<span class="ruby-identifier">eval</span>(<span class="ruby-node">&quot;group.#{group_method}&quot;</span>), <span class="ruby-identifier">option_key_method</span>, <span class="ruby-identifier">option_value_method</span>, <span class="ruby-identifier">selected_key</span>) <span class="ruby-operator">+</span>
+      <span class="ruby-string">'&lt;/optgroup&gt;'</span>
+  <span class="ruby-keyword">end</span>.<span class="ruby-identifier">join</span>.<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- option_groups_from_collection_for_select-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- option_groups_from_collection_for_select-method -->
+
+      
+        <div id="options_for_select-method" class="method-detail ">
+          <a name="method-i-options_for_select"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">options_for_select</span><span
+              class="method-args">(container, selected = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Accepts a container (hash, array, enumerable, your type) and returns a
+string of option tags. Given a container where the elements respond to
+first and last (such as a two-element array), the “lasts” serve as option
+values and the “firsts” as option text. Hashes are turned into this form
+automatically, so the keys become “firsts” and values become lasts. If
+<tt>selected</tt> is specified, the matching “last” or element will get the
+selected option-tag. <tt>selected</tt> may also be an array of values to be
+selected when using a multiple select.</p>
+
+<p>Examples (call, result):</p>
+
+<pre>options_for_select([[&quot;Dollar&quot;, &quot;$&quot;], [&quot;Kroner&quot;, &quot;DKK&quot;]])
+  &lt;option value=&quot;$&quot;&gt;Dollar&lt;/option&gt;\n&lt;option value=&quot;DKK&quot;&gt;Kroner&lt;/option&gt;
+
+options_for_select([ &quot;VISA&quot;, &quot;MasterCard&quot; ], &quot;MasterCard&quot;)
+  &lt;option&gt;VISA&lt;/option&gt;\n&lt;option selected=&quot;selected&quot;&gt;MasterCard&lt;/option&gt;
+
+options_for_select({ &quot;Basic&quot; =&gt; &quot;$20&quot;, &quot;Plus&quot; =&gt; &quot;$40&quot; }, &quot;$40&quot;)
+  &lt;option value=&quot;$20&quot;&gt;Basic&lt;/option&gt;\n&lt;option value=&quot;$40&quot; selected=&quot;selected&quot;&gt;Plus&lt;/option&gt;
+
+options_for_select([ &quot;VISA&quot;, &quot;MasterCard&quot;, &quot;Discover&quot; ], [&quot;VISA&quot;, &quot;Discover&quot;])
+  &lt;option selected=&quot;selected&quot;&gt;VISA&lt;/option&gt;\n&lt;option&gt;MasterCard&lt;/option&gt;\n&lt;option selected=&quot;selected&quot;&gt;Discover&lt;/option&gt;</pre>
+
+<p>You can optionally provide html attributes as the last element of the
+array.</p>
+
+<p>Examples:</p>
+
+<pre>options_for_select([ &quot;Denmark&quot;, [&quot;USA&quot;, {:class =&gt; 'bold'}], &quot;Sweden&quot; ], [&quot;USA&quot;, &quot;Sweden&quot;])
+  &lt;option value=&quot;Denmark&quot;&gt;Denmark&lt;/option&gt;\n&lt;option value=&quot;USA&quot; class=&quot;bold&quot; selected=&quot;selected&quot;&gt;USA&lt;/option&gt;\n&lt;option value=&quot;Sweden&quot; selected=&quot;selected&quot;&gt;Sweden&lt;/option&gt;
+
+options_for_select([[&quot;Dollar&quot;, &quot;$&quot;, {:class =&gt; &quot;bold&quot;}], [&quot;Kroner&quot;, &quot;DKK&quot;, {:onclick =&gt; &quot;alert('HI');&quot;}]])
+  &lt;option value=&quot;$&quot; class=&quot;bold&quot;&gt;Dollar&lt;/option&gt;\n&lt;option value=&quot;DKK&quot; onclick=&quot;alert('HI');&quot;&gt;Kroner&lt;/option&gt;</pre>
+
+<p>If you wish to specify disabled option tags, set <tt>selected</tt> to be a
+hash, with <tt>:disabled</tt> being either a value or array of values to be
+disabled. In this case, you can use <tt>:selected</tt> to specify selected
+option tags.</p>
+
+<p>Examples:</p>
+
+<pre>options_for_select([&quot;Free&quot;, &quot;Basic&quot;, &quot;Advanced&quot;, &quot;Super Platinum&quot;], :disabled =&gt; &quot;Super Platinum&quot;)
+  &lt;option value=&quot;Free&quot;&gt;Free&lt;/option&gt;\n&lt;option value=&quot;Basic&quot;&gt;Basic&lt;/option&gt;\n&lt;option value=&quot;Advanced&quot;&gt;Advanced&lt;/option&gt;\n&lt;option value=&quot;Super Platinum&quot; disabled=&quot;disabled&quot;&gt;Super Platinum&lt;/option&gt;
+
+options_for_select([&quot;Free&quot;, &quot;Basic&quot;, &quot;Advanced&quot;, &quot;Super Platinum&quot;], :disabled =&gt; [&quot;Advanced&quot;, &quot;Super Platinum&quot;])
+  &lt;option value=&quot;Free&quot;&gt;Free&lt;/option&gt;\n&lt;option value=&quot;Basic&quot;&gt;Basic&lt;/option&gt;\n&lt;option value=&quot;Advanced&quot; disabled=&quot;disabled&quot;&gt;Advanced&lt;/option&gt;\n&lt;option value=&quot;Super Platinum&quot; disabled=&quot;disabled&quot;&gt;Super Platinum&lt;/option&gt;
+
+options_for_select([&quot;Free&quot;, &quot;Basic&quot;, &quot;Advanced&quot;, &quot;Super Platinum&quot;], :selected =&gt; &quot;Free&quot;, :disabled =&gt; &quot;Super Platinum&quot;)
+  &lt;option value=&quot;Free&quot; selected=&quot;selected&quot;&gt;Free&lt;/option&gt;\n&lt;option value=&quot;Basic&quot;&gt;Basic&lt;/option&gt;\n&lt;option value=&quot;Advanced&quot;&gt;Advanced&lt;/option&gt;\n&lt;option value=&quot;Super Platinum&quot; disabled=&quot;disabled&quot;&gt;Super Platinum&lt;/option&gt;</pre>
+
+<p>NOTE: Only the option tags are returned, you have to wrap this call in a
+regular <a href="../../HTML.html">HTML</a> select tag.</p>
+            
+
+            
+            <div class="method-source-code" id="options_for_select-source">
+<pre>
+<span class="ruby-comment"># File lib/action_view/helpers/form_options_helper.rb, line 322</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">options_for_select</span>(<span class="ruby-identifier">container</span>, <span class="ruby-identifier">selected</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">container</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">String</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">container</span>
+
+  <span class="ruby-identifier">selected</span>, <span class="ruby-identifier">disabled</span> = <span class="ruby-identifier">extract_selected_and_disabled</span>(<span class="ruby-identifier">selected</span>).<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span> <span class="ruby-identifier">r</span> <span class="ruby-operator">|</span>
+     <span class="ruby-constant">Array</span>.<span class="ruby-identifier">wrap</span>(<span class="ruby-identifier">r</span>).<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">to_s</span> }
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">container</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">element</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">html_attributes</span> = <span class="ruby-identifier">option_html_attributes</span>(<span class="ruby-identifier">element</span>)
+    <span class="ruby-identifier">text</span>, <span class="ruby-identifier">value</span> = <span class="ruby-identifier">option_text_and_value</span>(<span class="ruby-identifier">element</span>).<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">item</span><span class="ruby-operator">|</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">to_s</span> }
+    <span class="ruby-identifier">selected_attribute</span> = <span class="ruby-string">' selected=&quot;selected&quot;'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">option_value_selected?</span>(<span class="ruby-identifier">value</span>, <span class="ruby-identifier">selected</span>)
+    <span class="ruby-identifier">disabled_attribute</span> = <span class="ruby-string">' disabled=&quot;disabled&quot;'</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">disabled</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">option_value_selected?</span>(<span class="ruby-identifier">value</span>, <span class="ruby-identifier">disabled</span>)
+    <span class="ruby-node">%(&lt;option value=&quot;#{ERB::Util.html_escape(value)}&quot;#{selected_attribute}#{disabled_attribute}#{html_attributes}&gt;#{ERB::Util.html_escape(text)}&lt;/option&gt;)</span>
+  <span class="ruby-keyword">end</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot;\n&quot;</span>).<span class="ruby-identifier">html_safe</span>
+
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- options_for_select-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- options_for_select-method -->
+
+      
+        <div id="options_from_collection_for_select-method" class="method-detail ">
+          <a name="method-i-options_from_collection_for_select"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">options_from_collection_for_select</span><span
+              class="method-args">(collection, value_method, text_method, selected = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns a string of option tags that have been compiled by iterating over
+the <tt>collection</tt> and assigning the result of a call to the
+<tt>value_method</tt> as the option value and the <tt>text_method</tt> as
+the option text. Example:</p>
+
+<pre>options_from_collection_for_select(@people, 'id', 'name')</pre>
+
+<p>This will output the same <a href="../../HTML.html">HTML</a> as if you did
+this:</p>
+
+<pre>&lt;option value=&quot;#{person.id}&quot;&gt;#{person.name}&lt;/option&gt;</pre>
+
+<p>This is more often than not used inside a select_tag like this example:</p>
+
+<pre>select_tag 'person', options_from_collection_for_select(@people, 'id', 'name')</pre>
+
+<p>If <tt>selected</tt> is specified as a value or array of values, the
+element(s) returning a match on <tt>value_method</tt> will be selected
+option tag(s).</p>
+
+<p>If <tt>selected</tt> is specified as a Proc, those members of the
+collection that return true for the anonymous function are the selected
+values.</p>
+
+<p><tt>selected</tt> can also be a hash, specifying both <tt>:selected</tt>
+and/or <tt>:disabled</tt> values as required.</p>
+
+<p>Be sure to specify the same class as the <tt>value_method</tt> when
+specifying selected or disabled options. Failure to do this will produce
+undesired results. Example:</p>
+
+<pre>options_from_collection_for_select(@people, 'id', 'name', '1')</pre>
+
+<p>Will not select a person with the id of 1 because 1 (an Integer) is not the
+same as ‘1’ (a string)</p>
+
+<pre>options_from_collection_for_select(@people, 'id', 'name', 1)</pre>
+
+<p>should produce the desired results.</p>
+            
+
+            
+            <div class="method-source-code" id="options_from_collection_for_select-source">
+<pre>
+<span class="ruby-comment"># File lib/action_view/helpers/form_options_helper.rb, line 363</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">options_from_collection_for_select</span>(<span class="ruby-identifier">collection</span>, <span class="ruby-identifier">value_method</span>, <span class="ruby-identifier">text_method</span>, <span class="ruby-identifier">selected</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">options</span> = <span class="ruby-identifier">collection</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">element</span><span class="ruby-operator">|</span>
+    [<span class="ruby-identifier">element</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">text_method</span>), <span class="ruby-identifier">element</span>.<span class="ruby-identifier">send</span>(<span class="ruby-identifier">value_method</span>)]
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">selected</span>, <span class="ruby-identifier">disabled</span> = <span class="ruby-identifier">extract_selected_and_disabled</span>(<span class="ruby-identifier">selected</span>)
+  <span class="ruby-identifier">select_deselect</span> = {}
+  <span class="ruby-identifier">select_deselect</span>[<span class="ruby-value">:selected</span>] = <span class="ruby-identifier">extract_values_from_collection</span>(<span class="ruby-identifier">collection</span>, <span class="ruby-identifier">value_method</span>, <span class="ruby-identifier">selected</span>)
+  <span class="ruby-identifier">select_deselect</span>[<span class="ruby-value">:disabled</span>] = <span class="ruby-identifier">extract_values_from_collection</span>(<span class="ruby-identifier">collection</span>, <span class="ruby-identifier">value_method</span>, <span class="ruby-identifier">disabled</span>)
+
+  <span class="ruby-identifier">options_for_select</span>(<span class="ruby-identifier">options</span>, <span class="ruby-identifier">select_deselect</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- options_from_collection_for_select-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- options_from_collection_for_select-method -->
+
+      
+        <div id="select-method" class="method-detail ">
+          <a name="method-i-select"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">select</span><span
+              class="method-args">(object, method, choices, options = {}, html_options = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Create a select tag and a series of contained option tags for the provided
+object and method. The option currently held by the object will be
+selected, provided that the object is available.</p>
+
+<p>There are two possible formats for the choices parameter, corresponding to
+other helpers’ output:</p>
+
+<pre>* A flat collection: see options_for_select
+* A nested collection: see grouped_options_for_select</pre>
+
+<p>Example with @post.person_id =&gt; 1:</p>
+
+<pre>select(&quot;post&quot;, &quot;person_id&quot;, Person.all.collect {|p| [ p.name, p.id ] }, { :include_blank =&gt; true })</pre>
+
+<p>could become:</p>
+
+<pre>&lt;select name=&quot;post[person_id]&quot;&gt;
+  &lt;option value=&quot;&quot;&gt;&lt;/option&gt;
+  &lt;option value=&quot;1&quot; selected=&quot;selected&quot;&gt;David&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Sam&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Tobias&lt;/option&gt;
+&lt;/select&gt;</pre>
+
+<p>This can be used to provide a default set of options in the standard way:
+before rendering the create form, a new model instance is assigned the
+default options and bound to @model_name. Usually this model is not saved
+to the database. Instead, a second model object is created when the create
+request is received. This allows the user to submit a form page more than
+once with the expected results of creating multiple records. In addition,
+this allows a single partial to be used to generate form inputs for both
+edit and create forms.</p>
+
+<p>By default, <tt>post.person_id</tt> is the selected option. Specify
+<tt>:selected =&gt; value</tt> to use a different selection or
+<tt>:selected =&gt; nil</tt> to leave all options unselected. Similarly,
+you can specify values to be disabled in the option tags by specifying the
+<tt>:disabled</tt> option. This can either be a single value or an array of
+values to be disabled.</p>
+
+<h4>Gotcha</h4>
+
+<p>The <a href="../../HTML.html">HTML</a> specification says when
+<tt>multiple</tt> parameter passed to select and all options got deselected
+web browsers do not send any value to server. Unfortunately this introduces
+a gotcha: if an <tt>User</tt> model has many <tt>roles</tt> and have
+<tt>role_ids</tt> accessor, and in the form that edits roles of the user
+the user deselects all roles from <tt>role_ids</tt> multiple select box, no
+<tt>role_ids</tt> parameter is sent. So, any mass-assignment idiom like</p>
+
+<pre>@user.update_attributes(params[:user])</pre>
+
+<p>wouldn’t update roles.</p>
+
+<p>To prevent this the helper generates an auxiliary hidden field before every
+multiple select. The hidden field has the same name as multiple select and
+blank value.</p>
+
+<p>This way, the client either sends only the hidden field (representing the
+deselected multiple select box), or both fields. Since the <a
+href="../../HTML.html">HTML</a> specification says key/value pairs have to
+be sent in the same order they appear in the form, and parameters
+extraction gets the last occurrence of any repeated key in the query
+string, that works for ordinary forms.</p>
+            
+
+            
+            <div class="method-source-code" id="select-source">
+<pre>
+<span class="ruby-comment"># File lib/action_view/helpers/form_options_helper.rb, line 156</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">select</span>(<span class="ruby-identifier">object</span>, <span class="ruby-identifier">method</span>, <span class="ruby-identifier">choices</span>, <span class="ruby-identifier">options</span> = {}, <span class="ruby-identifier">html_options</span> = {})
+  <span class="ruby-constant">InstanceTag</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">object</span>, <span class="ruby-identifier">method</span>, <span class="ruby-keyword">self</span>, <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:object</span>)).<span class="ruby-identifier">to_select_tag</span>(<span class="ruby-identifier">choices</span>, <span class="ruby-identifier">options</span>, <span class="ruby-identifier">html_options</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- select-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- select-method -->
+
+      
+        <div id="time_zone_options_for_select-method" class="method-detail ">
+          <a name="method-i-time_zone_options_for_select"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">time_zone_options_for_select</span><span
+              class="method-args">(selected = nil, priority_zones = nil, model = ::ActiveSupport::TimeZone)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns a string of option tags for pretty much any time zone in the world.
+Supply a ActiveSupport::TimeZone name as <tt>selected</tt> to have it
+marked as the selected option tag. You can also supply an array of
+ActiveSupport::TimeZone objects as <tt>priority_zones</tt>, so that they
+will be listed above the rest of the (long) list. (You can use
+ActiveSupport::TimeZone.us_zones as a convenience for obtaining a list of
+the US time zones, or a Regexp to select the zones of your choice)</p>
+
+<p>The <tt>selected</tt> parameter must be either <tt>nil</tt>, or a string
+that names a ActiveSupport::TimeZone.</p>
+
+<p>By default, <tt>model</tt> is the ActiveSupport::TimeZone constant (which
+can be obtained in Active Record as a value object). The only requirement
+is that the <tt>model</tt> parameter be an object that responds to
+<tt>all</tt>, and returns an array of objects that represent time zones.</p>
+
+<p>NOTE: Only the option tags are returned, you have to wrap this call in a
+regular <a href="../../HTML.html">HTML</a> select tag.</p>
+            
+
+            
+            <div class="method-source-code" id="time_zone_options_for_select-source">
+<pre>
+<span class="ruby-comment"># File lib/action_view/helpers/form_options_helper.rb, line 504</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">time_zone_options_for_select</span>(<span class="ruby-identifier">selected</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">priority_zones</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">model</span> = <span class="ruby-operator">::</span><span class="ruby-constant">ActiveSupport</span><span class="ruby-operator">::</span><span class="ruby-constant">TimeZone</span>)
+  <span class="ruby-identifier">zone_options</span> = <span class="ruby-string">&quot;&quot;</span>
+
+  <span class="ruby-identifier">zones</span> = <span class="ruby-identifier">model</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-identifier">convert_zones</span> = <span class="ruby-identifier">lambda</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">list</span><span class="ruby-operator">|</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">z</span><span class="ruby-operator">|</span> [ <span class="ruby-identifier">z</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-identifier">z</span>.<span class="ruby-identifier">name</span> ] } }
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">priority_zones</span>
+          <span class="ruby-keyword">if</span> <span class="ruby-identifier">priority_zones</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Regexp</span>)
+      <span class="ruby-identifier">priority_zones</span> = <span class="ruby-identifier">model</span>.<span class="ruby-identifier">all</span>.<span class="ruby-identifier">find_all</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">z</span><span class="ruby-operator">|</span> <span class="ruby-identifier">z</span> <span class="ruby-operator">=~</span> <span class="ruby-identifier">priority_zones</span>}
+          <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">zone_options</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">options_for_select</span>(<span class="ruby-identifier">convert_zones</span>[<span class="ruby-identifier">priority_zones</span>], <span class="ruby-identifier">selected</span>)
+    <span class="ruby-identifier">zone_options</span> <span class="ruby-operator">+=</span> <span class="ruby-string">&quot;&lt;option value=\&quot;\&quot; disabled=\&quot;disabled\&quot;&gt;-------------&lt;/option&gt;\n&quot;</span>
+
+    <span class="ruby-identifier">zones</span> = <span class="ruby-identifier">zones</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">z</span><span class="ruby-operator">|</span> <span class="ruby-identifier">priority_zones</span>.<span class="ruby-identifier">include?</span>( <span class="ruby-identifier">z</span> ) }
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">zone_options</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">options_for_select</span>(<span class="ruby-identifier">convert_zones</span>[<span class="ruby-identifier">zones</span>], <span class="ruby-identifier">selected</span>)
+  <span class="ruby-identifier">zone_options</span>.<span class="ruby-identifier">html_safe</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- time_zone_options_for_select-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- time_zone_options_for_select-method -->
+
+      
+        <div id="time_zone_select-method" class="method-detail ">
+          <a name="method-i-time_zone_select"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">time_zone_select</span><span
+              class="method-args">(object, method, priority_zones = nil, options = {}, html_options = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Return select and option tags for the given object and method, using <a
+href="FormOptionsHelper.html#method-i-time_zone_options_for_select">time_zone_options_for_select</a>
+to generate the list of option tags.</p>
+
+<p>In addition to the <tt>:include_blank</tt> option documented above, this
+method also supports a <tt>:model</tt> option, which defaults to
+ActiveSupport::TimeZone. This may be used by users to specify a different
+time zone model object. (See <tt>time_zone_options_for_select</tt> for more
+information.)</p>
+
+<p>You can also supply an array of ActiveSupport::TimeZone objects as
+<tt>priority_zones</tt>, so that they will be listed above the rest of the
+(long) list. (You can use ActiveSupport::TimeZone.us_zones as a convenience
+for obtaining a list of the US time zones, or a Regexp to select the zones
+of your choice)</p>
+
+<p>Finally, this method supports a <tt>:default</tt> option, which selects a
+default ActiveSupport::TimeZone if the object’s time zone is <tt>nil</tt>.</p>
+
+<p>Examples:</p>
+
+<pre>time_zone_select( &quot;user&quot;, &quot;time_zone&quot;, nil, :include_blank =&gt; true)
+
+time_zone_select( &quot;user&quot;, &quot;time_zone&quot;, nil, :default =&gt; &quot;Pacific Time (US &amp; Canada)&quot; )
+
+time_zone_select( &quot;user&quot;, 'time_zone', ActiveSupport::TimeZone.us_zones, :default =&gt; &quot;Pacific Time (US &amp; Canada)&quot;)
+
+time_zone_select( &quot;user&quot;, 'time_zone', [ ActiveSupport::TimeZone['Alaska'], ActiveSupport::TimeZone['Hawaii'] ])
+
+time_zone_select( &quot;user&quot;, 'time_zone', /Australia/)
+
+time_zone_select( &quot;user&quot;, &quot;time_zone&quot;, ActiveSupport::TimeZone.all.sort, :model =&gt; ActiveSupport::TimeZone)</pre>
+            
+
+            
+            <div class="method-source-code" id="time_zone_select-source">
+<pre>
+<span class="ruby-comment"># File lib/action_view/helpers/form_options_helper.rb, line 276</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">time_zone_select</span>(<span class="ruby-identifier">object</span>, <span class="ruby-identifier">method</span>, <span class="ruby-identifier">priority_zones</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">options</span> = {}, <span class="ruby-identifier">html_options</span> = {})
+  <span class="ruby-constant">InstanceTag</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">object</span>, <span class="ruby-identifier">method</span>, <span class="ruby-keyword">self</span>,  <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:object</span>)).<span class="ruby-identifier">to_time_zone_select_tag</span>(<span class="ruby-identifier">priority_zones</span>, <span class="ruby-identifier">options</span>, <span class="ruby-identifier">html_options</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- time_zone_select-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- time_zone_select-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,1616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Array</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./lib/active_support/json/encoding_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/json/encoding.rb">lib/active_support/json/encoding.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/object/to_query_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/object/to_query.rb">lib/active_support/core_ext/object/to_query.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/object/blank_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/object/blank.rb">lib/active_support/core_ext/object/blank.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/object/to_param_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/object/to_param.rb">lib/active_support/core_ext/object/to_param.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/array/random_access_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/array/random_access.rb">lib/active_support/core_ext/array/random_access.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/array/wrap_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/array/wrap.rb">lib/active_support/core_ext/array/wrap.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/array/access_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/array/access.rb">lib/active_support/core_ext/array/access.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/array/extract_options_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/array/extract_options.rb">lib/active_support/core_ext/array/extract_options.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/array/uniq_by_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/array/uniq_by.rb">lib/active_support/core_ext/array/uniq_by.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/array/grouping_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/array/grouping.rb">lib/active_support/core_ext/array/grouping.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/array/prepend_and_append_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/array/prepend_and_append.rb">lib/active_support/core_ext/array/prepend_and_append.rb</a></li>
+          
+            <li><a href="./lib/active_support/core_ext/array/conversions_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/active_support/core_ext/array/conversions.rb">lib/active_support/core_ext/array/conversions.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link"><a href="Object.html">Object</a></p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-wrap">::wrap</a></li>
+          
+          <li><a href="#method-i-extract_options-21">#extract_options!</a></li>
+          
+          <li><a href="#method-i-fifth">#fifth</a></li>
+          
+          <li><a href="#method-i-forty_two">#forty_two</a></li>
+          
+          <li><a href="#method-i-fourth">#fourth</a></li>
+          
+          <li><a href="#method-i-from">#from</a></li>
+          
+          <li><a href="#method-i-in_groups">#in_groups</a></li>
+          
+          <li><a href="#method-i-in_groups_of">#in_groups_of</a></li>
+          
+          <li><a href="#method-i-sample">#sample</a></li>
+          
+          <li><a href="#method-i-second">#second</a></li>
+          
+          <li><a href="#method-i-split">#split</a></li>
+          
+          <li><a href="#method-i-third">#third</a></li>
+          
+          <li><a href="#method-i-to">#to</a></li>
+          
+          <li><a href="#method-i-to_default_s">#to_default_s</a></li>
+          
+          <li><a href="#method-i-to_formatted_s">#to_formatted_s</a></li>
+          
+          <li><a href="#method-i-to_param">#to_param</a></li>
+          
+          <li><a href="#method-i-to_query">#to_query</a></li>
+          
+          <li><a href="#method-i-to_s">#to_s</a></li>
+          
+          <li><a href="#method-i-to_sentence">#to_sentence</a></li>
+          
+          <li><a href="#method-i-to_xml">#to_xml</a></li>
+          
+          <li><a href="#method-i-uniq_by">#uniq_by</a></li>
+          
+          <li><a href="#method-i-uniq_by-21">#uniq_by!</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./ActiveSupport.html">ActiveSupport</a></li>
+        
+          <li><a href="./ActiveSupport/Autoload.html">ActiveSupport::Autoload</a></li>
+        
+          <li><a href="./ActiveSupport/BacktraceCleaner.html">ActiveSupport::BacktraceCleaner</a></li>
+        
+          <li><a href="./ActiveSupport/Base64.html">ActiveSupport::Base64</a></li>
+        
+          <li><a href="./ActiveSupport/BasicObject.html">ActiveSupport::BasicObject</a></li>
+        
+          <li><a href="./ActiveSupport/Benchmarkable.html">ActiveSupport::Benchmarkable</a></li>
+        
+          <li><a href="./ActiveSupport/BufferedLogger.html">ActiveSupport::BufferedLogger</a></li>
+        
+          <li><a href="./ActiveSupport/BufferedLogger/Severity.html">ActiveSupport::BufferedLogger::Severity</a></li>
+        
+          <li><a href="./ActiveSupport/Cache.html">ActiveSupport::Cache</a></li>
+        
+          <li><a href="./ActiveSupport/Cache/Entry.html">ActiveSupport::Cache::Entry</a></li>
+        
+          <li><a href="./ActiveSupport/Cache/FileStore.html">ActiveSupport::Cache::FileStore</a></li>
+        
+          <li><a href="./ActiveSupport/Cache/MemCacheStore.html">ActiveSupport::Cache::MemCacheStore</a></li>
+        
+          <li><a href="./ActiveSupport/Cache/MemoryStore.html">ActiveSupport::Cache::MemoryStore</a></li>
+        
+          <li><a href="./ActiveSupport/Cache/NullStore.html">ActiveSupport::Cache::NullStore</a></li>
+        
+          <li><a href="./ActiveSupport/Cache/Store.html">ActiveSupport::Cache::Store</a></li>
+        
+          <li><a href="./ActiveSupport/Cache/Strategy.html">ActiveSupport::Cache::Strategy</a></li>
+        
+          <li><a href="./ActiveSupport/Cache/Strategy/LocalCache.html">ActiveSupport::Cache::Strategy::LocalCache</a></li>
+        
+          <li><a href="./ActiveSupport/Cache/Strategy/LocalCache/LocalStore.html">ActiveSupport::Cache::Strategy::LocalCache::LocalStore</a></li>
+        
+          <li><a href="./ActiveSupport/Callbacks.html">ActiveSupport::Callbacks</a></li>
+        
+          <li><a href="./ActiveSupport/Callbacks/ClassMethods.html">ActiveSupport::Callbacks::ClassMethods</a></li>
+        
+          <li><a href="./ActiveSupport/Concern.html">ActiveSupport::Concern</a></li>
+        
+          <li><a href="./ActiveSupport/Configurable.html">ActiveSupport::Configurable</a></li>
+        
+          <li><a href="./ActiveSupport/Configurable/ClassMethods.html">ActiveSupport::Configurable::ClassMethods</a></li>
+        
+          <li><a href="./ActiveSupport/Configurable/Configuration.html">ActiveSupport::Configurable::Configuration</a></li>
+        
+          <li><a href="./ActiveSupport/Dependencies.html">ActiveSupport::Dependencies</a></li>
+        
+          <li><a href="./ActiveSupport/Dependencies/ClassCache.html">ActiveSupport::Dependencies::ClassCache</a></li>
+        
+          <li><a href="./ActiveSupport/Dependencies/WatchStack.html">ActiveSupport::Dependencies::WatchStack</a></li>
+        
+          <li><a href="./ActiveSupport/Deprecation.html">ActiveSupport::Deprecation</a></li>
+        
+          <li><a href="./ActiveSupport/DescendantsTracker.html">ActiveSupport::DescendantsTracker</a></li>
+        
+          <li><a href="./ActiveSupport/Duration.html">ActiveSupport::Duration</a></li>
+        
+          <li><a href="./ActiveSupport/FileUpdateChecker.html">ActiveSupport::FileUpdateChecker</a></li>
+        
+          <li><a href="./ActiveSupport/FileWatcher.html">ActiveSupport::FileWatcher</a></li>
+        
+          <li><a href="./ActiveSupport/FileWatcher/Backend.html">ActiveSupport::FileWatcher::Backend</a></li>
+        
+          <li><a href="./ActiveSupport/Gzip.html">ActiveSupport::Gzip</a></li>
+        
+          <li><a href="./ActiveSupport/Gzip/Stream.html">ActiveSupport::Gzip::Stream</a></li>
+        
+          <li><a href="./ActiveSupport/HashWithIndifferentAccess.html">ActiveSupport::HashWithIndifferentAccess</a></li>
+        
+          <li><a href="./ActiveSupport/HashWithIndifferentAccess.html">ActiveSupport::HashWithIndifferentAccess</a></li>
+        
+          <li><a href="./ActiveSupport/Inflector.html">ActiveSupport::Inflector</a></li>
+        
+          <li><a href="./ActiveSupport/Inflector/Inflections.html">ActiveSupport::Inflector::Inflections</a></li>
+        
+          <li><a href="./ActiveSupport/InheritableOptions.html">ActiveSupport::InheritableOptions</a></li>
+        
+          <li><a href="./ActiveSupport/JSON.html">ActiveSupport::JSON</a></li>
+        
+          <li><a href="./ActiveSupport/JSON/Encoding.html">ActiveSupport::JSON::Encoding</a></li>
+        
+          <li><a href="./ActiveSupport/JSON/Encoding/CircularReferenceError.html">ActiveSupport::JSON::Encoding::CircularReferenceError</a></li>
+        
+          <li><a href="./ActiveSupport/JSON/Encoding/Encoder.html">ActiveSupport::JSON::Encoding::Encoder</a></li>
+        
+          <li><a href="./ActiveSupport/JSON/Variable.html">ActiveSupport::JSON::Variable</a></li>
+        
+          <li><a href="./ActiveSupport/LogSubscriber.html">ActiveSupport::LogSubscriber</a></li>
+        
+          <li><a href="./ActiveSupport/LogSubscriber/TestHelper.html">ActiveSupport::LogSubscriber::TestHelper</a></li>
+        
+          <li><a href="./ActiveSupport/LogSubscriber/TestHelper/MockLogger.html">ActiveSupport::LogSubscriber::TestHelper::MockLogger</a></li>
+        
+          <li><a href="./ActiveSupport/Memoizable.html">ActiveSupport::Memoizable</a></li>
+        
+          <li><a href="./ActiveSupport/Memoizable/InstanceMethods.html">ActiveSupport::Memoizable::InstanceMethods</a></li>
+        
+          <li><a href="./ActiveSupport/MessageEncryptor.html">ActiveSupport::MessageEncryptor</a></li>
+        
+          <li><a href="./ActiveSupport/MessageEncryptor/InvalidMessage.html">ActiveSupport::MessageEncryptor::InvalidMessage</a></li>
+        
+          <li><a href="./ActiveSupport/MessageVerifier.html">ActiveSupport::MessageVerifier</a></li>
+        
+          <li><a href="./ActiveSupport/MessageVerifier/InvalidSignature.html">ActiveSupport::MessageVerifier::InvalidSignature</a></li>
+        
+          <li><a href="./ActiveSupport/Multibyte.html">ActiveSupport::Multibyte</a></li>
+        
+          <li><a href="./ActiveSupport/Multibyte/Chars.html">ActiveSupport::Multibyte::Chars</a></li>
+        
+          <li><a href="./ActiveSupport/Multibyte/EncodingError.html">ActiveSupport::Multibyte::EncodingError</a></li>
+        
+          <li><a href="./ActiveSupport/Multibyte/Unicode.html">ActiveSupport::Multibyte::Unicode</a></li>
+        
+          <li><a href="./ActiveSupport/Multibyte/Unicode/Codepoint.html">ActiveSupport::Multibyte::Unicode::Codepoint</a></li>
+        
+          <li><a href="./ActiveSupport/Multibyte/Unicode/UnicodeDatabase.html">ActiveSupport::Multibyte::Unicode::UnicodeDatabase</a></li>
+        
+          <li><a href="./ActiveSupport/Notifications.html">ActiveSupport::Notifications</a></li>
+        
+          <li><a href="./ActiveSupport/Notifications/Event.html">ActiveSupport::Notifications::Event</a></li>
+        
+          <li><a href="./ActiveSupport/Notifications/Fanout.html">ActiveSupport::Notifications::Fanout</a></li>
+        
+          <li><a href="./ActiveSupport/Notifications/Instrumenter.html">ActiveSupport::Notifications::Instrumenter</a></li>
+        
+          <li><a href="./ActiveSupport/OrderedHash.html">ActiveSupport::OrderedHash</a></li>
+        
+          <li><a href="./ActiveSupport/OrderedOptions.html">ActiveSupport::OrderedOptions</a></li>
+        
+          <li><a href="./ActiveSupport/Railtie.html">ActiveSupport::Railtie</a></li>
+        
+          <li><a href="./ActiveSupport/Rescuable.html">ActiveSupport::Rescuable</a></li>
+        
+          <li><a href="./ActiveSupport/Rescuable/ClassMethods.html">ActiveSupport::Rescuable::ClassMethods</a></li>
+        
+          <li><a href="./ActiveSupport/SafeBuffer.html">ActiveSupport::SafeBuffer</a></li>
+        
+          <li><a href="./ActiveSupport/SafeBuffer/SafeConcatError.html">ActiveSupport::SafeBuffer::SafeConcatError</a></li>
+        
+          <li><a href="./ActiveSupport/StringInquirer.html">ActiveSupport::StringInquirer</a></li>
+        
+          <li><a href="./ActiveSupport/TaggedLogging.html">ActiveSupport::TaggedLogging</a></li>
+        
+          <li><a href="./ActiveSupport/TestCase.html">ActiveSupport::TestCase</a></li>
+        
+          <li><a href="./ActiveSupport/Testing.html">ActiveSupport::Testing</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Assertions.html">ActiveSupport::Testing::Assertions</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Declarative.html">ActiveSupport::Testing::Declarative</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Isolation.html">ActiveSupport::Testing::Isolation</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Isolation/Forking.html">ActiveSupport::Testing::Isolation::Forking</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Isolation/MiniTest.html">ActiveSupport::Testing::Isolation::MiniTest</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Isolation/Subprocess.html">ActiveSupport::Testing::Isolation::Subprocess</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Isolation/TestUnit.html">ActiveSupport::Testing::Isolation::TestUnit</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Pending.html">ActiveSupport::Testing::Pending</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance.html">ActiveSupport::Testing::Performance</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Benchmarker.html">ActiveSupport::Testing::Performance::Benchmarker</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/ForClassicTestUnit.html">ActiveSupport::Testing::Performance::ForClassicTestUnit</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/ForMiniTest.html">ActiveSupport::Testing::Performance::ForMiniTest</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics.html">ActiveSupport::Testing::Performance::Metrics</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/Amount.html">ActiveSupport::Testing::Performance::Metrics::Amount</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/Base.html">ActiveSupport::Testing::Performance::Metrics::Base</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/CpuTime.html">ActiveSupport::Testing::Performance::Metrics::CpuTime</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/DigitalInformationUnit.html">ActiveSupport::Testing::Performance::Metrics::DigitalInformationUnit</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/GcRuns.html">ActiveSupport::Testing::Performance::Metrics::GcRuns</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/GcTime.html">ActiveSupport::Testing::Performance::Metrics::GcTime</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/Memory.html">ActiveSupport::Testing::Performance::Metrics::Memory</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/Objects.html">ActiveSupport::Testing::Performance::Metrics::Objects</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/ProcessTime.html">ActiveSupport::Testing::Performance::Metrics::ProcessTime</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/Time.html">ActiveSupport::Testing::Performance::Metrics::Time</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/UserTime.html">ActiveSupport::Testing::Performance::Metrics::UserTime</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Metrics/WallTime.html">ActiveSupport::Testing::Performance::Metrics::WallTime</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Performer.html">ActiveSupport::Testing::Performance::Performer</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/Performance/Profiler.html">ActiveSupport::Testing::Performance::Profiler</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/ProxyTestResult.html">ActiveSupport::Testing::ProxyTestResult</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/RemoteError.html">ActiveSupport::Testing::RemoteError</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/SetupAndTeardown.html">ActiveSupport::Testing::SetupAndTeardown</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/SetupAndTeardown/ClassMethods.html">ActiveSupport::Testing::SetupAndTeardown::ClassMethods</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/SetupAndTeardown/ForClassicTestUnit.html">ActiveSupport::Testing::SetupAndTeardown::ForClassicTestUnit</a></li>
+        
+          <li><a href="./ActiveSupport/Testing/SetupAndTeardown/ForMiniTest.html">ActiveSupport::Testing::SetupAndTeardown::ForMiniTest</a></li>
+        
+          <li><a href="./ActiveSupport/TimeWithZone.html">ActiveSupport::TimeWithZone</a></li>
+        
+          <li><a href="./ActiveSupport/TimeZone.html">ActiveSupport::TimeZone</a></li>
+        
+          <li><a href="./ActiveSupport/XmlMini.html">ActiveSupport::XmlMini</a></li>
+        
+          <li><a href="./ActiveSupport/XmlMini_LibXMLSAX.html">ActiveSupport::XmlMini_LibXMLSAX</a></li>
+        
+          <li><a href="./ActiveSupport/XmlMini_LibXMLSAX/HashBuilder.html">ActiveSupport::XmlMini_LibXMLSAX::HashBuilder</a></li>
+        
+          <li><a href="./ActiveSupport/XmlMini_NokogiriSAX.html">ActiveSupport::XmlMini_NokogiriSAX</a></li>
+        
+          <li><a href="./ActiveSupport/XmlMini_NokogiriSAX/HashBuilder.html">ActiveSupport::XmlMini_NokogiriSAX::HashBuilder</a></li>
+        
+          <li><a href="./Test.html">Test</a></li>
+        
+          <li><a href="./Test/Unit.html">Test::Unit</a></li>
+        
+          <li><a href="./Test/Unit/Collector.html">Test::Unit::Collector</a></li>
+        
+          <li><a href="./Test/Unit/Collector/ObjectSpace.html">Test::Unit::Collector::ObjectSpace</a></li>
+        
+          <li><a href="./Object.html">Object</a></li>
+        
+          <li><a href="./ActiveSupport/HashWithIndifferentAccess.html">Object::HashWithIndifferentAccess</a></li>
+        
+          <li><a href="./LoadError.html">Object::MissingSourceFile</a></li>
+        
+          <li><a href="./ERB.html">ERB</a></li>
+        
+          <li><a href="./ERB/Util.html">ERB::Util</a></li>
+        
+          <li><a href="./I18n.html">I18n</a></li>
+        
+          <li><a href="./I18n/Railtie.html">I18n::Railtie</a></li>
+        
+          <li><a href="./LoadError.html">LoadError</a></li>
+        
+          <li><a href="./LoadError.html">LoadError</a></li>
+        
+          <li><a href="./Logger.html">Logger</a></li>
+        
+          <li><a href="./Logger/SimpleFormatter.html">Logger::SimpleFormatter</a></li>
+        
+          <li><a href="./Array.html">Array</a></li>
+        
+          <li><a href="./Base64.html">Base64</a></li>
+        
+          <li><a href="./Benchmark.html">Benchmark</a></li>
+        
+          <li><a href="./BigDecimal.html">BigDecimal</a></li>
+        
+          <li><a href="./Class.html">Class</a></li>
+        
+          <li><a href="./Date.html">Date</a></li>
+        
+          <li><a href="./DateTime.html">DateTime</a></li>
+        
+          <li><a href="./Enumerable.html">Enumerable</a></li>
+        
+          <li><a href="./FalseClass.html">FalseClass</a></li>
+        
+          <li><a href="./File.html">File</a></li>
+        
+          <li><a href="./Float.html">Float</a></li>
+        
+          <li><a href="./Hash.html">Hash</a></li>
+        
+          <li><a href="./Integer.html">Integer</a></li>
+        
+          <li><a href="./Kernel.html">Kernel</a></li>
+        
+          <li><a href="./Module.html">Module</a></li>
+        
+          <li><a href="./NameError.html">NameError</a></li>
+        
+          <li><a href="./NilClass.html">NilClass</a></li>
+        
+          <li><a href="./Numeric.html">Numeric</a></li>
+        
+          <li><a href="./Process.html">Process</a></li>
+        
+          <li><a href="./QualifiedConstUtils.html">QualifiedConstUtils</a></li>
+        
+          <li><a href="./Range.html">Range</a></li>
+        
+          <li><a href="./Regexp.html">Regexp</a></li>
+        
+          <li><a href="./String.html">String</a></li>
+        
+          <li><a href="./Symbol.html">Symbol</a></li>
+        
+          <li><a href="./Time.html">Time</a></li>
+        
+          <li><a href="./TrueClass.html">TrueClass</a></li>
+        
+          <li><a href="./URI.html">URI</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Array</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="wrap-method" class="method-detail ">
+          <a name="method-c-wrap"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">wrap</span><span
+              class="method-args">(object)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Wraps its argument in an array unless it is already an array (or
+array-like).</p>
+
+<p>Specifically:</p>
+<ul><li>
+<p>If the argument is <tt>nil</tt> an empty list is returned.</p>
+</li><li>
+<p>Otherwise, if the argument responds to <tt>to_ary</tt> it is invoked, and
+its result returned.</p>
+</li><li>
+<p>Otherwise, returns an array with the argument as its single element.</p>
+
+<p><a href="Array.html#method-c-wrap">Array.wrap(nil)</a>       # =&gt; [] <a
+href="Array.html#method-c-wrap">Array.wrap</a>([1, 2, 3]) # =&gt; [1, 2, 3]
+<a href="Array.html#method-c-wrap">Array.wrap(0)</a>         # =&gt; [0]</p>
+</li></ul>
+
+<p>This method is similar in purpose to <tt>Kernel#Array</tt>, but there are
+some differences:</p>
+<ul><li>
+<p>If the argument responds to <tt>to_ary</tt> the method is invoked.
+<tt>Kernel#Array</tt></p>
+</li></ul>
+
+<p>moves on to try <tt>to_a</tt> if the returned value is <tt>nil</tt>, but
+<tt>Array.wrap</tt> returns such a <tt>nil</tt> right away.</p>
+<ul><li>
+<p>If the returned value from <tt>to_ary</tt> is neither <tt>nil</tt> nor an
+<tt>Array</tt> object, <tt>Kernel#Array</tt></p>
+</li></ul>
+
+<p>raises an exception, while <tt>Array.wrap</tt> does not, it just returns
+the value.</p>
+<ul><li>
+<p>It does not call <tt>to_a</tt> on the argument, though special-cases
+<tt>nil</tt> to return an empty array.</p>
+</li></ul>
+
+<p>The last point is particularly worth comparing for some enumerables:</p>
+
+<pre>Array(:foo =&gt; :bar)      # =&gt; [[:foo, :bar]]
+Array.wrap(:foo =&gt; :bar) # =&gt; [{:foo =&gt; :bar}]
+
+Array(&quot;foo\nbar&quot;)        # =&gt; [&quot;foo\n&quot;, &quot;bar&quot;], in Ruby 1.8
+Array.wrap(&quot;foo\nbar&quot;)   # =&gt; [&quot;foo\nbar&quot;]</pre>
+
+<p>There’s also a related idiom that uses the splat operator:</p>
+
+<pre>[*object]</pre>
+
+<p>which returns <tt>[nil]</tt> for <tt>nil</tt>, and calls to
+<tt>Array(object)</tt> otherwise.</p>
+
+<p>Thus, in this case the behavior is different for <tt>nil</tt>, and the
+differences with <tt>Kernel#Array</tt> explained above apply to the rest of
++object+s.</p>
+            
+
+            
+            <div class="method-source-code" id="wrap-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/wrap.rb, line 39</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">wrap</span>(<span class="ruby-identifier">object</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">object</span>.<span class="ruby-identifier">nil?</span>
+    []
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">object</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:to_ary</span>)
+    <span class="ruby-identifier">object</span>.<span class="ruby-identifier">to_ary</span> <span class="ruby-operator">||</span> [<span class="ruby-identifier">object</span>]
+  <span class="ruby-keyword">else</span>
+    [<span class="ruby-identifier">object</span>]
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- wrap-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- wrap-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="extract_options-21-method" class="method-detail ">
+          <a name="method-i-extract_options-21"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">extract_options!</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Extracts options from a set of arguments. Removes and returns the last
+element in the array if it’s a hash, otherwise returns a blank hash.</p>
+
+<pre>def options(*args)
+  args.extract_options!
+end
+
+options(1, 2)           # =&gt; {}
+options(1, 2, :a =&gt; :b) # =&gt; {:a=&gt;:b}</pre>
+            
+
+            
+            <div class="method-source-code" id="extract_options-21-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/extract_options.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">extract_options!</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">last</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">last</span>.<span class="ruby-identifier">extractable_options?</span>
+    <span class="ruby-identifier">pop</span>
+  <span class="ruby-keyword">else</span>
+    {}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- extract_options-21-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- extract_options-21-method -->
+
+      
+        <div id="fifth-method" class="method-detail ">
+          <a name="method-i-fifth"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">fifth</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Equal to <tt>self[4]</tt>.</p>
+            
+
+            
+            <div class="method-source-code" id="fifth-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/access.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fifth</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-value">4</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- fifth-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- fifth-method -->
+
+      
+        <div id="forty_two-method" class="method-detail ">
+          <a name="method-i-forty_two"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">forty_two</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Equal to <tt>self[41]</tt>. Also known as accessing “the reddit”.</p>
+            
+
+            
+            <div class="method-source-code" id="forty_two-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/access.rb, line 43</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">forty_two</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-value">41</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- forty_two-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- forty_two-method -->
+
+      
+        <div id="fourth-method" class="method-detail ">
+          <a name="method-i-fourth"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">fourth</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Equal to <tt>self[3]</tt>.</p>
+            
+
+            
+            <div class="method-source-code" id="fourth-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/access.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fourth</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-value">3</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- fourth-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- fourth-method -->
+
+      
+        <div id="from-method" class="method-detail ">
+          <a name="method-i-from"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">from</span><span
+              class="method-args">(position)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns the tail of the array from <tt>position</tt>.</p>
+
+<pre>%w( a b c d ).from(0)  # =&gt; %w( a b c d )
+%w( a b c d ).from(2)  # =&gt; %w( c d )
+%w( a b c d ).from(10) # =&gt; %w()
+%w().from(0)           # =&gt; %w()</pre>
+            
+
+            
+            <div class="method-source-code" id="from-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/access.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">from</span>(<span class="ruby-identifier">position</span>)
+  <span class="ruby-keyword">self</span>[<span class="ruby-identifier">position</span>, <span class="ruby-identifier">length</span>] <span class="ruby-operator">||</span> []
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- from-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- from-method -->
+
+      
+        <div id="in_groups-method" class="method-detail ">
+          <a name="method-i-in_groups"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">in_groups</span><span
+              class="method-args">(number, fill_with = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Splits or iterates over the array in <tt>number</tt> of groups, padding any
+remaining slots with <tt>fill_with</tt> unless it is <tt>false</tt>.</p>
+
+<pre>%w(1 2 3 4 5 6 7 8 9 10).in_groups(3) {|group| p group}
+[&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;]
+[&quot;5&quot;, &quot;6&quot;, &quot;7&quot;, nil]
+[&quot;8&quot;, &quot;9&quot;, &quot;10&quot;, nil]
+
+%w(1 2 3 4 5 6 7).in_groups(3, '&amp;nbsp;') {|group| p group}
+[&quot;1&quot;, &quot;2&quot;, &quot;3&quot;]
+[&quot;4&quot;, &quot;5&quot;, &quot;&amp;nbsp;&quot;]
+[&quot;6&quot;, &quot;7&quot;, &quot;&amp;nbsp;&quot;]
+
+%w(1 2 3 4 5 6 7).in_groups(3, false) {|group| p group}
+[&quot;1&quot;, &quot;2&quot;, &quot;3&quot;]
+[&quot;4&quot;, &quot;5&quot;]
+[&quot;6&quot;, &quot;7&quot;]</pre>
+            
+
+            
+            <div class="method-source-code" id="in_groups-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/grouping.rb, line 56</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">in_groups</span>(<span class="ruby-identifier">number</span>, <span class="ruby-identifier">fill_with</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-comment"># size / number gives minor group size;</span>
+  <span class="ruby-comment"># size % number gives how many objects need extra accommodation;</span>
+  <span class="ruby-comment"># each group hold either division or division + 1 items.</span>
+  <span class="ruby-identifier">division</span> = <span class="ruby-identifier">size</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">number</span>
+  <span class="ruby-identifier">modulo</span> = <span class="ruby-identifier">size</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">number</span>
+
+  <span class="ruby-comment"># create a new array avoiding dup</span>
+  <span class="ruby-identifier">groups</span> = []
+  <span class="ruby-identifier">start</span> = <span class="ruby-value">0</span>
+
+  <span class="ruby-identifier">number</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">length</span> = <span class="ruby-identifier">division</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">modulo</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">modulo</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">index</span> <span class="ruby-operator">?</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>)
+    <span class="ruby-identifier">padding</span> = <span class="ruby-identifier">fill_with</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">false</span> <span class="ruby-operator">&amp;&amp;</span>
+      <span class="ruby-identifier">modulo</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">length</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">division</span> <span class="ruby-operator">?</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>
+    <span class="ruby-identifier">groups</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">slice</span>(<span class="ruby-identifier">start</span>, <span class="ruby-identifier">length</span>).<span class="ruby-identifier">concat</span>([<span class="ruby-identifier">fill_with</span>] * <span class="ruby-identifier">padding</span>)
+    <span class="ruby-identifier">start</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">length</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+    <span class="ruby-identifier">groups</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">g</span><span class="ruby-operator">|</span> <span class="ruby-keyword">yield</span>(<span class="ruby-identifier">g</span>) }
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">groups</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- in_groups-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- in_groups-method -->
+
+      
+        <div id="in_groups_of-method" class="method-detail ">
+          <a name="method-i-in_groups_of"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">in_groups_of</span><span
+              class="method-args">(number, fill_with = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Splits or iterates over the array in groups of size <tt>number</tt>,
+padding any remaining slots with <tt>fill_with</tt> unless it is
+<tt>false</tt>.</p>
+
+<pre>%w(1 2 3 4 5 6 7).in_groups_of(3) {|group| p group}
+[&quot;1&quot;, &quot;2&quot;, &quot;3&quot;]
+[&quot;4&quot;, &quot;5&quot;, &quot;6&quot;]
+[&quot;7&quot;, nil, nil]
+
+%w(1 2 3).in_groups_of(2, '&amp;nbsp;') {|group| p group}
+[&quot;1&quot;, &quot;2&quot;]
+[&quot;3&quot;, &quot;&amp;nbsp;&quot;]
+
+%w(1 2 3).in_groups_of(2, false) {|group| p group}
+[&quot;1&quot;, &quot;2&quot;]
+[&quot;3&quot;]</pre>
+            
+
+            
+            <div class="method-source-code" id="in_groups_of-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/grouping.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">in_groups_of</span>(<span class="ruby-identifier">number</span>, <span class="ruby-identifier">fill_with</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">fill_with</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span>
+    <span class="ruby-identifier">collection</span> = <span class="ruby-keyword">self</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-comment"># size % number gives how many extra we have;</span>
+    <span class="ruby-comment"># subtracting from number gives how many to add;</span>
+    <span class="ruby-comment"># modulo number ensures we don't add group of just fill.</span>
+    <span class="ruby-identifier">padding</span> = (<span class="ruby-identifier">number</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">size</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">number</span>) <span class="ruby-operator">%</span> <span class="ruby-identifier">number</span>
+    <span class="ruby-identifier">collection</span> = <span class="ruby-identifier">dup</span>.<span class="ruby-identifier">concat</span>([<span class="ruby-identifier">fill_with</span>] * <span class="ruby-identifier">padding</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+    <span class="ruby-identifier">collection</span>.<span class="ruby-identifier">each_slice</span>(<span class="ruby-identifier">number</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">slice</span><span class="ruby-operator">|</span> <span class="ruby-keyword">yield</span>(<span class="ruby-identifier">slice</span>) }
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">groups</span> = []
+    <span class="ruby-identifier">collection</span>.<span class="ruby-identifier">each_slice</span>(<span class="ruby-identifier">number</span>) { <span class="ruby-operator">|</span><span class="ruby-identifier">group</span><span class="ruby-operator">|</span> <span class="ruby-identifier">groups</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">group</span> }
+    <span class="ruby-identifier">groups</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- in_groups_of-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- in_groups_of-method -->
+
+      
+        <div id="sample-method" class="method-detail ">
+          <a name="method-i-sample"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">sample</span><span
+              class="method-args">(n=nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Backport of <a href="Array.html#method-i-sample">Array#sample</a> based on
+Marc-Andre Lafortune’s <a
+href="https://github.com/marcandre/backports/">github.com/marcandre/backports/</a>
+Returns a random element or <tt>n</tt> random elements from the array. If
+the array is empty and <tt>n</tt> is nil, returns <tt>nil</tt>. If
+<tt>n</tt> is passed and its value is less than 0, it raises an
+<tt>ArgumentError</tt> exception. If the value of <tt>n</tt> is equal or
+greater than 0 it returns <tt>[]</tt>.</p>
+
+<pre>[1,2,3,4,5,6].sample     # =&gt; 4
+[1,2,3,4,5,6].sample(3)  # =&gt; [2, 4, 5]
+[1,2,3,4,5,6].sample(-3) # =&gt; ArgumentError: negative array size
+           [].sample     # =&gt; nil
+           [].sample(3)  # =&gt; []</pre>
+            
+
+            
+            <div class="method-source-code" id="sample-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/random_access.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">sample</span>(<span class="ruby-identifier">n</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">self</span>[<span class="ruby-constant">Kernel</span>.<span class="ruby-identifier">rand</span>(<span class="ruby-identifier">size</span>)] <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span>.<span class="ruby-identifier">nil?</span>
+  <span class="ruby-identifier">n</span> = <span class="ruby-identifier">n</span>.<span class="ruby-identifier">to_int</span>
+<span class="ruby-keyword">rescue</span> <span class="ruby-constant">Exception</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">e</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">TypeError</span>, <span class="ruby-node">&quot;Coercion error: #{n.inspect}.to_int =&gt; Integer failed:\n(#{e.message})&quot;</span>
+<span class="ruby-keyword">else</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">TypeError</span>, <span class="ruby-node">&quot;Coercion error: obj.to_int did NOT return an Integer (was #{n.class})&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">n</span>.<span class="ruby-identifier">kind_of?</span> <span class="ruby-constant">Integer</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&quot;negative array size&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">n</span> = <span class="ruby-identifier">size</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">size</span>
+  <span class="ruby-identifier">result</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword">self</span>)
+  <span class="ruby-identifier">n</span>.<span class="ruby-identifier">times</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">r</span> = <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-constant">Kernel</span>.<span class="ruby-identifier">rand</span>(<span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">i</span>)
+    <span class="ruby-identifier">result</span>[<span class="ruby-identifier">i</span>], <span class="ruby-identifier">result</span>[<span class="ruby-identifier">r</span>] = <span class="ruby-identifier">result</span>[<span class="ruby-identifier">r</span>], <span class="ruby-identifier">result</span>[<span class="ruby-identifier">i</span>]
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">result</span>[<span class="ruby-identifier">n</span><span class="ruby-operator">..</span><span class="ruby-identifier">size</span>] = []
+  <span class="ruby-identifier">result</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- sample-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- sample-method -->
+
+      
+        <div id="second-method" class="method-detail ">
+          <a name="method-i-second"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">second</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Equal to <tt>self[1]</tt>.</p>
+            
+
+            
+            <div class="method-source-code" id="second-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/access.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">second</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-value">1</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- second-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- second-method -->
+
+      
+        <div id="split-method" class="method-detail ">
+          <a name="method-i-split"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">split</span><span
+              class="method-args">(value = nil)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Divides the array into one or more subarrays based on a delimiting
+<tt>value</tt> or the result of an optional block.</p>
+
+<pre>[1, 2, 3, 4, 5].split(3)                # =&gt; [[1, 2], [4, 5]]
+(1..10).to_a.split { |i| i % 3 == 0 }   # =&gt; [[1, 2], [4, 5], [7, 8], [10]]</pre>
+            
+
+            
+            <div class="method-source-code" id="split-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/grouping.rb, line 87</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">split</span>(<span class="ruby-identifier">value</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">using_block</span> = <span class="ruby-identifier">block_given?</span>
+
+  <span class="ruby-identifier">inject</span>([[]]) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">results</span>, <span class="ruby-identifier">element</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> (<span class="ruby-identifier">using_block</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-keyword">yield</span>(<span class="ruby-identifier">element</span>)) <span class="ruby-operator">||</span> (<span class="ruby-identifier">value</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">element</span>)
+      <span class="ruby-identifier">results</span> <span class="ruby-operator">&lt;&lt;</span> []
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">results</span>.<span class="ruby-identifier">last</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">element</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">results</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- split-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- split-method -->
+
+      
+        <div id="third-method" class="method-detail ">
+          <a name="method-i-third"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">third</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Equal to <tt>self[2]</tt>.</p>
+            
+
+            
+            <div class="method-source-code" id="third-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/access.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">third</span>
+  <span class="ruby-keyword">self</span>[<span class="ruby-value">2</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- third-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- third-method -->
+
+      
+        <div id="to-method" class="method-detail ">
+          <a name="method-i-to"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to</span><span
+              class="method-args">(position)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns the beginning of the array up to <tt>position</tt>.</p>
+
+<pre>%w( a b c d ).to(0)  # =&gt; %w( a )
+%w( a b c d ).to(2)  # =&gt; %w( a b c )
+%w( a b c d ).to(10) # =&gt; %w( a b c d )
+%w().to(0)           # =&gt; %w()</pre>
+            
+
+            
+            <div class="method-source-code" id="to-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/access.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to</span>(<span class="ruby-identifier">position</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">first</span> <span class="ruby-identifier">position</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to-method -->
+
+      
+        <div id="to_default_s-method" class="method-detail method-alias">
+          <a name="method-i-to_default_s"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_default_s</span><span
+              class="method-args">(format = :default)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+          </div>
+
+          
+
+          
+          <div class="aliases">
+            Alias for: <a href="Array.html#method-i-to_s">to_s</a>
+          </div>
+          
+        </div><!-- to_default_s-method -->
+
+      
+        <div id="to_formatted_s-method" class="method-detail ">
+          <a name="method-i-to_formatted_s"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_formatted_s</span><span
+              class="method-args">(format = :default)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Converts a collection of elements into a formatted string by calling
+<tt>to_s</tt> on all elements and joining them:</p>
+
+<pre>Blog.all.to_formatted_s # =&gt; &quot;First PostSecond PostThird Post&quot;</pre>
+
+<p>Adding in the <tt>:db</tt> argument as the format yields a comma separated
+id list:</p>
+
+<pre>Blog.all.to_formatted_s(:db) # =&gt; &quot;1,2,3&quot;</pre>
+            
+
+            
+            <div class="method-source-code" id="to_formatted_s-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/conversions.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_formatted_s</span>(<span class="ruby-identifier">format</span> = <span class="ruby-value">:default</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">format</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:db</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:empty?</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">empty?</span>
+        <span class="ruby-string">&quot;null&quot;</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">collect</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">element</span><span class="ruby-operator">|</span> <span class="ruby-identifier">element</span>.<span class="ruby-identifier">id</span> }.<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot;,&quot;</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">to_default_s</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_formatted_s-source -->
+            
+          </div>
+
+          
+          <div class="aliases">
+            Also aliased as: <a href="Array.html#method-i-to_s">to_s</a>
+          </div>
+          
+
+          
+        </div><!-- to_formatted_s-method -->
+
+      
+        <div id="to_param-method" class="method-detail ">
+          <a name="method-i-to_param"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_param</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Calls <tt>to_param</tt> on all its elements and joins the result with
+slashes. This is used by <tt>url_for</tt> in Action Pack.</p>
+            
+
+            
+            <div class="method-source-code" id="to_param-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/object/to_param.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_param</span>
+  <span class="ruby-identifier">collect</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">to_param</span> }.<span class="ruby-identifier">join</span> <span class="ruby-string">'/'</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_param-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_param-method -->
+
+      
+        <div id="to_query-method" class="method-detail ">
+          <a name="method-i-to_query"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_query</span><span
+              class="method-args">(key)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Converts an array into a string suitable for use as a URL query string,
+using the given <tt>key</tt> as the param name.</p>
+
+<pre>['Rails', 'coding'].to_query('hobbies') # =&gt; &quot;hobbies%5B%5D=Rails&amp;hobbies%5B%5D=coding&quot;</pre>
+            
+
+            
+            <div class="method-source-code" id="to_query-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/object/to_query.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_query</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">prefix</span> = <span class="ruby-node">&quot;#{key}[]&quot;</span>
+  <span class="ruby-identifier">collect</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_query</span>(<span class="ruby-identifier">prefix</span>) }.<span class="ruby-identifier">join</span> <span class="ruby-string">'&amp;'</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_query-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_query-method -->
+
+      
+        <div id="to_s-method" class="method-detail method-alias">
+          <a name="method-i-to_s"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_s</span><span
+              class="method-args">(format = :default)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+          </div>
+
+          
+          <div class="aliases">
+            Also aliased as: <a href="Array.html#method-i-to_default_s">to_default_s</a>
+          </div>
+          
+
+          
+          <div class="aliases">
+            Alias for: <a href="Array.html#method-i-to_formatted_s">to_formatted_s</a>
+          </div>
+          
+        </div><!-- to_s-method -->
+
+      
+        <div id="to_sentence-method" class="method-detail ">
+          <a name="method-i-to_sentence"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_sentence</span><span
+              class="method-args">(options = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Converts the array to a comma-separated sentence where the last element is
+joined by the connector word. Options:</p>
+<ul><li>
+<p><tt>:words_connector</tt> - The sign or word used to join the elements in
+arrays with two or more elements (default: ", ")</p>
+</li><li>
+<p><tt>:two_words_connector</tt> - The sign or word used to join the elements
+in arrays with two elements (default: " and ")</p>
+</li><li>
+<p><tt>:last_word_connector</tt> - The sign or word used to join the last
+element in arrays with three or more elements (default: ", and ")</p>
+</li></ul>
+            
+
+            
+            <div class="method-source-code" id="to_sentence-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/conversions.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_sentence</span>(<span class="ruby-identifier">options</span> = {})
+  <span class="ruby-keyword">if</span> <span class="ruby-keyword">defined?</span>(<span class="ruby-constant">I18n</span>)
+    <span class="ruby-identifier">default_words_connector</span>     = <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">translate</span>(<span class="ruby-value">:'support.array.words_connector'</span>,     <span class="ruby-value">:locale</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:locale</span>])
+    <span class="ruby-identifier">default_two_words_connector</span> = <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">translate</span>(<span class="ruby-value">:'support.array.two_words_connector'</span>, <span class="ruby-value">:locale</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:locale</span>])
+    <span class="ruby-identifier">default_last_word_connector</span> = <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">translate</span>(<span class="ruby-value">:'support.array.last_word_connector'</span>, <span class="ruby-value">:locale</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:locale</span>])
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">default_words_connector</span>     = <span class="ruby-string">&quot;, &quot;</span>
+    <span class="ruby-identifier">default_two_words_connector</span> = <span class="ruby-string">&quot; and &quot;</span>
+    <span class="ruby-identifier">default_last_word_connector</span> = <span class="ruby-string">&quot;, and &quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">options</span>.<span class="ruby-identifier">assert_valid_keys</span>(<span class="ruby-value">:words_connector</span>, <span class="ruby-value">:two_words_connector</span>, <span class="ruby-value">:last_word_connector</span>, <span class="ruby-value">:locale</span>)
+  <span class="ruby-identifier">options</span>.<span class="ruby-identifier">reverse_merge!</span> <span class="ruby-value">:words_connector</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">default_words_connector</span>, <span class="ruby-value">:two_words_connector</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">default_two_words_connector</span>, <span class="ruby-value">:last_word_connector</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">default_last_word_connector</span>
+
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">length</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">0</span>
+      <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">1</span>
+      <span class="ruby-keyword">self</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">dup</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">2</span>
+      <span class="ruby-node">&quot;#{self[0]}#{options[:two_words_connector]}#{self[1]}&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-node">&quot;#{self[0...-1].join(options[:words_connector])}#{options[:last_word_connector]}#{self[-1]}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_sentence-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_sentence-method -->
+
+      
+        <div id="to_xml-method" class="method-detail ">
+          <a name="method-i-to_xml"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">to_xml</span><span
+              class="method-args">(options = {})</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns a string that represents the array in XML by invoking
+<tt>to_xml</tt> on each element. Active Record collections delegate their
+representation in XML to this method.</p>
+
+<p>All elements are expected to respond to <tt>to_xml</tt>, if any of them
+does not then an exception is raised.</p>
+
+<p>The root node reflects the class name of the first element in plural if all
+elements belong to the same type and that’s not Hash:</p>
+
+<pre>customer.projects.to_xml
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;projects type=&quot;array&quot;&gt;
+  &lt;project&gt;
+    &lt;amount type=&quot;decimal&quot;&gt;20000.0&lt;/amount&gt;
+    &lt;customer-id type=&quot;integer&quot;&gt;1567&lt;/customer-id&gt;
+    &lt;deal-date type=&quot;date&quot;&gt;2008-04-09&lt;/deal-date&gt;
+    ...
+  &lt;/project&gt;
+  &lt;project&gt;
+    &lt;amount type=&quot;decimal&quot;&gt;57230.0&lt;/amount&gt;
+    &lt;customer-id type=&quot;integer&quot;&gt;1567&lt;/customer-id&gt;
+    &lt;deal-date type=&quot;date&quot;&gt;2008-04-15&lt;/deal-date&gt;
+    ...
+  &lt;/project&gt;
+&lt;/projects&gt;</pre>
+
+<p>Otherwise the root element is “records”:</p>
+
+<pre>[{:foo =&gt; 1, :bar =&gt; 2}, {:baz =&gt; 3}].to_xml
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;records type=&quot;array&quot;&gt;
+  &lt;record&gt;
+    &lt;bar type=&quot;integer&quot;&gt;2&lt;/bar&gt;
+    &lt;foo type=&quot;integer&quot;&gt;1&lt;/foo&gt;
+  &lt;/record&gt;
+  &lt;record&gt;
+    &lt;baz type=&quot;integer&quot;&gt;3&lt;/baz&gt;
+  &lt;/record&gt;
+&lt;/records&gt;</pre>
+
+<p>If the collection is empty the root element is “nil-classes” by default:</p>
+
+<pre>[].to_xml
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;nil-classes type=&quot;array&quot;/&gt;</pre>
+
+<p>To ensure a meaningful root element use the <tt>:root</tt> option:</p>
+
+<pre>customer_with_no_projects.projects.to_xml(:root =&gt; &quot;projects&quot;)
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;projects type=&quot;array&quot;/&gt;</pre>
+
+<p>By default name of the node for the children of root is
+<tt>root.singularize</tt>. You can change it with the <tt>:children</tt>
+option.</p>
+
+<p>The <tt>options</tt> hash is passed downwards:</p>
+
+<pre>Message.all.to_xml(:skip_types =&gt; true)
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;messages&gt;
+  &lt;message&gt;
+    &lt;created-at&gt;2008-03-07T09:58:18+01:00&lt;/created-at&gt;
+    &lt;id&gt;1&lt;/id&gt;
+    &lt;name&gt;1&lt;/name&gt;
+    &lt;updated-at&gt;2008-03-07T09:58:18+01:00&lt;/updated-at&gt;
+    &lt;user-id&gt;1&lt;/user-id&gt;
+  &lt;/message&gt;
+&lt;/messages&gt;</pre>
+            
+
+            
+            <div class="method-source-code" id="to_xml-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/conversions.rb, line 136</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_xml</span>(<span class="ruby-identifier">options</span> = {})
+  <span class="ruby-identifier">require</span> <span class="ruby-string">'active_support/builder'</span> <span class="ruby-keyword">unless</span> <span class="ruby-keyword">defined?</span>(<span class="ruby-constant">Builder</span>)
+
+  <span class="ruby-identifier">options</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">dup</span>
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:indent</span>]  <span class="ruby-operator">||=</span> <span class="ruby-value">2</span>
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:builder</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">Builder</span><span class="ruby-operator">::</span><span class="ruby-constant">XmlMarkup</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:indent</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">options</span>[<span class="ruby-value">:indent</span>])
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:root</span>]    <span class="ruby-operator">||=</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">first</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;Hash&quot;</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">all?</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-identifier">first</span>.<span class="ruby-identifier">class</span>) }
+    <span class="ruby-identifier">underscored</span> = <span class="ruby-constant">ActiveSupport</span><span class="ruby-operator">::</span><span class="ruby-constant">Inflector</span>.<span class="ruby-identifier">underscore</span>(<span class="ruby-identifier">first</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">name</span>)
+    <span class="ruby-constant">ActiveSupport</span><span class="ruby-operator">::</span><span class="ruby-constant">Inflector</span>.<span class="ruby-identifier">pluralize</span>(<span class="ruby-identifier">underscored</span>).<span class="ruby-identifier">tr</span>(<span class="ruby-string">'/'</span>, <span class="ruby-string">'_'</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-string">&quot;objects&quot;</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">builder</span> = <span class="ruby-identifier">options</span>[<span class="ruby-value">:builder</span>]
+  <span class="ruby-identifier">builder</span>.<span class="ruby-identifier">instruct!</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:skip_instruct</span>)
+
+  <span class="ruby-identifier">root</span> = <span class="ruby-constant">ActiveSupport</span><span class="ruby-operator">::</span><span class="ruby-constant">XmlMini</span>.<span class="ruby-identifier">rename_key</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:root</span>].<span class="ruby-identifier">to_s</span>, <span class="ruby-identifier">options</span>)
+  <span class="ruby-identifier">children</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:children</span>) <span class="ruby-operator">||</span> <span class="ruby-identifier">root</span>.<span class="ruby-identifier">singularize</span>
+
+  <span class="ruby-identifier">attributes</span> = <span class="ruby-identifier">options</span>[<span class="ruby-value">:skip_types</span>] <span class="ruby-operator">?</span> {} <span class="ruby-operator">:</span> {<span class="ruby-value">:type</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;array&quot;</span>}
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">builder</span>.<span class="ruby-identifier">tag!</span>(<span class="ruby-identifier">root</span>, <span class="ruby-identifier">attributes</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">empty?</span>
+
+  <span class="ruby-identifier">builder</span>.<span class="ruby-identifier">__send__</span>(<span class="ruby-value">:method_missing</span>, <span class="ruby-identifier">root</span>, <span class="ruby-identifier">attributes</span>) <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-constant">ActiveSupport</span><span class="ruby-operator">::</span><span class="ruby-constant">XmlMini</span>.<span class="ruby-identifier">to_tag</span>(<span class="ruby-identifier">children</span>, <span class="ruby-identifier">value</span>, <span class="ruby-identifier">options</span>) }
+    <span class="ruby-keyword">yield</span> <span class="ruby-identifier">builder</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- to_xml-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- to_xml-method -->
+
+      
+        <div id="uniq_by-method" class="method-detail ">
+          <a name="method-i-uniq_by"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">uniq_by</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns an unique array based on the criteria given as a <tt>Proc</tt>.</p>
+
+<pre>[1, 2, 3, 4].uniq_by { |i| i.odd? } # =&gt; [1, 2]</pre>
+            
+
+            
+            <div class="method-source-code" id="uniq_by-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/uniq_by.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">uniq_by</span>
+  <span class="ruby-identifier">hash</span>, <span class="ruby-identifier">array</span> = {}, []
+  <span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">hash</span>[<span class="ruby-keyword">yield</span>(<span class="ruby-identifier">i</span>)] <span class="ruby-operator">||=</span> (<span class="ruby-identifier">array</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">i</span>) }
+  <span class="ruby-identifier">array</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- uniq_by-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- uniq_by-method -->
+
+      
+        <div id="uniq_by-21-method" class="method-detail ">
+          <a name="method-i-uniq_by-21"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">uniq_by!</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Same as <a href="Array.html#method-i-uniq_by">uniq_by</a>, but modifies
+self.</p>
+            
+
+            
+            <div class="method-source-code" id="uniq_by-21-source">
+<pre>
+<span class="ruby-comment"># File lib/active_support/core_ext/array/uniq_by.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">uniq_by!</span>
+  <span class="ruby-identifier">replace</span>(<span class="ruby-identifier">uniq_by</span>{ <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-keyword">yield</span>(<span class="ruby-identifier">i</span>) })
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- uniq_by-21-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- uniq_by-21-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

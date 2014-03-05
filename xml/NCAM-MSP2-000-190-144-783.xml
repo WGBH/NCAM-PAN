@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<record xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.nsdl.org/ncs/ncam_afa" xsi:schemaLocation="http://ns.nsdl.org/ncs/ncam_afa http://ns.nsdl.org/ncs/ncam_afa/1.00/schemas/record.xsd">
+  <general>
+    <recordID>NCAM-MSP2-000-190-144-783</recordID>
+    <recordDate>2009-11-25</recordDate>
+    <url>http://www.exploratorium.edu/ti/podcasts/index.php</url>
+    <title>Teacher Institute Podcasts</title>
+    <description>Podcasts for science teachers, by science teachers. In each five-minute episode, you will learn about hands-on activities, science facts, science history, pedagogy tips for new teachers, or other ideas for your science classroom. The clips are available for download as mp3 files.</description>
+    <subject>Curriculum</subject>
+    <subject>Teacher content knowledge</subject>
+    <language>en-US</language>
+    <mimeType>audio</mimeType>
+    <mimeType>image</mimeType>
+    <mimeType>image/jpeg</mimeType>
+    <mimeType>text</mimeType>
+    <mimeType>text/html</mimeType>
+  </general>
+  <educational>
+    <educationLevel>Grade 5</educationLevel>
+    <educationLevel>Middle School</educationLevel>
+    <educationLevel>Grade 6</educationLevel>
+    <educationLevel>Grade 7</educationLevel>
+    <educationLevel>Grade 8</educationLevel>
+    <audience>Educator</audience>
+    <resourceType>Reference Material</resourceType>
+  </educational>
+  <lifecycle>
+    <publicationDate>2009-03-18</publicationDate>
+    <rights>Copyright Exploratorium</rights>
+    <accessRights>Free access</accessRights>
+    <contributor role="Producer">Exploratorium</contributor>
+  </lifecycle>
+  <accessForAll>
+    <accessMode>auditory</accessMode>
+  </accessForAll>
+</record>

@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"generate_zones:EFI"(TZInfo::TZDataParser#generate_zones;FI"RW;F:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"KWhether to generate zone definitions (set to false to stop zones being;TI"generated).    ;T:
+@file0FI"lib/tzinfo/tzdataparser.rb;T

@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"document:EFI"RDoc::Comment#document;FI"W;F:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"JOverrides the content returned by #parse.  Use when there is no #text;TI"source for this comment;T:
+@file0FI"lib/rdoc/comment.rb;T
