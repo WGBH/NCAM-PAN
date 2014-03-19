@@ -11,7 +11,10 @@
 # how to start up solr, generally for automated testing. 
 production:
   jetty_path: '/wgbh/http/ncampan/NCAM-PAN/blacklight-app/jetty'
-  url: http://127.0.0.1:8984/solr
+  url: http://lsncampan.wgbh.org:8983/solr
+staging:
+  jetty_path: '/wgbh/http/ncampan2/NCAM-PAN/blacklight-app/jetty'
+  url: http://lsncampan.wgbh.org:8984/solr
 development:
   jetty_path: './jetty'
   url: http://127.0.0.1:8984/solr
