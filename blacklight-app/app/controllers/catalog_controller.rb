@@ -60,6 +60,12 @@ class CatalogController < ApplicationController
     config.add_facet_field 'educationlevel_s', :label => 'Education Level' 
     # config.add_facet_field 'isadaptationof_s', :label => 'Is Adaptation Of', :limit => true
 
+    config.add_facet_field 'example_query_facet_field', :label => 'Query Facets', :query => {
+      :useful_without_sound => { :label => 'Useful Without Sound', :fq => '*:sound' },
+      :useful_without_vision => { :label => 'Useful Without Vision', :fq => '*:vision' },
+      :useful_without_color_vision => { :label => 'Useful Without Color Vision', :fq => '*:color'}
+    }
+
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
