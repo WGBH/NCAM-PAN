@@ -76,15 +76,15 @@ class CatalogController < ApplicationController
 
     #config.add_facet_field 'example_pivot_field', :label => 'Pivot Field', :pivot => ['format', 'language_facet']
 
-    #config.add_facet_field 'example_query_facet_field', :label => 'Publish Date', :query => {
-    #   :years_5 => { :label => 'within 5 Years', :fq => "pub_date:[#{Time.now.year - 5 } TO *]" },
-    #   :years_10 => { :label => 'within 10 Years', :fq => "pub_date:[#{Time.now.year - 10 } TO *]" },
-    #   :years_25 => { :label => 'within 25 Years', :fq => "pub_date:[#{Time.now.year - 25 } TO *]" }
+    #config.add_facet_field 'publication_date_query', :label => 'Publish Date', :query => {
+    #   :years_5 => { :label => 'within 5 Years', :fq => "publication_date_s:[#{Time.now.year - 5 } TO *]" },
+    #   :years_10 => { :label => 'within 10 Years', :fq => "publication_date_s:[#{Time.now.year - 10 } TO *]" },
+    #   :years_25 => { :label => 'within 25 Years', :fq => "publication_date_s:[#{Time.now.year - 25 } TO *]" }
     #}
-    config.add_facet_field 'example_query_facet_field', :label => 'Query Facets', :query => {
-      :useful_without_sound => { :label => 'Useful Without Sound', :fq => '*:sound' },
-      :useful_without_vision => { :label => 'Useful Without Vision', :fq => '*:vision' },
-      :useful_without_color_vision => { :label => 'Useful Without Color Vision', :fq => '*:color'}
+    config.add_facet_field 'custom_query', :label => 'Query Facets', :query => {
+      :useful_without_sound => { :label => 'Useful Without Sound', :fq => '((-accessmode_s:auditory) OR (accessmode_s:auditory AND (adaptationtype_s:captions OR adaptationtype_s:transcript)))' },
+      :useful_without_vision => { :label => 'Useful Without Vision', :fq => '((-accessmode_s:visual) OR (accessmode_s:visual AND (adaptationtype_s:longDescription OR adaptationtype_s:shortDescription)))' },
+      :useful_without_color_vision => { :label => 'Useful Without Color Vision', :fq => '-accessmode_s:colour'}
     }
 
 
@@ -155,28 +155,28 @@ class CatalogController < ApplicationController
     # solr request handler? The one set in config[:default_solr_parameters][:qt],
     # since we aren't specifying it otherwise. 
     
-    config.add_search_field 'all_fields', :label => 'All Fields'
+    #config.add_search_field 'all_fields', :label => 'All Fields'
     
 
     # Now we see how to over-ride Solr request handler defaults, in this
     # case for a BL "search field", which is really a dismax aggregate
     # of Solr search fields. 
     
-    config.add_search_field('title_s', :label => 'Title') do |field|
-      # solr_parameters hash are sent to Solr as ordinary url query params. 
-      field.solr_parameters = { :'spellcheck.dictionary' => 'default' }
+    #config.add_search_field('title_s', :label => 'Title') do |field|
+    #  # solr_parameters hash are sent to Solr as ordinary url query params. 
+    #  field.solr_parameters = { :'spellcheck.dictionary' => 'default' }
 
       # :solr_local_parameters will be sent using Solr LocalParams
       # syntax, as eg {! qf=$title_qf }. This is neccesary to use
       # Solr parameter de-referencing like $title_qf.
       # See: http://wiki.apache.org/solr/LocalParams
-      field.solr_local_parameters = { 
-        :qf => '$title_s_qf',
-        :pf => '$title_s_pf'
-      }
-    end
+    #  field.solr_local_parameters = { 
+    #    :qf => '$title_qf',
+    #    :pf => '$title_pf'
+    #  }
+    #end
 
-    config.add_search_field('resourcetype_s', :label => 'Resource Type') # do |field|
+    #config.add_search_field('resourcetype_s', :label => 'Resource Type') # do |field|
       # field.solr_parameters = { :'spellcheck.dictionary' => 'resourcetype_s'  }
       # field.solr_local_parameters = { 
       #   :qf => '$resourcetype_s_qf',
@@ -203,22 +203,22 @@ class CatalogController < ApplicationController
     #    :pf => '$subject_pf'
     #  }
     #end
-    config.add_search_field('description_t', :label => 'Description') do |field|
-      field.solr_parameters = { :'spellcheck.dictionary' => 'default' }
-      field.qt = 'search'
-      field.solr_local_parameters = { 
-        :qf => '$description_t',
-        :pf => '$description_t'
-       }
-    end
+    #config.add_search_field('description_t', :label => 'Description') do |field|
+    #  field.solr_parameters = { :'spellcheck.dictionary' => 'default' }
+    #  field.qt = 'search'
+    #  field.solr_local_parameters = { 
+    #    :qf => '$description_t',
+    #    :pf => '$description_t'
+    #   }
+    #end
 
-    config.add_search_field('educationlevel', :label => 'Education Level') do |field|
-      field.solr_parameters = { :'spellcheck.dictionary' => 'default'  }
-       field.solr_local_parameters = { 
-         :qf => '$educationlevel_t',
-         :pf => '$educationlevel_t'
-       }
-    end
+    #config.add_search_field('educationlevel', :label => 'Education Level') do |field|
+    #  field.solr_parameters = { :'spellcheck.dictionary' => 'default'  }
+    #   field.solr_local_parameters = { 
+    #     :qf => '$educationlevel_t',
+    #     :pf => '$educationlevel_t'
+    #   }
+    #end
 
     # "sort results by" select (pulldown)
     # label in pulldown is followed by the name of the SOLR field to sort by and
