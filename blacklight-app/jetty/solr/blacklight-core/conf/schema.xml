@@ -547,7 +547,6 @@
    <field name="contributor_s" type="string" indexed="true" stored="true" multiValued="true"/>
    <field name="displaytransformability_s" type="string" indexed="true" stored="true" multiValued="true"/>
    <field name="accessmodeadapted_s" type="string" indexed="true" stored="true" multiValued="true"/>
-   <field name="accessmodeadapted_s" type="string" indexed="true" stored="true" multiValued="true"/>
    <field name="genderethnicitydisability_s" type="string" indexed="true" stored="true" multiValued="true"/>
    <!-- pub_date sort uses new trie-based int fields, which are recommended for any int and are displayable, sortable, and range-quer
    we use 'tint' for faster range-queries. -->
