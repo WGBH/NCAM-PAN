@@ -60,6 +60,11 @@ class CatalogController < ApplicationController
     config.add_facet_field 'educationlevel_s', :label => 'Education Level' 
     # config.add_facet_field 'isadaptationof_s', :label => 'Is Adaptation Of', :limit => true
 
+    config.add_facet_field 'custom_query', :label => 'Query Facets', :query => {     
+       :useful_without_sound => { :label => 'Useful Without Sound', :fq => '((-accessmode_s:auditory) OR (accessmode_s:auditory AND (adaptationtype_s:captions OR adaptationtype_s:transcript)))' },     
+       :useful_without_vision => { :label => 'Useful Without Vision', :fq => '((-accessmode_s:visual) OR (accessmode_s:visual AND (adaptationtype_s:longDescription OR adaptationtype_s:shortDescription)))' },    
+       :useful_without_color_vision => { :label => 'Useful Without Color Vision', :fq => '-accessmode_s:colour'}     
+    } 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
     # handler defaults, or have no facets.
@@ -132,8 +137,8 @@ class CatalogController < ApplicationController
       # Solr parameter de-referencing like $title_qf.
       # See: http://wiki.apache.org/solr/LocalParams
       field.solr_local_parameters = { 
-        :qf => '$title_s_qf',
-        :pf => '$title_s_pf'
+        :qf => '$title_qf',
+        :pf => '$title_pf'
       }
     end
     
@@ -172,7 +177,7 @@ class CatalogController < ApplicationController
     config.add_sort_field 'score desc, publicationdate_sort desc, title_sort asc', :label => 'Relevance'
     #config.add_sort_field 'publicationdate_sort desc, title_sort asc', :label => 'Publication Date'
     #config.add_sort_field 'author_sort asc, title_sort asc', :label => 'author'
-    config.add_sort_field 'title_sort asc, pub_date_sort desc', :label => 'Title'
+    config.add_sort_field 'title_sort asc, publicationdate_sort desc', :label => 'Title'
     config.add_sort_field 'accessmode_sort asc, title_sort asc', :label => 'Access Mode'
     config.add_sort_field 'adaptationtype_sort asc, title_sort asc', :label => 'Adaptation Type'
 
