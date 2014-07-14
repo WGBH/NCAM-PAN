@@ -1,5 +1,5 @@
 module BlacklightHelper
-  include Blacklight::UrlHelperBehavior
+ include Blacklight::BlacklightHelperBehavior
 
   # overrides default link_to_document method, uses url_s for the solr document and opens in a new window
   def link_to_document(doc, opts={:label=>nil, :counter => nil})
