@@ -1,0 +1,17 @@
+<%# default partial to display solr document fields in catalog index view -%>
+<dl class="document-metadata dl-horizontal dl-invert">
+
+  <% if document[:adaptationtype_s].present? %>
+    <dt class="blacklight-adaptationtype_s"><%= render_index_field_label document, :field => "adaptationtype_s" %></dt>
+    <dd class="blacklight-adaptationtype_s"><%= render_index_field_value document, :field => "adaptationtype_s" %></dd>
+  <% end %>
+  <button type="button" class="btn more-info-btn" data-toggle="collapse" data-target="#index_fields_<%= document[:title_s].parameterize %>">More Info</button>
+  <div id="index_fields_<%= document[:title_s].parameterize %>" class="collapse out">
+    <% index_fields(document).each do |solr_fname, field| -%>
+      <% if should_render_index_field? document, field %>
+        <dt class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_label document, :field => solr_fname %></dt>
+        <dd class="blacklight-<%= solr_fname.parameterize %>"><%= render_index_field_value document, :field => solr_fname %></dd>
+      <% end -%>
+    <% end -%>
+  </div>
+</dl>
