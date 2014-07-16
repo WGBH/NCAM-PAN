@@ -9,13 +9,36 @@ $btn-primary-color: #0E3868;
 $navbar-default-bg: #293E66;
 $navbar-height: 60px;
 $well-bg: #FFF4D8;
-
 $panel-default-heading-bg: #FFDC80;
 
 @import 'bootstrap';
 
 @import 'blacklight/blacklight';
 
-div.collapse, div.collapsing {
+.collapse, .collapsing {
 	margin-top: 10px;
+}
+
+.navbar-brand {
+	background: transparent url(/assets/ncampan/accesstonsdl-results-logo.png) no-repeat top left !important;
+	width: 410px !important;
+	height: 43px !important;
+}
+
+.navbar-subtitle {
+	margin-left: 226px;
+}
+
+.navbar-right {
+    a {
+      color: #0E3868 !important;
+    }
+	a:hover {
+	  color: #000000 !important;
+	  text-decoration: underline !important;
+    } 
+}
+
+#header-navbar {
+	background: #FFFFFF;
 }

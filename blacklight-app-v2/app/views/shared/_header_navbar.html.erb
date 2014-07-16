@@ -1,0 +1,19 @@
+<div id="header-navbar" class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-subtitle">STEM resources for students with disabilities</div>
+    <div class="navbar-header">
+
+    <%= link_to application_name, root_path, class: "navbar-brand" %>
+    </div>
+
+    <div class="" id="user-util-collapse">
+      <%= render :partial=>'/user_util_links' %>
+    </div>
+  </div>
+</div>
+
+<div id="search-navbar" class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <%= render_search_bar  %>
+  </div>
+</div>
