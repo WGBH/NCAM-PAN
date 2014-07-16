@@ -3,3 +3,6 @@ en:
     application_name: 'Access to NSDL'
     header_links:
       search_history: 'Search History'
+    search:
+      facets:
+        title: 'Filter results'
