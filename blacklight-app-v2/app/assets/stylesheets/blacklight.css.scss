@@ -1,8 +1,15 @@
 $font-size-base: 13px;
 $font-size-h3: 15px;
-$headings-font-weight: bold;
+$font-size-h5: 17px;
+
 $brand-primary: #0E3868;
 $font-family-sans-serif: 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;
+$btn-primary-bg: #C8E700;
+$navbar-default-bg: #293E66;
+$navbar-height: 60px;
+$well-bg: #FFF4D8;
+
+$panel-default-heading-bg: #FFDC80;
 
 @import 'bootstrap';
 
