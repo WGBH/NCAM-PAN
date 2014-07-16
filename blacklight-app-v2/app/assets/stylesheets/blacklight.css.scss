@@ -5,6 +5,7 @@ $font-size-h5: 17px;
 $brand-primary: #0E3868;
 $font-family-sans-serif: 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;
 $btn-primary-bg: #C8E700;
+$btn-primary-color: #0E3868;
 $navbar-default-bg: #293E66;
 $navbar-height: 60px;
 $well-bg: #FFF4D8;
@@ -14,3 +15,7 @@ $panel-default-heading-bg: #FFDC80;
 @import 'bootstrap';
 
 @import 'blacklight/blacklight';
+
+div.collapse, div.collapsing {
+	margin-top: 10px;
+}
