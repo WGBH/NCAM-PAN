@@ -1,5 +1,5 @@
 BlacklightAppV2::Application.routes.draw do
-  root :to => "catalog#index"
+  root :to => "home#index"
   blacklight_for :catalog
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

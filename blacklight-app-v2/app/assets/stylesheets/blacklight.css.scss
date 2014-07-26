@@ -42,3 +42,49 @@ $panel-default-heading-bg: #FFDC80;
 #header-navbar {
 	background: #FFFFFF;
 }
+
+#search-navbar .input-group {
+	margin-left: 5px;
+}
+
+#landing_copy  {
+      margin: 0px 0 12px 20px;
+      font-size: 13px;
+      ul, #ft ul {
+      	   list-style-type: none;
+   		   padding: 0;
+   		   width: 400px;
+      }
+}
+
+#sponsorship ul {
+  margin: 0px 0 12px 6px;
+  list-style-type: none;
+  clear: both;
+  display: none;
+}
+
+body.landing #sponsorship ul.logos { display: block; }
+
+#sponsorship ul.links {
+  display: block;
+  padding-top: 22px;
+}
+
+#sponsorship ul.links li.links {
+  float:left;
+  margin-right: 30px;
+}
+
+#sponsorship ul.logos li {
+  float: left;
+}
+
+ul.logos {
+  list-style-type: none;
+  display: flex;
+}
+
+#sponsorship ul.links a {
+  color: #555555;
+}
