@@ -17,4 +17,5 @@ module BlacklightHelper
   def should_render_index_field? document, solr_field
     should_render_field?(solr_field, document) && document_has_value?(document, solr_field) && solr_field.field != "adaptationtype_s"
   end
+
 end
