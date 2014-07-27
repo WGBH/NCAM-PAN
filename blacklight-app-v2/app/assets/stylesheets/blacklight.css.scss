@@ -58,31 +58,13 @@ $panel-default-heading-bg: #FFDC80;
 }
 
 #sponsorship ul {
-  margin: 0px 0 12px 6px;
+  margin-top: 20px;
   list-style-type: none;
-  clear: both;
-  display: none;
-}
-
-body.landing #sponsorship ul.logos { display: block; }
-
-#sponsorship ul.links {
   display: block;
-  padding-top: 22px;
 }
 
-#sponsorship ul.links li.links {
-  float:left;
-  margin-right: 30px;
-}
-
-#sponsorship ul.logos li {
-  float: left;
-}
-
-ul.logos {
-  list-style-type: none;
-  display: flex;
+p.logos {
+  margin-left: 10px;
 }
 
 #sponsorship ul.links a {
