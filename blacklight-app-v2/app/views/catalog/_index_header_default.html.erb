@@ -13,7 +13,7 @@
          </span>-->
          <%= link_to_document document, :label=>document_show_link_field(document), :counter => counter %>
         </h3>  
-        <p class="blacklight-description_s col-sm-9 col-lg-10"><%= document[:description_s][0].to_s %></p>  
+        <p class="blacklight-description_s col-sm-9 col-lg-10"><%= document[:description_s][0].to_s.html_safe %></p>  
 
       </div>
       
