@@ -11,6 +11,8 @@ $navbar-height: 60px;
 $well-bg: #FFF4D8;
 $panel-default-heading-bg: #FFDC80;
 
+@import 'bootstrap-sprockets'
+
 @import 'bootstrap';
 
 @import 'blacklight/blacklight';
@@ -20,7 +22,7 @@ $panel-default-heading-bg: #FFDC80;
 }
 
 .navbar-brand {
-	background: transparent url(/assets/ncampan/accesstonsdl-results-logo.png) no-repeat top left !important;
+	background: transparent url('accesstonsdl-results-logo.png') no-repeat top left !important;
 	width: 410px !important;
 	height: 43px !important;
 }
