@@ -82,8 +82,8 @@ class CatalogController < ApplicationController
     #   :years_25 => { :label => 'within 25 Years', :fq => "publication_date_s:[#{Time.now.year - 25 } TO *]" }
     #}
     config.add_facet_field 'custom_query', :label => 'Accessible Resources', :query => {
-      :useful_without_sound => { :label => 'Useful Without Sound', :fq => '((-accessmode_s:auditory) OR (accessmode_s:auditory AND (adaptationtype_s:captions OR adaptationtype_s:transcript)))' },
-      :useful_without_vision => { :label => 'Useful Without Vision', :fq => '((-accessmode_s:visual) OR (accessmode_s:visual AND (adaptationtype_s:longDescription OR adaptationtype_s:shortDescription)))' },
+      :useful_without_sound => { :label => 'Useful Without Sound', :fq => '-(accessmode_s:auditory -adaptationtype_s:captions -adaptation_s:transcript)' },
+      :useful_without_vision => { :label => 'Useful Without Vision', :fq => '-(-adaptationtype_s:audioDescription -adaptationtype_s:longDescription -adaptationtype_s:shortDescription accessmode_s:visual)' },
       :useful_without_color_vision => { :label => 'Useful Without Color Vision', :fq => '-accessmode_s:colour'}
     }
 
