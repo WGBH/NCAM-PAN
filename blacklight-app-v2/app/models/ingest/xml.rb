@@ -28,7 +28,7 @@ class Ingest::Xml < Ingest::Base
 
         end
         
-        print solr_doc.to_s
+        # print solr_doc.to_s
         Blacklight.solr.add solr_doc, :add_attributes => { :commitWithin => 10000 }
         Blacklight.solr.commit
       end
