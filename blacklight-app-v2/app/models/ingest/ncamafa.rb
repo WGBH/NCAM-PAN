@@ -27,7 +27,7 @@ class Ingest::Ncamafa < Ingest::Xml
             solr_doc[:id] = node.text 
             #fields << [node.name, node.text] if node.name != "text"
           else
-            fields << ["#{node.name.parameterize}_s", node.text] if node.name != "text"
+            fields << ["#{node.name.parameterize}_ss", node.text] if node.name != "text"
         end
       end
     end
